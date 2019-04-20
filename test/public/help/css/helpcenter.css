@@ -1,0 +1,644 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{  margin: 0px; padding: 0px; }
+body { font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei","Helvetica Neue",Helvetica,tahoma,sans-serif!important; font-size: 14px; width:100%; *text-align: center; color:#888888; background-image: url("../images/layout/bgwhite.png"); background-repeat: repeat;  }
+html, body { height: 100%; margin: 0; padding: 0; }
+div { margin: 0; padding: 0; }
+ul, li { display:inline-block; *display:inline; zoom:1; }
+a { cursor:pointer; text-decoration:none; color:#222222; font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei","Helvetica Neue",Helvetica,tahoma,sans-serif!important; }
+input { font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei","Helvetica Neue",Helvetica,tahoma,sans-serif!important; }
+button { font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei","Helvetica Neue",Helvetica,tahoma,sans-serif!important; }
+select { font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei","Helvetica Neue",Helvetica,tahoma,sans-serif!important; }
+textarea { font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei","Helvetica Neue",Helvetica,tahoma,sans-serif!important; }
+a:hover { }
+.pointer { cursor:pointer; }
+.clearfix { clear: both; }
+.pull-left { float:left; }
+.pull-right { float:right; }
+.center-align { text-align: center; }
+.left-align { text-align: left; }
+.margin-center { margin:auto;}
+img { border: none; }
+.banner_wrap { width: 100%; height: auto; text-align: center; background-image: url(http://media.jxf88.com/helpcenter/images/layout/bgwrap.jpg); background-repeat: repeat-x; }
+.windows_min { width: 100%; height: 100%; position: absolute; z-index: 10000; background: rgba(0,0,0,0.8) none repeat scroll !important; background: #000; filter: Alpha(opacity=80); left: 0; top: 0; }
+.bgnone{ background:none;}
+.tbold { font-weight:bold;}
+.lheight28{line-height: 28px;}
+.tbold { font-weight:bold;}
+p { margin: 15px auto;}
+.ml140 { margin-left:140px; }
+.ml85 { margin-left:85px; }
+.ml10 { margin-left:10px; }
+.ml20 { margin-left:20px; }
+.ml00 { margin-left:100px; }
+.ml50 { margin-left:50px; }
+.pl20 { padding-left:20px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 40px; }
+.mt40 { margin-top: 40px; }
+.mt50 { margin-top: 50px; }
+.mt60 { margin-top: 60px; }
+.mtb10 { margin: 10px 0px; }
+.mtb60 { margin: 60px 0px; }
+.mt80 { margin-top: 80px; }
+.mt100 { margin-top: 100px; }
+.mt140 { margin-top: 140px; }
+.mb70 { margin-bottom: 70px; }
+.mb50 { margin-bottom: 50px; }
+.mb40 { margin-bottom: 40px; }
+.mb20 { margin-bottom: 20px; }
+.mb10 { margin-bottom: 10px; }
+.mr20 { margin-right:20px; }
+.mr60 { margin-right:60px; }
+.mr100 { margin-right:100px; }
+.mr200 { margin-right:200px; }
+.pt50 { padding-top: 50px; }
+.pt20 { padding-top: 20px; }
+.pt30 { padding-top: 30px; }
+.pb20{ padding-bottom:20px;}
+.pb30{ padding-bottom:30px;}
+.pb50{ padding-bottom:50px;}
+.pb100{ padding-bottom:100px;}
+.red_txt { color: #cf271e; }
+.black_txt { color: #000; text-decoration:underline; }
+.yellow_txt { color: #f0d656; text-decoration:underline; }
+.red_underline { color: #cf271e; text-decoration:underline; }
+.pindent { padding-left:30px;}
+ol.mylist li { display: list-item; text-align: -webkit-match-parent; list-style-type: decimal;}
+.mylist { padding-left:80px;}
+ol.listroman li { display: list-item; text-align: -webkit-match-parent; list-style-type: lower-roman;}
+.listroman { padding-left:100px;}
+.wid470 { width: 470px; }
+.font20 { font-size: 20px; }
+
+/* start */
+.helpc_bgbanner{ background:url(http://media.jxf88.com/helpcenter/images/helpc_bgbanner.jpg) repeat-x; height:531px;}
+.helpc_banner{ background:url( ../images/banner_helpcenter.jpg) no-repeat center top; width:1903px; height:531px; margin:auto; position:relative;}
+.helpc_textban{ width:260px; height:155px; position:absolute; font-size:30px; color:#ed1c24; left: 951px; top: 64px; text-align: center; font-weight:bold;}
+.helpc_searchbar{ width:500px; height:50px; position:absolute; top: 390px; right: 478px;}
+.helpc_inputfield{ width:390px; height:50px; line-height:50px; background-color:#FFF; border:0px; color:#898989; font-size:18px; float:left; padding-left: 20px; padding-right: 20px;}
+.helpc_btnsearch{ background-color:#cf271e; width:70px; height:49px; border:0px; float:left; position:relative; cursor:pointer;}
+.helpc_btnsearch:hover{ background-color:#cf271e; }
+.helpc_search { position:absolute; z-index:10; right: 18px; top: 9px; cursor:pointer;}
+.helpc_navbg{ background:url(http://media.jxf88.com/helpcenter/images/helpc_nav.jpg) repeat-x; height:57px;}
+.helpc_w720{ width:720px; margin:auto;}
+.helpc_w720 li a{ color:#FFF; width:180px; font-size:18px; text-align:center; line-height:58px;  padding: 16px 70px 16px 70px; }
+.helpc_w720 li a:hover{ background-color: #e5e5e5;  color:#ed1c24;}
+.helpc_w720 li .selected{ background-color: #e5e5e5;  color:#ed1c24;}
+.helpc_navbggray{ background-color:#e5e5e5; height:57px;}
+.helpc_w960{ width:1100px; margin:auto; background-color:#e5e5e5; height:57px; text-align: center;}
+.helpc_w960 li a{ color:#898989; font-size:16px; text-align:center; line-height:57px; padding: 16px 12px; }
+.helpc_w960 li a:hover{ color:#ed1c24; border-bottom:#ed1c24 solid 4px;}
+.helpc_w960 li .selected{ color:#ed1c24; border-bottom:#ed1c24 solid 4px;}
+.helpc_w940{ width:940px; margin: auto; position:relative;}
+
+.helpc_navgreen{ height:43px; border-bottom:solid 1px #FFFFFF; }
+.helpc_navgreen li a{ background-color:#ccecf0; line-height:43px; color:#1191a5; width:180px; font-size:18px; text-align:center; padding: 9px 118px;}
+.helpc_navgreen li a:hover{ background-color:#3fa8b8; color:#fff;}
+.helpc_navgreen li .selected { background-color:#3fa8b8; color:#fff; }
+
+.helpc_navlgreen{ height:43px; border-bottom:solid 1px #FFFFFF;}
+.helpc_navlgreen li a { background-color:#86c6d1; line-height:43px; color:#fff; font-size:18px; text-align:center; padding: 9px 63px;}
+.helpc_navlgreen2 li a {
+    background-color: #86c6d1;
+    line-height: 43px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 9px 21.8px;
+}
+.helpc_navlgreen3 li a {
+    background-color: #86c6d1;
+    line-height: 43px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 9px 19px;
+}
+.helpc_navlgreen2 li a:hover{ background-color:#3fa8b8; color:#fff;}
+.helpc_navlgreen2 li a.selected{ background-color:#3fa8b8; color:#fff;}
+.helpc_navlgreen3 li a:hover{ background-color:#3fa8b8; color:#fff;}
+.helpc_navlgreen3 li a.selected{ background-color:#3fa8b8; color:#fff;}
+
+.helpc_navlgreen4 li a.helpc_navlgreen4_faq div{
+  background-color: #86c6d1;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  top: -9px;
+}
+.green4_top{
+  margin-top: 3px;
+}
+ .helpc_navlgreen4 li div {
+    background-color: #86c6d1;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 0px 13px;
+}
+.helpc_navlgreen4 li a.selected div{background-color:#3fa8b8; color:#fff;}
+.helpc_navlgreen4 li a:hover div{background-color:#3fa8b8; color:#fff;}
+
+.helpc_redtitle{ font-size:48px; color:#ed1c24; text-align:center; font-weight:bold;}
+.helpc_red{ font-size:25px; color:#ce271f; text-align:left;}
+.helpc_red2{ font-size:25px; color:#ce271f; text-align:left;}
+.helpc_white { width: 545px; margin-left: 126px; padding-top: 20px; padding-bottom: 6px; font-size:25px; color:#fff; text-align:left;}
+.helpc_box2mid { background: url(http://media.jxf88.com/helpcenter/images/hc_financialimgmid.jpg) repeat-y; width:706px; height:100%; margin:auto; }
+.helpc_box2top { background: url(http://media.jxf88.com/helpcenter/images/hc_financialimgtop.jpg) no-repeat;  }
+.helpc_box2bot { background: url(http://media.jxf88.com/helpcenter/images/hc_financialimgbot.jpg) no-repeat; height:20px; }
+.helpc_box1, .helpc_box2 { position:relative;}
+.helpc_box1 .helpc_red { position:absolute; left: 220px; top: 74px;  right:60px;}
+.helpc_box1 .helpc_red2 { position:absolute; left: 220px; top: 46px;  right:60px;}
+.helpc_balloon{ font-size:30px; font-weight:bold; text-align:center; color:#FFF; line-height:90px; }
+
+/* faq casino */
+.helpc_faqimg1{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino1.jpg) no-repeat; width:671px; height:370px; position:relative;}
+.helpc_faqimg1_txt1{ position:absolute; bottom: 30px; right: 10px;}
+.helpc_faqimg2{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino2.jpg) no-repeat; width:657px; height:388px; position:relative;}
+.helpc_faqimg2_txt2{ position:absolute; bottom: 40px; right: 21px;}
+.helpc_faqimg3{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino3.jpg) no-repeat; width:721px; height:412px; position:relative;}
+.helpc_faqimg3_txt3{ position:absolute; top: -32px; left: 21px;}
+.helpc_faqimg3b_txt3b{ position:absolute; bottom: -40px; left: 21px;}
+.helpc_faqimg4{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino4.jpg) no-repeat; width:797px; height:390px; position:relative;}
+.helpc_faqimg4_txt4{ position:absolute; bottom: -32px; left: 21px;}
+.helpc_faqimg5{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino5.jpg) no-repeat; width:922px; height:683px; position:relative;}
+.helpc_faqimg5_txt5{ position:absolute; top: -32px; left: 154px;}
+.helpc_faqimg5b_txt5b{ position:absolute; top: -47px; right: 90px;}
+.helpc_faqimg6{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino6.jpg) no-repeat; width:656px; height:507px; position:relative;}
+.helpc_faqimg6_txt6{ position:absolute; top: 51px; left: -84px;}
+.helpc_faqimg7{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino7.jpg) no-repeat; width:922px; height:784px; position:relative;}
+.helpc_faqimg7_txt7{ position:absolute; bottom: 53px; left: -7px;}
+.helpc_faqimg7b_txt7b{ position:absolute; bottom: -40px; left: 263px;}
+.helpc_faqimg7c_txt7c{ position:absolute; bottom: 10px; right: 73px;}
+.helpc_faqimg8{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino8.jpg) no-repeat; width:435px; height:401px; position:relative;}
+.helpc_faqimg8_txt8{ position:absolute; top: 51px; left: -84px;}
+.helpc_faqimg9{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqcasino9.jpg) no-repeat; width:435px; height:401px; position:relative;}
+
+/* faq sport3 */
+.helpc_spimg1{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_a.jpg) no-repeat; width:682px; height:366px; position:relative;}
+.helpc_spimg1_txt1{ position:absolute; bottom: 9px; right: 33px; font-size: 18px; color: #464646; }
+.helpc_spimg2{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_b.jpg) no-repeat; width:690px; height:393px; position:relative;}
+.helpc_spimg2_txt2{ position:absolute; bottom: 30px; right: 75px; font-size: 18px; color: #464646; }
+.helpc_spimg3{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_c.jpg) no-repeat; width:866px; height:446px; position:relative;}
+.helpc_spimg3_txt1{ position:absolute; top: -57px; right: 21px;}
+.helpc_spimg3_txt2{ position:absolute; bottom: -50px; right: 21px;}
+.helpc_sports1c { background:url(../images/hc_faq_sport_b1.jpg) no-repeat; width:802px; height:432px; position:relative; margin-bottom: 30px; }
+.helpc_sports1d { background:url(../images/hc_faq_sport_b2.jpg) no-repeat; width:960px; height:950px; position:relative; margin-bottom: 30px; }
+.helpc_sports1f { background:url(../images/hc_faq_sport_b3.jpg) no-repeat; width:919px; height:566px; position:relative; margin-bottom: 30px; }
+.helpc_sports1g { background:url(../images/hc_faq_sport4a.jpg) no-repeat; width:223px; height:662px; position:relative; margin-bottom: 30px; }
+.helpc_sports1h { background:url(../images/hc_faq_sport4a1.jpg) no-repeat; width:817px; height:261px; position:relative; margin-bottom: 30px; }
+.helpc_sports1i { background:url(../images/hc_faq_sport4a2.jpg) no-repeat; width:1031px; height:216px; position:relative; margin-bottom: 30px; }
+.helpc_sports1j { background:url(../images/hc_faq_sport4a3.jpg) no-repeat; width:1051px; height:214px; position:relative; margin-bottom: 30px; }
+.helpc_sports1k { background:url(../images/hc_faq_sport4a4.jpg) no-repeat; width:805px; height:278px; position:relative; margin-bottom: 30px; }
+.helpc_sports1l { background:url(../images/hc_faq_sport4a5.jpg) no-repeat; width:816px; height:500px; position:relative; margin-bottom: 30px; }
+.helpc_sports1m { background:url(../images/hc_faq_sport4a6.jpg) no-repeat; width:566px; height:591px; position:relative; margin-bottom: 30px; }
+.helpc_sports1n { background:url(../images/hc_faq_sport4a7.jpg) no-repeat; width:504px; height:730px; position:relative; margin-bottom: 30px; }
+.helpc_sports1o { background:url(../images/hc_faq_sport4a8.jpg) no-repeat; width:1036px; height:414px; position:relative; margin-bottom: 30px; }
+.helpc_sports1p { background:url(../images/hc_faq_sport4a9.jpg) no-repeat; width:1036px; height:472px; position:relative; margin-bottom: 30px; }
+.helpc_sports1q { background:url(../images/hc_faq_sport4a10.jpg) no-repeat; width:823px; height:404px; position:relative; margin-bottom: 30px; }
+.helpc_sports1r { background:url(../images/hc_faq_sport4a11.jpg) no-repeat; width:612px; height:529px; position:relative; margin-bottom: 30px; }
+.helpc_sports1s { background:url(../images/hc_faq_sport4a12.jpg) no-repeat; width:813px; height:305px; position:relative; margin-bottom: 30px;  }
+.helpc_sports1t { background:url(../images/hc_faq_sport4a13.jpg) no-repeat; width:803px; height:278px; position:relative; margin-bottom: 30px; }
+.helpc_sports1u { background:url(../images/hc_faq_sport4a14.jpg) no-repeat; width:816px; height:376px; position:relative; margin-bottom: 30px; }
+.helpc_sports1v { background:url(../images/hc_faq_sport4a15.jpg) no-repeat; width:818px; height:765px; position:relative; margin-bottom: 30px;  }
+.helpc_sports_details { font-size: 20px; color: #353535; margin-bottom: 30px; }
+.helpc_w985 { width: 985px; margin: auto; position: relative; }
+.helpc_redfont { color: #cf271e; }
+.helpc_sport4 { margin-top: 220px; margin-left: 230px; font-size: 20px; color: #353535; }
+.helpc_sport7a { margin-top: 220px; margin-right: 50px; font-size: 20px; color: #353535; }
+.helpc_sport7 { margin-top: 220px; margin-left: 50px; font-size: 20px; color: #353535; }
+#helpcenterContent > div.helpc_w940.pt50 > div.helpc_navgreen { width: 100%; }
+#helpcenterContent > div.helpc_w940.pt50 > div.helpc_navgreen > a > div.twodiv { width: 50%!important; box-sizing: border-box; float: left; text-align: center; background-color: #ccecf0; line-height: 43px; font-size: 18px; color: #1191a5; }
+#helpcenterContent > div.helpc_w940.pt50 > div.helpc_navgreen > a > div.twodiv { color: #1191a5; }
+#helpcenterContent > div.helpc_w940.pt50 > div.helpc_navgreen > a:hover > div.twodiv { background-color: #3fa8b8; color: #fff; }
+#helpcenterContent > div.helpc_w940.pt50 > div.helpc_navgreen > a > div.twodiv.selected { background-color: #3fa8b8; color: #fff; }
+#helpcenterContent > div.helpc_w940.pt50 > div.helpc_navgreen > a:hover > div.twodiv { color: #fff;  }
+#helpcenterContent > div.helpc_w940.pt50 > div.helpc_navgreen > a > div.twodiv.selected { color: #fff; }
+
+.helpc_spimglast{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_d.jpg) no-repeat; width:802px; height:514px; position:relative; margin-top:95px;}
+.helpc_spimglast_txt1{ position:absolute; top: -57px; left: 126px;}
+.helpc_spimglast_txt1b{ position:absolute; bottom: -50px; left: 21px;}
+.helpc_spimglast2{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_e.jpg) no-repeat; width:587px; height:535px; position:relative;}
+.helpc_spimglast_txt2{ position:absolute; bottom: -50px; right: 21px;}
+.helpc_spimglast_txt2b{ position:absolute; top: 80px; left: -138px;}
+.helpc_spimglast3{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_f.jpg) no-repeat; width:959px; height:540px; position:relative;}
+.helpc_spimglast_txt3{ position:absolute; top: -50px; left: 283px;}
+.helpc_spimglast_txt3b{ position:absolute; bottom: -50px; left: 21px;}
+.helpc_spimglast4{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_g.jpg) no-repeat; width:818px; height:645px; position:relative;     margin-left: 108px;}
+.helpc_spimglast_txt4{ position:absolute;     bottom: 171px; right: 0px;}
+.helpc_spimglast5{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport_h.jpg) no-repeat; width:837px; height:521px; position:relative;}
+.helpc_spimglast_txt5{ position:absolute; bottom: -50px; right: 21px;}
+
+
+
+/* faq keno */
+.helpc_faqkenoimg1{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno1.jpg) no-repeat; width:668px; height:272px; position:relative;}
+.helpc_faqkenoimg1_txt1{ position:absolute; bottom: -47px; left: 0px;}
+.helpc_faqkenoimg2{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno2.jpg) no-repeat; width:167px; height:289px; position:relative;}
+.helpc_faqkenoimg2_txt2{ position:absolute; top: 44px; left: -403px;}
+.helpc_faqkenoimg3{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno3.jpg) no-repeat; width:217px; height:276px; position:relative;}
+.helpc_faqkenoimg3_txt3{ position:absolute; top: 44px; left: -403px;}
+.helpc_faqkenoimg4{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno4.jpg) no-repeat; width:843px; height:543px; position:relative;}
+.helpc_faqkenoimg4_txt4{ position:absolute; top: -41px; right: 20px;}
+.helpc_faqkenoimg5{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno5.jpg) no-repeat; width:142px; height:289px; position:relative;}
+.helpc_faqkenoimg5_txt5{ position:absolute; top: 102px; left: -479px;}
+.helpc_faqkenoimg6{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno6.jpg) no-repeat; width:850px; height:441px; position:relative;}
+.helpc_faqkenoimg6_txt6{ position:absolute; top: -35px; right: 20px;}
+.helpc_faqkenoimg6b{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno7.jpg) no-repeat; width:895px; height:377px; position:relative;}
+.helpc_faqkenoimg7{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno8.jpg) no-repeat; width:636px; height:457px; position:relative;}
+.helpc_faqkenoimg7_txt7{ position:absolute; top: -78px; left: 20px;}
+.helpc_faqkenoimg7_txt7b{ position:absolute; top: -35px; left: 20px;}
+.helpc_faqkenoimg8{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqkeno9.jpg) no-repeat; width:698px; height:667px; position:relative;}
+.helpc_faqkenoimg8_txt8{ position:absolute; top: -40px; left: 243px;}
+.helpc_faqkenoimg8_txt8b{ position:absolute; bottom: -39px; left: 368px;}
+.helpc_faqkenoimg8_txt8c{ position:absolute; top: 270px; left: -41px;}
+.helpc_faqkenoimg8_txt8d{ position:absolute; bottom: 164px; left: -57px;}
+
+/* faq financial */
+.helpc_financial1{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg1.jpg) no-repeat; width:691px; height:368px; position:relative;}
+.helpc_financial_txt1{ position:absolute; bottom: 24px; right: 20px;}
+.helpc_financial1b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg1b.jpg) no-repeat; width:680px; height:393px; position:relative;}
+.helpc_financial_txt1b{ position:absolute; bottom: 42px; right: 20px;}
+.helpc_financial1c{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg1c.jpg) no-repeat; width:766px; height:415px; position:relative;}
+.helpc_financial_txt1c{ position:absolute; bottom: 18px; left: 98px}
+.helpc_financial1d{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg1d.jpg) no-repeat; width:876px; height:434px; position:relative;}
+.helpc_financial_txt1d{ position:absolute; bottom: -18px; left: 20px;}
+.helpc_financial2{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg2.jpg) no-repeat; width:932px; height:323px; position:relative;}
+.helpc_financial_txt2{ position:absolute; top: -68px; left: 110px;}
+.helpc_financial_txt2a{ position:absolute; bottom: -26px; left: 36px;}
+.helpc_financial_txt2b{ position:absolute; bottom: -26px; left: 368px;}
+.helpc_financial_txt2c{ position:absolute; bottom: -26px; right: 39px;}
+.helpc_financial3{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg3.jpg) no-repeat; width:872px; height:491px; position:relative;}
+.helpc_financial_txt3{ position:absolute; top: -68px; left: 84px;}
+.helpc_financial4{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg4.jpg) no-repeat; width:817px; height:429px; position:relative;}
+.helpc_financial_txt4{ position:absolute; top: -68px; left: 53px;}
+.helpc_financial4b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg4b.jpg) no-repeat; width:895px; height:275px; position:relative;}
+.helpc_financial_txt4b{ position:absolute; top: -42px; left: 53px;}
+.helpc_financial_txt4c{ position:absolute; bottom: -51px; left: 53px;}
+.helpc_financial5{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg5.jpg) no-repeat; width:817px; height:429px; position:relative;}
+.helpc_financial_txt5{ position:absolute; bottom: 19px; right: 87px;}
+.helpc_financial5b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_atmimg5b.jpg) no-repeat; width:657px; height:412px; position:relative;}
+.helpc_financial_txt5b{ position:absolute; bottom: 38px; right: 16px;}
+
+.helpc_financialcc1{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_ccimg1.jpg) no-repeat; width:674px; height:368px; position:relative;}
+.helpc_financialcc_txt1{ position:absolute; bottom: 24px; right: 2px;}
+.helpc_financialcc1b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_ccimg1b.jpg) no-repeat; width:663px; height:384px; position:relative;}
+.helpc_financialcc_txt1b{ position:absolute; bottom: 42px; right: -7px;}
+.helpc_financialcc2{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_ccimg2.jpg) no-repeat; width:762px; height:414px; position:relative;}
+.helpc_financialcc_txt2{ position:absolute; bottom: 16px; left: 144px;}
+.helpc_financialcc2b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_ccimg2b.jpg) no-repeat; width:729px; height:431px; position:relative;}
+.helpc_financialcc_txt2b{ position:absolute; bottom: 17px; right: 100px;}
+.helpc_financialcc3{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_ccimg3.jpg) no-repeat; width:729px; height:431px; position:relative;}
+.helpc_financialcc4{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_ccimg4.jpg) no-repeat; width:644px; height:406px; position:relative;}
+.helpc_financialcc_txt4{ position:absolute; bottom: 24px; right: -107px;}
+.helpc_financialcc_txt4b{ position:absolute; bottom: -30px; left: 10px;}
+.helpc_financialcc5{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_ccimg5.jpg) no-repeat; width:603px; height:291px; position:relative;}
+.helpc_financialcc_txt5{ position:absolute; top: -85px; left: -51px;}
+.helpc_financialcc6{ width:603px;  position:relative;}
+.helpc_financialcc_txt6{ position:absolute;  bottom: -57px; left: -51px;}
+
+.helpc_financial3rd1{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_1.jpg) no-repeat; width:682px; height:388px; position:relative;}
+.helpc_financial3rd_txt1{ position:absolute; bottom: 24px; right: 2px;}
+.helpc_financial3rd2{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_2.jpg) no-repeat; width:673px; height:391px; position:relative;}
+.helpc_financial3rd_txt2{ position:absolute; bottom: 24px; right: 2px;}
+.helpc_financial3rd2b{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_2.jpg) no-repeat; width:663px; height:391px; position:relative;}
+.helpc_financial3rd_txt2b{ position:absolute; bottom: 24px; right: 2px;}
+.helpc_financial3rd3{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_3.jpg) no-repeat; width:759px; height:410px; position:relative;}
+.helpc_financial3rd_txt3{ position:absolute; bottom: 24px; left: 116px;}
+.helpc_financial3rd3b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_3rdimg3b.jpg) no-repeat; width:732px; height:404px; position:relative;}
+.helpc_financial3rd_txt3b{ position:absolute; bottom: -46px; right: 116px;}
+.helpc_financial3rd4{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_4.jpg) no-repeat; width:895px; height:552px; position:relative;}
+.helpc_financial3rd5{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_5.jpg) no-repeat; width:603px; height:242px; position:relative;}
+.helpc_financial3rd6{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_6.jpg) no-repeat; width:601px; height:408px; position:relative;}
+.helpc_financial3rd6b{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_7.jpg) no-repeat; width:603px; height:636px; position:relative;}
+.helpc_financial3rd6c{ background:url(http://media.jxf88.com/helpcenter/images/help3rd_8.jpg) no-repeat; width:611px; height:548px; position:relative;}
+.helpc_financial3rd_txt5{ position:absolute; bottom: 38px; right: -120px;}
+.helpc_financial3rd_txt5b{ position:absolute; bottom: -15px; left: 19px;}
+.helpc_financial3rd_txt5c{ position:absolute; bottom: -15px; left: 115px;}
+.helpc_3rd_text { margin-left: 115px; }
+.floatcontent { position: absolute; bottom: 28px; right: 24px; font-size: 18px; color: #000000; width: 190px; }
+.floatcontent1 { position: absolute; bottom: 7px; right: 24px; font-size: 18px; color: #000000; width: 190px; }
+.floatcontent2 { position: absolute; bottom: 42px; right: 104px; font-size: 18px; color: #000000; width: 190px; }
+.floatcontent3 { position: absolute; bottom: 152px; right: 14px; font-size: 18px; color: #000000; width: 190px; }
+.floatcontent4 { position: absolute; bottom: 42px; right: 104px; font-size: 18px; color: #000000; width: 190px; }
+.redcontent { font-size: 18px; color: #cf271e; font-weight: bold; }
+.blackcontent2 { font-size: 18px; color: #464646; font-weight: bold; }
+.blackcontent { font-size: 18px; color: #464646; }
+
+.helpc_financialtransfer1{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_transimg1.jpg) no-repeat; width:709px; height:371px; position:relative;}
+.helpc_financialtransfer_txt1{ position:absolute; bottom: 31px; right: 39px;}
+.helpc_financialtransfer1b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_transimg2.jpg) no-repeat; width:662px; height:390px; position:relative;}
+.helpc_financialtransfer_txt1b{ position:absolute; bottom: 24px; right: 2px;}
+.helpc_financialtransfer2{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_transimg3.jpg) no-repeat; width:841px; height:456px; position:relative;}
+.helpc_financialtransfer_txt2{ position:absolute; top: -47px; left: 67px; }
+.helpc_financialtransfer_txt2b{ position:absolute; bottom: -10px; left: 59px;}
+
+.helpc_financialwdraw1{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg1.jpg) no-repeat; width:709px; height:371px; position:relative;}
+.helpc_financialwdraw_txt1{ position:absolute; bottom: 31px; right: 39px;}
+.helpc_financialwdraw1b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg1b.jpg) no-repeat; width:662px; height:390px; position:relative;}
+.helpc_financialwdraw_txt1b{ position:absolute; bottom: 24px; right: 2px;}
+.helpc_financialwdraw2{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg2.jpg) no-repeat; width:659px; height:415px; position:relative;}
+.helpc_financialwdraw_txt2{ position:absolute; bottom: 24px; right: 2px;}
+.helpc_financialwdraw2b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg2b.jpg) no-repeat; width:829px; height:413px; position:relative;}
+.helpc_financialwdraw_txt2b{ position:absolute; bottom: 32px; left: 51px;}
+.helpc_financialwdraw3{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg3.jpg) no-repeat; width:689px; height:406px; position:relative;}
+.helpc_financialwdraw_txt3{ position:absolute; bottom: 41px; right: 29px;}
+.helpc_financialwdraw3b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg3b.jpg) no-repeat; width:737px; height:439px; position:relative;}
+.helpc_financialwdraw_txt3b{ position:absolute; top: -42px; left: 29px;}
+.helpc_financialwdraw3c{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg3c.jpg) no-repeat; width:737px; height:421px; position:relative;}
+.helpc_financialwdraw_txt3c{ position:absolute; top: -42px; left: 29px;}
+.helpc_financialwdraw3d{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg3d.jpg) no-repeat; width:763px; height:442px; position:relative;}
+.helpc_financialwdraw_txt3d{ position:absolute; bottom: 29px; right: 57px;}
+.helpc_financialwdraw4{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg4.jpg) no-repeat; width:703px; height:396px; position:relative;}
+.helpc_financialwdraw_txt4{ position:absolute; top: -42px; left: 29px;}
+.helpc_financialwdraw4b{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg4b.jpg) no-repeat; width:467px; height:336px; position:relative;}
+.helpc_financialwdraw_txt4b{ position:absolute; top: -42px; left: -104px;}
+.helpc_financialwdraw4c{ background:url(http://media.jxf88.com/helpcenter/images/hc_financial_wdrawimg4c.jpg) no-repeat; width:752px; height:407px; position:relative;}
+.helpc_financialwdraw_txt4c{ position:absolute; bottom: -127px; left: 133px;}
+
+.helpc_financialpopup1{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqblocker1.jpg) no-repeat; width:728px; height:523px; position:relative; margin-top:-75px;}
+.helpc_financialpopup_txt1{ position:absolute; top: 31px; left: 39px;}
+.helpc_financialpopup2{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqblocker2.jpg) no-repeat; width:949px; height:464px; position:relative;}
+.helpc_financialpopup_txt2{ position:absolute; top: -61px; left: 118px;}
+.helpc_financialpopup3{ background:url(http://media.jxf88.com/helpcenter/images/hc_faqblocker3.jpg) no-repeat; width:520px; height:170px; position:relative;}
+.helpc_financialpopup_txt3{ position:absolute; top: -61px; left: -75px;}
+
+.helpc_financialsport1{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport1.jpg) no-repeat; width:481px; height:391px; position:relative; }
+.helpc_financialsport_txt1{ position:absolute; top: 31px; left: -343px; line-height: 2em; font-size: 19px;}
+.helpc_financialsport2{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport2.jpg) no-repeat; width:431px; height:327px; position:relative; }
+.helpc_financialsport_txt2{ position:absolute; top: 31px; left: -450px; line-height: 2em; font-size: 19px; }
+.helpc_financialsport2b{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport2b.jpg) no-repeat; width:475px; height:172px; position:relative; }
+.helpc_financialsport_txt2b{ position:absolute; top: -87px; right: 50px; line-height: 2em; font-size: 19px; }
+.helpc_financialsport2c{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport2c.jpg) no-repeat; width:440px; height:287px; position:relative; }
+.helpc_financialsport3{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport3.jpg) no-repeat; width:487px; height:369px; position:relative; }
+.helpc_financialsport_txt3{ position:absolute; top: 133px; left: -343px; line-height:4em;}
+.helpc_financialsport3b{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport3b.jpg) no-repeat; width:839px; height:390px; position:relative; }
+.helpc_financialsport_txt3b{ position:absolute; top: -54px; left: 25px; line-height:4em;}
+.helpc_financialsport_txt3b2{ position:absolute; top: -19px; right: 230px; line-height:4em;}
+.helpc_financialsport3c{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport3c.jpg) no-repeat; width:853px; height:577px; position:relative; }
+.helpc_financialsport_txt3c{ position:absolute; top: 4px; left: 371px;}
+.helpc_financialsport4{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport4.jpg) no-repeat; width:846px; height:212px; position:relative; }
+.helpc_financialsport_txt4{ position:absolute; top: -28px; left: 206px;}
+.helpc_financialsport4b{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport4b.jpg) no-repeat; width:846px; height:260px; position:relative; }
+.helpc_financialsport_txt4b{ position:absolute; top: -28px; left: 136px;}
+.helpc_financialsport5{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport5.jpg) no-repeat; width:832px; height:168px; position:relative; }
+.helpc_financialsport_txt5{ position:absolute; top: 0px; left: 114px;}
+.helpc_financialsport5b{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport5b.jpg) no-repeat; width:832px; height:255px; position:relative; }
+.helpc_financialsport_txt5b{ position:absolute; top: -41px; left: 119px; }
+.helpc_financialsport6{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport6.jpg) no-repeat; width:528px; height:342px; position:relative; margin-top:-75px; margin-right:56px;}
+.helpc_financialsport_txt6{ position:absolute; top: 126px; left: -236px; line-height:4em;}
+.helpc_financialsport6b{ background:url(http://media.jxf88.com/helpcenter/images/hc_faq_sport6b.jpg) no-repeat; width:788px; height:449px; position:relative;}
+.helpc_financialsport_txt6b{ position:absolute; top: 0px; left: -71px; line-height:3em;}
+
+.helpc_financialpromo1{ background:url(http://media.jxf88.com/helpcenter/images/help_faq_promo1.jpg) no-repeat; width:704px; height:470px; margin:auto; margin-top:20px; }
+.helpc_mobile1{ background:url(http://media.jxf88.com/helpcenter/images/hc_mobile1.jpg) no-repeat; width:570px; height:425px; margin-left: 113px; position:relative;}
+.helpc_mobile_txt1{ position:absolute; top: -48px; left: 120px; line-height:3em;}
+.helpc_mobile_txt1b{ position:absolute; top: 178px; right: -92px;}
+.helpc_mobile2{ background:url(http://media.jxf88.com/helpcenter/images/hc_mobile2.jpg) no-repeat; width:541px; height:434px; margin-left: 109px; position:relative;}
+.helpc_mobile_txt2{ position:absolute; top: 227px; right: -212px; line-height:3em;}
+.helpc_mobile3{ background:url(http://media.jxf88.com/helpcenter/images/help_mobile3.jpg) no-repeat; width:562px; height:649px; float:right; margin-right:100px; position:relative;}
+.helpc_mobile_txt3{ position:absolute; top: 487px; left: -145px; line-height:3em;}
+.helpc_mobile4{ background:url(http://media.jxf88.com/helpcenter/images/help_mobile4.jpg) no-repeat; width:374px; height:437px; margin-left: 109px; }
+.helpc_mobile_txt4{ position:absolute; top: 176px; right: 96px; line-height:3em;}
+.helpc_mobileqr{ width:138px; height:138px; position:absolute; right: 153px; top: 36px; }
+
+.helpc_alipay3 { background:url(http://media.jxf88.com/helpcenter/images/allipay1.jpg) no-repeat; width:675px; height:371px; position:relative; }
+.helpc_alipay4 { background:url(http://media.jxf88.com/helpcenter/images/allipay4.jpg) no-repeat; width:633px; height:324px; position:relative; }
+.helpc_alipay4b { background:url(http://media.jxf88.com/helpcenter/images/allipay4b.jpg) no-repeat; width:402px; height:510px; position:relative; }
+.helpc_alipay4b .floatcontent3 { position: absolute; bottom: 202px; right: -266px; font-size: 18px; color: #000000; width: 250px; }
+
+.helpc_alipaymob1 { background:url(http://media.jxf88.com/helpcenter/images/allipaymob1.jpg) no-repeat; width:659px; height:332px; position:relative; }
+.helpc_alipaymob2 { background:url(http://media.jxf88.com/helpcenter/images/allipaymob2.jpg) no-repeat; width:636px; height:489px; position:relative; }
+.helpc_alipaymob3 { background:url(http://media.jxf88.com/helpcenter/images/allipaymob3.jpg) no-repeat; width:525px; height:448px; position:relative; }
+.helpc_alipaymob4 { background:url(http://media.jxf88.com/helpcenter/images/allipaymob4.jpg) no-repeat; width:415px; height:545px; position:relative; }
+#online_mob .floatcontent { position: absolute; bottom: 2px; right: 7px; font-size: 18px; color: #000000; width: 190px; }
+#online_mob .floatcontent1 { position: absolute; bottom: 42px; right: -166px; font-size: 18px; color: #000000; width: 190px; }
+#online_mob .floatcontent2 { position: absolute; bottom: 42px; right: -126px; font-size: 18px; color: #000000; width: 190px; }
+
+.helpc_alipayoff { background:url(../images/alipay/alipay_off.jpg) no-repeat; width:549px; height:458px; position:relative; }
+.helpc_alipayoff2 { background:url(../images/alipay/alipay_off2.jpg) no-repeat; width:550px; height:388px; position:relative; }
+.helpc_alipayoff3 { background:url(../images/alipay/alipay_off3.jpg) no-repeat; width:473px; height:448px; position:relative; }
+.helpc_alipayoff4 { background:url(../images/alipay/alipay_off4.jpg) no-repeat; width:436px; height:445px; position:relative; }
+.helpc_alipayoff5 { background:url(../images/alipay/alipay_off5.jpg) no-repeat; width:817px; height:512px; position:relative; }
+.helpc_alipayoff6 { background:url(../images/alipay/alipay_off6.jpg) no-repeat; width:499px; height:641px; position:relative; }
+.helpc_alipayoff7 { background:url(../images/alipay/alipay_off7.jpg) no-repeat; width:844px; height:318px; position:relative; }
+
+.helpc_alipayoffmob { background:url(../images/alipay/offline_mobile/offline_mob1.jpg) no-repeat; width:653px; height:326px; position:relative; }
+.helpc_alipayoffmob2 { background:url(../images/alipay/offline_mobile/offline_mob2.jpg) no-repeat; width:631px; height:486px; position:relative; }
+.helpc_alipayoffmob3 { background:url(../images/alipay/offline_mobile/offline_mob3.jpg) no-repeat; width:588px; height:485px; position:relative; }
+.helpc_alipayoffmob4 { background:url(../images/alipay/offline_mobile/offline_mob4.jpg) no-repeat; width:664px; height:647px; position:relative; }
+.helpc_alipayoffmob5 { background:url(../images/alipay/offline_mobile/offline_mob5.jpg) no-repeat; width:471px; height:449px; position:relative; }
+.helpc_alipayoffmob6 { background:url(../images/alipay/offline_mobile/offline_mob6.jpg) no-repeat; width:440px; height:442px; position:relative; }
+.helpc_alipayoffmob7 { background:url(../images/alipay/offline_mobile/offline_mob7.jpg) no-repeat; width:808px; height:472px; position:relative; }
+.helpc_alipayoffmob8 { background:url(../images/alipay/offline_mobile/offline_mob8.jpg) no-repeat; width:442px; height:571px; position:relative; }
+.helpc_alipayoffmob9 { background:url(../images/alipay/offline_mobile/offline_mob9.jpg) no-repeat; width:540px; height:316px; position:relative; }
+#offline_mob .floatcontent { position: absolute; bottom: 2px; right: 7px; font-size: 18px; color: #000000; width: 190px; }
+#offline_mob .floatcontent1 { position: absolute; bottom: 42px; right: -166px; font-size: 18px; color: #000000; width: 190px; }
+#offline_mob .floatcontent2 { position: absolute; bottom: 42px; right: -36px; font-size: 18px; color: #000000; width: 190px; }
+#offline_mob .floatcontent3 { position: absolute; bottom: 282px; right: 10px; font-size: 18px; color: #000000; width: 190px; }
+
+.helpc_mainnav{ width:60px; height:30%; position:absolute; left:81%; top: 70%; background:url(http://media.jxf88.com/helpcenter/images/helpc_mainnav.png) repeat-y; bottom:0px; margin-bottom:20px;}
+.helpc_mainnav2{ width:60px; height:30%; position:absolute; left:81%; top: 70%; background:url(http://media.jxf88.com/helpcenter/images/helpc_mainnav.png) repeat-y; bottom:0px; margin-bottom:20px;}
+.helpc_maincircle1{ width:30px; height:30px; border-radius:39px; border:solid 1px #959595; line-height:30px; color:#959595; text-align:center; padding: 7px 13px; font-size:18px; margin-left:15px; background-color:#FFF; }
+.helpc_maincircle1:hover{ border:solid 1px #e71b1b; color:#e71b1b;}
+.helpc_maincircle1select{  width:30px; height:30px; border-radius:39px; border:solid 1px #e71b1b; line-height:30px; color:#e71b1b; text-align:center; padding: 7px 13px; font-size:18px; margin-left:15px; background-color:#FFF;}
+
+.helpc_maincircle2{ width:50px; height:50px; border-radius:39px; border:solid 1px #959595; line-height:50px; color:#959595; text-align:center; padding: 8px 9px; font-size:18px; background-color:#FFF; }
+.helpc_maincircle2:hover{ border:solid 1px #e71b1b; color:#e71b1b;}
+.helpc_maincircle2select{  width:50px; height:50px; border-radius:39px; border:solid 1px #e71b1b; line-height:50px; color:#e71b1b; text-align:center; font-size:18px; background-color:#FFF;}
+
+.helpc_ttile1{ font-size:18px; font-weight:bold; color:#464646;}
+.helpc_ttile2{ font-size:25px; color:#464646;}
+.helpc_line{ background-color:#e1e1e1; height:1px;}
+.helpc_abtbox{ width:220px;}
+
+.helpc_deposit_question3 .floatcontent { position: absolute; bottom: 242px; right: 117px; font-size: 18px; color: #000000; width: 190px; }
+
+/* icons */
+.helpc_rnavicon3, .helpc_search, .helpc_box1, .helpc_rnavicon1, .helpc_rnavicon2, .helpc_monkey, .helpc_mail, .helpc_phone, .helpc_balloon, .helpc_question{ background: url(../images/icons.png) no-repeat; }
+.helpc_search{ background-position: -7px -8px ; width: 31px; height: 31px;}
+.helpc_box1{ background-position: -38px -96px ; width: 722px; height: 193px;}
+.helpc_rnavicon1{ background-position: -66px -8px ; width: 47px; height: 48px;}
+.helpc_rnavicon2{ background-position: -132px -8px ; width: 25px; height: 43px;}
+.helpc_rnavicon3{ background-position: -359px -6px ; width: 44px; height: 49px;}
+.helpc_monkey{ background-position: -189px -8px ; width: 61px; height: 46px;}
+.helpc_mail{ background-position: -261px -12px ; width: 47px; height: 38px;}
+.helpc_phone{ background-position: -315px -12px ; width: 33px; height: 47px;}
+.helpc_balloon{ background-position: -48px -655px ; width: 96px; height: 101px;}
+.helpc_question{ background-position: -160px -664px ; width: 75px; height: 76px;}
+.pointerc { cursor: pointer; }
+.helpc_womanicon{background: url(../images/womanicon.jpg) no-repeat; width: 46px; height: 43px;}
+
+/* serie */
+.helpserie_left{ float:left; width:450px; margin-right:20px;}
+.helpserie_right{ float:right; width:460px;}
+.helpserie_title{ font-size:24px; color:#464646; font-weight:bold; margin-bottom:20px;}
+.helpserie_text{ font-size:18px; color:#888888; line-height:1.5em; }
+.helpserie_line{ background-color:#e1e1e1; height:1px; margin-top:50px; margin-bottom:50px;}
+
+/* about us */
+.help_graybg{ background-color:#e6e6e6;}
+.help_abt1{ margin-left:280px; margin-bottom:30px;}
+.help_abt2{ background:url(../images/abtus_img2.jpg) no-repeat; width:203px; height:261px; margin-left:106px; margin-bottom:20px; float:left; }
+.help_abt4{ background:url(../images/abtus_img4.jpg) no-repeat; width:291px; height:266px; float:left; margin-right:33px;}
+.help_abt5{ background:url(../images/abtus_img5.jpg) no-repeat; width:291px; height:266px; float:left; margin-right:33px;}
+.help_abt6{ background:url(../images/abtus_img6.jpg) no-repeat; width:291px; height:266px; float:left;}
+.help_abt7{ background:url(../images/abtus_img7.jpg) no-repeat; width:423px; height:264px; float:left; margin-left:13px;}
+.help_abt8{ background:url(../images/abtus_img8.jpg) no-repeat; width:423px; height:247px; float:left; margin-left:13px;}
+.help_abt9{ background:url(../images/abtus_img9.jpg) no-repeat; width:425px; height:155px; float:left; margin-left:10px;}
+.help_abt10{ background:url(../images/abtus_img10.jpg) no-repeat; width:423px; height:255px; float:left; margin-left:10px;}
+.help_left{ width:600px; float:left;}
+.help_left2{ width:450px; float:left; margin-right:50px;}
+.help_title{ font-size:24px; color:#464646;}
+
+
+/*Deposit - WeChat*/
+.left-200 {margin-left: 200px;}
+.left-300 {margin-left: 300px;}
+.content-wrap {margin: 40px 0 0;}
+.content h5,
+.content p {color: #464646;margin-bottom: 40px;}
+.content {position: relative}
+.content h5 {font-size: 25px;font-weight: normal}
+.content p {font-size: 17px;}
+.deposit .align-left {font-size: 17px;color: #000000;position: absolute;left: 50px;top: 170px;}
+.deposit .align-right {font-size: 17px;color: #000000;position: absolute;left: 280px;top: 100px;}
+.helpc_deposit_wechat2{ background:url(../images/deposit/wechat/deposit_wechat2.jpg) no-repeat;background-size: inherit;width:673px; height:367px; position:relative;}
+.helpc_deposit_wechat3{ background:url(../images/deposit/wechat/deposit_wechat3.jpg) no-repeat;background-size: inherit;width:673px; height:423px; position:relative;}
+.helpc_deposit_wechat4{ background:url(../images/deposit/wechat/deposit_wechat4.jpg) no-repeat;background-size: inherit; height:423px; position:relative;}
+.helpc_deposit_question1{ background:url(../images/deposit/wechat/helpc_deposit_question1.jpg) no-repeat;background-size: inherit; height:423px; position:relative;}
+.helpc_deposit_question2{ background:url(../images/deposit/wechat/helpc_deposit_question2.jpg) no-repeat;background-size: inherit; height:423px; position:relative;}
+.helpc_deposit_question3{ background:url(../images/deposit/wechat/helpc_deposit_question3.jpg) no-repeat;background-size: inherit; height:423px; position:relative;}
+.helpc_deposit_question4{ background:url(../images/deposit/wechat/helpc_deposit_question4.jpg) no-repeat;background-size: inherit; height:730px; position:relative;}
+
+/*Deposit - Flash Payment*/
+.helpc_deposit_fp2{ background:url(../images/deposit/flash_payment/helpc_deposit_fp2.jpg) no-repeat;background-size: cover;width:776px; height:433px; position:relative;}
+.helpc_deposit_fp3{ background:url(../images/deposit/flash_payment/helpc_deposit_fp3.jpg) no-repeat;width:673px; height:367px; position:relative;}
+.helpc_deposit_fp4{ background:url(../images/deposit/flash_payment/helpc_deposit_fp4.jpg) no-repeat;width:673px; height:367px; position:relative;}
+.helpc_deposit_fp5{ background:url(../images/deposit/flash_payment/helpc_deposit_fp5.jpg) no-repeat;width:673px; height:367px; position:relative;}
+.helpc_deposit_fp6{ background:url(../images/deposit/flash_payment/helpc_deposit_fp6.jpg) no-repeat;width:673px; height:367px; position:relative;}
+.helpc_deposit_fp7{ background:url(../images/deposit/flash_payment/helpc_deposit_fp7.jpg) no-repeat;width:673px; height:367px; position:relative;}
+.helpc_deposit_fp8{ background:url(../images/deposit/flash_payment/helpc_deposit_fp8.jpg) no-repeat;width:673px; height:367px; position:relative;}
+.helpc_deposit_fp9{ background:url(../images/deposit/flash_payment/helpc_deposit_fp9.jpg) no-repeat;width:765px; height:387px; position:relative;}
+
+/*Deposit - Second Deposit*/
+.w275 {width: 275px !important}
+.helpc_second_deposit1{ background:url(../images/deposit/second_deposit/helpc_second_deposit1.jpg) no-repeat;width:765px; height:436px; position:relative;}
+.helpc_second_deposit1 .w275 {bottom: 9px;}
+.helpc_second_deposit2{ background:url(../images/deposit/second_deposit/helpc_second_deposit2.jpg) no-repeat;width:765px; height:436px; position:relative;}
+.helpc_second_deposit3{ background:url(../images/deposit/second_deposit/helpc_second_deposit3.jpg) no-repeat;width:765px; height:436px; position:relative;}
+
+/*Deposit QQ Page*/
+.helpc_deposit_qq1{ background:url(../images/deposit/qq/helpc_deposit_qq1.jpg) no-repeat;background-size: 100%;width:765px; height:436px; position:relative;}
+.helpc_deposit_qq2{ background:url(../images/deposit/qq/helpc_deposit_qq2.jpg) no-repeat;width:765px; height:375px; position:relative;}
+.helpc_deposit_qq3{ background:url(../images/deposit/qq/helpc_deposit_qq3.jpg) no-repeat;background-size: 100%;width:765px; height:640px; position:relative;}
+.helpc_deposit_qq4{ background:url(../images/deposit/qq/helpc_deposit_qq4.jpg) no-repeat;width:765px; height:470px; position:relative;}
+.helpc_deposit_qq5{ background:url(../images/deposit/qq/helpc_deposit_qq5.jpg) no-repeat;width:765px; height:370px; position:relative;}
+
+/*Deposit - Online Payment*/
+.helpc_deposit_online_payment1{ background:url(../images/deposit/online_payment/helpc_deposit_online_payment1.jpg) no-repeat;width:765px; height:438px; position:relative;}
+.helpc_deposit_online_payment2{ background:url(../images/deposit/online_payment/helpc_deposit_online_payment2.jpg) no-repeat;background-size: 100%;width:765px; height:438px; position:relative;}
+.helpc_deposit_online_payment3{ background:url(../images/deposit/online_payment/helpc_deposit_online_payment3.jpg) no-repeat;background-size: 100%;width:765px; height:438px; position:relative;}
+.helpc_deposit_online_payment4{ background:url(../images/deposit/online_payment/helpc_deposit_online_payment4.jpg) no-repeat;background-size: 100%;width:765px; height:466px; position:relative;}
+.helpc_deposit_online_payment5{ background:url(../images/deposit/online_payment/helpc_deposit_online_payment5.jpg) no-repeat;background-size: 100%;width:765px; height:438px; position:relative;}
+
+/*Deposit - ATM*/
+.cleardiv {float: left;width: 100%}
+.ml290 {margin-left: 290px;}
+.text-center {text-align: center;}
+.three-columns {float: left;width: 100%}
+.three-columns .col {float:left;width: 33%;}
+.helpc_deposit_atm1{ background:url(../images/deposit/atm/helpc_deposit_atm1.jpg) no-repeat;width:765px; height:438px; position:relative;}
+.helpc_deposit_atm2{ background:url(../images/deposit/atm/helpc_deposit_atm2.jpg) no-repeat;width:800px; height:385px; position:relative;}
+.helpc_deposit_atm3{ background:url(../images/deposit/atm/helpc_deposit_atm3.jpg) no-repeat;width:220px; height:280px; position:relative;}
+.helpc_deposit_atm4{ background:url(../images/deposit/atm/helpc_deposit_atm4.jpg) no-repeat;width:260px; height:280px; position:relative;background-size: 100%}
+.helpc_deposit_atm5{ background:url(../images/deposit/atm/helpc_deposit_atm5.jpg) no-repeat;width:220px; height:280px; position:relative;margin: 0 auto}
+.helpc_deposit_atm6{ background:url(../images/deposit/atm/helpc_deposit_atm6.jpg) no-repeat;width:765px; height:438px; position:relative;}
+.helpc_deposit_atm7{ background:url(../images/deposit/atm/helpc_deposit_atm7.jpg) no-repeat;width:765px; height:355px; position:relative;}
+.helpc_deposit_atm8{ background:url(../images/deposit/atm/helpc_deposit_atm8.jpg) no-repeat;width:765px; height:280px; position:relative;}
+.helpc_deposit_atm9{ background:url(../images/deposit/atm/helpc_deposit_atm9.jpg) no-repeat;width:742px; height:415px; position:relative;}
+.helpc_deposit_atm10{ background:url(../images/deposit/atm/helpc_deposit_atm10.jpg) no-repeat;width:742px; height:377px; position:relative;}
+
+#atm .floatcontent5 { position: absolute; bottom: 65px; right: 53px; font-size: 18px; color: #000000; width: 221px; }
+
+/*Deposit - Mobile Payment*/
+.mobile_payment .floatcontent { position: absolute; bottom: 343px; right: 22px; font-size: 18px; color: #000000; width: 221px; }
+.mobile_payment .floatcontent2 { position: absolute; bottom: 375px; right: 24px; font-size: 18px; color: #000000; width: 221px; }
+.mobile_payment .floatcontent3 { position: absolute; bottom: 285px; right: -200px; font-size: 18px; color: #000000; width: 307px; }
+.mobile_payment .floatcontent4 { position: absolute; bottom: 285px; right: 405px; font-size: 18px; color: #000000; width: 221px; }
+.mobile_payment .floatcontent5 { position: absolute; bottom: 285px; right: -47px; font-size: 18px; color: #000000; width: 221px; }
+.mobile_payment .floatcontent6 { position: absolute; bottom: 285px; right: -267px; font-size: 18px; color: #000000; width: 261px; }
+.helpc_deposit_mp1{ background:url(../images/deposit/mobile_payment/helpc_deposit_mp1.jpg) no-repeat;width:674px; height:739px; position:relative;}
+.helpc_deposit_mp2{ background:url(../images/deposit/mobile_payment/helpc_deposit_mp2.jpg) no-repeat;width:687px; height:768px; position:relative;}
+.helpc_deposit_mp3{ background:url(../images/deposit/mobile_payment/helpc_deposit_mp3.jpg) no-repeat;width:604px; height:760px; position:relative;}
+.helpc_deposit_mp4{ background:url(../images/deposit/mobile_payment/helpc_deposit_mp4.jpg) no-repeat;width:387px; height:678px; position:relative; right: -427px; }
+.helpc_deposit_mp5{ background:url(../images/deposit/mobile_payment/helpc_deposit_mp5.jpg) no-repeat;width:811px; height:719px; position:relative;}
+.helpc_deposit_mp6{ background:url(../images/deposit/mobile_payment/helpc_deposit_mp6.jpg) no-repeat;width:384px; height:671px; position:relative;}
+
+/*Deposit - F&A*/
+.font_18 {font-size: 18px;}
+
+.helpc_deposit_uni { background:url(../images/deposit/unionpay/union1.jpg) no-repeat;width:712px; height:388px; position:relative;}
+.helpc_deposit_uni2 { background:url(../images/deposit/unionpay/union2.jpg) no-repeat;width:840px; height:534px; position:relative;background-size:79%}
+.helpc_deposit_uni3 { background:url(../images/deposit/unionpay/union3.jpg) no-repeat;width:581px; height:217px; position:relative;}
+.helpc_deposit_uni4 { background:url(../images/deposit/unionpay/union4.jpg) no-repeat;width:582px; height:462px; position:relative;}
+.helpc_deposit_uni5 { background:url(../images/deposit/unionpay/union5.jpg) no-repeat;width:583px; height:625px; position:relative;}
+.helpc_deposit_uni6 { background:url(../images/deposit/unionpay/union6.jpg) no-repeat;width:586px; height:530px; position:relative;}
+.helpc_deposit_uni2_content {right: 94px !important;}
+
+
+/*Alipay Offline*/
+.helpc_alipay_offline1{ background:url(../images/alipay/helpc_alipay_offline1.jpg) no-repeat; width:805px; height:452px; position:relative;}
+.helpc_alipay_offline2{ background:url(../images/alipay/helpc_alipay_offline2.jpg) no-repeat; width:805px; height:452px; position:relative;}
+.helpc_alipay_offline1 .floatcontent2 {width: 214px}
+
+/*Alipay Online*/
+.helpc_alipay_online1{ background:url(../images/alipay/helpc_alipay_online1.jpg) no-repeat; width:805px; height:452px; position:relative;}
+
+/*Alipay Barcode Deposit*/
+.barcode2 .floatcontent2 {
+    width: 220px;
+}
+.helpc_alipay_barcode3 { background:url(../images/alipay/barcode/barcode1.png) no-repeat; width:675px; height:371px; position:relative; }
+.helpc_alipay_barcode4 { background:url(../images/alipay/barcode/barcode2.png) no-repeat; width:558px; height:510px; position:relative; }
+.helpc_alipay_barcode4 .floatcontent3 { position: absolute; bottom: 150px; right: -250px; font-size: 18px; color: #000000; width: 310px; }
+.helpc_alipay_barcode5 { background:url(../images/alipay/barcode/barcode3.png) no-repeat; width:642px; height:510px; position:relative; }
+.helpc_alipay_barcode5 .floatcontent3 { position: absolute; bottom: 50px; right: -100px; font-size: 18px; color: #000000; width: 310px; }
+.helpc_alipay_barcode6 { background:url(../images/alipay/barcode/barcode4.png) no-repeat; height:339px; position:relative;}
+.helpc_alipay_barcode7 { background:url(../images/alipay/barcode/barcode5.png) no-repeat; height:339px; position:relative;}
+
+
+/*Alipay barcode Deposit Mobile*/
+.helpc_alipay_barcode_mobile1{ background:url(../images/alipay/barcode/mobile_barcode1.png) no-repeat; width:682px; height:388px; position:relative;}
+.helpc_alipay_barcode_mobile2{ background:url(../images/alipay/barcode/mobile_barcode2.png) no-repeat; width:682px; height:540px; position:relative;}
+.helpc_alipay_barcode_mobile2 .floatcontent1 {position: absolute;bottom: 250px;right: -160px;font-size: 18px;color: #000000;width: 190px;}
+.helpc_alipay_barcode_mobile3{ background:url(../images/alipay/barcode/mobile_barcode3.png) no-repeat; width:682px; height:540px; position:relative;}
+.helpc_alipay_barcode_mobile3 .floatcontent1 {position: absolute;bottom: 124px;right: -7px;font-size: 18px;color: #000000;width: 213px;}
+.helpc_alipay_barcode_mobile4{ background:url(../images/alipay/barcode/mobile_barcode4.png) no-repeat; width:682px; height:350px; position:relative;}
+.helpc_alipay_barcode_mobile4_text {float: right;right: 250px;position: absolute;}
+
+
+/* Anti Hack */
+.antihack { font-size: 18px; color: #555555; }
+.antihack > div > .helpc_w960 {  width: 1110px; }
+.at_num { font-size: 24px; font-weight: bold; }
+.at_div { height: 2px; border-top: 1px solid #f0f0f5; margin: 50px auto; width: 706px; }
+.at_div2 { height: 2px; border-top: 1px solid #f0f0f5; margin: 50px auto; width: 800px; }
+.at_det { height: 56px; margin-bottom: 20px; }
+.at_det2 { margin-bottom: 20px; }
+.at_nav { background: #ccecf0; width: 33.33%; font-size: 18px; text-align: center; color: #3fa8b8; height: 43px; float: left; line-height: 40px; border-right: 1px solid #ffffff; box-sizing: border-box; }
+.wid706 { width: 706px; margin: 0 auto; }
+.wid750 { width: 750px; margin: 0 auto; }
+.wid800 { width: 800px; margin: 0 auto; }
+.at_selected { background: #3fa8b8!important; color: #ffffff!important; }
+.at_title { font-size: 30px; color: #ce271f; font-weight: bold; margin: 0 auto; width: 300px; margin-bottom: 50px; }
+
+
+.newMember .helpc_white { font-size: 18px; }
+.moreHelp { border: 1px solid #cfcdcd;  }
+a .moreHelp  { padding: 10px; color:#cf271e; font-size: 18px; width: 110px; margin-left: 115px; }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>浏览器安全警告</title>
+    <link rel="icon" href="imgs/browser_update/favicon-.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/upgrade_browser_Style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <base href="." target="_blank">
+    <!--[if gte IE 9]>
+    <script>
+        window.location.href = "/"
+    </script>
+    <![endif]-->
+    <script>
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera;
+        if(!isIE){
+            window.location.href = "/"
+        }
+
+    </script>
+    <!-- jQuery -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+
+</head>
+<body>
+<h1><table><tr><td>请升级您的浏览器或下载</td><td><img src="imgs/browser_update/logo1.png" /></td><td>客户端</td></tr></table></h1>
+<p class="toptext">
+    您正在使用过期的浏览器，安全级别太低，请使用IE9及以上版本、Chrome、Firefox浏览器访问本站，或手机扫一扫下方二维码打开:<br/>
+</p>
+<div class="qrcode">
+    <div class="top">
+        <div class="inner" id="qrcode"></div>
+    </div>
+    <div class="bottom">手机扫描二维码</div>
+</div>
+<script>
+    var host = window.location.host;
+    var i = host.indexOf('.');
+    host = "m" + host.substr(i);
+    var mLink = window.location.protocol + "//" + host + "/";
+    $("#qrcode").qrcode({
+        render: $.browser.msie && ($.browser.version < "9.0") ? "table" : "canvas",
+        width: 120, //宽度
+        height:120, //高度
+        correctLevel: 0,
+        text: mLink,
+        src: "imgs/browser_update/logo_ico_20.png",
+        imgWidth: 20,
+        imgHeight: 20,
+        foreground: "#454545"
+    });
+</script>
+
+<div class="content">
+    <div class="item">
+        <h2>您为什么会看到这个页面</h2>
+        <p>自 2016 年 1 月 12 日起，Microsoft 不再为 IE 8 及以下版本提供相应支持和更新。没有关键的浏览器安全更新，您的PC易受有害病毒、间谍软件和其他恶意软件的攻击，导致您的个人信息容易泄漏。请参阅 <a href="http://www.xuechewu.com/go_end_of_ie_support">微软对 Internet Explorer 早期版本的支持将于 2016 年 1 月 12 日结束的说明</a> 。</p>
+    </div>
+    <div class="item">
+        <h2>升级您的浏览器</h2>
+        <p>推荐使用以下浏览器的最新版本。如果你的电脑已有以下浏览器的最新版本则直接使用该浏览器访问<b id="referrer"></b>即可。</p>
+        <ul class="browser">
+            <li class="browser-chrome"><a href="http://www.google.cn/chrome/browser/desktop/index.html?hl=zh-CN&standalone=1"> 谷歌浏览器<span>Google Chrome</span></a></li>
+
+            <li class="browser-firefox"><a href="http://www.firefox.com.cn/download/"> 火狐浏览器<span>Mozilla Firefox</span></a></li>
+
+            <li class="browser-ie"><a href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads"> IE浏览器<span>Internet Explorer</span></a></li>
+
+            <li class="browser-qq"><a href="http://browser.qq.com/"> QQ浏览器 <span>微信插件版</span></a></li>
+
+            <div class="clean"></div>
+        </ul>
+        <div class="clean"></div>
+    </div>
+</div>
+</body>
+</html>

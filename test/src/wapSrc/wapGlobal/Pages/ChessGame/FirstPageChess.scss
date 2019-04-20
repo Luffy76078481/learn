@@ -1,0 +1,167 @@
+.gamelobby{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .middleContent{
+        position: absolute;
+        top: .8rem;
+        bottom: .85rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+.backHome{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.52rem;
+    height: 0.74rem;
+    background-image:url("../../style/images/chess/pops.png");
+    background-size: 15rem;
+    background-repeat: no-repeat;
+    background-position: .1rem -2.96rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+//  =================================== 排名
+.SideBar{
+    position: absolute;
+    left: .5rem;
+    height: 3.92rem;
+    width: 1.3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    .rankList{
+        width: 1.1rem;
+        height: 100%;
+        box-sizing: border-box;
+        float: left;
+        background-image: url("../../style/images/chess/phb.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;  
+        position: relative;  
+        .rankScroll{
+            overflow-y: scroll;
+            width: 100%;
+            position: absolute;
+            top: .6rem;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            &::-webkit-scrollbar {display: none;}
+        }
+        .rankUser{
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: .8rem;
+            margin-bottom: .2rem;
+            overflow: hidden;
+            img{
+                display: block;
+                width: .8rem;
+                border-radius: 5px;
+                height: 100%;
+                margin: auto;
+            }
+            &:nth-child(1)::after{
+                background-image:url("../../style/images/chess/1.png") 
+            }
+            &:nth-child(2)::after{
+                background-image:url("../../style/images/chess/2.png") 
+            }
+            &:nth-child(3)::after{
+                background-image:url("../../style/images/chess/3.png") 
+            }
+            &::after{
+                width: .79rem;
+                height: .41rem;
+                content:"";
+                position: absolute;
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-position:center;   
+                bottom: -.1rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+    .rankButton{
+        width: .23rem;
+        height: .95rem;
+        float: right;
+        background: url("../../style/images/chess/rankclick.png") no-repeat 0 center / cover;
+        &:active{
+            background: url("../../style/images/chess/rankactive.png") no-repeat 0 center / cover;
+        }
+    }
+}
+// =================================== 游戏板块
+.gamesWrap{
+    width: 9.3rem;
+    position: absolute;
+    right: .5rem;
+    top: 0;
+    left: 2rem;
+    bottom: .5rem;
+    margin: auto;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    div{
+        display: inline-block;
+        width: 3.1rem;
+        height: 2.2rem;
+        background-repeat:no-repeat;
+        background-position:100% 100%;
+        background-size:contain; 
+        vertical-align: top;
+        font-size: 0;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        &.active{
+            transform:scale(1.05);
+            -ms-transform:scale(1.05); 	/* IE 9 */
+            -moz-transform:scale(1.05); 	/* Firefox */
+            -webkit-transform:scale(1.05); /* Safari 和 Chrome */
+        }
+    }
+
+}
+.exchange{
+    background: url("../../style/images/chess/dh.png") no-repeat 0 0 / cover;
+    width: 1.73rem;
+    height: 1.3rem;
+    position: absolute;
+    right: .41rem;
+    top: .3rem;
+}
+
+.am-modal-button-group-h .am-modal-button, .am-modal-button-group-v .am-modal-button{
+    color: #7c3d19!important;
+}

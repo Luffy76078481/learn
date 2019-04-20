@@ -1,0 +1,57 @@
+#wrapwcent{
+  min-width: 1300px;
+  min-width: 1100px\9;
+  max-width: 1920px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin:30px auto;
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .wrapper-game-list-item{
+    width:50%;
+    display: inline-block;
+    padding:5px;
+    &:hover .game-hover{
+      display:block;
+    }
+    .game-hover {
+      a{
+        padding:6px 20px;
+      }
+    }
+    .room-info-wrapper {
+      position: relative;
+      background: #8b0000;
+      height: 45px;
+      text-align: center;
+      .room-info {
+        width: 100%;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        .room-title{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  .coming{
+    font-size:35px;
+    color: #8b0000;
+    width:100%;
+    min-height:200px;
+    line-height:200px;
+  }
+
+}
+
+.game-thumb {
+  width: 800px;
+  height: 361px;
+}
+
+ 

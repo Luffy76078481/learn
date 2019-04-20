@@ -1,0 +1,76 @@
+* {
+  touch-action: pan-y !important; }
+
+.WithdrawPage .noPaddingLeft .am-list-item.am-input-item {
+  padding-left: 0; }
+.WithdrawPage .am-list-line .am-list-line:after {
+  height: 0px !important; }
+.WithdrawPage .am-list-item .am-list-line .am-list-extra {
+  flex-basis: 20%; }
+.WithdrawPage .accounts .am-list-item .am-list-line .am-list-extra {
+  flex-basis: 70%; }
+.WithdrawPage .tips {
+  padding: 5px 15px 0;
+  font-size: .2rem;
+  color: #02543f;
+  line-height: 20px;
+  display: block; }
+.WithdrawPage .btn {
+  background: #02543f; }
+.WithdrawPage .addAmount a {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: .25rem;
+  background: #02543f;
+  color: #fff;
+  margin-left: 10px;
+  border-radius: 5px; }
+
+.am-modal-button-group-v.am-modal-button-group-normal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px; }
+  .am-modal-button-group-v.am-modal-button-group-normal a {
+    font-size: 15px;
+    flex: 1; }
+
+.sendPhone span {
+  font-size: .25rem;
+  color: #af0000; }
+.sendPhone .item {
+  text-align: left;
+  margin: .2rem 0; }
+  .sendPhone .item:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .sendPhone .item input {
+    display: inline-block;
+    padding: 0px 5px;
+    border: 1px solid #ccc;
+    width: 90%;
+    height: 28px;
+    line-height: 28px;
+    font-size: .25rem;
+    float: left; }
+    .sendPhone .item input.code {
+      width: 50%;
+      border-right: 0; }
+  .sendPhone .item .getCode {
+    display: inline-block;
+    padding: 1px 0px;
+    width: calc(45% - 5px);
+    text-align: center;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    font-size: .25rem;
+    color: #fff;
+    background: #cf0000; }
+    .sendPhone .item .getCode.disabled {
+      background: #cecece;
+      cursor: default; }
+
+/*# sourceMappingURL=WithdrawPage.css.map */

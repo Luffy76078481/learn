@@ -1,0 +1,46 @@
+<?php
+  /*链接数据库*/
+  $con = mysql_connect("localhost","root","iRvsonNNpZ");
+  if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+  mysql_select_db("x99help", $con);
+  
+  /*存储数据*/
+  
+  $uid = $_POST["uid"];
+  
+  /*1为激活 2为咨询*/
+  if($uid == 1){
+
+	$partner = $_POST["partnerName"];
+	
+	$rester = mysql_query("INSERT INTO userinfo (partner) VALUES ('".$partner."')");
+	if($rester){
+		echo "1";
+	}else{
+		echo "2";
+	}
+	
+  }elseif($uid == 2){
+	$username = $_POST["username"];
+	$userphone = $_POST["userphone"];
+	$usermail = $_POST["usermail"];
+	$usertime = $_POST["usertime"];
+	$remarks = $_POST["remarks"];
+	if($username == "" || $userphone == ""){
+		echo "2";
+	}else{
+		$rester = mysql_query("INSERT INTO userinfo (name ,tab ,mail ,time ,remarks) VALUES ('".$username."' , '".$userphone."', '".$usermail."','".$usertime."','".$remarks."')");
+		if($rester){
+			echo "1";
+		}else{
+			echo "2";
+		}
+	}
+  }
+
+  /*关闭数据库*/
+  mysql_close($con);
+?>

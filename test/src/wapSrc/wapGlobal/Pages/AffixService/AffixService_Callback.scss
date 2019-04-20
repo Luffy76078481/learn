@@ -1,0 +1,104 @@
+.callback_box {
+  position: fixed;
+  left: 0;
+  z-index: 997;
+  height: auto;
+  color: rgb(51, 51, 51);
+  font-size: .2rem;
+  top: 46%;
+  .callback_callimg {
+    background: url("./images/callback_call.png") no-repeat 0 0 / cover ;
+    width: .69rem;
+    height: 3rem;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+
+
+  .callback_bg {
+    transition: .5s;
+    width: 7rem;
+    height: 3rem;
+    z-index: 998;
+    position: absolute;
+    left: -7rem;
+    top: 0;
+    background: url("./images/callback_bg.png") 0 0 / cover no-repeat;
+    cursor: pointer;
+
+    .call-control {
+      position: absolute;
+      overflow: hidden;
+    }
+
+    .btn-close {
+      top: .15rem;
+      right: .2rem;
+      width: .4rem;
+      height: .4rem;
+      background: url(./images//callback_close.png) no-repeat;
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    .text-1 {
+      top: .2rem;
+      left: 2.2rem;
+      width: 4rem;
+    }
+
+    .number {
+      top: 1.1rem;
+      left: 2.2rem;
+      width: auto;
+      height: auto;
+
+      .left-number {
+        float: left;
+        width: 2.5rem;
+      }
+
+      input {
+        padding: 0 10px;
+        width: 100%;
+        height:.5rem;
+      }
+
+      .right-btn {
+        float: left;
+        width: 1.5rem;
+        margin-left: .5rem;
+
+        input {
+          background: #563f33;
+          color: #fff;
+          border: none;
+          height: .58rem;
+          &:hover {
+            background: #ff0000;
+          }
+        }
+      }
+    }
+
+    .text-2 {
+      top: 2rem;
+      left: 2.2rem;
+      width: 4.7rem;
+      color: #e59619;
+    }
+
+
+
+
+  }
+
+  .callback_shwobg {
+    left: 0px;
+  }
+
+
+}

@@ -1,0 +1,59 @@
+#bingo {
+  .banner{
+    width: 100%
+  }
+  .note{
+    margin: auto;
+    width: 1200px;
+    margin: auto;
+    .notice-bar {
+      line-height: 30px;
+      width: 1000px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+      a{color: #5D5D5D !important;
+      }
+    }
+  }
+  .main{//by Terry
+    display: block;
+    // width: 1000px;
+    // height: 383px;
+    // padding: 10px 0px;
+    // background: #6F0301;
+    // border-radius: 7px;
+    position: relative;
+    left: 0;
+    right: 0;
+    // margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+  .bbin, .kg{
+    display: inline-block;
+  }
+  .bingo_bbin {
+    border: 2px solid transparent;
+    border-radius: 9px;
+    margin: 5px;
+    width: 482px;
+    height: 363px;
+    display: inline-block;
+
+  }
+
+  .bingo_kg {
+    border: 2px solid transparent;
+    border-radius: 9px;
+    margin: 5px;
+    width: 482px;
+    height: 363px;
+    display: inline-block;
+
+  }
+}

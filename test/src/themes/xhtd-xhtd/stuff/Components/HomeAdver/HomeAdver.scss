@@ -1,0 +1,115 @@
+.home_adver{
+    background: url(./images/mainbg.jpg) top center no-repeat;
+    height: 432px;
+    overflow: hidden;
+    width: 100%;
+    .home_box{
+        width: 1200px;
+        margin: 0 auto;
+        background: #fbf1cc;
+        height: 432px;
+        overflow: hidden;
+        .link {
+            width: 950px;
+            margin: 20px auto;
+            .div{
+                width: 161px;
+                height: 242px;
+                float: left;
+                border: 1px solid #d8ceaa;
+                border-right: none;
+            }
+            #f1{background: url(./images/main01.png) no-repeat;
+            &:hover{background: url(./images/a1.jpg) no-repeat}}
+            #f2{background: url(./images/main02.png) no-repeat;
+            &:hover{background: url(./images/a2.jpg) no-repeat}}
+            #f3{background: url(./images/main03.png) no-repeat;
+            &:hover{background: url(./images/a3.jpg) no-repeat}}
+            #f4{background: url(./images/main04.png) no-repeat;
+            &:hover{background: url(./images/a4.jpg) no-repeat}}
+            .content{
+                width: 297px;
+                height: 242px;
+                border: 1px solid #d8ceaa;
+                float: left;
+                .service{
+                    .up{
+                        width: 297px;
+                        height: 81px; 
+                    }
+                    .middle{
+                        width: 297px;
+                        height: 81px;
+                    }
+                    span{
+                        display: block;
+                        height: 40px;
+                        color: #775f43;
+                        position: absolute;
+                        top: 15px;
+                        right: 50px;
+                        z-index: 200;
+                        font-family: "微软雅黑";
+                    }
+                    .load{
+                        width: 261px;
+                        height: 9px;
+                        background: url(./images/load.png) no-repeat;
+                        position: absolute;
+                        top: 64px;
+                        left: 20px;
+                    }
+                    .bottom{
+                        span{
+                            top: 25px;
+                            right: 50px; 
+                        }
+                    }
+                }
+            }
+        }
+        .clear{
+            clear: both;
+        }
+        .content2{
+            height: 118px;
+            border: 1px solid #d8ceaa;
+            width: 948px;
+            margin: 0 auto;
+            .cooperation{
+                display: block;
+                height: 118px;
+                float: left;
+                border-right: 1px solid #d8ceaa;
+            }
+            .indexpromotions{
+                display: block;
+                background: url(./images/content202.jpg) top center no-repeat;
+                width: 322px;
+                height: 118px;
+                float: left;
+                border-right: 1px solid #d8ceaa;
+            }
+            .help{
+                background: url(./images/content0203.png) top center no-repeat;
+                width: 275px;
+                height: 63px;
+                float: right;
+                padding: 55px 0 0 25px;
+                a{
+                    display: block;
+                    width: 75px;
+                    float: left;
+                    height: 25px;
+                    line-height: 25px;
+                    color: #77571a!important;
+                    font-size: 13px!important;
+                }
+            }
+        }
+    }
+}
+
+.content .service div{
+    position: relative;
+}

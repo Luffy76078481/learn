@@ -1,0 +1,104 @@
+@import "../../style/variables.scss";
+
+.footerBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .navTabs {
+        text-align: center;
+        border-top: 1px solid #ccc;
+        background: $bg-color;
+        background: linear-gradient(#5e5a5a, #444247 80%);
+        height: 51px;
+        a {
+            font-size: 12px;
+            display: block;
+            position: relative;
+            color: #fff;
+            &.active {
+                color: $theme-text-color;
+            }
+            .icon {
+                width: .4rem;
+                height: .4rem;
+                margin: 0 auto .1rem;
+                font-size: 24px;
+                display: block;
+            }
+            .icon-home {
+                background: url(../../style/images/home-icon.png) no-repeat;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+                &:before{
+                    content: '';
+                }
+            }
+            .icon-money {
+                background: url(../../style/images/cashier-icon.png) no-repeat;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+                &:before{
+                    content: '';
+                }
+            }
+            .icon-group {
+                background: url(../../style/images/group-icon.png) no-repeat;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+                &:before{
+                    content: '';
+                }
+            }
+            .icon-promotion {
+                background: url(../../style/images/promo-icon.png) no-repeat;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+                &:before{
+                    content: '';
+                }
+            }
+            .icon-paste {
+                background: url(../../style/images/paste-icon.png) no-repeat;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%;
+                &:before{
+                    content: '';
+                }
+            }
+            &.active {
+                color: #f7cb8f;
+                .icon-home {
+                    background: url(../../style/images/home-active.png) no-repeat;
+                    -webkit-background-size: 100% 100%;
+                    background-size: 100% 100%;
+                }
+                .icon-money {
+                    background: url(../../style/images/cashier-active.png) no-repeat;
+                    -webkit-background-size: 100% 100%;
+                    background-size: 100% 100%;
+                }
+                .icon-paste {
+                    background: url(../../style/images/paste-active.png) no-repeat;
+                    -webkit-background-size: 100% 100%;
+                    background-size: 100% 100%;
+                }
+                .icon-promotion {
+                    background: url(../../style/images/promo-active.png) no-repeat;
+                    -webkit-background-size: 100% 100%;
+                    background-size: 100% 100%;
+                }
+            }
+            .am-badge {
+                position: absolute;
+                top: 0;
+                right: 50%;
+                margin-right: -25px;
+                .am-badge-text {
+                    background-color: $theme-btnBg;
+                }
+            }
+        }
+    }
+}
+

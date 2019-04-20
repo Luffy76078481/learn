@@ -1,0 +1,97 @@
+.hijack-alert{
+  position: fixed;
+  z-index: 9;
+  width: 6.25rem;
+  height: 4rem;
+  left: 50%;
+  margin-left: -3.125rem;
+  top: 50%;
+  padding: 0.2rem 0;
+  margin-top: -2rem;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 2px 2px 3px 0px #a52405;
+  .hijack-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #a52405;
+    overflow: hidden;
+    color: #000;
+    &>ul{
+      padding: 0
+    }
+    &>p{
+      font-size: 0.3rem;
+      text-align: center;
+      padding: 0.5rem 0;
+      background: #a52405;
+      color: #fff;
+      font-weight: bold;
+      margin: 0 0 .4rem 0;
+    }
+    .close{
+      position: absolute;
+      right: .05rem;
+      top: .05rem;
+      border: 1px solid #fff;
+      color: #fff;
+      background: no-repeat;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 0.2rem;
+      &:hover{
+        color: #fff305
+      }
+    }
+    ul{
+      li{
+        margin: 0.2rem 0 0 0;
+        position: relative;
+        text-align: center;
+        height: 0.6rem;
+        span{
+          width: 25%;
+          display: inline-block;
+          text-align: center;
+          font-weight: bold;
+          color: #383434;
+        }
+        input{
+          border: 1px solid #383434;
+          color: #383434;
+          padding-left: 5px;
+          width: 60%;
+        }
+        button{
+          width: 2rem;
+          display: inline-block;
+          margin: 0.2rem .1rem 0;
+          color: #fff;
+          border: none;
+          background: #a52405;
+          padding: 0.1rem 0;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: 800;
+          font-size: 1.25em;
+          border-radius: 5px;
+          
+        }
+        div{
+          color: red;
+          position: absolute;
+          font-size: .2rem;
+          line-height: 0.25rem;
+          padding-left: 31%;
+          padding-top: 0.1rem;
+        }
+      }
+    }
+  }
+}

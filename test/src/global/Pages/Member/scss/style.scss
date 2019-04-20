@@ -1,0 +1,1052 @@
+.messege_new{
+  color: red;
+}
+.member2 {
+  background:url('./img/bgwhite.png') 0 0 repeat;
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #999 !important;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #999 !important;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #999 !important;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #999 !important;
+  }
+
+
+
+  body {
+    background: #f7f7f7;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    font-size: 16px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .float_left {
+    float: left;
+  }
+  .float_right {
+    float: right;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  .fnc_holder div {
+    display: inline-block;
+  }
+  input, select {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 4px;
+    height:36px;
+    color: #000!important;
+  }
+  .cust_container {
+    width: 1020px;
+    margin: 0 auto;
+    background: #fff;
+    font-size:16px;
+    line-height:28px;
+    color:#5c5c5c;
+    .loaderDom{
+      text-align: center;
+      padding:50px 0;
+      color:#888;
+      font-size:13px;
+      img{
+
+        margin-bottom:30px;
+      }
+    }
+    .memberBtn{
+      display: inline-block;
+      width: 156px;
+      text-align: center;
+      color: #fff;
+      background: #cf271e;
+      padding: 9px 0;
+      border: 0;
+      margin-left: 150px;
+      margin-top:20px;
+      font-size:18px;
+      &.default{
+        background:#8a8a8a;
+      }
+    }
+    .font_red{
+      color:#cf271e;
+    }
+    .font_bold{
+      font-weight:bold;
+    }
+
+    .containerTop{
+      height:210px;
+      box-shadow: 0 0 5px 2px #999;
+      background:url('./img/bg_top.jpg') 0 0 repeat;
+      color:#888;
+      position: relative;
+      .icons_verify_new{
+        height: 164px;
+        width: 290px;
+        background: url('./img/dafa_newImg.jpg') 0 0/100% 100% no-repeat;
+        position: absolute;
+        right: 48px;
+        top: 21px;
+      }
+      .topLeft{
+        //width: 590px;
+        height: 132px;
+        padding: 13px 0 0 20px;
+        text-align: left;
+        float:left;
+        .sp_line{
+          float: left;
+          display: inline;
+          height: 65px;
+          width: 0;
+          border-left: 1px solid #c3c3c3;
+          border-right: 1px solid #fff;
+        }
+        p{
+          margin:0;
+        }
+        .userName{
+          margin-top:-10px;
+          height: 55px;
+          width: 500px;
+          line-height: 32px;
+          position: relative;
+          span{
+            color:#cf271e;
+            margin:0 10px;
+          }
+          i.userIcon{
+            display: inline-block;
+            width: 40px;
+            height: 31px;
+            background: url('./img/jxw.png');
+            margin: 0 0 0 15px;
+            position: relative;
+            top:8px;
+            cursor: pointer;
+          }
+          .cloud{
+            width:325px;
+            height:94px;
+            background:url('./img/cloud_bg.png') 0 0 no-repeat;
+            color:#888;
+            top: 10px;
+            position: absolute;
+            left: 180px;
+            padding-left: 120px;
+            padding-top: 10px;
+            font-size: 12px;
+            line-height: 20px;
+            z-index:50;
+            i{
+              position: absolute;
+              cursor: pointer;
+              top: 15px;
+              right: 26px;
+              font-size:16px;
+              color:#888;
+              &:hover{
+                color:#555;
+              }
+            }
+            a{
+              display: block;
+              cursor: pointer;
+              width: 114px;
+              height: 26px;
+              line-height: 26px;
+              color: #fff;
+              background-color: #cf271e;
+              text-align: center;
+              font-size: 12px;
+              margin-top:5px;
+            }
+          }
+        }
+        .my_purse{
+          float: left;
+          background: url('./img/purse.png') no-repeat 20px;
+          font-size: 16px;
+          line-height: 28px;
+          padding: 0 0 0 180px;
+          width: 300px;
+          height: 72px;
+          .loadAmount{
+            float:right;
+            margin:0px 10px;
+          }
+          span{
+            color:#cf271e;
+            font-size:16px;
+          }
+          i{
+            display: inline-block;
+            float:right;
+            background:#fff;
+            border-radius:100%;
+            border:1px solid #b3b3b3;
+            padding: 3px;
+            cursor: pointer;
+            color:#888;
+            font-size: 12px;
+            margin:2px 15px 0 0;
+            &:hover{
+              color:#cf271e;
+              border-color:#cf271e;
+            }
+          }
+        }
+      
+        .icons_verify {//账户安全
+          height: 70px;
+          font-size: 16px;
+          line-height: 30px;
+          padding: 0 20px;
+          float:left;
+          .verifyItems{
+            a{
+              width: 43px;
+              height: 40px;
+              float: left;
+              display: inline-block;
+              margin: 0 10px;
+              background: url('./img/verify.png');
+            }
+            .name_icon{
+              background-position: 0 0px;
+              &:hover,&.isAuth{
+                background-position: 0px 40px;
+              }
+            }
+            .mobile_icon{
+              background-position: -43px 0;
+              &:hover,&.isAuth{
+                background-position: -43px 40px;
+              }
+            }
+            .email_icon{
+              background-position: 87px 0;
+              &:hover,&.isAuth{
+                background-position: 87px 40px;
+              }
+            }
+            .card_icon{
+              background-position: 43px 0;
+              &:hover,&.isAuth{
+                background-position: 43px 40px;
+              }
+            }
+          }
+        }
+        .bac_tabs{
+          height: 35px;
+          padding:0px;
+          margin-top: 10px;
+          ul li{
+            display: inline-block;
+            background: #ececec;
+            border: 1px solid #cfcfcf;
+            width: 85px;
+            font-size: 14px;
+            line-height: 30px;
+            margin: 4px 16px;
+            text-align: center;
+            position: relative;
+            &.selected_bac_tabs:after{
+              content: '';
+              display: block;
+              width:0;
+              height:0;
+              position: absolute;
+              border-left:15px solid transparent;
+              border-right:15px solid transparent;
+              border-bottom:13px solid #fff;
+              top: 58px;
+              left: 50%;
+              margin-left: -15px;
+            }
+            &.selected_bac_tabs,&:hover{
+              background: #cf271e;
+              a{
+                color:#fff;
+              }
+            }
+            a{
+              display: block;
+              clear: both;
+              width: 85px;
+              height: 30px;
+              color:#5c5c5c;
+            }
+          }
+        }
+      }
+      .favoritesDiv{
+        float:left;
+        height: 130px;
+        .favItem{
+          float:left;
+          width: 185px;
+          height: 140px;
+          border:1px dashed  #ccc;
+          font-size:20px;
+          text-align: center;
+          background:#f8f8f8;
+          margin: 15px 20px 5px 0;
+          a{
+            color:#888;
+            line-height:50px;
+            .font-60{
+              margin-top:25px;
+              font-size:60px;
+            }
+          }
+
+        }
+      }
+    }
+
+    .containerCon{
+      text-align: left;
+      padding:20px 20px 80px;
+      min-height:500px;
+      //表单基本样式
+      .lbl {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #888;
+        margin-top: 16px;
+        margin-right: 18px;
+      }
+      .custinput {
+        display: inline-block;
+        width: 320px;
+        input{
+          background: #fdfcfc;
+          padding: 6px;
+          font-size:14px;
+          height: 36px;
+          width: 100%;
+          border: 1px solid #ccc;
+        }
+      }
+      .custbtn button{
+        width: 156px;
+        text-align: center;
+        color: #fff;
+        background: #cf271e;
+        padding: 9px 0;
+        border: 0;
+        margin-left: 11%;
+        margin-top: 2%;
+      }
+      table{
+        thead{
+          tr{
+            width: 100%;
+            background: #f09e99;
+            th{
+              height: 35px;
+              line-height:35px;
+              font-weight: 700;
+              color: #fff;
+              text-align: center;
+              font-size:13px;
+            }
+          }
+        }
+        tbody{
+          tr:nth-child(odd)>td{
+            background: #dedede;
+          }
+          td{
+            color: #555;
+            background: #fcecec;
+            font-size: 12px;
+            padding:5px 10px;
+            text-align:center;
+            line-height:35px;
+            &:first-child{
+              text-align: center;
+                  }
+          }
+        }
+      }
+      //基本信息
+      .userInfo{
+        padding:30px 40px;
+        h4{
+          font-size:20px;
+          display: inline-block;
+        }
+        .crown{
+          display: inline-block;
+          margin-left: 40px;
+          vertical-align: top;
+          width:25px;
+          height:22px;
+          margin-top: 15px;
+          background:url('./img/crown.jpg') 0 0 no-repeat;
+        }
+        .recommendCode{
+          display: inline-block;
+          padding:2px 50px 2px 8px;
+          background:#eee;
+          border-radius:15px;
+          font-size:12px;
+          margin-right: 50px;
+          font-weight: bold;
+          a{
+            font-weight: normal;
+          }
+        }
+        .guide{
+          float:right;
+        }
+        .info{
+          margin-top:20px;
+          &:after{
+            content:'';
+            display: block;
+            clear: both;
+          }
+          ul li{
+            width: 33.3%;
+            display: inline-block;
+            float:left;
+            padding: 20px 0;
+            font-size:13px;
+            color:#555;
+            &:after{
+              content:'';
+              display: block;
+              clear: both;
+            }
+            label{
+              float:left;
+            }
+            .conInput{
+              margin-left:5px;
+              float:left;
+              display:inline-block;
+              border:none;
+              background:transparent;
+              width:280px;
+              height: 28px;
+            }
+            .con{
+              margin-left:5px;
+              float:left;
+              display:inline-block;
+            }
+            .validate{
+              font-size:12px;
+              background:#428bca;
+              color:#fff;
+              border-radius:8px;
+              padding:2px 8px;
+              position: relative;
+              top:-5px;
+              margin-left:10px;
+            }
+          }
+        }
+        .changePwd{
+          text-align: left;
+          border-top:1px solid #f5edd3;
+          .pwdCon{
+            padding:20px 0 0 50px;
+          }
+          a{
+            margin-top:10px;
+            margin-right:30px;
+          }
+
+        }
+      }
+      //存款
+      .Yhtext{
+        font-size: 14px;
+        color: red;
+      }
+      .deposit{
+        padding: 0 60px;
+        .tipsH{
+          text-indent: 10px;
+          font-weight:bold;
+        }
+        ul.tabsUl{
+          border-bottom: 1px solid #d0cece;
+          margin: auto;
+          padding: 50px 30px 0 0;
+
+          #YHZZ{
+            .tooltiptextuc{
+              font-weight: normal;
+              width: 110px;
+            }
+          }
+
+
+
+          &:after{
+            content: '';
+            display: block;
+            clear: both;
+          }
+          li{
+            float: left;
+            display: inline;
+            _width: 130px;
+            margin: 0 25px;
+            padding: 0;
+            font-size: 13px;
+            &.selected_red{
+              a{
+                font-weight: bold;
+                border-bottom: 4px solid red;
+              }
+            }
+            a{
+              color: #717171;
+              display: block;
+              position: relative;
+              &:hover{
+                color:red;
+              }
+              .tooltiptextuc{
+                width: 100px;
+                background-color: #ffffe4;
+                color: #cf271e;
+                text-align: center;
+                border-radius: 6px;
+                padding:0;
+                border: 1px solid #e6adaa;
+                position: absolute;
+                top: -35px;
+                left: 50%;
+                margin-left: -50px;
+                &:after{
+                  content: '';
+                  display: block;
+                  width:10px;
+                  height:10px;
+                  position: absolute;
+                  transform: rotate(45deg);
+                  border:1px solid #e6adaa;
+                  background:#ffffe4;
+                  border-left:none;
+                  border-top:none;
+                  bottom:-6px;
+                  left: 50%;
+                  margin-left: -5px;
+                }
+              }
+            }
+          }
+        }
+        .dpt_credit{
+          label{
+            display: inline-block;
+            text-align: left;
+            width: 150px;
+          }
+          select{
+            width: 200px;
+          }
+          padding: 30px 20px;
+          margin-bottom: -56px;
+          font-size: 13px;
+          //第三方支付
+          .thirdFrom{
+            padding:20px;
+            &:after{
+              content:'';
+              display: block;
+              clear: both;
+            }
+            img{
+              width:160px;
+              float:left;
+            }
+            p{
+              float:left;
+              font-size:13px;
+              color:#888;
+              margin-left:20px
+            }
+            .resultBtn{
+              clear: both;
+              padding-top:30px;
+            }
+          }
+
+          //在线支付
+          .bankOption{
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px!important;
+            box-shadow: 0 0 10px #fff;
+            &.isSelected .selectedCard{
+              border:2px solid #ff6666;
+              background:url('./img/selected_card.png') 101% 105% no-repeat;
+            }
+            input[type=radio]{
+              position: absolute;
+              top: 50%;
+              left: 5px;
+              width: auto;
+              margin-top: -5px;
+            }
+            .bankOption_text{
+              width: 130px;
+              height: 45px;
+              background-size: 100% auto;
+              background-repeat: no-repeat;
+              background-position-y: 50%;
+              box-shadow: none;
+              border: 1px solid #ddd;
+            }
+            .selectedCard{
+              position: absolute;
+              width:100%;
+              height:100%;
+              right:0;
+              top:0;
+
+            }
+          }
+        }
+        //银行转账
+        .offlineBank{
+          &:after{
+            content: '';
+            display: block;
+            clear: both;
+          }
+          .offlineBankInfo{
+            position: relative;
+            background: #fafafa;
+            color: #cf271e;
+            padding: 15px 30px;
+            border: 1px dotted #717171;
+            width: 100%;
+            display: inline-block;
+            margin: 10px 0 20px;
+            background: #eeede8;
+            .offlineBank_text{
+              font-size: 14px;
+              text-align: center;
+              font-weight: bold;
+            }
+            .alipayCode{
+              position: relative;
+              .alipayCode_info{
+                display: inline-block;
+                float: left;
+              }
+              .alipayCode_qrcode{
+                display: inline-block;
+                position: relative;
+                float: left;
+                margin-left: 50px;
+              }
+              p{
+                line-height: 36px;
+                span{
+                  width: auto;
+                  margin-right: 20px;
+                  color: #717171;
+                  font-weight: bolder
+                }
+              }
+              label{
+                color: #717171;
+                font-weight: bold;
+              }
+            }
+            p{
+              margin:0;
+            }
+          }
+          .bankPay p{
+            line-height: 36px;
+            &>span{
+              width:200px;
+              display: inline-block;
+              color: #717171
+            }
+          }
+
+        }
+        .money{
+          padding:30px 20px;
+          font-size:13px;
+          select{
+            width: 200px;
+          }
+          p{
+            label{
+              display: inline-block;
+              text-align: left;
+              width:150px;
+                  color: #717171;
+            }
+            input{
+              border:1px solid #ccc;
+              padding:3px 8px;
+              width:200px;
+              margin-right:20px;
+            }
+          }
+          .tips{
+            padding: 5px;
+            border: 1px dashed #ccc7c7;
+            line-height:24px;
+            font-size:12px;
+            width: 460px!important;
+            font-weight: bold;
+            margin-top: 30px;
+          }
+        }
+      }
+      //提款
+      .drawing{
+        padding:30px 20px;
+        .accBox{
+          &:after{
+            content: '';
+            display: block;
+            clear: both;
+          }
+          .lbl{
+            float:left;
+          }
+          .accountItems{
+            display: inline-block;
+            margin-top: 10px;
+            float:left;
+            font-size:13px;
+            width: 80%;
+            .bankOption{
+              margin:0 10px 10px 0 !important;
+              padding:5px 10px;
+              color:#666;
+              position: relative;
+              float: left;
+              &.isSelected .selectedCard{
+                border:2px solid #ff6666;
+                background:url('./img/selected_card.png') 101% 105% no-repeat;
+              }
+              .selectedCard{
+                position: absolute;
+                width:100%;
+                height:100%;
+                border:1px solid #ccc;
+                right:0;
+                top:0;
+              }
+            }
+            .addBankButton{
+              display: block;
+              padding:5px 15px;
+              border:1px dotted #ccc;
+              cursor:pointer;
+              color:#cf271e;
+              width:130px;
+              float: left;
+              margin-right: 20px;
+              &:hover{
+                border-color:#cf271e;
+              }
+            }
+            .spc-addBankButton{
+              width: 200px;
+            }
+          }
+        }
+      }
+      //游戏转账
+      .gametrans{
+        .transfer_each{
+          &:after{
+            content:'';
+            display: block;
+            clear: both;
+          }
+          .transferItem{
+            display: inline-block;
+            width: 208px;
+            height: 225px;
+            background:rgb(236,236,236);
+            box-shadow: 1px 1px 2px 2px #d8d8d8;
+            border-radius: 5px;
+            margin-right: 15px;
+            margin-left: 15px;
+            margin-bottom: 15px;
+            padding:3px;
+            border:2px solid transparent;
+            &:hover{
+              background:rgb(255,252,230);
+              border-color:#f09e99;
+            }
+            h5{
+              border-bottom: 1px dotted #ccc;
+              margin: 0;
+              font-size: 15px;
+              text-align: center;
+              color: #656565;
+              height: 30px;
+              line-height: 26px;
+              font-weight: bold;
+            }
+            .money{
+              margin:20px 15px 0;
+              font-size:14px;
+              strong{
+                color:#cf271e;
+                font-size:16px;
+              }
+            }
+            a{
+              text-align: center;
+              display: block;
+              margin: 10px 35px;
+              background: #cf271e;
+              color: #fff;
+              line-height: 33px;
+              font-size: 15px;
+              &:hover{
+                background:#af0000;
+              }
+            }
+          }
+        }
+      }
+      //添加新的银行卡
+      .bindCard{
+
+        .wrdbot{
+          text-align: center;
+          .title{
+            background: #f09e99;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            line-height: 28px;
+          }
+        }
+        .custbtn{
+          text-align: center;
+          a.memberBtn{
+            margin-left:0;
+          }
+        }
+      }
+      //历史记录
+      .recordsHistory{
+        padding:20px 30px;
+        .nav-tabs{
+          border-bottom: 1px solid #cf271e;
+          margin-bottom:20px;
+          li{
+            margin:0 10px;
+            &.active a,&:hover a{
+              background:#cf271e;
+              color:#fff;
+              border:0;
+              border-radius:0;
+            }
+            a{
+              font-size:12px;
+              color:#cf271e;
+              padding:2px 8px;
+              display: inline-block;
+              margin: 0;
+              border: 0;
+            }
+          }
+        }
+        .tab-content{
+
+          .fnc_holder{
+            margin-bottom:15px;
+            .lbl{
+              font-size:12px;
+              color:#888;
+            }
+            select,input{
+              width: 100%;
+              border: 1px solid #cccccc;
+              outline: none;
+              height: 28px;
+              line-height: 28px;
+              font-size: 12px;
+              padding: 0 6px;
+            }
+            .btn-primary{
+              background-color:#cf271e;
+              border-color:#cf271e;
+              border-radius:0;
+              margin-left:20px;
+              padding:3px 12px;
+            }
+          }
+
+          .tblbottom{
+            font-size:13px;
+            .custpagination{
+              li{
+                float:left;
+                padding: 0 3px;
+                &:hover a{
+                  background:#cf271e;
+                  color:#fff;
+                }
+                a{
+                  padding:2px 6px;
+                  color:#cf271e;
+                  border-radius: 3px;
+                  &.active{
+                    background:#cf271e;
+                    color:#fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*快速添加场馆弹出层*/
+  #favoritesModal{
+    .modal-dialog{
+      width:430px;
+      .modal-body{
+        text-align: center;
+        &:after{
+          content:'';
+          display: block;
+          clear: both;
+        }
+        p{
+          margin:0 30px;
+          text-align: center;
+          font-size:14px;
+        }
+        div{
+          display: inline-block;
+          width: 40%;
+          float: left;
+          text-align: left;
+          font-size: 13px;
+          color: #888;
+          padding: 0px 5px;
+          margin-left: 25px;
+          input{
+            display: inline-block;
+            width:  auto;
+            height:auto;
+            margin-right:5px;
+          }
+        }
+      }
+
+    }
+  }
+  /*转账弹出层*/
+  #transferModal{
+    .modal-dialog {
+      transform: translate(0, 100%);
+      width:500px;
+    }
+    .modal-content .modal-header{
+      background: #af0000;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+    }
+    .hlder{
+      margin-bottom:20px;
+      .lbl{
+        margin-bottom:0;
+      }
+      .seclbl{
+        font-size:12px;
+        margin-left:100px;
+        color:#888;
+      }
+    }
+
+    .custbtn {
+      text-align: center;
+      button{
+        margin:0;
+        width:130px;
+        padding:6px 0;
+
+      }
+    }
+  }
+
+}
+
+.sweet-alert .sa-icon.sa-success .sa-fix, .sweet-alert .sa-icon.sa-success:after, .sweet-alert .sa-icon.sa-success:before {
+  background-color: transparent!important;
+}
+
+.info .spec-li{
+  width: 60%!important;
+}
+
+.spec-jiantou{
+  position: relative;
+}
+
+.fileinput-button{
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 36px;
+  overflow: hidden;
+  top: 0px;
+  right: 1px;
+  span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    z-index: 10;
+    background: #cf271e;
+    color: #fff;
+    pointer-events: none;
+  }
+}

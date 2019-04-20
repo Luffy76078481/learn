@@ -1,0 +1,217 @@
+// @charset "utf-8";
+// body{
+//     /* IOS 11支持*/
+//     //padding-left: constant(safe-area-inset-left);
+//     //padding-right: constant(safe-area-inset-right);
+//     /*IOS 11.2版本版本支持*/
+//     //padding-left: env(safe-area-inset-left);
+//     //padding-right: env(safe-area-inset-right);
+//     /* IOS 11支持*/
+//     //padding-top: constant(safe-area-inset-top);
+//     //padding-bottom: constant(safe-area-inset-bottom);//为底下圆弧的高度 34px 
+//     /*IOS 11.2版本版本支持*/
+//     //padding-top: env(safe-area-inset-left);
+//     //padding-bottom: env(safe-area-inset-bottom);//为底下圆弧的高度 34px
+// }
+// // 竖屏
+// @media screen and (orientation: portrait) {
+//     html{
+//         width : 100% ;
+//         height : 100% ;
+//     }
+//     @media screen and (min-height:1367px){
+//         html{
+//             font-size: 100px;
+//         }
+//     }
+//     @media screen and (max-height: 1366px) and (min-height: 1281px){
+//         html{
+//             font-size: 95px;
+//         }
+//     }
+//     @media screen and (max-height: 1280px) and (min-height: 1201px){
+//         html{
+//             font-size: 90px;
+//         }
+//     }
+//     @media screen and (max-height: 1200x) and (min-height: 1154px){
+//         html{
+//             font-size: 85px;
+//         }
+//     }
+//     @media screen and (max-height: 1153px) and (min-height: 1080px){
+//         html{
+//             font-size: 80px;
+//         }
+//     }
+//     @media screen and (max-height: 1079px) and (min-height: 1029px){
+//         html{
+//             font-size: 75x;
+//         }
+//     }
+//     @media screen and (max-height: 1028px) and (min-height: 980px){
+//         html{
+//             font-size: 72px;
+//         }
+//     }
+//     @media screen and (max-height: 979px) and (min-height: 960px){
+//         html{
+//             font-size: 64px;
+//         }
+//     }
+//     @media screen and (max-height: 959px) and (min-height: 880px){
+//         html{
+//             font-size: 60px;
+//         }
+//     }
+//     @media screen and (max-height: 879px) and (min-height: 854px){
+//         html{
+//             font-size: 57px;
+//         }
+//     }
+//     @media screen and (max-height: 853px) and (min-height: 813px){
+//         html{
+//             font-size: 52px;
+//         }
+//     }
+//     @media screen and (max-height: 812px) and (min-height: 731px){
+//         html{
+//             font-size: 49px;
+//         }
+//     }
+//     @media screen and (max-height: 730px) and (min-height: 668px){
+//         html{
+//             font-size: 47px;
+//         }
+//     }
+//     @media screen and (max-height: 667px) and (min-height: 640px){
+//         html{
+//             font-size: 44px;
+//         }
+//     }
+//     @media screen and (max-height: 639px) and (min-height: 580px){
+//         html{
+//             font-size: 40px;
+//         }
+//     }
+//     @media screen and (max-height: 579px) and (min-height: 534px){
+//         html{
+//             font-size: 38px;
+//         }
+//     }
+//     @media screen and (max-height: 533px) and (min-height: 500px){
+//         html{
+//             font-size: 36px;
+//         }
+//     }
+//     @media screen and (max-height: 499px) and (min-height: 481px){
+//         html{
+//             font-size: 34px;
+//         }
+//     }
+//     @media screen and (max-height: 480px) and (min-height: 428px){
+//         html{
+//             font-size: 32px;
+//         }
+//     }
+//     @media screen and (max-height: 427px) and (min-height: 380px){
+//         html{
+//             font-size: 30px;
+//         }
+//     }
+//     @media screen and (max-height:379px){
+//         html{
+//             font-size: 26px;
+//         }
+//     }
+// } 
+// // 横屏
+// @media screen and (orientation: landscape) {
+//      html{
+//        width:100%;
+//        height:100%;
+//     }
+//     // 480x320 568x320 533x320 427x311 474x300
+//     @media screen and (max-height: 320px) and (min-height: 300px){
+//         html{
+//             font-size: 34px;
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.7) and (-webkit-max-device-pixel-ratio:1.8){
+//             html{
+//                 font-size: 38px;
+//             }
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.6) and (-webkit-max-device-pixel-ratio:1.7){
+//             html{
+//                 font-size: 36px;
+//             }
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.5) and (-webkit-max-device-pixel-ratio:1.6){
+//             html{
+//                 font-size: 34px;
+//             }
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.4) and (-webkit-max-device-pixel-ratio:1.5){
+//             html{
+//                 font-size: 32px;
+//             }
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.3) and (-webkit-max-device-pixel-ratio:1.4){
+//             html{
+//                 font-size: 30px;
+//             }
+//         }
+//     }
+//     // 640*360 667x375 640x384 812x375
+//     @media screen and (max-height: 384px) and (min-height: 360px){
+//         html{
+//             font-size: 45px;
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.8){
+//             html{
+//                 font-size: 50px;
+//             }
+//         }       
+//         @media screen and (-webkit-min-device-pixel-ratio:1.7) and (-webkit-max-device-pixel-ratio:1.8){
+//             html{
+//                 font-size: 45px;
+//             }
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.6) and (-webkit-max-device-pixel-ratio:1.7){
+//             html{
+//                 font-size: 42px;
+//             }
+//         }
+//         @media screen and (-webkit-min-device-pixel-ratio:1.5) and (-webkit-max-device-pixel-ratio:1.6){
+//             html{
+//                 font-size: 40px;
+//             }
+//         }
+//         @media screen and (-webkit-max-device-pixel-ratio:1.5){
+//             html{
+//                 font-size: 36px;
+//             }
+//         }
+//     }
+//     // 823x411 736x414 732x412 731x411
+//     @media screen and (max-height: 424px) and (min-height: 385px){
+//         html{
+//             font-size: 50px;
+//         }      
+//         @media screen and (-webkit-min-device-pixel-ratio:1.8){
+//             html{
+//                 font-size: 52px;
+//             }
+//         }     
+//         @media screen and (-webkit-min-device-pixel-ratio:1.7) and (-webkit-max-device-pixel-ratio:1.8){
+//             html{
+//                 font-size: 50px;
+//             }
+//         }
+//         @media screen and (-webkit-max-device-pixel-ratio:1.7){
+//             html{
+//                 font-size: 48px;
+//             }
+//         }
+//     }
+// }

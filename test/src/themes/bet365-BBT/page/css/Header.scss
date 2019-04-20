@@ -1,0 +1,302 @@
+#topHead{
+    .logoimgIndx{
+        display: inline-block;
+        width: 170px;
+        height: 72px;
+    }
+
+    .menu-nav {
+        //height: 36px;
+        overflow: hidden;
+        //width: 1140px;
+    }
+    .menu-nav ul li {
+        float: left;
+        text-align: center;
+        font-size: 14px;
+        width: 10%;
+        line-height: 36px;
+    }
+    .aaa{
+        float: left;
+        position: relative;
+        left: 50px;
+        top: 20px;
+    }
+    .notice {
+        //height: 30px;
+        //line-height: 30px;
+        //font-size: 12px;
+        color: #825a55;
+        overflow: hidden;
+    }
+    .noticeCenter {
+        float: left;
+        height: 28px;
+        overflow: hidden;
+    }
+    .noticeLeft a {
+        //color: #825a55;
+        margin: 0px 5px;
+        text-decoration: none;
+    }
+
+    .top_livechat {
+        //width: 119px;
+        //height: 25px;
+        float: right;
+        //margin-top: 3px;
+    }
+
+    .timeNumber {
+        padding-top: 10px;
+    }
+    .timeNumber span, .timeNumber a {
+        float: left;
+        font-size: 12px;
+    }
+    .timeNumber i{
+        margin-right: 5px;
+    }
+    .logo {
+        float: left;
+        .innerLogo {
+            display: block;
+            //height: 100px;
+            //width: 250px;
+        }
+    }
+    .loginForm {
+        float: right;
+        color: #fff;
+        height: 72px;
+        margin-right: 12px;
+        padding-top: 14px;
+        padding-right: 20px;
+        .m-t-10{
+            margin-top: 0!important;
+            min-width: 248px;
+            height: 48px;
+            margin: 0px 0 0 0;
+            background-color: #10694d;
+            color: #80bfac;
+            border: 1px solid #0e5942;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -o-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            font-size: 12px;
+            box-shadow: 0 1px 0 #1b8f6c;
+            .Topline{
+                height: 23px;
+                border-bottom: 1px solid #0e5942;
+                line-height: 22px;
+                .user{
+                    float: left;
+                    padding-left: 8px;
+                    .username{
+                        color: #80bfac;
+                    }
+                    .username:hover{
+                        text-decoration: none;
+                    }
+                    .out{
+                        margin: 0 20px 0 10px;
+                        font-size: 11px;
+                        color: #ffdf1b;      
+                    }
+                    .out:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .account{
+                    float: left;
+                    .ac{
+                        border-left: 1px solid #0e5942;
+                        float: left;
+                        padding-left: 10px;
+                        color: #ffdf1b;
+                    }
+                    .ac:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .message{
+                    background-image: url(../images/Message.gif);
+                    float: left!important;
+                    padding: 0 8px 14px 22px!important;
+                    height: 0!important;
+                    width: 0!important;
+                    font-size: 0!important;
+                    margin: 4px 0 5px 5px!important;
+                    background-position: 0 0!important;
+                    background-repeat: no-repeat!important;
+                    cursor: pointer;
+                }
+                .message:hover{
+                    background-position: 0 -54px!important;
+                }
+                .msgNum{
+                    float: left;
+                    color: #80bfac;
+                }
+                .msgNum:hover{
+                    text-decoration: underline;
+                }
+            }
+            .BottomLine{
+                height: 23px;
+                // border-top: 1px solid #0e5942;
+                line-height: 22px;
+                .amount{
+                    padding: 0 27px 0 9px;
+                    border-right: 1px solid #0e5c44;
+                    font-size: 11px;
+                    line-height: 23px;
+                    color: #fff;
+                    font-family: verdana;
+                    white-space: nowrap;
+                }
+                .amount:hover{
+                    color: #ffdf1b;
+                    cursor: pointer;
+                }
+                .transfer{
+                    a{
+                        color: #ffdf1b;
+                        cursor: pointer;
+                        padding: 0 8px 0 11px;
+                        white-space: nowrap;
+                        line-height: 22px;
+                    }               
+                }
+                div{
+                    float: left;
+                }
+            }
+        }
+    }
+    .afterLogin{
+        padding-top: 0px !important;
+    }
+    #login-form{
+        width: 250px;
+    }
+
+
+    .menu-nav ul li a.active {
+        /*color: yellow;*/
+    }
+    .memberItem a{
+        text-decoration: underline;
+    }
+    .memberItem .member-msg{
+        text-decoration: none;
+    }
+    .timeNumber .personal{
+        display: block;
+        cursor: pointer;
+        padding: 0;
+    }
+    .timeNumber .personalHide{
+        display: none;
+    }
+    .timeNumber .personal:hover{
+        text-decoration: underline;
+        color: #ffea00;
+    }
+    .item{
+        padding: 0 2px;
+    }
+    .timeNumber span, .timeNumber a {
+        padding-right: 10px;
+    }
+
+    #login-form{
+        overflow: hidden;
+        padding-top: 0;
+        .loginInput{
+            input{
+                float: left;
+                width: 100px;
+                height: 25px;
+                line-height: 23px;
+                margin: 0px 5px 0px 0px;
+                padding: 0px 5px 0px 5px;
+                border: 1px solid #0E5942;
+                background-color: #10694D;
+                color: #60A692;
+                border-radius: 3px;
+                -moz-border-radius: 3px;
+                -o-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                font-size: 11px;
+                box-shadow: 0px 1px 0px #288B6C;
+            }
+            button{
+                display: block;
+                width: 40px;
+                font-size: 11px;
+                height: 26px;
+                margin: 0;
+                background-image: none;
+                background-color: #fad910;
+                border: 1px solid #005e3c;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+        .forgetItem{
+            padding-top: 8px;
+            overflow: hidden;
+            .form-reg{
+                float: left;
+                font-size: 11px;
+                color: #FFDF1B;
+            }
+            .form-reg:hover{
+                text-decoration: underline;
+            }
+            .forget{
+                float: right;
+                font-size: 11px;
+                color: #80BFAC;
+            }
+            .forget:hover{
+                color: #FFDF1B;
+            }
+        }
+        .code-input{
+            display: none;
+        }
+        .code-image{
+            display: none;
+        }
+        &.require_verify_code{
+            .account-input{
+                width: 125px;
+            }
+            .pwd-input{
+                width: 125px;
+            }
+            .code-input{
+                display:inline-block;
+                width: 70px;
+            }
+            .code-image{
+                display: inline-block;
+                width: 70px;
+                background: #4d4332;
+                height: 28px;
+                border: 1px solid #4d4332;
+                img{
+                    width: 67px;
+                }
+
+            }
+        }
+
+    }
+}
+
+

@@ -1,0 +1,139 @@
+.dafaFGcss .FootPage #footer{    background: #e7e7e9;}
+.FootPage{
+ 
+  #footer{
+    background: transparent;
+    margin: 0px 0 40px 0;
+    padding: 60px 0 0 0;
+    .container{
+      width: 1706px;
+    }
+    .footer-help-share{
+      width: 100%;
+      height: 348px;
+      margin-bottom: 30px;
+    }
+    #foot-Cagayan{
+      text-align: center;
+      .Cagayan{
+        color: #5e5e5e;
+        line-height: 22px;
+        position: relative;
+        a{
+          color: #5e5e5e;
+        }
+        p{
+          color: #5e5e5e;
+        }
+        .c_right{
+          padding-top: 10px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+}
+#platform-inco{
+  display: none;
+}
+
+
+.FootPage{
+  #footer-nav{  height: 41px;}
+  #foot_help{float: left}
+  #foot_share{float: left}
+  #foot-mobile-img{float: left}
+  #foot_share{
+    margin-left: 50px;
+  }
+  .f-nav{
+    width: 1200px;
+    margin: auto;
+    height: 20px;
+    .left{
+      float: left;
+      ul{
+        li{
+          display: inline-block;
+        }
+      }
+    }
+    .right{
+      float: right;
+      ul{
+        li{
+          border: 1px solid #e3c2bc;
+          display: inline-block;
+          margin-left: 25px;
+          border-radius: 5px;
+          width: auto;
+          text-align: center;
+          height: 30px;
+          line-height: 30px;
+          margin-top: 5px;
+          &:hover{
+            background: #aa635c;
+          }
+          a{
+            color: #f1f1f1;
+            &:active{text-decoration: none}
+            &:visited{text-decoration: none}
+          }
+        }
+      }
+    }
+  }
+}
+.gamecss .FootPage{
+  background: none;
+  .footer-help-share {
+    margin-left: 0;
+    width: 1000px;
+    height: 300px;
+  }
+  #footer #foot-Cagayan div a{
+    color: #d6a876;
+  }
+  #footer #foot-Cagayan .Cagayan p{
+    color: #d6a876;
+  }
+  #footer #foot-Cagayan .Cagayan .c_right{
+    padding-top: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+// 真人
+.casinocss {
+  #footer #foot-Cagayan div.Cagayan{
+    color: #d6a876;
+    p.c_right{
+      color: #d6a876;
+    }    
+    .color-third{
+      color: #d6a876;
+    }
+  } 
+}
+
+.sportcss .FootPage {
+  background: #e6e7e8;
+}
+
+.usefulcss {
+  #footer #foot-Cagayan div.Cagayan{
+    color: #d6a876;
+    p.c_right{
+      color: #d6a876;
+    }    
+    .color-third{
+      color: #d6a876;
+    }
+  } 
+}

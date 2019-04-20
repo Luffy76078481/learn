@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+.dafanewFG{
+  #dafa_indexContent{
+    //background-color: #dfdfdf;
+  }
+
+  #pt_bg_style img{
+    height: auto;
+    width: 100%;
+  }
+
+  .navbg{
+    width: 100%;
+    height: 40px;
+    background: #373737;
+    display: none;
+  }
+
+  #focus-ad{
+    background-color: #000;
+  }
+
+  #pt_bg_style{
+    height: auto !important;
+    text-align: center;
+    background-color: #fff !important;
+  }
+
+  .download_fix{
+    position: fixed;
+    left: -285px;
+    top:25%;
+    z-index: 999;
+    width: 344px;
+    height: 200px;
+    background-color: #373737;
+    border-radius: 0 0 5px 0;
+    transition: 1s;
+  }
+
+  .download_fix:hover{
+    left: 0;
+  }
+
+  .download_fix:before{
+    content: "";
+    width: 60px;
+    height: 61px;
+    background: url("../images/icon.png") no-repeat 0 -180px;
+    position: absolute;
+    top: -37px;
+    right: 0px;
+  }
+  .help_fix{
+    position: fixed;
+    right: -285px;
+    top:70%;
+    z-index: 999;
+    width: 344px;
+    height: 200px;
+    background-color: #373737;
+    border-radius: 0 0 0 5px;
+    transition: 1s;
+  }
+
+  .help_fix:hover{
+    right: 0;
+  }
+
+  .help_fix:before{
+    content: "";
+    width: 60px;
+    height: 61px;
+    background: url("../images/icon.png") no-repeat -80px -180px;
+    position: absolute;
+    top: -37px;
+    left: 0px;
+  }
+  .fix_title{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 200px;
+    color: #ffe001;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 15px;
+  }
+  .download_fix_title{
+    padding-top: 70px;
+  }
+  .help_fix_title{
+    padding-top: 50px;
+  }
+
+  .fix_text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 284px;
+    height: 200px;
+    padding: 7px 30px;
+    text-align: center;
+  }
+
+  .help_li{
+    position: relative;
+    display: inline-block;
+    padding: 7px 10px 7px 60px;
+    margin-top: 4px;
+    white-space: nowrap;
+    width: 226px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 33px;
+    border: 1px solid #ffe000;
+    border-radius: 5px;
+    color: #ffe001;
+  }
+
+  .download_li{
+    position: relative;
+    font-size: 16px;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 15px 15px 15px 65px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    width: 226px;
+    overflow: hidden;
+    border: 1px solid #ffe000;
+    border-radius: 5px;
+    color:#ffe000;
+  }
+
+
+  .download_li a:before{
+    content: "";
+    position: absolute;
+    z-index: 111;
+    left: 56px;
+    top: 9px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .help_li a:before{
+    content: "";
+    position: absolute;
+    z-index: 111;
+    left: 20px;
+    top: 2px;
+    width: 30px;
+    height: 26px;
+  }
+
+  .help_li a{
+    color:#ffe000;
+    text-decoration: none;
+  }
+  .download_li a{
+    color:#ffe000;
+    text-decoration: none;
+  }
+
+  .download_li:hover,.help_li:hover{
+    background-color: #ffe001;
+    color: #373737;
+  }
+  .download_li:hover a,.help_li:hover a{
+    color: #373737;
+  }
+
+
+  .download_game   a:before{  background: url("../images/icon.png") no-repeat -240px -120px;  }
+  .download_poker  a:before{  background: url("../images/icon.png") no-repeat -240px -200px;  }
+  .download_send   a:before{  background: url("../images/icon.png") no-repeat -240px -360px;  }
+  .help_onlineHelp a:before{  background: url("../images/icon.png") no-repeat -160px -120px;  }
+  .help_email      a:before{  background: url("../images/icon.png") no-repeat -160px -160px;  }
+  .help_phone      a:before{  background: url("../images/icon.png") no-repeat -160px -200px;  }
+  .help_wechat     a:before{  background: url("../images/icon.png") no-repeat -160px -360px;  }
+
+  .download_game:hover   .download_game_a:before{  background: url("../images/icon.png") no-repeat -280px -120px;  }
+  .download_poker:hover  .download_poker_a:before {  background: url("../images/icon.png") no-repeat -280px -200px;  }
+  .download_send:hover   .download_send_a:before {  background: url("../images/icon.png") no-repeat -280px -360px;  }
+  .help_onlineHelp:hover .help_onlineHelp_a:before {  background: url("../images/icon.png") no-repeat -200px -120px;  }
+  .help_email:hover      .help_email_a:before {  background: url("../images/icon.png") no-repeat -200px -160px;  }
+  .help_phone:hover      .help_phone_a:before {  background: url("../images/icon.png") no-repeat -200px -200px;  }
+  .help_wechat:hover     .help_wechat_a:before {  background: url("../images/icon.png") no-repeat -200px -360px;  }
+
+
+
+  .dafa_secondSlider{
+    height: 100px;
+    display: inline-block;
+
+    &>div{
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+  .sliderBox{
+    width: 100%;
+  }
+
+  .dafa_secondSlider-1{
+    width: 33.4%;
+    border-right: 2px solid #dfdfdf;
+    background-color: #dfdfdf;
+  }
+  .dafa_secondSlider-2{
+    width: 33.3%;
+    background-color: #dfdfdf;
+  }
+  .dafa_secondSlider-3{
+    width: 33.3%;
+    border-left: 3px solid #dfdfdf;
+    background-color: #dfdfdf;
+  }
+
+
+  //slider左右按鈕
+  #owl-demo .owl-controls .owl-nav .owl-next, #owl-demo .owl-controls .owl-nav .owl-prev{
+    background: url(../images/icon.png) no-repeat;
+    top: 100px;
+    width: 30px;
+    height: 60px;
+  }
+  #owl-demo .owl-controls .owl-nav .owl-next{
+    left: 10%;
+    background-position: 0 -120px;
+  }
+
+  #owl-demo .owl-controls .owl-nav .owl-prev{
+    right: 10%;
+    background-position: -40px -120px;
+  }
+
+  //slider原點
+  .owl-theme .owl-dots .owl-dot span{
+    width: 14px;
+    height: 14px;
+    margin: 7px 2px;
+    background: transparent;
+    border: 2px solid #d3d3d3;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+
+  .owl-theme .owl-dots .owl-dot {
+    position: relative;
+    left: 26%;
+  }
+
+  .dafa_container{
+    min-width: 1300px;
+    min-width: 1100px\9;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  #dafa_indexContent{
+    padding-top: 15px;
+  }
+
+  .dafa_index_box{
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    width: 33.3333%;
+    float:left;
+    margin-bottom:20px;
+    padding:0 .4%;
+    position: relative;
+    .box{
+      position: relative;
+      img{
+        width:100%;
+      }
+    }
+
+  }
+
+  .dafa_index_cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+    //text-align: center;
+  }
+
+  .dafa_index_cover_btn{
+    background: transparent;
+    color: #ffe000;
+    border-radius: 2px;
+    border: 2px solid #ffe000;
+    padding: 0 5px;
+    min-width: 175px;
+    width: 175px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 22px !important;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: bolder;
+  }
+
+  .dafa_index_cover_btn:hover{
+    background: #ffe000;
+    color: rgba(0,0,0,.8);
+    text-decoration: none;
+  }
+
+  .dafa_index_box .box:hover .dafa_index_cover{
+    display: block;
+  }
+
+  .dafa_index_title{
+    width: 100%;
+    height: 34px;
+    background-color: #af0102;
+    font-size: 23px;
+    color: #fff;
+    padding: 5px  15px;
+    font-weight: bolder;
+  }
+
+  .dafa_index_text{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.8);
+    font-size:.9375vw;
+    font-weight:bold;
+    color: #fff;
+    padding:5px 0;
+    text-align: center;
+
+  }
+
+  //.dafa_index_sport_text , .dafa_index_casino_text {
+  //  font-size: 15px;
+  //}
+
+  .dafa_sport-up{
+    width: 100%;
+    position: relative;
+
+  }
+  .dafa_sport-down{
+    margin-top:2.3%;
+    width: 100%;
+    img{
+      width:100%;
+    }
+  }
+
+  .dafa_casino-up{
+    width: 100%;
+    position: relative;
+  }
+  .dafa_casino-down{
+    margin-top:2.3%;
+    width: 100%;
+    img{
+      width:100%;
+    }
+  }
+
+  .dafa_sponsors{
+    width: 100%;
+    height: 85px;
+    //background-color: #2e7db2;
+    margin-top: 100px;
+  }
+ 
+  
+}
+
+#pt_bg_style {
+  min-height: 100px;
+  background: #291714;
+}
+
+.NewNoticeList {
+  float: left;
+  width: 100%;
+  background: #b00002;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.NewNoticeList a {
+  color: yellow;
+  text-decoration: none;
+}

@@ -1,0 +1,59 @@
+.promotionAlert{
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  margin-left: -300px;
+  top: 25%;
+display: none;
+  &.popout{
+    display: block;
+  }
+  &.popBox {
+
+    .popBox_body{
+      border: 0 none;
+      background: none;
+      padding: 0;
+      color: #FFFFFF;
+      width: 600px;
+      overflow: hidden;
+      p{
+        margin-bottom: 0!important
+      }
+    }
+    .popBox_title{
+      width:600px;
+      padding: 0 10px;
+    }
+    .popBox_close{
+      float: right;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+  }
+  .fa-circle-o-notch:before{
+    content: ""!important;
+  }
+  .fa-remove:before,  .fa-times:before {
+    position: relative!important;
+    top: 0px!important;
+    left: 0px!important;
+  }
+}
+
+ .popBox_close {
+  color: #3d221d;
+  border: 1px solid rgba(76, 45, 40, 0.54);
+  width: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  height: 30px;
+  background-color: #FFF;
+  line-height: 27px;
+  position: absolute;
+  right: -10px;
+  top: -22px;
+  font-size: 21px;
+
+}

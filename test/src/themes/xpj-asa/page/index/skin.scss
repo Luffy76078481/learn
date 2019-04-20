@@ -1,0 +1,1480 @@
+@charset "utf-8";
+@import "variables";
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: map-get($base, input-placeholder) !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: map-get($base, input-placeholder) !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: map-get($base, input-placeholder) !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: map-get($base, input-placeholder) !important;
+}
+#RegisterNewPage .registerDatePick div{color: map-get($base, input-placeholder) !important;}
+
+button{
+  outline:none !important;
+}
+
+body {
+  font-family: $font-family;
+  background: $bg-color;
+  font-size: $font-size;
+  color: $text-color-normal;
+}
+
+//__________header________________
+
+.headBg {
+  background: map-get($base, header-background1) no-repeat;
+  background-color: #11100e;
+  border-bottom: 1px solid #23221f;
+}
+
+#topHead {  background: map-get($base, header-background2) top repeat-x;  }
+.logo .innerLogo{
+      background: map-get($base, header-logo) center center no-repeat;
+      width: 294px;
+    }
+
+    #reserveDialog_login .fast_booking_content input{
+      color: #FFF;
+    }
+
+
+    .loginForm {
+      .timeNumber {
+        span {  color: $text-color; }
+        a {  
+            color: $text-color-normal;  
+            &.fav {
+                color: $text-color-hightline; 
+            }
+        }
+      }
+      #login-form {
+        .form-login-input {
+          input {
+            //color: $text-color-normal;
+            //border: 1px solid $border-color;
+          }
+          input ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: map-get($base, header-input-placeholder) !important;  }
+          input ::-moz-placeholder { /* Firefox 19+ */
+            color: map-get($base, header-input-placeholder) !important;  }
+          input :-ms-input-placeholder { /* IE 10+ */
+            color: map-get($base, header-input-placeholder) !important;  }
+          input :-moz-placeholder { /* Firefox 18- */
+            color: map-get($base, header-input-placeholder) !important;  }
+        }
+        .form-login-button {
+          .form-login-btn {
+            background: map-get($base, header-login-btn) no-repeat;
+            width: 102px;
+            height: 25px;
+            border: 0;
+          }
+          .form-login-btn:hover {  background-position: 0px -25px;  }
+          a {  color: $text-color-deep;  }
+        }
+        .form-login-reg {
+            width: 66px;
+            height: 60px;
+            background-color: #FFFFFF;
+          
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color: #ccc;
+                background-color: #282723;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            a:link {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            a:visited {
+                text-decoration: none;
+            }
+        }
+      }
+
+      .mt10 {
+        border: 1px solid $border-color;
+        span {  color: $text-color-normal;   padding-left: 5px;}
+        a {
+          color: $text-color-normal;
+          span {  color: map-get($base, color_warn);  }
+        }
+        a:hover {  color: $text-color-hightline;  }
+      }
+    }
+
+    .menu-nav {
+      color: $text-color-normal;
+
+      ul {
+        color: $text-color-deep;
+        li {
+          // width:103px !important;
+          color: $text-color-deep;
+          a {
+            color: $text-color-deep;
+            .agFish {  color: map-get($base, color_warn);  }
+          }
+          a:hover {  color: $text-color-hightline;  }
+          a.active {  color: $text-color-hightline;  }
+        }
+      }
+    }
+
+    .notice {
+      color: $text-color-normal;
+      background: map-get($base, header-bottom-background) repeat-x;
+      border-top: 1px $border-color-deep solid;
+      border-bottom: 1px $border-color-deep solid;
+      //font-size: 12px;
+      .noticeLeft {
+        color: $title-color-warm;
+        //color: #1c1c1c;
+        a {
+          color: $text-color-hightline;
+          //display:none;
+          //color: map-get($base, header-color_3);
+        }
+        a:hover {  color: $text-color-hightline;  }
+        //.vip {  color: $text-color-hightline;  }
+        .color-main{
+          color: $title-color-warm;
+        }
+      }
+      //.noticeLeft:after{
+      //  color: $text-color;
+      //  content:"帮助中心 | 申请代理 | VIP";
+      //}
+      .noticeCenter {
+      }
+      .noticeRight {
+        .top_livechat {
+          background: map-get($base, header-Service-btn) no-repeat;
+          background-position: -184px -2px;
+        }
+      }
+    }
+
+
+    // .bomb{
+    //   background: #ecb934;
+    //   a{
+    //     color: #342c1f !important;
+    //   }
+    // }
+//____________跑馬燈 + 跳出公告_________________
+
+    //外部字顏色
+    #NoticeList {
+      a {  color: $title-color;  }
+    }
+
+    .popBox {
+      background-color: map-get($base, popbox-bgColor);
+      border: 1px solid map-get($base, popbox-borderColor);;
+      .popBox_title {
+        background-color: $bg-color-dark2;
+        font-size: map-get($base, popbox-title-fontsize);
+        line-height: map-get($base, popbox-title-lineheight);
+        color: $text-color;
+        .popBox_pic {
+          color: map-get($base, popbox-title-iconcolor);
+          font-size: map-get($base, popbox-title-leftIcon);
+        }
+        .popBox_close {
+          color: map-get($base, popbox-title-iconcolor);
+          border: 1px solid map-get($base, popbox-title-closeBorder);
+          width: 30px;
+          background-color: map-get($base, popbox-title-closeBg);
+          border-radius: 5px;
+        }
+      }
+      .popBox_body {
+        border: solid 1px map-get($base, popbox-body-bordercolor);
+        box-shadow: 0 0 5px map-get($base, popbox-body-shadow) inset;
+        //color: map-get($base, popbox-body-color);
+        background: map-get($base, popbox-body-bgImg) repeat-y 40px 10px;
+        ul {
+          li {
+            list-style-type: none;
+            list-style-image: map-get($base, popbox-body-pointImg);
+            .popBox_body_date {
+              color: map-get($base, popbox-body-titlecolor);
+              font-weight: bolder;
+            }
+            .popBox_body_title {
+              color: map-get($base, popbox-body-color);
+              font-weight: bold;
+            }
+            .popBox_body_content {
+              color: map-get($base, popbox-body-color);
+            }
+          }
+        }
+      }
+    }
+
+
+//___________________sweet彈出窗_____________________
+
+.sweet-alert {
+  background-color: map-get($base, sweet_title_bgcolor);
+  border: 1px solid $border-color-deep;
+  box-shadow: 0 0 10px $text-color-normal inset;
+}
+.sweet-alert h2 {
+  color: map-get($base, sweet_title_color) ;
+}
+.sweet-alert p{
+  color: map-get($base, sweet_color) ;
+}
+
+.sweet-alert button{
+  background-color: $text-color-deep !important;
+  font-weight: bold;
+  color: $bg-color-dark;
+}
+
+
+//___________________系統訊息彈出窗_____________________
+
+
+.popupArea{
+  border: solid 1px $border-color;
+  background-color:map-get($base, footer-bgcolor2);
+  box-shadow: 4px 3px 0px map-get($base,SystemMessage_box_shadow);
+  color: $text-color-normal;
+}
+.popupTitle{
+  font-size: 18px;
+}
+
+
+//___________________會員登入彈出窗_____________________
+
+.preferential_popbox{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto !important;
+}
+
+.custom_modal_content .modal-header {
+  background: $bg-color-dark2;
+  border: 1px solid $border-color-deep;
+  color:$text-color-normal;
+}
+
+.custom_modal_content .modal-body {
+  background: url(resources/bg_02.jpg) !important;
+  border: 1px solid $border-color-deep;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.fast_booking_content select, .fast_booking_content input {
+  background: $bg-color;
+  color: $text-color-normal;
+  border: 1px solid $border-color-deep;
+}
+
+.fast_booking_content button {
+  background: $text-color-dark;
+}
+
+//__________footer________________
+
+#footer-nav {
+  //background: map-get($base, footer-bgcolor1);
+  border-top:2px solid $border-color-deep;
+  a {  color: map-get($base, footer-color1);  }
+  .client-download {
+    a {
+      border: 1px solid map-get($base, footer-border_color_21);
+      border-radius: 4px;
+      color: map-get($base, footer-color1);
+    }
+  }
+}
+
+#footer {
+  background-color:#1a1915;
+
+  .footer-help-share {
+    #foot_help {
+      h3 {
+        color: map-get($base, footer-color2);
+        i {  color: map-get($base, footer-color2);  }
+        span {  color: map-get($base, footer-color2);  }
+      }
+      div {
+        p {
+          a {  color: map-get($base, footer-color2);  }
+        }
+      }
+    }
+    #foot_share {
+      h3 {
+        color: map-get($base, footer-color2);
+        i {  color: map-get($base, footer-color2);  }
+        span {  color: map-get($base, footer-color2);  }
+      }
+      .share-list {
+        a {  background: map-get($base, footer-share-list);  }
+        .share-weibo {  background-position: 0px -38px;  }
+        .share-qzone {  background-position: -80px -37px;  }
+        .share-fackbook {  background-position: -165px -38px;  }
+        .share-twitter {  background-position: 45px -39px;  }
+        .share-fackbook:hover {  background-position: -165px 0px;  }
+        .share-twitter:hover {  background-position: 45px 0px;  }
+        .share-qzone:hover {  background-position: -80px 0px;  }
+        .share-weibo:hover {  background-position: 0px 0px;  }
+      }
+    }
+    #foot-mobile-img{
+      //background: url(resources/index/mobile.jpg);
+    }
+  }
+
+  #foot-Cagayan{
+    div{
+      color: map-get($base, footer-color3);
+      a{  color: map-get($base, footer-color3);  }
+      p{  color: map-get($base, footer-color3);  }
+    }
+  }
+}
+
+#platform-inco{
+  background-color: $bg-color-dark;
+
+}
+
+.footer_bottom_img{
+  content: url("resources/footer.png");
+}
+
+//__________firstPage________________
+
+//casinolist_Slider
+#pt_bg_style{
+  background-color: map-get($base, firstPage_casinolist_Slider_bg);
+  .ptlist{
+    .platform-img{
+      .platform-Number{
+        i{color:$text-color;  }
+        span{color:$text-color;  }
+      }
+    }
+    .platform-Introduction{
+      h4{  color:$text-color;  }
+      p{  color:$text-color-normal;  }
+      a{
+        background: $bg-color-deep;
+        color:$text-color-normal;
+      }
+
+    }
+    //左右按鈕
+    .owl-controls{
+      .owl-nav{
+        .owl-prev{
+          opacity: 0.5;
+          background: map-get($base, firstPage_slider_icon_left) no-repeat;
+        }
+        .owl-next{
+          opacity: 0.5;
+          background: map-get($base, firstPage_slider_icon_right) no-repeat;
+        }
+        .owl-prev:hover{opacity: 1;}
+        .owl-next:hover{opacity: 1;}
+      }
+    }
+  }
+}
+
+    //中間主題
+    #indexContent{
+      .content-jackpot{
+        h3{
+          color:$text-color-normal;
+          i{  color:$title-color;  }
+          span{  color:$title-color;  }
+        }
+        ul{
+          li{
+            span{  color:$text-color-normal  }
+            i{
+              background-color: $bg-color-deep;
+              color:$text-color-hightline;
+              span{color:$text-color-hightline;}
+            }
+          }
+        }
+      }
+      .updateContent{
+        .updataAd{
+          background-color: $bg-color-deep;
+          h4{  color:$title-color;  }
+        }
+      }
+      .content-game{
+        h3{
+          color:$text-color-normal;
+          i{  color:$title-color;  }
+          span{  color:$title-color;  }
+        }
+        div{
+          .content-game-introduction{
+            h4{  color:$title-color;  }
+            p{  color:$text-color-normal;  }
+          }
+          a{
+            background-color: map-get($base, firstPage_game_btn_bgcolor);
+            color:$text-color-normal;
+          }
+
+        }
+      }
+      .content-bingo{
+        h3{
+          color:$text-color-normal;
+          i{  color:$title-color;  }
+          span{  color:$title-color;  }
+        }
+        .content-bingo-title{
+          a{  color:$text-color-normal;  }
+          .active{  background-color: map-get($base, firstPage_bingo_text_bgcolor);  }
+        }
+        .content-bingo-offers{
+          a{
+            color:$text-color;
+            i{  color:map-get($base, color_warn)  }
+            span{
+              background-color: map-get($base, firstPage_bingo_btn_bgcolor);
+              color:$text-color;
+              i{  color:$text-color;  }
+            }
+            span:hover{
+              background-color: map-get($base, firstPage_game_btn_bgcolor);
+              color:$text-color-normal;
+              i{  color:$text-color-normal;  }
+            }
+          }
+        }
+        .content-bingo-fname{
+          background: $bg-color-deep;
+          .content-bingo-list{
+            background: $bg-color;
+          }
+          .content-bingo-title{
+            .active{
+              background: $bg-color;
+            }
+          }
+        }
+
+      }
+      .content-data{
+        ul{
+          li{
+            div{
+              color:$text-color-normal;
+              i{  color:$text-color-normal;  }
+            }
+            .data_title{
+              background-color: $bg-color-deep;
+              span{
+                background-color: $title-color;
+                color:$bg-color-deep;
+              }
+            }
+          }
+        }
+      }
+}
+
+
+//__________sport________________
+
+    .sport-nav{
+      background-color: map-get($base, sport_nav_bgcolor);
+      ul{
+        li{
+          a{color: $text-color-normal}
+        }
+        .nav-onchos{  background-color: $title-color;  }
+      }
+    }
+    #sport{
+      background: map-get($base, sport_bg) center -130px no-repeat;
+    }
+
+//------------sport2-------------
+ .sport-div{
+  background: url("resources/bg.jpg") top center no-repeat;
+}
+.sport-card li{
+  border: 2px solid #454545;
+  background-color: rgba(0,0,0,.7);
+  box-shadow: 0 0 20px #000;
+}
+.sport-card li .logo{
+  color: #FFFFFF;
+}
+.sport-card li .mask{
+  background: rgba(0,0,0,0.7);
+}
+.sport-card li .mask a{
+  background-color: #ecb934;
+}
+.sport-card li .mask a:hover{
+  background-color: #dd8003;
+}
+.sport-card li:hover{
+  border-color: #ecb934;
+  background-color:rgba(0,0,0,.8);
+  box-shadow: 0 0 20px #ecb934;
+}
+.sport-card li:hover .foot{
+  color: #ecb934;
+}
+.sport-card li:hover .logo{
+  color: #ecb934;
+}
+.sport-card li:hover .body .inner-logo::before{
+  color: #ecb934 !important;
+}
+//__________casino________________
+
+#casino{
+  background: map-get($base, casino_bgimg) top center no-repeat;
+}
+
+.cansino-nav{
+  li{
+    background-color: map-get($base, casino_nav_bgcolor1);
+    a{  color:map-get($base, color_5)  }
+    .cansino-start-game{  background: map-get($base, casino_nav_img) no-repeat; }
+  }
+  .cansino-nav-active{  background-color: map-get($base, casino_nav_bgcolor2);  }
+}
+
+.casino-platform-list{
+  .casino-platform-list-img{
+    h3{  color:map-get($base, color);  }
+  }
+  .casino-platform-list-link{
+    a{
+      color:map-get($base, color_lit);
+      background: map-get($base, casino_go_btn) no-repeat;
+    }
+    a:hover{  background-position: 0px -50px;  }
+  }
+}
+.cansino-nav li .cansino-start-game {
+  height: 55px;
+  background-size: 100%;
+  transform: rotateX(-90deg) translateZ(40px);
+  -webkit-transform: rotateX(-90deg) translateZ(40px);
+  -moz-transform: rotateX(-90deg) translateZ(40px);
+  -o-transform: rotateX(-90deg) translateZ(40px);
+  -ms-transform:rotateX(-90deg) translateZ(40px);
+  -sand-transform:rotateX(-90deg) translateZ(40px);
+}
+
+.cansino-nav li:hover a.cansino-start-txt {
+  transform: rotateX(90deg) translateZ(40px);
+  -webkit-transform: rotateX(90deg) translateZ(40px);
+  -moz-transform: rotateX(90deg) translateZ(40px);
+  -o-transform: rotateX(90deg) translateZ(40px);
+  -ms-transform:rotateX(90deg) translateZ(40px);
+  -sand-transform:rotateX(90deg) translateZ(40px);
+}
+:root a.cansino-start-game{
+  display: none\9;
+}
+:root .cansino-nav li:hover a.cansino-start-game{
+  display: block\9;
+}
+
+.cansino-nav li:hover a.cansino-start-game {
+  transform: rotateX(0deg) translateZ(40px);
+  -webkit-transform: rotateX(0deg) translateZ(40px);
+  -moz-transform: rotateX(0deg) translateZ(40px);
+  -o-transform: rotateX(0deg) translateZ(40px);
+  -ms-transform:rotateX(0deg) translateZ(40px);
+  -sand-transform:rotateX(0deg) translateZ(40px);
+}
+
+.casino-Content {
+  padding: 20px;
+  text-align: center;
+}
+
+.casino-platform-list-img {
+  width: 308px;
+  height: 350px;
+}
+
+.casino-platform-list-img h3 {
+  text-align: center;
+  margin: 0px;
+  padding-top: 305px;
+}
+
+.casino-platform-list-link a {
+  float: left;
+  width: 100%;
+  font-size: 21px;
+  color: #ffff00;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+.casino-platform-list-link .casino-go-game {
+  /*background: url(../images/casino/yuleLiTitle.png) no-repeat;*/
+}
+
+.casino-platform-list-link .casino-platform-Introduction {
+  background-position: -154px 0px;
+  background: url(./images/casino/yuleLiTitle.png) no-repeat;
+}
+
+.casino-platform-list-link .casino-go-game:hover {
+  background-position: 0px -50px;
+}
+
+.casino-platform-list-link .casino-platform-Introduction:hover {
+  background-position: -154px -50px;
+}
+
+.casino-platform-list > div {
+  margin: 20px 0px;
+}
+
+.casino-platform-list {
+  width: 1050px;
+  margin: 20px auto 0 auto;
+}
+
+//__________gamesPage________________
+
+          #game{
+      .game-jackpot-num{
+        span{  color:$text-color-normal;  }
+      }
+      .game-header-focus{  background: map-get($base, game_upboxbg) no-repeat;  }
+      .game-header-focus-left{  }
+      .game-header-focus-right{
+        li{
+          p{  color:$text-color-normal;  }
+          div{
+            color:$text-color-hightline;
+            i{
+              background: map-get($base, game_money_icon) no-repeat;
+              background-position: -6px -3px;
+            }
+          }
+        }
+      }
+    }
+
+    .broadcast-bg{  
+      background: map-get($base, slider_img) top center no-repeat;
+       width: 100%;
+       height: 45px;
+       width: 100%;
+       height: 45px;
+       position: absolute;
+       line-height: 45px;
+     }
+     .z_in {
+      z-index: 10;
+      margin-left: 115px;
+  }
+
+//__________gamelistpanel___遊戲版塊_____________
+.Games-content .notice-bar .marquee {
+  width: 900px;
+  margin: 0 auto;
+  line-height: 45px;
+}
+    .game-list-content{
+      background: map-get($base, gamelistpanel_bg_img) top center no-repeat  ;
+      .game-list-bgbox{
+        padding-top: 25px;
+      }
+      .game-list-outbox {
+        .listboxhid {
+          height: 80px;
+          width: 100%;
+          .platform_list {
+            width: 120px !important;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .game-start-btn {
+      content:url("resources/game/vgeahv.png")
+    }
+
+    //   遊戲平台分類    platform_list__nav
+    .game-list-bgbox{
+      .platform_list_AG{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -6px;  }
+      .platform_list_BBIN{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -170px;  }
+      .platform_list_QT{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -328px;  }
+      .platform_list_PT{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -488px;  }
+      .platform_list_MG2{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -648px;  }
+      .platform_list_HB{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -809px;  }
+      .platform_list_OPUS2{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -968px;  }
+      .platform_list_YOPLAY{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1130px;  }
+      .platform_list_CQ{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1277px;  }
+      .platform_list_VT{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0  -1589px;  }
+
+      .platform_list_AG:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -88px;  }
+      .platform_list_BBIN:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -249px;  }
+      .platform_list_QT:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -408px;  }
+      .platform_list_PT:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -568px;  }
+      .platform_list_MG2:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -728px;  }
+      .platform_list_HB:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -888px;  }
+      .platform_list_OPUS2:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1048px;  }
+      .platform_list_YOPLAY:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1210px;  }
+      .platform_list_CQ:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1348px;  }
+      .platform_list_VT:hover{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1671px;  }
+
+      .platform_list_AG_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -88px;  }
+      .platform_list_BBIN_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -249px;  }
+      .platform_list_QT_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -408px;  }
+      .platform_list_PT_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -568px;  }
+      .platform_list_MG2_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -728px;  }
+      .platform_list_HB_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -888px;  }
+      .platform_list_OPUS2_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1048px;  }
+      .platform_list_YOPLAY_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1210px;  }
+      .platform_list_CQ_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1348px;  }
+      .platform_list_VT_onchoose{  background: map-get($base, gamelistpanel_platform_list) no-repeat 0 -1671px;  }
+
+
+    }
+    //   左側遊戲分類   game-list-left-nav
+    .game-list-left-nav{
+      .checkJackpot{    color:$text-color-normal;  }
+      ul{
+        li{
+          a{  color:$text-color-normal;  }
+          span{  color:$text-color-normal;  }
+        }
+        .active{
+          a{  color:$text-color-hightline !important;  }
+          span{  color:$text-color-hightline;  }
+        }
+        li:hover a{  color:$text-color-hightline;  }
+      }
+
+      .searchbar{
+        input{
+          color:$text-color-normal;
+          background-color: map-get($base, gamelistpanel_searchbar_bgcolor);
+        }
+        i{  color:$text-color-normal;  }
+      }
+      //.searchbar ::-webkit-input-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+      //.searchbar ::-moz-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+      //.searchbar :-ms-input-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+      //.searchbar :-moz-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+    }
+
+    //   右側遊戲顯示   game-list-right-content
+    .game-list-right-content{
+      #GamesGridPopupMask {
+        opacity: 0.6;
+        background: map-get($base, gamelistpanel_Loading_hoverMask);
+      }
+      ul{
+          a{
+            span{
+              background: $bg-color-deep;
+              color:$text-color-normal;
+            }
+          }
+          .game-fuceng{  background:map-get($base, gamelistpanel_games_hoverMask) !important;  }
+      }
+
+    }
+    .gamesPic{
+      background: url("resources/mgbox.png") no-repeat;
+      width: 259px !important;
+      height: 145px !important;
+    }
+    .game-list-fname {
+      width: 990px;
+      margin: 0px auto;
+    }
+
+
+    .game-list-right-content {
+      width: 883px;
+      li{
+        a{
+          margin: 9px 0 0 19px;
+          width: 222px;
+          span{
+            line-height: 42px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .game-list-content li .game-fuceng {
+      position: absolute;
+      top: -10px;
+      left: -19px;
+    }
+
+
+    //    遊戲頁數按鈕  game-page-btn
+    #game-page{
+        li{
+          a{
+            background: map-get($base, gamelistpanel_game_pageIcon_bg_color) !important;
+            color: $text-color-normal !important;
+            border: 1px solid map-get($base, gamelistpanel_game_pageIcon_border_color) !important;
+          }
+        }
+        .active{
+          a{  background:  map-get($base, gamelistpanel_game_pageIcon_onchoosing) !important;  }
+        }
+
+    }
+
+
+//__________bingo________________
+
+    #bingo{
+      .bingo-fname {
+        background: map-get($base, bingo_content_bg_img) top center no-repeat;
+      }
+      .bingo-head-img {
+        background: map-get($base, bingo_head_img) top center no-repeat;
+      }
+      .bingo-title-img{
+        display: inline-block;
+        width: 192px;
+        height: 53px;
+        background: map-get($base, bingo-title-img) no-repeat;
+      }
+      .bingo-title-img2{
+        text-align: center;
+        display: inline-block;
+        width: 192px;
+        height: 53px;
+        background: map-get($base, bingo-title-img2) no-repeat;
+      }
+      .bingo-title-img3{
+        text-align: center;
+        display: inline-block;
+        width: 192px;
+        height: 53px;
+        background: map-get($base, bingo-title-img3) no-repeat;
+      }
+      .bing-desc-bbin{
+        span{
+          background: map-get($base, bingo_bbinlogo_img) top center no-repeat;
+        }
+        p{  color:$text-color-normal;  }
+      }
+      .bingo-platform-list{ span{  color:$text-color-hightline;  } }
+      .bingo-platform-cqssc{
+        background: map-get($base, bingo-platform-cqssc)
+      }
+      .bingo-platform-pk10{
+        background: map-get($base, bingo-platform-pk10)
+      }
+      .bingo-platform-pcdd{
+        background: map-get($base, bingo-platform-pcdd)
+      }
+      .bingo-platform-ssxw{
+        background: map-get($base, bingo-platform-ssxw)
+      }
+      .bingo-platform-ks{
+        background: map-get($base, bingo-platform-pls)
+      }
+      .bingo-platform-xglhc{
+        background: map-get($base, bingo-platform-xglhc)
+      }
+      .bingo-platform-fcsd{
+        background: map-get($base,bingo-platform-fcsd)
+      }
+      .bingo-platform-pls{
+        background: map-get($base,bingo-platform-pls)
+      }
+      .bingo-platform-ogc{
+        background: map-get($base,bingo-platform-ogc)
+      }
+      .bingo-platform-cgc{
+        background: map-get($base,bingo-platform-cgc)
+      }
+      .bingo-platform-jndc{
+        background: map-get($base,bingo-platform-jndc)
+      }
+      .bingo-platform-jndbs{
+        background: map-get($base,bingo-platform-jndbs)
+      }
+      .bingo-platform-bjklb{
+        background: map-get($base,bingo-platform-bjklb)
+      }
+      .bingo-platform-tjsfc{
+        background: map-get($base,bingo-platform-tjsfc)
+      }
+      .bingo-platform-bbklc{
+        background: map-get($base,bingo-platform-bbklc)
+      }
+      .bingo-platform-aysyq{
+        background: map-get($base,bingo-platform-aysyq)
+      }
+    }
+
+
+//__________ptGame________________
+.PtPage-content{
+  .notice-bar .marquee {
+    width: 900px ;
+    margin: 0 auto;
+    
+  }
+}
+    #game-pt{
+      width: 100%;
+      height: 330px;
+      .ptgame_download_img{
+        width: 253px;
+        height: 150px;
+        background:  map-get($base, ptGame_download_img) no-repeat;
+      }
+      .mggame_download_img{
+        width: 253px;
+        height: 150px;
+        background:  map-get($base, mgGame_download_img) no-repeat;
+      }
+      li{
+        p{  color:$text-color-normal;  }
+        div{
+          color:$text-color-hightline;
+          i{
+            background: map-get($base, game_money_icon) no-repeat;
+            background-position: -6px -3px;
+          }
+        }
+      }
+    }
+    #PTbg{
+      .game-list-content{
+        background: map-get($base, ptGame_bg_img) top center no-repeat;
+      }
+    }
+
+//__________mgGame________________
+.Mg-content{
+  .notice-bar .marquee {
+    width: 900px ;
+    margin: 0 auto;
+    
+  }
+}
+    #MGbg{
+      .game-list-content{
+        background: map-get($base, ptGame_bg_img) top center no-repeat #1a1915;
+      }
+    }
+
+//__________agGame________________
+
+
+    #ag-game{
+      .fishing_bg{
+        background: map-get($base, agGame_bg_img) no-repeat center top;
+      }
+      .fishing{
+        background: map-get($base, agGame_gamebox_bgcolor);
+        border: 1px solid map-get($base, agGame_gamebox_bordercolor);
+        .btn1{
+          color: map-get($base, agGame_gamebox_btn_color);
+          border-top: 2px solid map-get($base, agGame_gamebox_btn_bordertopcolor);
+          border-bottom: 2px solid map-get($base, agGame_gamebox_btn_borderbottomcolor);
+          background: map-get($base, agGame_gamebox_btn_bgcolor);
+        }
+        .fh_qrcode{
+          background-color: map-get($base, agGame_gamebox_qrcode_bgcolor);
+          p{
+            color:map-get($base, agGame_gamebox_qrcode_color);
+          }
+        }
+        .numpop{
+          background-color:map-get($base, agGame_gamebox_onlinepeople_bgcolor);
+          p{
+            color:map-get($base, agGame_gamebox_onlinepeople_color);
+          }
+        }
+      }
+    }
+
+
+//__________promotions________________
+
+#promotions {
+  .promotions-nav {
+    li {
+      a {
+        color: $text-color-normal;
+      }
+    }
+    .active {
+      color: $title-color-warm;
+      a {
+        color: $text-color-hightline;
+      }
+    }
+  }
+  .promotions-list-content {
+    position: relative;
+}
+  .promotions-list {
+    li {
+      .promotions-list-left {
+        color: $text-color-deep;
+      }
+      .promotions-list-right {
+        .promotions-list-inco {
+          background: transparent;
+        }
+        .promotions-list-content {
+          border: 3px $border-color solid;
+          .promotions-list-view {
+            background-color: $bg-color-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//__________memberPage________________
+
+    //會員首頁
+    .Bgmember-main{
+      background:  map-get($base, memberPage_bg_img);
+      .tm{
+        .ht-t{  background: map-get($base, memberPage_title_img1) no-repeat;  }
+        .ht-nav::before{  background: map-get($base, memberPage_nav_border_img);  }
+        .ht-nav::after{  background: map-get($base, memberPage_nav_border_img);  }
+        .ht-nav{
+          li{
+            a{
+              color: map-get($base, memberPage_nav_icon_color);
+              i{
+                color: #a1a1a1;
+              }
+            }
+            .htico
+            a.on i,a:hover i{  color: #f1c202;  background-position: -21px -150px; }
+            a.on ,a:hover{  color: map-get($base, memberPage_icon_onchoose_hover_color);   }
+            .tm1 {  background:map-get($base, memberPage_nav_img1) no-repeat;  }
+            .tm2 {  background:map-get($base, memberPage_nav_img2) no-repeat;  }
+            .tm3 {  background:map-get($base, memberPage_nav_img3) no-repeat;  }
+            .tm4 {  background:map-get($base, memberPage_nav_img4) no-repeat;  }
+          }
+          .active .tm1{  background: map-get($base, memberPage_navhover_img1) no-repeat;  }
+          .active .tm2{  background: map-get($base, memberPage_navhover_img2) no-repeat;  }
+          .active .tm3{  background: map-get($base, memberPage_navhover_img3) no-repeat;  }
+          .active .tm4{  background: map-get($base, memberPage_navhover_img4) no-repeat;  }
+        }
+      }
+    }
+    .tm .htico{
+      background-image: map-get($base, memberPage_nav_icon_img);
+    }
+
+    .ico{
+      background-image: map-get($base, memberPage_info_img);
+    }
+    .bbd.hyn .f20 , .p10 .f14 , .clearfix.bbd.t .f20 {
+      color: $text-color-normal;
+    }
+    .info .qhui{  color: $text-color-normal;  }
+    .logininfo span{  color: $text-color-normal;  }
+
+    .tm .clearfix.t20{
+      background: $bg-color_member;
+      border: 1px solid $bg-color-deep;
+    }
+
+//___________deposit____________
+
+  #promotab,#member_message,#maindata{
+    //background: map-get($base, memberPage_bg_img);
+    background-color: #232323;
+  }
+
+  .tm .ht-jinggao .info {
+    color: map-get($base, color_warn);
+  }
+  .tm .ht-cunkuan .t a.on {
+    color: map-get($base, memberPage_icon_onchoose_hover_color);
+    border: 1px solid  map-get($base, memberPage_icon_onchoose_hover_color);
+    text-decoration: none;
+  }
+  .tm .ht-cunkuan .t a:hover {
+    color: map-get($base, memberPage_icon_onchoose_hover_color);
+  }
+  .tm a {
+    color: $text-color-normal;
+  }
+
+  .huang.wraperl-xs, .border a {
+    color: $text-color-hightline;
+  }
+
+
+  #verifyField span{
+    color:$text-color-deep;
+  }
+
+  .tm .ml5{
+    color: $text-color-deep !important;
+  }
+
+  .select, .input {
+    color:  $text-color-normal !important;
+  }
+
+  .tm .htbtnlg, .tm a.htbtnlg, .tm input.htbtnlg {
+    background-color: $text-color-dark;
+  }
+
+  .tm .htbtnlg, .tm a.htbtnlg, .tm input.htbtnlg {
+    color: $text-color-normal;
+  }
+
+  #bindCardPage .input-group-addon {
+    color: $text-color-normal;
+  }
+  .tm .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+  
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+.gminfolist{
+  font-size: 20px;
+}
+  .gminfolist div .c, .gminfolist div .t{
+    color: $text-color-normal;
+  }
+
+  .gminfolist div .total_money_title, .gminfolist div .total_money_number{
+    color: $text-color-hightline;
+    margin-top:20px;
+  }
+
+  .transbtns {
+    border: 1.5px solid $text-color-deep;
+    background-color: $bg-color-dark;
+    color:$text-color-normal;
+    //box-shadow: 0 0 5px 1px $text-color-normal inset;
+  }
+
+
+  //會員表格
+
+.tm select.select{
+  border: 1px solid $border-color-input!important;
+  background-color: $bg-color-input!important;
+}
+
+.tm input.input ,#RegisterNewPage .registerDatePick{
+  border: 1px solid $border-color-input;
+  background-color: $bg-color-input;
+}
+
+.tm .table-msg th {
+  background-color: $bg-color-input;
+}
+
+.tm .table-border td, .tm .table-border th {
+  border-right: 1px solid $border-color-input;
+  border-bottom: 1px solid $border-color-input;
+}
+
+.tm .table-border {
+  border-left: 1px solid $border-color-input;
+  border-top: 1px solid $border-color-input;
+}
+
+.tm .table-border tr:hover td {
+  background: map-get($base, footer-bgcolor1);
+}
+
+.tm a.detail_link{
+  text-decoration: underline;
+  color:$text-color-deep;
+}
+
+.tm .report .t {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $border-color-input;
+}
+
+.ggg {
+  border: solid 1px $border-color-input;
+  background-color: $bg-color-input;
+}
+.loginForm #login-form .form-login-input input{
+  border: solid 1px $border-color-input;
+  background-color: $bg-color-input;
+}
+#verifyField span {
+  color: map-get($base, color_warn);
+
+}
+.updataAd-img{
+  background: map-get($base, vip2_image) top center no-repeat;
+  background-size: 100% 100%;
+  height: 212px;
+}
+#foot-mobile-img{
+  background: map-get($base, foot-mobile-img) top center no-repeat;
+  background-size: 100% 100%;
+  height: 103px;
+  width: 318px;
+  margin-top: 15px;
+}
+
+#RegisterNewPage .content {
+  border: 1px solid $bg-color-deep;
+  background: transparent;
+  background: map-get($base, footer-bgcolor2);
+}
+
+#RegisterNewPage .ht-t{
+  background: map-get($base, RegisterPage_bg_img);
+}
+
+.content-jackpot ul li {
+  border-top: 1px dashed $border-color-deep;
+}
+
+.content-bingo-offers {
+  border-bottom: 1px dotted $border-color-deep;
+}
+
+.tm .ht-jinggao .info {
+  color: $text-color-deep;
+}
+
+body .tm .bbd{
+  border-bottom: 1px solid $text-color-deep;
+}
+
+.tm .gminfolist .row {
+  border-bottom: 1px solid $text-color-dark;
+}
+
+div .datelist{
+  border: 1px solid $border-color-deep!important;
+  background-color: $bg-color-dark!important;
+}
+.tm .btn-mid{
+  background-color: $text-color-dark!important;
+
+}
+.tm .report .t a.on {
+  color:  map-get($base, memberPage_icon_onchoose_hover_color);
+  border: 1px solid  map-get($base, memberPage_icon_onchoose_hover_color);
+}
+.headFname .credit{
+  display:block;
+  height: 100px;
+  float:left;
+  margin-left: 112px;
+  width: 260px;
+  background: url(resources/credit.gif) center center no-repeat;
+  background-size: 95%;
+  opacity: .9;
+}
+.promotions-list-left{
+  display:none;
+}
+.promotions-list-right{
+  float: none;
+}
+
+.promotions-fname{
+  margin: 0 auto;
+  padding: 30px 0;
+  width: 915px;
+}
+.promotions-list-title{
+  display: none;
+}
+.custom_modal_content{
+  border: 0 none;
+}
+#reserveDialog_login .fast_booking_content{
+  width: 100%;
+  color: #FFF;
+  h4{
+    color: #FFF!important;
+  }
+}
+.modal-title{
+  color: #FFF!important;
+}
+.onlinepay_left {
+  background-color: rgba(255,255,255,.1);
+  border: 1px $border-color-input solid;
+  color:$text-color-hightline;
+}
+.onlinepay_right{
+  border-bottom: 1px $border-color-input solid;
+}
+
+
+.atmBox{
+  background: $bg-color-dark;
+  border: 2px solid $border-color-input;
+}
+
+.atmBox_title{
+  border-bottom: solid 2px $border-color-input;
+  color: $text-color-hightline;
+}
+.money_quick_input .moneyIcon,.money_input_group .moneyIcon{
+  background: $bg-color-input;
+  border-color: $border-color-input;
+}
+.Xpj2first .fromCenter .service{
+  display: none;
+}
+.Xpj2first .content5{
+  height: 90px!important;
+}
+.Xpj2first .content5 .payIcons{
+  border: 0 none!important;
+}
+
+
+$site-nav-color: #1a1915;
+#sitenav {
+  background: $site-nav-color;
+  .header{
+    background: lighten($site-nav-color, 10%);
+    border-bottom-color: lighten($site-nav-color, 20%);
+  }
+  .main{
+    .maincontent{
+      background: lighten($site-nav-color, 10%);
+      border-color: lighten($site-nav-color, 10%);
+    }
+    .list ul li{
+      border-color: lighten($site-nav-color, 40%);
+      background: lighten($site-nav-color, 40%);
+    }
+  }
+  .indexbottom ul li{
+    color: lighten($site-nav-color, 50%);
+    h3{
+      color: lighten($site-nav-color, 50%);
+    }
+    span{
+      -webkit-filter:saturate(0.5);
+    }
+  }
+  .web{
+    ul{
+      li{
+        a{
+          img{
+            content: url("resources/ico.png");
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+.header .headright {
+  background: url(resources/headright.png) no-repeat !important;
+}
+
+.header{
+  .logo{
+    img{
+      content: url("resources/navLogo.png") !important;;
+    }
+  }
+}
+.indexbottom {
+  background: url(resources/bottombg.png) top center no-repeat !important;;
+}
+.affix-online-server{
+  .hd{
+    height: 345px;
+    padding-top: 110px;
+  }
+}
+
+.promotionAlert.popBox .popBox_body{
+  height: 400px;
+}
+
+//存款私有样式
+
+.tm .ht-nav li a.item5.on .htico, .tm .ht-nav li a.item5:hover .htico{
+  background-position: -24px -120px!important;
+}
+.tm .ht-nav li a.item6.on .htico, .tm .ht-nav li a.item6:hover .htico {
+  background-position: -24px -150px!important;
+}
+.tm .ht-nav li a.item8.on .htico, .tm .ht-nav li a.item8:hover .htico {
+background-position: -24px -210px!important;
+}
+.depositContent label{
+  color: #635846!important;
+}
+.depositContent select,.depositContent .memberBtn{
+  border: 1px solid #4d4332!important;
+  background-color: #211b13!important;
+}
+.depositContent .memberBtn{
+  color: #d7d64c!important;
+}

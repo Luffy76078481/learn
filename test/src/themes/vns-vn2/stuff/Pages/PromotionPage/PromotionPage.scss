@@ -1,0 +1,28 @@
+#promotions{
+  color: #fff;
+  .promotions-fname{
+    padding: 20px 0;
+    width: 1000px;
+  }
+  .promotions-list-img {
+    position: relative;
+  }
+  .promotions-nav li a {
+    text-decoration: none;
+    display: block;
+  }
+  .promotions-nav li {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    margin-right: 30px;
+    line-height: 95px;
+  }
+  .clear {
+    clear: both;
+  }
+}
+

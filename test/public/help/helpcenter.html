@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Help Center</title>
+<link href="css/helpcenter.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/helpcenter2.js"></script>
+<script type="text/javascript">
+    function ShowDetails( elementId ){
+        $( ".lv_monkey" ).stop( false , true );
+        $( "#" + elementId ).stop( false , true );
+        $( "#" + elementId ).slideToggle( function (){
+            fixMonkey();
+        } );
+
+
+    }
+    $( function(){
+        initSelection();
+        fixMonkey();
+        var currentUrl = window.location.href;
+        var param = currentUrl.split("#");
+        $("#"+param[1]).show();
+    })
+    function fixMonkey(){
+        var activeArr = $( ".lvpromo_list.active" );
+        if ( activeArr.length == 0 ) {
+            $( ".lv_monkey" ).remove();
+            return;
+        }
+        var monkey = $( ".lv_monkey" );
+        var element = activeArr.eq( 0 );
+        var left = parseInt( element.css( "margin-left" ) ) - monkey.width()  + "px";
+        var top = element.position().top + parseInt( element.css( "margin-top" ) ) + "px";
+        monkey.animate( { "top" : top , "left" : left } );
+    }
+    $(window).scroll(function(){
+        if($(window).scrollTop() == 0){
+            $(".helpc_mainnav").stop().animate({"marginTop": ($(window).scrollTop()) + "px"}, "slow" );
+        }else{
+            $(".helpc_mainnav").stop().animate({"marginTop": ($(window).scrollTop() - 120) + "px"}, "slow" );
+        }
+        });
+
+    //
+
+    //alert("a");
+    function getSearchParameters() {
+        var parameterString = window.location.search.substr(1);
+        return parameterString != null && parameterString != "" ? transformToArray(parameterString) : {};
+    }
+
+    function transformToArray( parameterString ) {
+            var params = {};
+            var parameterArray = parameterString.split("&");
+            for ( var i = 0; i < parameterArray.length; i++) {
+                var temporaryArray = parameterArray[i].split("=");
+                params[temporaryArray[0]] = temporaryArray[1];
+            }
+          return params;
+        }
+
+    function isEmpty(str) {
+        return (!str || 0 === str.length);
+    }
+
+    function initSelection() {
+        var params = getSearchParameters();
+        //alert(params);
+
+        var display = params.display;
+        //alert(display);
+
+        if (isEmpty(display)==false) {
+
+             //alert(display);
+
+            $("#"+display).show()
+            window.location.hash = "#"+display+"_title";
+
+//          if (display == "promoRules") {
+//              //alert($("#test").html());
+//              $("#lv_details20").show();
+//              //alert($("#test").next(".helpc_box2").html());
+//              window.location.hash = '#promoRules';
+//          } else if (display == "howToParticipate") {
+//              //alert($("#test").html());
+//              $("#lv_details12").show();
+//              //alert($("#test").next(".helpc_box2").html());
+//              window.location.hash = '#howToParticipate';
+//          }
+        }
+    }
+</script>
+</head>
+
+<body>
+	<span id="lpButDivID-1488867972182" style="display: none;"></span>
+	<script type="text/javascript" charset="UTF-8" src="https://ytpfx.livechatvalue.com/chat/chatClient/chatbox.jsp?companyID=1020532&configID=42103&jid=2872586176&s=1"></script>
+<div id="helpcenterContent">
+	<div class="helpc_bgbanner">
+		<div class="helpc_banner">
+        	<div class="helpc_textban">Hi ~ <br />我是您的助手小发 <br />有问题 点小发 我会随时帮到你</div>
+            <!--
+            <div class="helpc_searchbar">
+            	<input name="" type="text"  class="helpc_inputfield" value="请输入您想要查询的问题" />
+                <input name="" type="button" class="helpc_btnsearch" ><span class="helpc_search"></span></input>
+                <div class="clearfix"></div>
+            </div>
+            -->
+        </div>
+    </div>
+    <!--body -->
+    <div class="mainContainer helpc_w940 pt50 newMember">
+        <!--start faq -->
+        <a name="one" id="one"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details1_title" onclick="ShowDetails( 'lv_details1' )">
+            <div class="helpc_red">支付宝电脑端如何存款？</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details1" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>①    <b>支付宝扫码在线支付：</b>登陆DafaBet网站，在存款页面,选择“支付宝在线”，输入存入的金额，点击下方的存款，跳转到支付宝付款页面后，请使用手机打开支付宝客户端，然后点击扫一扫，扫描页面为您提供的二维码进行支付。（温馨提示：每一个提供的二维码只能支付一次，请在10分钟之内完成支付，请勿多次扫描支付。）</p>
+                        <p>②    <b>网银转账支付：</b>请您在“出纳柜台”-“存款”-“银行转账”-右下角黄色框中查看DafaBet为您提供的线下账号，登录您的支付宝，在转账到银行卡页面，输入正确的转账信息，等待支付宝到账后，在DafaBet页面提交您转账的申请单，“存款人”填写【支付宝的真实姓名】“银行账号”填写【0000】 “汇款银行“填写【支付宝】“汇款方式”选择【其他】即可。</p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+
+        <a name="two" id="two"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details2_title" onclick="ShowDetails( 'lv_details2' )">
+            <div class="helpc_red">支付宝手机端如何存款？</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details2" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>①    <b>支付宝扫码在线支付：</b>登陆DafaBet APP或者手机网址，点击左下角的“资金管理”-“网银支付”-“支付宝”，输入您的存款金额，点击下方的“提交”按钮，按照页面的提示，进行支付即可。</p>
+                        <p>②    <b>线下支付：</b>登陆DafaBet APP或者手机网址，点击左下角的“资金管理”-“存款”-“线下支付”，查看到DafaBet为您提供的线下账号，然后登陆您的支付宝资金管理，在支付宝的转账到银行卡页面，填写DafaBet为您提供的银行信息，等待银行转账成功后，在DafaBet页面提交线下存款申请单，“汇款人”填写【支付宝的真实姓名】“汇款人账号”填写【0000】 “汇款银行”填写【支付宝】“汇款方式”选择【支付宝】“银行账号”即可。<br /></p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+
+        <a name="three" id="three"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details3_title" onclick="ShowDetails( 'lv_details3' )">
+            <div class="helpc_red">当您付款后准备提交申请单，<br />但收款账号变更怎么办？</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details3" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>为了玩家资金安全，我们会不定期对收款账号变更，如果您已经存款，请您按照以下步骤提交申请单；</p>
+                        <p><b>电脑版：</b>请您点击-资金管理中心选择“银行转账”即可看到“其目标银行”点击其目标银行填写收款人“姓名”、收款银行名称、收款人资金管理只需填写尾数“后四位数”进行填写存款信息。</p>
+                        <p><b>手机版：</b>请您点击-资金管理-手机选择“线下支付”即可看到“目标银行”点击其他资金管理填写收款人“姓名”、收款银行名称、收款人资金管理只需填写尾数“后四位数”进行填写存款信息。</p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+
+        <a name="four" id="four"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details4_title" onclick="ShowDetails( 'lv_details4' )">
+            <div class="helpc_red">存款申请怎么被拒绝了？</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details4" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>如果财务部门长时间未收到您的款项，会将您的存款申请拒绝，如果您已经成功支付，请您重新提交一份申请单就可以了，我们会尽快帮您查询处理。</p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+		
+        <a name="six" id="six"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details6_title" onclick="ShowDetails( 'lv_details6' )">
+            <div class="helpc_red">存款记录显示“需要提交证明”怎么办？</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details6" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>当您存款记录显示“需要提交证明”说明您的款项财务部门无法核实或者您使用第三方存款，为了玩家资金安全，需要您使用资金管理注册邮箱，将该笔存款带有汇款人和收款人双方姓名交易凭证截图发送至：info@sbet.bet，我们收到邮件后会尽快为您处理，并且回复您邮件。</p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+
+        <a name="seven" id="seven"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details7_title" onclick="ShowDetails( 'lv_details7' )">
+            <div class="helpc_red">验证提款银行卡收不到验证信息怎么办？</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details7" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>如果您使用手机和邮箱都无法收到验证信息，可能是当地网络运营商原因，请您使用注册邮箱发送银行卡账号、姓名、银行名称、支行地址发送至：info@sbet.bet，我们收到您的邮件后会尽快帮您验证处理。</p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+
+        <a name="eight" id="eight"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details8_title" onclick="ShowDetails( 'lv_details8' )">
+            <div class="helpc_red">提款常见问题：</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details8" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>①    DafaBet单笔最低提款50元，单笔最高提款5万元，当日最高提款上限是100万元。</p>
+                        <p>②    存款后如不参与活动，达到一倍流水即可提款，如存款500，投注500元，等待派彩后即可申请提款。如果参与了优惠，需要完成优惠指定的流水，方可进行提款。</p>
+                        <p>③    第一次提款需要绑定银行卡，具体操作步骤如下，请您在DafaBet“资金管理中心”-“提款”-“+添加银行卡”-选择及输入对应的提款银行卡信息，确认无误后，点击“确定”即可，然后使用注册手机或者邮箱进行验证，验证成功后，需要退出账号，重新登录进行提款操作。（温馨提示：提款银行卡开户姓名必须与DafaBet注册姓名一致，方可提款）</p>
+                        <p>④    提款步骤：当您银行卡绑定成功并重新退出了账号，请您在“资金管理中心”-“提款”-输入提款金额，选择您需要提入的银行卡卡号，点击“确认”，提款申请即为成功，这时请您耐心等待财务部门的办理。</p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+
+        <a name="nine" id="nine"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details9_title" onclick="ShowDetails( 'lv_details9' )">
+            <div class="helpc_red">优惠常见问题：</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details9" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>①    DafaBet不同的等级，将会享受不同的等级优惠，详细优惠建议您参考 <a href="https://betcn1.com/vip" class="yellow_txt" target="_blank">https://betcn1.com/vip</a></p>
+                        <p>②    DafaBet返水，当您的等级为LV2以后，可以获取到各个场馆场馆的返水，不同的场馆，返水的比例不一样，详细的优惠规则建议您参考
+                            <a href="https://betcn1.com/vip" class="yellow_txt" target="_blank"> https://betcn1.com/vip</a></p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+<!--
+        <a name="ten" id="ten"></a>
+        <div class="helpc_box1 margin-center mt30 pointerc" id="lv_details10_title" onclick="ShowDetails( 'lv_details10' )">
+            <div class="helpc_red">世界杯有什么优惠？</div>
+        </div>
+        <div class="helpc_box2 margin-center mt30">
+            <div class="helpc_box2mid" id="lv_details10" style="display: none;">
+                <div class="helpc_box2top">
+                    <div class="helpc_white">
+                        <p>①    世界杯期间我们有提供封神榜优惠，您只需要在体育投注世界杯赛事每笔投注大于或等于200元，每日注单量大于5单，即可有机会上榜赢取每日最高1388元奖金。具体详情请参考：
+                           <a href="http://www.DafaBetbest.org/#/zh-cn/fifa/winning-list.php" class="yellow_txt" target="_blank"> http://www.DafaBetbest.org/#/zh-cn/fifa/winning-list.php</a></p>
+                        <p>②    世界杯期间，我们会提供不同的赛事，进行全程保险，您只需要在活动时间或者历史时间有效单笔存款500元或以上，方可参与该期优惠，最高可以返还1888元，详细的优惠规则，请参考
+                           <a href="http://www.DafaBetbest.org/#/zh-cn/promotion/kingmeal_index.php" class="yellow_txt" target="_blank"> http://www.DafaBetbest.org/#/zh-cn/promotion/kingmeal_index.php</a></p>
+                    </div>
+                </div>
+                <div class="helpc_box2bot"></div>
+            </div>
+        </div>
+-->
+<!--
+        <div class="pb50"></div>
+            <a href="https://media.jxf88.com/zh/helpcenter/helpcenter_faq_myaccount.html" target="_blank"><div class="moreHelp">查看更多帮助</div></a>
+        <div class="pb50"></div>
+		
+        <!--end faq -->
+    </div>
+    <!--mainnav -->
+    <div class="helpc_mainnav2">
+    	<div class="mb20 "><a href="#one" class="helpc_maincircle1" onclick="changeStyle(this)">1</a></div>
+        <div class="mb20"><a href="#two" class="helpc_maincircle1" onclick="changeStyle(this)">2</a></div>
+        <div class="mb20"><a href="#three" class="helpc_maincircle1" onclick="changeStyle(this)">3</a></div>
+        <div class="mb20 "><a href="#four" class="helpc_maincircle1" onclick="changeStyle(this)">4</a></div>
+        <div class="mb20"><a href="#six" class="helpc_maincircle1" onclick="changeStyle(this)">5</a></div>
+        <div class="mb20 "><a href="#seven" class="helpc_maincircle1" onclick="changeStyle(this)">6</a></div>
+        <div class="mb20"><a href="#eight" class="helpc_maincircle1" onclick="changeStyle(this)">7</a></div>
+        <div class="mb20"><a href="#nine" class="helpc_maincircle1" onclick="changeStyle(this)">8</a></div>
+        <div class="mb10"><a href="https://ytpfx.livechatvalue.com/chat/chatClient/chatbox.jsp?companyID=1020532&configID=42103&jid=2872586176&s=1" target="_blank"><div class="helpc_maincircle2"><div class="helpc_rnavicon1 margin-center mt6"></div></div></a></div>
+      <div><a onclick="backToTop();"><div class="helpc_maincircle2"><div class="helpc_rnavicon2 margin-center"></div></div></a></div>
+      <div class="mb20"></div>
+    </div>
+     <!--mainnav -->
+
+
+
+</div>
+</body>
+</html>

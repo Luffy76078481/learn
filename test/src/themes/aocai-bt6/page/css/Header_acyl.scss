@@ -1,0 +1,214 @@
+
+
+#topHead{
+    height: 170px;
+    position: relative;
+    z-index: 100;
+    .headBg {
+        text-align: center;
+        height: 170px;
+    }
+    .logo .innerLogo{
+        background: url('../images/logo2.png') left center no-repeat;
+        background-size: 100%;
+        width: 270px;
+        height: 120px;
+        background-position: center 30px;
+    }
+    .luckyLink{
+        display: block;
+        top: 25px;
+        left: 285px;
+        background: url('../images/hongbao.png') no-repeat;
+        width: 178px;
+        height: 100px;
+        position: absolute;
+    }
+    .headFname{
+        position: relative;
+        height: 120px;
+        width: 1200px;
+        margin: auto;
+        .credit:before{
+            padding: 5px;
+            height: 23px;
+            line-height: 18px;
+            width: 160px;
+            display: block;
+            margin-top: 35px;
+            margin-left: 8px;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+    .timeNumber {
+        padding-top: 10px;
+        height: 50px;
+    }
+    .timeNumber span, .timeNumber a {
+        float: right;
+        font-size: 12px;
+        color: #000;
+    }
+    .timeNumber i{
+        margin-right: 5px;
+    }
+    .logo {
+        float: left;
+        .innerLogo {
+            display: block;
+        }
+    }
+    .loginForm {
+        float: right;
+        color: #000;
+    }
+    .timeNumber .personal{
+        display: block;
+        cursor: pointer;
+        padding: 0;
+    }
+    .timeNumber .personalHide{
+        display: none;
+    }
+    .timeNumber .personal:hover{
+        text-decoration: underline;
+        color: #ffea00;
+    }
+    .item{
+        padding: 0 2px;
+    }
+    #login-form{
+        position: relative;
+        top: 1px;
+        &.require_verify_code{
+            .account-input{
+                width: 150px!important;
+                margin: 0px!important;
+            }
+            .pwd-input{
+                width: 150px!important;
+                margin: 0px!important;
+            }
+            .code-input{
+                width: 80px!important;
+                margin: 0!important;
+            }
+        }
+        .form-login-input{
+            width: 275px;
+            text-align: left;
+            float:left;
+            line-height: 24px;
+            padding-left: 7px;
+            input{
+                border: 1px solid #ccc;
+                background-color: #fff;
+                color: #000;
+                height: 32px;
+                padding: 3px 5px;
+                margin-bottom: 5px;
+                width: 130px!important;
+                font-size: 12px!important;
+                &.pwd-input{
+                    margin-left: 8px;
+                }
+            }
+        }
+        .form-login-button {
+            padding-right: 98px;
+            width: 90px;
+            text-align: center;
+            padding-left: 9px;
+            float:left;
+            .form-login-btn:before{
+                content: '登入';
+                color: #fff;
+                line-height: 28px;
+            }
+            .form-login-btn {
+                float: left;
+                border-radius: 0;
+                background-color: #f42f2c;
+                width: 90px;
+                height: 32px;
+                border: 0;
+                opacity: 1;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+            .form-login-btn:hover {  background-position: 0px -25px;  }
+        }
+        .form-login-reg{
+            float:left;
+            .form-reg-btn {
+                width: 90px;
+                height: 32px;
+                font-size: 14px;
+                border: 1px solid #f90;
+                opacity: 1;
+                background: transparent;
+                display: inline-block;
+                font-weight: 800;
+                &:before {
+                    content: '注册 ';
+                    color: #f90;
+                    line-height: 30px
+                }
+                &:hover {
+                    text-decoration: none;
+                    opacity: .8
+                }
+            }
+        }
+
+    }
+
+    /*导航*/
+    .Navigation{
+        width: 1200px;
+        margin: auto;
+        height: 50px;
+    }
+    .menu-nav {
+        height: 50px;
+        background: none;
+        position: relative;
+        width: 100%;
+        background: #e1221f;
+        ul {
+            color: #fff;
+            li {
+                color: #383837;
+                margin: 0;
+                width: 90px;
+                height: 50px;
+                float: left;
+
+                a {
+                    display: inline-block;
+                    position: relative;
+                    z-index: 100;
+                    width: 90px;
+                    font-size: 14px;
+                    color: #ffffff;
+                    height: 50px;
+                    line-height: 50px;
+                }
+                a:hover {
+                    background: #c9101e;
+
+                }
+
+                a.active {
+                    background: #c9101e;
+                }
+                .navbx7 i,.navbx8 i,.navbx9 i{display: none;}
+            }
+        }
+    }
+}

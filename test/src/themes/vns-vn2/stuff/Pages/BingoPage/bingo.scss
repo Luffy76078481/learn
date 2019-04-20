@@ -1,0 +1,36 @@
+#bingo{
+
+  .bingo-fname{
+      padding: 25px 65px;
+    .bing-desc-bbin {
+      text-align: center;
+      margin-bottom: 25px;
+      .bing-desc-inco-bg{
+        height: 1px;
+        display: block;
+      }
+      p {
+        padding: 15px 0px;
+        line-height: 24px;
+      }
+    }
+    .bingo-platform-list {
+      width: 810px;
+      margin: 0 auto;
+      div {
+        margin-bottom: 30px;
+        text-align: center;
+        color: #ffdf1b;
+        height: 159px;
+        a{
+          padding: 5px 0px;
+          color: #ffdf1b;
+        }
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+
+}

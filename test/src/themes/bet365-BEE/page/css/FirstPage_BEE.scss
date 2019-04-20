@@ -1,0 +1,314 @@
+@charset "utf-8";
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px !important;
+    }
+}
+
+//firstpage
+.firstPage {
+    width: 100%;
+    height: 100%;
+    background: #007B5B url("../images/body_bg.png") repeat-x;
+}
+.bet365_firstPanel {
+    width: 961px;
+    display: flex;
+    margin: 0 auto 48px;
+}
+
+.bet365_firstPanel .fnameCenter {
+    width: 962px;
+    margin: 0 auto;
+}
+
+.bet365_firstPanel .indexHead {
+    width: 961px;
+    height: 72px;
+    background: url(../images/head1.jpg?v=1);
+}
+
+.footerLinks {
+    text-align: center;
+    border-top: solid 1px #275a4b;
+    border-bottom: solid 1px #275a4b;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.footerLinks a {
+    color: #80a298;
+    font-size: 11px;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+}
+
+.ban {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    color: #80a298;
+}
+
+.si_content {
+    font-size: 11px;
+}
+
+.kong {
+    display: block;
+    font-size: 11px;
+    text-align: left;
+    color: #417667;
+    padding-top: 10px;
+    line-height: 13px;
+}
+
+.bet365_firstPanel .indexLeft {
+    float: left;
+    height: 746px;
+    width: 120px;
+    background: url('../images/sec-nav-bg-grad.png') repeat-x;
+    //background-color: #05684c;
+}
+
+.bet365_firstPanel .indexLeft ul li .hoverSelect {
+    color: #FFDF1B;
+    background-color: #333333;
+}
+
+.bet365_firstPanel .indexLeft ul li a {
+    margin: 0;
+    padding: 5px 0 5px 10px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.bet365_firstPanel .indexLeft ul li a:hover {
+    background-color: #333333;
+    color: #FFDF1B;
+}
+
+.bet365_firstPanel .sportsContentHref img {
+    display: block;
+}
+
+.bet365_firstPanel .indexRight {
+    //float: left;
+    //width: 1013px;
+    flex: 1;
+}
+
+.bet365_firstPanel .indexRightContent {
+    border: solid 9px #333333;
+    background-color: #333333;
+    box-sizing: border-box;
+}
+
+.bet365_firstPanel .indexrRightSports {
+    border: solid 1px #202020;
+    width: 850px;
+    height: 220px;
+    background-color: #333333;
+}
+
+.bet365_firstPanel .sportsContent {
+    // background: url(images/844x214-LandingPage_Bojan.jpg?v=1) no-repeat;
+    background: url(../images/LandingPage_Afobe.jpg) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 100%;
+    height: 214px;
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px #636363;
+    &:hover {
+        border: solid 3px #FFDF1B;
+    }
+    .sportsContentHead {
+        width: 426px;
+        text-align: left;
+    }
+    .sportsContentRight {
+        height: 100%;
+        padding-top: 2px;
+        margin-right: 2px;
+        display: flex;
+        .sportsContentLogin {
+            height: 204px;
+            width: 210px;
+            float: left;
+        }
+        .sportsContentHref {
+            background: url(../images/bg-sports-right.gif?v=1) repeat-x;
+            height: 204px;
+            width: 204px;
+            float: left;
+            a {
+                display: block;
+                height: 102px;
+                width: 204px;
+                text-decoration: none;
+                span {
+                    display: block;
+                    font-size: 11px;
+                    padding: 0 0 1px 16px;
+                }
+    
+            }
+    
+        }
+    }
+}
+
+.bet365_firstPanel .sportsContentHref-title, .bet365_firstPanel .sportsContentHref-btn {
+    color: #FFDF1B;
+}
+
+.bet365_firstPanel .sportsContentHref-text {
+    color: #ffffff;
+}
+
+.bet365_firstPanel .casino, .bet365_firstPanel .poker, .bet365_firstPanel .game {
+    //margin-top: 30px;
+    border: solid 3px #636363;
+}
+
+.bet365_firstPanel .casino:hover, .bet365_firstPanel .poker:hover, .bet365_firstPanel .game:hover {
+    border: solid 3px #FFDF1B;
+}
+
+.bet365_firstPanel .casino-content {
+    width: 100%;
+    height: 152px;
+    background-image: url(../images/bg-Products.gif?v=1);
+    background-position: top left;
+    cursor: pointer;
+}
+
+.bet365_firstPanel .casino-content:hover {
+    background-position: top left;
+    text-decoration: none;
+}
+
+.bet365_firstPanel .imgStyle {
+    border-bottom: solid 1px #358469;
+}
+
+.bet365_firstPanel .casino-content h4 {
+    color: #FFDF1B;
+    font-weight: normal;
+    border-top: solid 1px #358469;
+    margin: 0 6px;
+    padding: 4px 0;
+    font-size: 11px;
+}
+
+.bet365_firstPanel .casino-content p {
+    font-size: 11px;
+    border-top: solid 1px #358469;
+    color: #fff;
+    margin: 0 7px;
+    padding: 5px 0;
+}
+
+
+
+
+.bet365_firstPanel .contentList {
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-between;
+    .contentListOl {
+        width: 33%;
+        background-color: #2d594a;
+        &.gameStyle {
+            margin-left: 3px;
+        }
+        &.pokerStyle {
+            //margin-left: 9px;
+        }
+    }
+}
+
+.bet365_firstPanel .footer {
+    background-color: #004531;
+    border-top: solid 1px #350c11;
+    padding: 10px;
+}
+
+.bet365_firstPanel .footer-menu {
+    text-align: center;
+    color: #80a298;
+    padding: 8px 0;
+    border-top: solid 1px #275a4b;
+}
+
+.bet365_firstPanel .footer-menu a {
+    color: #80a298;
+    text-decoration: none;
+}
+
+.bet365_firstPanel .footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.bet365_firstPanel .footer-desion {
+    color: #417667;
+    line-height: 13px;
+    padding: 8px 0;
+    border-bottom: solid 1px #275a4b;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-variant: normal;
+    font-size: 11px;
+}
+
+.bet365_firstPanel .footer-text {
+    text-align: center;
+    color: #80a298;
+    border-bottom: solid 1px #275a4b;
+    padding: 8px 0;
+}
+
+.bet365_firstPanel .casino-title img {
+    display: block;
+    width: 100%;
+    height: 95px;
+}
+
+.bet365_firstPanel .footer-text a {
+    text-decoration: none;
+}
+
+#LoadingDiv {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #046E51;
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+#LoadingDiv img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -26px 0 0 -27px;
+}
+
+#iboContainer {
+    width: 49px;
+}
+
+.newcasino_footer {
+    //display: none;
+}
+

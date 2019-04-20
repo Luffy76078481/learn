@@ -1,0 +1,581 @@
+@charset "utf-8";
+
+
+.dafa2fg{
+  width: 1000px;
+  padding: 10px 10px 25px 10px;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background: #6F0301;
+
+  .box_1{
+    width: 718px;
+    height: 360px;
+    display: inline-block;
+    margin-bottom: 10px;
+    vertical-align: middle;
+
+    .slider{
+      width: 718px;
+      height: 300px;
+    }
+    .box1_btnbx{
+      width: 718px;
+      height: 60px;
+      margin-top: 2px;
+      text-align: center;
+      line-height: 60px;
+
+      .box1_btn{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin: 8px;
+        line-height: 38px;
+        width: 187px;
+        height: 38px;
+        font-size: 15px;
+        color: #311f07;
+        font-weight: 700;
+        text-decoration:none;
+      }
+      .donlod_btn:before{
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 23px;
+        right: 8px;
+        top: 3px;
+      }
+      .regist_btn:before{
+        content: '';
+        position: absolute;
+        width: 27px;
+        height: 25px;
+        right: 5px;
+        top: 3px;
+      }
+    }
+  }
+  .box_2{
+    width: 250px;
+    height: 360px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    a{
+      text-decoration:none;
+    }
+
+    .vip{
+      width: 250px;
+      height: 232px;
+      margin-bottom: 3px;
+      position: relative;
+      text-align: center;
+
+      .vip1{
+        font-size: 48px;
+        line-height: 40px;
+        color: #fff;
+        padding-top: 15px;
+        margin: 0;
+      }
+      .vip2{
+        color: #311f07;
+        font-size: 23px;
+        margin: 0;
+      }
+      .vip3{
+        bottom: 10px;
+        right: 10px;
+        text-align: right;
+        position: absolute;
+        font-size: 9px;
+        color: #fff;
+        margin: 0;
+      }
+
+    }
+    .bonus{
+      width: 250px;
+      height: 125px;
+      position: relative;
+
+      .bonus1{
+        color: #c08f57;
+        font-size: 22px;
+        text-shadow: 0 1px 1px #000;
+        top: 7px;
+        left: 0;
+        font-weight: 700;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+      }
+      .bonus2{
+        top: 77px;
+        left: 0;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+      }
+      .bonus3{
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        color: #000;
+        font-size: 9px;
+        font-weight: 400;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+  .box_3{
+    width: 198px;
+    height: auto;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+    .menu_nav{
+      width: 198px;
+      height: auto;
+      margin-bottom: 10px;
+      background: linear-gradient(to bottom,rgba(111,3,1,1) 0,rgba(88,2,1,1) 40%,rgba(57,1,0,1) 100%);
+      border: 1px solid #dbb576;
+      border-radius: 5px;
+
+      ul{
+        padding: 10px 0;
+        font-weight: 700;
+        list-style: none;
+        li{
+          margin-left: 0;
+          padding-left: 30px;
+          position: relative;
+          overflow: hidden;
+          display: block;
+          .menubtn{
+            left: 7px;
+            top: 6px;
+            width: 11px;
+            height: 11px;
+            position: absolute;
+          }
+          .on{ background-position: 0 0;}
+          .off{ background-position: -11px 0;}
+          a{
+            color: #fff;
+            height: 28px;
+            line-height: 2.1;
+            display: block;
+            font-size: 12px;
+          }
+          a.iplay{
+          }
+          a.mainpg{
+            color: #FFE000;
+          }
+          a:hover{
+            color: #FFE000;
+          }
+          .inmenu{
+            display: none;
+            a{
+              color: #eac677;
+              font-size: 11px;
+              padding-left: 15px;
+            }
+
+          }
+        }
+      }
+
+    }
+    .contact{
+      width: 198px;
+      height: 331px;
+      background: linear-gradient(to bottom,rgba(111,3,1,1) 0,rgba(88,2,1,1) 80%);
+      border: 1px solid #dbb576;
+      border-radius: 5px;
+      text-align: left;
+
+      a{
+        color: #eac677;
+        font-weight: 400;
+        display: block;
+        line-height: 1.2;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        padding-left: 38px;
+        position: relative;
+      }
+      .dw_line{
+      }
+      p{
+        line-height: 1.5;
+        color: #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        padding-left: 38px;
+        margin-bottom: 0;
+        position: relative;
+      }
+      .title{
+        font-weight: 700;
+        margin-top: 8px;
+        font-size: 14px;
+      }
+      .help:before{
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 0;
+        width: 27px;
+        height: 22px;
+      }
+      .mail:before{
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 0;
+        width: 27px;
+        height: 20px;
+      }
+      .phone:before{
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 0;
+        width: 27px;
+        height: 29px;
+      }
+      .qrimg{
+        width: 100px;
+        height: 100px;
+        margin-top: 5px;
+        margin-left: 38px;
+      }
+    }
+  }
+  .box_4{
+    width: 510px;
+    height: 668px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+    .games{
+      width: 250px;
+      height: 217px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      .title{
+        height: 40px;
+        font-size: 17px;
+        line-height: 40px;
+        margin-bottom: 0;
+        background: linear-gradient(to bottom,rgba(212,181,126,1) 1%,rgba(122,80,30,1) 100%);
+        text-align: center;
+        color:#311f07;
+        font-weight: 700;
+      }
+      .games_img{
+        position: relative;
+        width: 250px;
+        height: 177px;
+      }
+      .games_img:before{
+        content: '网页版游戏';
+        position: absolute;
+        left: 17px;
+        bottom: 38px;
+        width: 149px;
+        height: 37px;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 37px;
+        padding-left: 10px;
+        color: #fff;
+      }
+    }
+    .bingo{
+      width: 250px;
+      height: 217px;
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      .title{
+        height: 40px;
+        font-size: 17px;
+        line-height: 40px;
+        margin-bottom: 0;
+        background: linear-gradient(to bottom,rgba(212,181,126,1) 1%,rgba(122,80,30,1) 100%);
+        text-align: center;
+        color:#311f07;
+        font-weight: 700;
+      }
+      .bingo_img{
+        position: relative;
+        width: 250px;
+        height: 177px;
+      }
+      .bingo_img:before{
+        content: '网页版游戏';
+        position: absolute;
+        left: 17px;
+        bottom: 38px;
+        width: 149px;
+        height: 37px;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 37px;
+        padding-left: 10px;
+        color: #fff;
+      }
+
+    }
+    .promotion{
+      width: 510px;
+      height: 301px;
+      border: 1px solid #dbb576;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      text-align: center;
+      position: relative;
+
+      h2{
+        background: linear-gradient(to bottom,rgba(212,181,126,1) 1%,rgba(122,80,30,1) 100%);
+        color: #311f07;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 700;
+        margin: 0;
+      }
+      .promotion_img{
+        display: inline-block;
+        width: 476px;
+        height: 138px;
+        margin-top: 20px;
+      }
+      a{
+        display: inline-block;
+        color: #FF9900;
+        text-decoration: none;
+        font-size: 11px;
+        margin-top: 15px;
+      }
+      p{
+        font-size: 12px;
+        margin-top: 15px;
+      }
+      .more{
+        position: absolute;
+        right: 30px;
+        bottom: 15px;
+      }
+    }
+    .dafa888{
+      width: 510px;
+      height: 192px;
+      border: 1px solid #dbb576;
+      border-radius: 5px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+
+      h2{
+        background: linear-gradient(to bottom,rgba(212,181,126,1) 1%,rgba(122,80,30,1) 100%);
+        color: #311f07;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 700;
+        margin: 0;
+      }
+      .sliderbox{
+        position: relative;
+        width: 486px;
+        margin-left: 12px;
+        height: 192px;
+        overflow: hidden;
+
+        .sliderimg{
+          width: 182px;
+          height: 122px;
+          display: inline-block;
+          margin-top: 16px;
+          position: absolute;
+          border:1px solid #ddd;
+        }
+        .sliderimg1{
+          left: 152px;
+          transform: perspective(0px) rotateY(0deg) translateX(0px);
+          z-index: 4;
+        }
+        .sliderimg2{
+          left: 296px;
+          transform: perspective(300px) rotateY(-56deg) translateX(-104px);
+          z-index: 3;
+        }
+        .sliderimg3{
+          left: 349px;
+          transform: perspective(300px) rotateY(-56deg) translateX(-104px);
+          z-index: 2;
+        }
+        .sliderimg4{
+          left: 402px;
+          z-index: 1;
+          transform: perspective(300px) rotateY(-56deg) translateX(-104px);
+        }
+        .sliderimg5{
+          left: 455px;
+          transform: perspective(300px) rotateY(-56deg) translateX(-104px);
+          z-index: 0;
+        }
+        .sliderimg6{
+          left: 455px;
+          transform: perspective(300px) rotateY(-56deg) translateX(-104px);
+          z-index: 0;
+        }
+        .sliderimg7{
+          transform: perspective(300px) rotateY(-56deg) translateX(-104px);
+          z-index: 0;
+        }
+
+        .rotalef{}
+        .rotart{}
+        .rotaoff{}
+        .posi0{left: -151px;}
+        .posi1{left: -98px;}
+        .posi2{left: -45px;}
+        .posi3{left: 8px;}
+        .posi4{left: 152px;}
+        .posi5{left: 296px;}
+        .posi6{left: 349px;}
+        .posi7{left: 402px;}
+        .posi8{left: 455px;}
+      }
+    }
+  }
+  .box_5{
+    width: 250px;
+    height: 760px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+    .casino{
+      width: 250px;
+      height: 217px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      .title{
+        height: 40px;
+        font-size: 17px;
+        line-height: 40px;
+        margin-bottom: 0;
+        background: linear-gradient(to bottom,rgba(212,181,126,1) 1%,rgba(122,80,30,1) 100%);
+        text-align: center;
+        color:#311f07;
+        font-weight: 700;
+      }
+      .casino_img{
+        position: relative;
+        width: 250px;
+        height: 177px;
+      }
+      .casino_img:before{
+        content: '网页版游戏';
+        position: absolute;
+        left: 17px;
+        bottom: 38px;
+        width: 149px;
+        height: 37px;
+        border-radius: 7px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 37px;
+        padding-left: 10px;
+        color: #fff;
+      }
+    }
+    .winner{
+      width: 250px;
+      height: 307px;
+      border: 1px solid #dbb576;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 20px;
+      h2{
+        background: linear-gradient(to bottom,rgba(212,181,126,1) 1%,rgba(122,80,30,1) 100%);
+        color: #311f07;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.8;
+        font-weight: 700;
+        margin: 0;
+      }
+      .winner_img{
+        display: inline-block;
+        width: 208px;
+        height: 110px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      a{
+        display: inline-block;
+        color: #FF9900;
+        text-decoration: none;
+        font-size: 11px;
+      }
+      p{
+        display: inline-block;
+        width: 208px;
+        font-size: 12px;
+      }
+    }
+    .ad1{
+      width: 250px;
+      height: 88px;
+      margin-bottom: 20px;
+    }
+    .ad2{
+      width: 250px;
+      height: 88px;
+    }
+  }
+}

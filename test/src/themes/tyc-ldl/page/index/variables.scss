@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+$font-size:              14px;
+$font-family:            #{arial,helvetica,STHeitiSC-Light,"Heiti SC",droidsansfallback,dengxian,"microsoft yahei"};
+
+$text-color-normal:      #ffffff;
+$text-color:             #938f8f;
+$text-color-dark:        #373737;
+$text-color-deep:        #af0000;
+$text-color-hightline:   #FFE000;
+$text-color-footer:   #d6a876;
+
+$bg-color:               #e6e7e8;
+$bg-color-deep:          #780000;
+$bg-color-dark:          #373737;
+$bg-color-input:         #fff;
+$bg-color_member:        #550305;
+$bg-color-footer:        #550305;
+$bg-color-jackpot:       #9c0e0e;
+
+$bg-btn:                 #AC8A4C;
+
+$bg-table:                #450305;
+
+$bg-bomb-color:           #FFE101;
+$bg-bomb-text:            #a60808;
+
+$title-color:            #ffea00;
+$title-color-warm:       #af0000;
+
+$border-color:           #dbb576;
+$border-color-deep:      #a01012;
+
+$bg-member-model:        #770508;
+$bg-member-model-body:rgba(55, 55, 55, 0.9);
+
+// base
+$base: (
+
+
+  //___________________sweet彈出窗_____________________
+        sweet_title_bgcolor:$bg-color-dark,
+        sweet_title_color:$text-color-normal,
+        sweet_color:$text-color-normal,
+
+  //______________________系統訊息彈出窗_______________
+        SystemMessage_box_shadow: rgba(0, 0, 0, 0.3),
+
+  //_____popbox
+        popbox-bgColor: $bg-color-dark,
+        popbox-borderColor: $border-color-deep,
+        popbox-title-iconcolor: $title-color-warm,
+        popbox-title-bgcolor: $bg-color,
+        popbox-title-fontsize: 22px,
+        popbox-title-lineheight: 50px,
+        popbox-title-leftIcon: 18px,
+        popbox-title-closeBg: $bg-color-dark,
+        popbox-title-closeBorder: $border-color-deep,
+        popbox-body-shadow: rgba(0, 0, 0, 0.8),
+        popbox-body-color: $text-color-normal,
+        popbox-body-titlecolor: $title-color-warm,
+        popbox-body-bordercolor: #000,
+
+);

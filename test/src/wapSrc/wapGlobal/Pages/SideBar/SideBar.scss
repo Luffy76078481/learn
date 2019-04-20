@@ -1,0 +1,60 @@
+.SideBar {
+
+    .item-inner {
+        padding: 0 20px;
+        min-height: 2.85rem;
+
+        .deposicon-div {
+            margin: 30px 20px 0 0;
+            height: 25px;
+
+            .deposicon {
+                border: 1px solid #fff;
+                border-radius: 5px;
+                padding: 3px 8px;
+                font-size: .2rem;
+                color: #fff;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .rightCon {
+        text-align: right;
+        color: #fff;
+
+        .userName {
+            margin-top: 40px;
+        }
+
+        .account-label {
+            margin-top: 40px;
+            font-size: .2rem;
+        }
+
+        .account-number {
+            margin-top: 5px;
+            font-size: .4rem;
+        }
+    }
+
+    .sideList {
+        width: 100%;
+        overflow: auto;
+        position: absolute;
+        top: 3.4rem;
+        bottom: 0;
+
+        .am-list-item .am-list-line .am-list-content {
+            padding: 13px 0;
+
+            i {
+                margin-right: 15px;
+                font-size: .35rem;
+            }
+        }
+    }
+}

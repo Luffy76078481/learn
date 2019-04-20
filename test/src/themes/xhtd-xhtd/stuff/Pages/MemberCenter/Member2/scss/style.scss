@@ -1,0 +1,1117 @@
+div.member2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.thirdFrom img{
+  float: left;
+  margin: 0 0 0 20px;
+  width: 160px;
+  display: block;
+}
+// 新日历
+.member2 .inputhlder{
+  height: 32px;
+  vertical-align: top;
+  div>span:first-child{
+    display: none
+  }
+  span.input-group-addon{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 34px;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    width: 40px;
+    border-radius: 4px;
+    margin: 0;
+  }
+  .input-group{
+    width: 225px;
+    .form-control{
+      width: 185px;
+    }
+  }  
+}
+
+.member2 .deposNav .navbox .tooltiptextuc:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: rotate(45deg);
+  border: 1px solid #e6adaa;
+  background: #ffffe4;
+  border-left: none;
+  border-top: none;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -5px;
+}
+.member2 .money .correctNum{
+  padding-left: 150px;
+  line-height: 36px;
+  color: #cf271e;
+  font-weight: bold;
+  margin: 0;
+}
+.wrdbot .accountItems {
+  width: 320px;
+  display: inline-block;
+}
+.wrdbot .accountItems .account {
+  background: #f7f7f7;
+  padding: 6px;
+  height: 36px;
+  width: 320px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.deposit .thirdFrom p {
+  float: left;
+  font-size: 13px;
+  color: #888;
+  margin-left: 20px;
+  line-height: 28px;
+}
+.loaderDom{ 
+  text-align: center;
+  color: #5b5b5c;
+  font-weight: bold;
+}
+.loaderDom p{ 
+  text-align: center
+}
+.loaderDom img{
+  display: inline-block;
+  margin: 10px 0;
+  text-align: center
+}
+.resultBtn{
+  padding-top: 30px;
+  clear: both;
+}
+.member2 .cust_container .memberBtn.default {
+  background: #8a8a8a;
+}
+.member2 .cust_container .memberBtn {
+  display: inline-block;
+  width: 156px;
+  text-align: center;
+  color: #fff;
+  background: #cf271e;
+  padding: 9px 0;
+  border: 0;
+  margin-top: 10px;
+  margin-left: 150px;
+  font-size: 18px;
+}
+.money .offlineBank .offlineBank_text {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #af0000;
+  color: #af0000;
+  font-size: 16px;
+  line-height: 36px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+}
+.money .offlineBank p {
+  margin-top: 10px;
+}
+.member2 .deposit .money p input {
+  border: 1px solid #ccc;
+  padding: 3px 8px;
+  width: 200px;
+  margin-right: 15px;
+  height: 36px;
+}
+.member2 .deposit .money .font_red {
+  color: #cf271e;
+}
+.member2 .deposit .money .font_bold {
+  font-weight: 700;
+}
+.notice-bar .popBox .popBox_title {
+  height: 15%;
+  width: 100%;
+  font-size: 22px;
+  line-height: 50px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.member2 .deposit .money .tips {
+  padding: 5px;
+  border: 1px dashed #ccc7c7;
+  line-height: 24px;
+  font-size: 12px;
+  width: 460px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.member2 {
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #999 !important;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #999 !important;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #999 !important;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #999 !important;
+  }
+  .deposNav .navbox .tooltiptextuc {
+    width: 100px;
+    background-color: #ffffe4;
+    color: #cf271e;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0;
+    border: 1px solid #e6adaa;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -35px;
+  }
+
+
+  body {
+    background: #f7f7f7;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    font-size: 16px;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .float_left {
+    float: left;
+  }
+  .float_right {
+    float: right;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  .nomarginright {
+    margin-right: 0 !important;
+  }
+  .unpadding {
+    padding: 0 !important;
+  }
+
+  /*global css*/
+
+  .cust_container {
+    width: 1127px;
+    display: inline-block;
+    background: white;
+    /* box-shadow: 0 0 9px 4px #000 inset; */
+    /* padding: 8px; */
+    margin: 30px 0 30px;
+    box-shadow: 0 0 3px #000;
+    /* border: 2px solid #fff; */
+  }
+
+  .bankOption_text{
+    box-shadow: 0 0 7px #aaa;
+  }
+
+  .atmBox_btn{
+    width: 50%;
+    height: 50px !important;
+    &:hover{
+      opacity: .9;
+    }
+  }
+
+  .atmBox_texttitle span{
+    margin: 0 !important;
+  }
+  .atmBox_texttitle{
+    color:#fff;
+  }
+  .atmBox_texttitle .atmBox_text{
+    color:#ecb934;
+  }
+
+
+
+  .leftside {
+    width: 167px;
+    background: #f1f4f9;
+    height: 100%;
+    min-height: 800px;
+  }
+  .leftside .header {
+    padding: 14px 17px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #454141;
+  }
+  .cust_nav {
+    font-size: 14px;
+    color: #5b5b5b;
+  }
+  .cust_nav li {
+    padding: 6px 0 0 0;
+    border: 1px solid transparent;
+    border-left: 3px solid transparent;
+  }
+  .cust_nav li img {
+    margin-right: 13px;
+  }
+  .cust_nav li a {
+    color: #5b5b5b;
+    padding: 10px 0;
+    padding-left: 0px;
+    border: 1px solid transparent;
+    border-left: 3px solid transparent;
+    display: block;
+  }
+
+  .cust_nav li a i{
+    font-size: 20px;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+
+
+  .cust_nav li.sub2:hover, .cust_nav li.active {
+    border: 1px solid #e3e7ea;
+    border-left: 3px solid #dd714f;
+    background: #f0f2f5;
+  }
+
+  .cust_nav li:hover>a, .cust_nav li.active>a{
+    color: #dd714f;
+  }
+  .cust_nav li ul {
+    display: none;
+    margin-left: 44px;
+  }
+  //.cust_nav li:hover ul, .cust_nav li.active ul {
+  .cust_nav li.active ul {
+    display: block;
+  }
+  /*second layer ul*/
+  .cust_nav li ul {
+    color: #898989;
+    background: #f8f9fc;
+    //padding-left: 52px;
+  }
+  .cust_nav li ul li {
+    text-align: left;
+    padding: 1px 0;
+    width: 100%;
+    //padding-left: 27px;
+  }
+  .cust_nav li ul li a {
+    border: 0;
+    padding-left: 27px;
+    padding-top: 6px;
+  }
+  //.cust_nav li ul li a:hover , .cust_nav li ul li a.active {
+  //
+  //  border-left: 3px solid #dd714f;
+  //}
+
+  .cust_nav li.sub a {
+  }
+  .cust_nav li.sub a.active, .cust_nav li.sub a:hover {
+    font-weight: bold;
+    //font-size: 1.5rem;
+    //border-left: 3px solid #dd714f;
+    color:#dd714f ;
+  }
+
+
+
+  /*right_side content*/
+  .rightside {
+    width: 960px;
+    border-left: 1px solid #e3e7ea;
+    min-height: 800px;
+  }
+  .rightside .header {
+    color: #5b5b5c;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 23px;
+    background: #f1f4f9;
+  }
+  .rightside .maincontent {
+    padding: 60px 20px 20px 20px;
+    color: #2c2c2c;
+    background: #fff;
+    min-height: 600px;
+    text-align: left;
+  }
+  .deposit_title{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .deposit_input{
+    vertical-align: middle;
+    display: inline-block;
+    width: 265px;
+    margin-left: 11px;
+    margin-right: 30px;
+  }
+
+  .deposit_money_box{
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+
+  .deposit_input input{
+    height: 40px;
+    font-size: 25px !important;
+    text-align: center;
+  }
+  .deposit_icon1{
+    vertical-align: middle;
+    display: inline-block;
+    width: 500px;
+  }
+  .deposit_icon2{
+    padding-top: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 820px;
+    padding-left: 92px;
+  }
+  .moneyIcon1{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 81px;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    color: #1d1d1d;
+    background-color: #ececec;
+    border-radius: 5px;
+    margin: 3px 10px !important;
+  }
+
+  .moneyIcon2{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    line-height: 42px;
+    font-size: 18px;
+    vertical-align: middle;
+    border: 2px solid #ecb934;
+    color: #ecb934;
+    border-radius: 5px;
+    margin: 3px 10px !important;
+    font-weight: bolder;
+  }
+  .moneyIcon1 i{
+    color: #ecb934;
+  }
+  .rightside .title {
+    color: #dd714f;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 16px;
+  }
+  .rightside .lbl {
+    font-size: 14px;
+    color: #2c2c2c;
+    width: 99px;
+    margin-bottom: 34px;
+    margin-right: 31px;
+  }
+  .rightside .input {
+    font-size: 12px;
+    width: 270px;
+  }
+
+  .onlinepayOption{
+    background-color: transparent;
+  }
+
+  .rightside .input input {
+    width: 321px;
+    height: 32px;
+    margin-top: -5px;
+    padding-right: 32px;
+    padding-left: 15px;
+    border: 1px solid #dedede;
+  }
+  .rightside .input .editable {
+    width: 270px;
+    border: 0px solid transparent;
+    background: #f7f7f7;
+    float: left;
+  }
+  .rightside .input .edit {
+    width: 30px;
+    height: 32px;
+    background: #f7f7f7;
+    border: 0;
+    float: left;
+    margin-top: -5px;
+  }
+  .rightside .input img {
+    margin-right: 5px;
+  }
+  .rightside .divider {
+    border-top: 1px dotted #dedede;
+    margin: 10px 0px 30px 0px;
+  }
+  .rightside .purse {
+    width: 247px;
+    height: 128px;
+    border-radius: 5px;
+    color: #fff;
+    background: #2f85dc url("./img/pursebg.jpg") right no-repeat;
+    padding: 12px;
+    margin-right: 10px;
+  }
+  .rightside .purse .bal {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  .rightside .purse span {
+    font-size: 16px;
+  }
+  .rightside .purse .custbtn {
+    background: #fff;
+    color: #307ac2;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px 17px;
+    margin-right: 17px;
+    border-radius: 17px;
+    cursor: pointer;
+  }
+  .rightside .table_holder {
+    width: 661px;
+  }
+  .rightside .table_holder .custbtn {
+    width: 60px;
+    color: #fff;
+    font-size: 14px;
+    background: #2f87dc;
+    border-radius: 18px;
+    text-align: center;
+    padding: 2px 0;
+    z-index: 11;
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    display: none;
+  }
+  .rightside .table_holder .table-bordered > tbody > tr > td {
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    font-size: 12px;
+    color: #333333;
+    width: 114px;
+    position: relative;
+    border-bottom: 1px solid #dedede;
+  }
+  .rightside .table_holder .table-bordered > tbody > tr > td p {
+    font-size: 14px;
+    color: #ed5324;
+  }
+  .rightside .table_holder .table-bordered > tbody > tr > td:hover {
+    background: #e2f0fd;
+    padding: 14px 0px 0px 0px;
+  }
+  .rightside .table_holder .table-bordered > tbody > tr > td:hover .custbtn {
+    display: block !important;
+  }
+  .rightside .gamerec .table > thead:first-child > tr:first-child > th {
+    border-bottom: 1px solid #dedede;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+  }
+  .rightside .gamerec .table-bordered > tbody > tr > td {
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+  }
+  .rightside .gamerec .table-bordered > tbody > tr > td:first-child {
+    color: #dc6843;
+  }
+  .rightside .tabs_holder .nav-tabs > li > a {
+    padding: 10px 24px;
+    border-radius: 0;
+    color: #333333;
+    margin-right: 4px;
+    border-color: #ccc;
+    font-size: 14px;
+  }
+  .rightside .tabs_holder .nav-tabs > li.active > a, .rightside .tabs_holder .nav-tabs > li.active > a:focus, .rightside .tabs_holder .nav-tabs > li.active > a:hover {
+    color: #dc6843;
+    border-bottom-color: transparent;
+  }
+  .rightside .tabs_holder .nav > li > a {
+    background: #eee;
+  }
+  .rightside .tabs_holder .nav-tabs > li.active > a {
+    background: #fff;
+  }
+  .rightside .tabs_holder .tab-content {
+    padding: 32px 15px 10px 0;
+    text-align: left;
+  }
+  .fnc_holder div {
+    display: inline-block;
+    position: relative
+  }
+  .fnc_holder .lbl {
+    width: 71px;
+    text-align: right;
+    margin-right: 3px;
+    margin-bottom: 0;
+  }
+  .fnc_holder .selctlabl {
+    width: 42px;
+  }
+  .fnc_holder .selection {
+    width: auto;
+    margin-right: 15px;
+  }
+  .fnc_holder .selection select {
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 1px 4px;
+  }
+  input, select {
+    width: 100%;
+    border: 1px solid #cccccc;
+    outline: none;
+    padding-left: 4px;
+  }
+  .fnc_holder select::-ms-expand {
+    display: none;
+  }
+  .fnc_holder .datehlder {
+    width: 80px;
+    font-size: 13px;
+  }
+  .fnc_holder input {
+    padding: 6px;
+  }
+  .fnc_holder .btn_hlder button {
+    color: #fff;
+    background: #0570d8;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    padding: 6px 9px;
+  }
+  .fnc_holder div > span {
+    background: #eeeeee;
+    color: #898989;
+    font-size: 14px;
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+    padding: 6px 9px;
+  }
+  .rightside .tabs_holder .divider {
+    border-top: 1px solid #efefef;
+    margin: 20px 0px;
+  }
+  .rightside .tabs_holder .table {
+    border: 1px solid #e9e9e9;
+  }
+  .ui-widget-header .ui-icon {
+    background-image: ("../img/ui-icons_444444_256x240.png");
+  }
+  .rightside .tabs_holder .table > thead > tr > th, .rightside .tabs_holder .table > tbody > tr > td {
+    text-align: center;
+    font-size: 14px;
+    color: #787878;
+    padding: 15px 0;
+  }
+  .rightside .tabs_holder .table > thead > tr > th {
+    font-weight: normal;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  .rightside .tabs_holder .tblbottom {
+    font-size: 14px;
+    color: #a7a7a7;
+  }
+  .rightside .tabs_holder .tblbottom span {
+    color: #dc6843;
+  }
+  .rightside .tabs_holder .offerstbl tr td:first-child + td + td, .rightside .tabs_holder .bethistotbl tr td:first-child + td + td, .rightside .tabs_holder .bethistotbl tr td:first-child + td + td + td,
+  .rightside .tabs_holder .rechargetbl tr td:first-child + td + td, .rightside .tabs_holder .withdrawrectbl tr td:first-child + td, .rightside .tabs_holder .withdrawrectbl tr td:first-child + td + td,
+  .rightside .tabs_holder .transferrectbl tr td:first-child + td {
+    color: #dc6843;
+  }
+  .rightside .tabs_holder .custpagination li {
+    display: inline-block;
+  }
+  .rightside .tabs_holder .custpagination li a {
+    color: #6f6f6f;
+    font-size: 16px;
+    padding: 1px 6px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+  }
+  .rightside .tabs_holder .custpagination li a:hover {
+    background: #0570d8;
+    color: #fff;
+  }
+  /*security  page*/
+  .security_pg {
+    font-size: 14px;
+    color: #333333;
+  }
+  .security_pg .lbl {
+    display: inline-block;
+    width: 84px;
+    text-align: right;
+    margin-right: 0;
+    margin-top: 16px;
+    margin-right: 5px;
+  }
+  .security_pg .custinput {
+    display: inline-block;
+    width: 320px;
+  }
+  .security_pg .custinput input, .security_pg .custinput select {
+    background: #f7f7f7;
+    padding: 6px;
+    height: 36px;
+  }
+  .security_pg .custbtn button {
+    width: 156px;
+    text-align: center;
+    color: #fff;
+    background: #2f87dc;
+    padding: 9px 0;
+    border: 0;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  .security_pg .messgbtn button {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .security_pg .custbtnsec {
+    display: inline-block;
+  }
+  .security_pg .custbtnsec button {
+    width: 93px;
+    background: #db613a;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    padding: 6px 0;
+    margin-left: 13px;
+  }
+  .security_pg .notice {
+    background: #f7fafe;
+    color: #666666;
+    height: 49px;
+    padding: 14px;
+  }
+  .security_pg .notice img {
+    margin: 0 4px;
+  }
+  .rightside .phonever {
+    padding: 11px 23px;
+  }
+  .security_pg .messageholder {
+    width: 240px;
+    margin: auto;
+    text-align: center;
+    margin-top: 11%;
+  }
+  .security_pg .messageholder p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .security_pg .messageholder span {
+    font-size: 13px;
+    color: #666666;
+  }
+  .security_pg .messageholder img {
+    display: block;
+    margin: auto;
+    margin-bottom: 19px;
+  }
+
+  /*message management*/
+  .rightside .messagemanagement .tabs_holder .nav-tabs > li > a {
+    color: #666666;
+  }
+  .rightside .messagemanagement .tabs_holder .nav-tabs > li.active > a, .rightside .messagemanagement .tabs_holder .nav-tabs > li.active > a:focus, .messagemanagement .rightside .tabs_holder .nav-tabs > li.active > a:hover {
+    color: #000;
+    font-weight: bold;
+  }
+  .rightside .messagemanagement .tabs_holder .nav-tabs > li > a {
+    padding: 10px 12px;
+  }
+  .rightside .messagemanagement .inptcheck {
+    width: auto;
+  }
+  .rightside .messagemanagement label {
+    font-weight: normal;
+    color: #373737;
+  }
+  .rightside .messagemanagement .new label {
+    font-weight: bold;
+  }
+  .rightside .messagemanagement .new span {
+    color: #fff;
+    background: #6dd900;
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+  .rightside .messagemanagement .date_hlder {
+    color: #999;
+    font-size: 14px;
+  }
+  .rightside .messagemanagement .tabs_holder .tab-content {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .rightside .divider_dot {
+    border-top: 1px dashed #ebebeb;
+    margin: 15px 0;
+  }
+  .rightside .messagemanagement button {
+    border: 1px solid #ccc;
+    color: #999;
+    border-radius: 2px;
+    background: transparent;
+    padding: 3px 10px;
+    margin-right: 5px;
+  }
+
+  /*account binding*/
+  .accbinding .custbtn button {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .accbinding .table > tbody > tr > td {
+    color: #333;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    border-top: 0;
+    border-bottom: 1px solid #f0eff0;
+  }
+  .accbinding .table > tbody > tr > td:first-child + td + td {
+    color: #9d9c9c;
+  }
+  .accbinding .table > tbody > tr > td:first-child + td + td span {
+    color: #333;
+  }
+  .accbinding .table > tbody > tr > td:first-child + td + td + td {
+    color: #db613a;
+  }
+
+  .depositfund .lbl {
+    margin-bottom: 0;
+  }
+  .depositfund .divider {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .depositfund .rad input {
+    width: auto;
+    position: relative;
+    top: 4px;
+    left: 6px;
+  }
+  .depositfund .rad input + label {
+    cursor: pointer;
+  }
+  .depositfund .radiohlder .rad {
+    width: 200px;
+    display: inline-block;
+    margin-right: 11%;
+  }
+  .depositfund .radiohlder .rad .radiohlder_img{
+    margin: 20px 0 10px 20px;
+  }
+
+  .depositfund .radiohlder .rad.rad-text {
+    width: auto;
+    margin-right: 2rem;
+  }
+  .depositfund .radiohlder .rad.rad-text span {
+    margin-left: 0.7rem;
+  }
+  .depositfund .radiohlder .rad:last-child {
+    margin: 0;
+  }
+  .depositfund .radiohlder {
+    margin-bottom: 10px;
+  }
+  .depositfund .custbtn button {
+    display: block;
+    margin: auto;
+    margin-top: 26px;
+  }
+  .withdrawalfund .wtop_hlder {
+    background: #f7fafe;
+    padding: 10px;
+    padding: 16px 20px;
+  }
+  .withdrawalfund .wdrtop {
+    width: 460px;
+    font-size: 14px;
+    color: #666666;
+  }
+  .withdrawalfund .wdrtop span {
+    color: #e25736;
+  }
+  .withdrawalfund .wdrtop .wlbl {
+    width: 100px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .withdrawalfund .wrdbot span, .gametrans .forms span {
+    background: #f7f7f7;
+    padding: 0;
+    margin-left: -18px;
+  }
+  .withdrawalfund .wrdbot .lbl {
+    margin-bottom: 10px;
+  }
+  .gametrans .seclbl {
+    margin-top: -24px;
+    margin-left: 10%;
+    color: #9d9c9c;
+  }
+  .gametrans .forms {
+    position: relative;
+  }
+  .gametrans .forms .changehlder {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    z-index: 1;
+  }
+
+  img.icon1 {
+    content: url("./img/navs/ico1.png");
+  }
+  img.icon2 {
+    content: url("./img/navs/ico2.png");
+  }
+  img.icon3 {
+    content: url("./img/navs/ico3.png");
+  }
+  img.icon4 {
+    content: url("./img/navs/ico4.png");
+  }
+  img.icon5 {
+    content: url("./img/navs/ico5.png");
+  }
+  img.edit {
+    content: url("./img/edit.png");
+    width: 17px !important;
+    height: 17px !important;
+  }
+  img.change {
+    content: url("./img/change.jpg");
+    cursor: pointer;
+  }
+  img.crown {
+    content: url("./img/crown.jpg");
+  }
+  .select, .input {
+    color: #2c2c2c !important;
+  }
+
+  img.thirdpay {
+    width: 50px;
+    margin-left: 1rem;
+  }
+  img.bankPay {
+    width: 110px;
+    margin-left: 1rem;
+  }
+  .rightside .promoCode {
+    width: 215px !important;
+    input{
+      width: 185px !important;
+    }
+
+  }
+  .rightside .copyBtn{
+    vertical-align: middle;
+    margin-top: -6px;
+  }
+
+  .rightside .tabs_holder .tblbottom .allAmount div{
+    line-height: 30px;
+  }
+  .rightside .tabs_holder .tblbottom .allAmount .amoumtnum{
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .depositfund p {
+    color: #7f7e80;
+  }
+  .deposit .money p label {
+    text-align: left;
+    width: 150px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+  }
+  .deposit .money select {
+    width: 200px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 4px;
+    height: 36px;
+  }
+  .deposit select {
+    width: 200px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 4px;
+    height: 36px;
+  }
+  .deposit label {
+    display: inline-block;
+    text-align: left;
+    font-weight: 400;
+    width: 150px;
+}
+  .deposNav{
+    width: 100%;
+    border-bottom: 1px solid #af0000;
+    margin-bottom: 50px;
+    height: 30px;
+
+    .navbox{
+      display: inline-block;
+      width: 130px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      .tooltiptextuc {
+        width: 100px;
+        background-color: #ffffe4;
+        color: #cf271e;
+        text-align: center;
+        border-radius: 6px;
+        padding: 0;
+        border: 1px solid #e6adaa;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        margin-left: -35px;
+      }
+    }
+    .navOnchoose{
+      border: 1px #af0000 solid;
+      color: #af0000;
+    }
+
+  }
+}
+.member2 .deposit .money .alipayCode{
+  position: relative;
+  .alipayCode_info{
+    position: relative;
+    p{
+      label{
+        line-height: 36px;
+      }
+    }
+  }
+  .alipayCode_qrcode{
+    position: absolute;
+    right: 150px;
+    top: -10px;
+    .alipayQrImg_Box{
+      margin: 20px
+    }
+  }
+}
+.member2 .shortCut {
+  display: block;
+  padding-left: 145px;
+  li{
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    vertical-align: middle;
+    border: 1px solid #af0000;
+    color: #af0000;
+    border-radius: 5px;
+    margin: 3px 5px ;
+  }
+}
+.deposNav li a{
+  color: #af0000
+}
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 40%; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+.ui-timepicker-div .ui_tpicker_unit_hide{ display: none; }
+
+.ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input { background: none; color: inherit; border: none; outline: none; border-bottom: solid 1px #555; width: 95%; }
+.ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input:focus { border-bottom-color: #aaa; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 40% 10px 10px; }
+
+/* Shortened version style */
+.ui-timepicker-div.ui-timepicker-oneLine { padding-right: 2px; }
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time, 
+.ui-timepicker-div.ui-timepicker-oneLine dt { display: none; }
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_time_label { display: block; padding-top: 2px; }
+.ui-timepicker-div.ui-timepicker-oneLine dl { text-align: right; }
+.ui-timepicker-div.ui-timepicker-oneLine dl dd, 
+.ui-timepicker-div.ui-timepicker-oneLine dl dd > div { display:inline-block; margin:0; }
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_minute:before,
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_second:before { content:':'; display:inline-block; }
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_millisec:before,
+.ui-timepicker-div.ui-timepicker-oneLine dl dd.ui_tpicker_microsec:before { content:'.'; display:inline-block; }
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide,
+.ui-timepicker-div.ui-timepicker-oneLine .ui_tpicker_unit_hide:before{ display: none; }

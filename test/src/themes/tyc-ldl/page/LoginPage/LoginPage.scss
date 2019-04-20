@@ -1,0 +1,106 @@
+#reserveDialog_login{
+  display: none;
+  .login{
+
+  }
+  .custom_modal_content .modal-header {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .modal-body
+  {
+    padding: 30px 60px 15px;
+
+    form {
+      color:#333;
+      width:255px;
+      padding:0 20px;
+      .errorMsg{
+        text-align: right;
+        color:#af0000;
+        font-size:12px;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .col-md-12{
+        margin-bottom:15px;
+        &.forget{
+          margin-top:-10px;
+          text-align: right;
+          a{
+            color:#c83434;
+            text-decoration: underline;
+          }
+        }
+      }
+      .noUser{
+        &:before{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #ccc;
+          z-index: 0;
+        }
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        position: relative;
+        color:#555;
+        span{
+          background-color: #fff;
+          display: inline-block;
+          padding: 0 5px;
+          position: relative;
+          z-index: 1;
+        }
+      }
+      p {
+        margin-top: 5px;
+        margin-bottom: 3px;
+      }
+      input {
+        width:100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        line-height: 1.35;
+        box-shadow: none;
+        height: 31px;
+        padding: 6px 15px 6px 10px;
+      }
+      button {
+        width: 100%;
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 18px;
+        border:none;
+        &.loginbtn{
+          color: #fff;
+          border-radius: 5px;
+          background-color: #fe4445;
+          box-shadow: 0 3px 6px rgba(0,0,0,.25);
+          &:hover{
+            background-color: #c83434;
+            box-shadow: 0 3px 6px rgba(0,0,0,.5);
+          }
+        }
+      }
+      a.regisbtn{
+        background-color: #fff;
+        display: block;
+        width:100%;
+        text-align: center;
+        color: #c83434;
+        border-radius: 20px;
+        font-size: 18px;
+        border: 3px solid #c83434;
+        padding: 8px 15px;
+      }
+    }
+
+  }
+}

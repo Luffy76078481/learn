@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+
+// base
+
+
+$font-size:              14px;
+//$font-family:            #{arial,helvetica,STHeitiSC-Light,"Heiti SC",droidsansfallback,dengxian,"microsoft yahei"};
+
+$text-color-normal:      #fff;
+$text-color-2:     #452d07;
+
+$text-color-hightline:   #ffea00!important;
+
+$bg-color:                #b79242;
+$bg-color2:               #361a18;
+$bg-Process-color:        #8d3e32;
+$bg-title-color:          #281400;
+$bg-content-color:        #381F05;
+$bg-color-footer:         #180e0c;
+$bg-footer-nav:           #452d07;
+$bg-color-btn:            #F2D369;
+$bg-color-btnhover:            #eea61b;
+
+$contact-icon-color:      #B54A3A;
+
+$btn-hover:               #eea61b;
+$footer-hover: #f2f2f2;
+
+$menu-click-color: #e6c446 !important;
+
+$nav-Separate-lines-top:     #c9a14b;
+$nav-Separate-lines-bottom:  #856b32;
+
+$nav-Separate-lines-top2:     #c9a14b;
+$nav-Separate-lines-bottom2:  #856b32;
+
+
+$border-color:           #a05e5b;
+$border-color2:           #693332;
+
+
+$button-bg:#bf8109;
+$button-color:#643B1D;
+$button-hover:#eea61b;
+
+//$border-color-deep:      #8effe0;
+
+// base
+$base: (
+        logo_img:url(resources/logo2.png),
+        hader_right_img:url(resources/index_05.png),
+   //------------------------網站首頁----------------
+        index_banner_img:url(resources/index_10.jpg),
+        index_banner_img_two:url(resources/index_13.png),
+  //------------------------footer----------------
+        footer_bg_img:url(resources/index_17.jpg),
+  //__________________________品牌介紹________________
+        brand_banner_img: url(resources/brand/product_02.jpg),
+
+        brand_icon1: url(resources/brand/product_05.png),
+        brand_icon2: url(resources/brand/product_07.png),
+        brand_icon3: url(resources/brand/product_09.png),
+
+        productListImgTy: url(resources/brand/product_15.jpg),
+        productListImgZr: url(resources/brand/product_17.jpg),
+        productListImghj: url(resources/brand/product_21.jpg),
+        productListImgCp: url(resources/brand/product_23.jpg),
+
+        productListImg1: url(resources/brand/product_26.jpg),
+        productListImg2: url(resources/brand/product_28.jpg),
+        productListImg3: url(resources/brand/product_33.jpg),
+        productListImg4: url(resources/brand/product_35.jpg),
+        productListImg5: url(resources/brand/product_38.jpg),
+        productListImg6: url(resources/brand/product_39.jpg),
+  //--------合營計畫--------
+
+        Cooperation_head_img: url(resources/money/money_02.jpg),
+
+
+
+  //__________________________立即加入________________
+
+
+        register_bg_img: url(resources/bg_02.jpg),
+
+  //__________________________營銷工具________________
+
+        tools_head_img:url(resources/marke/marke_02.jpg),
+
+  //__________________________常見問題________________
+        problem_head_img: url(resources/help/help_03.jpg),
+
+  //__________________________聯絡我們________________
+        contact_head_img:url(resources/content/content_02.jpg),
+        contact_bottom_logo_img:url(resources/logo2.png),
+);

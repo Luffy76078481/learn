@@ -1,0 +1,43 @@
+#reserveDialog_login{
+
+  .modal-dialog {
+    width: 725px;
+  }
+  .custom_modal_content {
+    width: 400px;
+    height: 300px;
+    margin: 100px;
+    box-shadow: none;
+    top: 100px;
+    background: transparent;
+  }
+  .custom_modal_content .modal-header {
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #7f7f7f;
+    border-bottom: 0;
+  }
+  .fast_booking_content form {
+    width: 95%;
+    margin: 2% auto;
+  }
+  .fast_booking_content p {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    color: #fff
+  }
+  .fast_booking_content input {
+    padding: 0px 5px;
+    width: 100%;
+    height: 33px;
+  }
+  .fast_booking_content button {
+    width: 155px;
+    height: 40px;
+    display: block;
+    margin: 20px auto 0px auto;
+    border: 0px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+}

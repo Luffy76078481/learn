@@ -1,0 +1,370 @@
+/*二级导航样式*/
+.second-nav-module {
+  position: absolute;
+  top: 170px;
+  width: 100%;
+  z-index: 99
+}
+
+.second-nav-module .main {
+  width: 100%;
+  background: rgba(0,0,0,.75);
+  -webkit-animation: down .6s cubic-bezier(.68,-.55,.265,1.55) forwards;
+  animation: down .6s cubic-bezier(.68,-.55,.265,1.55) forwards;
+  overflow: hidden
+}
+
+.second-nav-module .main .inner {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+
+.second-nav-module .main .inner ul {
+  text-align: center
+}
+
+.second-nav-module .main .inner ul li {
+  cursor: pointer;
+  margin-top:15px;
+  width: 145px;
+  display: inline-block
+}
+
+.second-nav-module .main .inner ul li .icon {
+  width: 140px;
+  height: 66px;
+  background: url('../images/gameicon_small.png') center no-repeat
+}
+
+.second-nav-module .main .inner ul li .title {
+  width: 100px;
+  margin: 0 auto;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden
+}
+
+.second-nav-module .main .inner ul li .title .btn2 {
+  position:absolute;
+  width: 100px;
+  height: 25px;
+  line-height: 20px;
+  border: 2px solid #ddd;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 1;
+  border-radius: 3px;
+  font-size:12px;
+}
+
+.second-nav-module .main .inner ul li .title .btn2.start {
+  top: 0;
+  opacity: 0;
+  color: #f9e877;
+  border: 2px solid #f9e877
+}
+
+.second-nav-module .main .inner ul li:hover .title .name3 {
+  opacity: 0
+}
+
+.second-nav-module .main .inner ul li:hover .title .start {
+  opacity: 1
+}
+
+.second-nav-module .main .inner ul li .og,.second-nav-module .main .inner ul li .OG {
+  background-position: center 0!important
+}
+
+.second-nav-module .main .inner ul li .ag,.second-nav-module .main .inner ul li .AG {
+  background-position: center -66px!important
+}
+
+.second-nav-module .main .inner ul li .sunbet,.second-nav-module .main .inner ul li .SUNBET,.second-nav-module .main .inner ul li .tgp,.second-nav-module .main .inner ul li .TGP {
+  background-position: center -132px!important
+}
+
+.second-nav-module .main .inner ul li .opus,.second-nav-module .main .inner ul li .OPUS {
+  background-position: center -198px!important
+}
+
+.second-nav-module .main .inner ul li .pt,.second-nav-module .main .inner ul li .PT {
+  background-position: center -264px!important
+}
+
+.second-nav-module .main .inner ul li .mg,.second-nav-module .main .inner ul li .MG,.second-nav-module .main .inner ul li .MG2 {
+  background-position: center -330px!important
+}
+
+.second-nav-module .main .inner ul li .ab,.second-nav-module .main .inner ul li .AB {
+  background-position: center -396px!important
+}
+
+.second-nav-module .main .inner ul li .bbin,.second-nav-module .main .inner ul li .BBIN {
+  background-position: center -462px!important
+}
+
+.second-nav-module .main .inner ul li .qt,.second-nav-module .main .inner ul li .QT {
+  background-position: center -528px!important
+}
+
+.second-nav-module .main .inner ul li .hb,.second-nav-module .main .inner ul li .HB {
+  background-position: center -594px!important
+}
+
+.second-nav-module .main .inner ul li .yoplay,.second-nav-module .main .inner ul li .YOPLAY {
+  background-position: center -660px!important
+}
+
+.second-nav-module .main .inner ul li .pg,.second-nav-module .main .inner ul li .PG {
+  background-position: center -726px!important
+}
+
+.second-nav-module .main .inner ul li .cg,.second-nav-module .main .inner ul li .CG {
+  background-position: center -792px!important
+}
+
+.second-nav-module .main .inner ul li .keno,.second-nav-module .main .inner ul li .KENO {
+  background-position: center -858px!important
+}
+
+.second-nav-module .main .inner ul li .tb,.second-nav-module .main .inner ul li .TB {
+  background-position: center -924px!important
+}
+
+.second-nav-module .main .inner ul li .t188,.second-nav-module .main .inner ul li .T188 {
+  background-position: center -990px!important
+}
+
+.second-nav-module .main .inner ul li .sb,.second-nav-module .main .inner ul li .SB {
+  background-position: center -1056px!important
+}
+
+.second-nav-module .main .inner ul li .gd,.second-nav-module .main .inner ul li .GD {
+  background-position: center -1122px!important
+}
+
+.second-nav-module .main .inner ul li .ss,.second-nav-module .main .inner ul li .SS {
+  background-position: center -1188px!important
+}
+
+.second-nav-module .main .inner ul li .tc,.second-nav-module .main .inner ul li .TC {
+  background-position: center -1254px!important
+}
+
+.second-nav-module .main .inner ul li .bg,.second-nav-module .main .inner ul li .BG {
+  background-position: center -1320px!important
+}
+
+.second-nav-module .main .inner ul li .mw,.second-nav-module .main .inner ul li .MW {
+  background-position: center -1386px!important
+}
+
+.second-nav-module .main .inner ul li .tcg,.second-nav-module .main .inner ul li .TCG {
+  background-position: center -1452px!important
+}
+
+.second-nav-module .main .inner ul li .sw,.second-nav-module .main .inner ul li .SW {
+  background-position: center -1518px!important
+}
+
+.second-nav-module .main .inner ul li .avia,.second-nav-module .main .inner ul li .AVIA {
+  background-position: center -1584px!important
+}
+
+.second-nav-module .main .inner ul li .bet818,.second-nav-module .main .inner ul li .BET818 {
+  background-position: center -1650px!important
+}
+
+.second-nav-module .main .inner ul li .gb,.second-nav-module .main .inner ul li .GB {
+  background-position: center -1716px!important
+}
+
+
+.second-nav-module .bingo {
+  background: rgba(0,0,0,.85);
+  -webkit-animation: lottodown .6s cubic-bezier(.68,-.55,.265,1.55) forwards;
+  animation: lottodown .6s cubic-bezier(.68,-.55,.265,1.55) forwards
+}
+
+.second-nav-module .bingo .inner {
+  width: 1200px;
+  margin: 0 auto;
+  height: 380px;
+  padding-top: 30px
+}
+
+.second-nav-module .bingo .inner .hot {
+  width: 825px;
+  margin: 0 auto 30px
+}
+
+.second-nav-module .bingo .inner .hotItems {
+  cursor: pointer;
+  width: 165px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  color: #fff
+}
+
+.second-nav-module .bingo .inner .hotItems:hover {
+  color: #f9e877
+}
+
+.second-nav-module .bingo .inner .hotItems p,.second-nav-module .bingo .inner .hotItems span {
+  display: inline-block
+}
+
+.second-nav-module .bingo .inner .hotItems img {
+  width: 45px;
+  height: 45px;
+  margin-right: 8px
+}
+
+.second-nav-module .bingo .inner .lottery {
+  text-align: center
+}
+
+.second-nav-module .bingo .inner .lottery .am-icon {
+  fill: #e11222
+}
+.second-nav-module .bingo .inner .lottery .lotteryitems{
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+.second-nav-module .bingo .inner .lottery .lotteryitems .t1{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  width: 170px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.second-nav-module .bingo .inner .lottery div:nth-child(3) ul.items{
+  margin-left: 18px;
+}
+.second-nav-module .bingo .inner .lottery .lotteryitems ul.items{
+  cursor: pointer;
+  padding-top: 20px;
+  text-align: left;
+}
+.second-nav-module .bingo .inner .lottery .lotteryitems ul.items li{
+  width: 90px;
+  display: block;
+  margin: 0 auto 6px;
+  text-align: left;
+  padding-left: 20px;
+  border-bottom: 2px solid transparent;
+  color: #fff;
+}
+.second-nav-module .bingo .inner .lottery .lotteryitems ul.items li:hover{
+  color: #f9e877;
+}
+.second-nav-module .bingo .inner .hotItems{
+  font-size: 18px;
+  color: #fff;
+}
+.second-nav-module .bingo .inner .hotItems:hover{
+  color: #f9e877;
+}
+.second-nav-module .bingo .inner .lottery .lotteryItems {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top
+}
+
+.second-nav-module .bingo .inner .lottery .lotteryItems .t1 {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  width: 170px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd
+}
+
+.second-nav-module .bingo .inner .lottery .lotteryItems .t1 .t1Icon {
+  vertical-align: -4px
+}
+
+.second-nav-module .bingo .inner .lottery .lotteryItems ul.items {
+  cursor: pointer;
+  padding-top: 20px;
+  text-align: left
+}
+
+.second-nav-module .bingo .inner .lottery .lotteryItems ul.items li {
+  width: 90px;
+  display: block;
+  margin: 0 auto 6px;
+  text-align: left;
+  padding-left: 20px;
+  border-bottom: 2px solid transparent;
+  color: #fff
+}
+
+.second-nav-module .bingo .inner .lottery .lotteryItems ul.items li:hover {
+  color: #f9e877
+}
+
+.second-nav-module .bingo .inner .lottery div:nth-child(3) {
+  text-align: left
+}
+
+.second-nav-module .bingo .inner .lottery div:nth-child(3) ul.items {
+  margin-left: 18px
+}
+
+.second-nav-module .bingo .inner .lottery div:nth-child(3) ul.items li {
+  padding-left: 0;
+  display: inline-block;
+  text-align: left!important
+}
+
+/*动画*/
+@-webkit-keyframes down {
+  0% {
+    height: 0
+  }
+
+  to {
+    height: 150px
+  }
+}
+
+@keyframes down {
+  0% {
+    height: 0
+  }
+
+  to {
+    height: 150px
+  }
+}
+
+@-webkit-keyframes lottodown {
+  0% {
+    height: 0
+  }
+
+  to {
+    height: 380px
+  }
+}
+
+@keyframes lottodown {
+  0% {
+    height: 0
+  }
+
+  to {
+    height: 380px
+  }
+}

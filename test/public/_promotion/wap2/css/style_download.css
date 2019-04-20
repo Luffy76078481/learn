@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif,"Roboto","微軟正黑體";
+}
+
+.pattenLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pattenRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icon {
+    margin-top: 35%;
+}
+
+.icon img {
+    display: block;
+    margin: auto;
+    border-radius:25px;
+}
+
+.title p {
+    text-align: center;
+    font-size: 40px;
+    color: #525758;
+    line-height: 2;
+}
+
+.version {
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    color: #8c9498;
+    line-height: 1.5;
+    padding: 6% 0 2% 0;
+}
+
+.version::after {
+    content: "";
+    width: 55%;
+    height: 10px;
+    border-top: 2px solid #E3E5E6;
+    position: absolute;
+    top: 0%;
+    left: 22%;
+}
+
+.butGroup {
+    padding-top: 3% 0;
+}
+
+.btns {
+    display: block;
+    font-size: 16px;
+    margin: 3% auto;
+    width: 60%;
+    height: 30px;
+    border: 1px solid #B3BABC;
+    text-align: center;
+    padding: 1%;
+    border-radius: 50px;
+    clear: both;
+    cursor: pointer;
+    padding-top: 3%;
+
+}
+.loadBtnP{
+    line-height: 1;
+}
+.butGroup a {
+    color: #1c1d1d;
+    text-decoration: none;
+}
+
+#install {
+    color: #F7AB07;
+}
+
+.qrcode {
+    width: 100%;
+    border-top: 1px solid #B3BABC;
+}
+
+.qrcode img {
+    display: block;
+    margin: auto;
+    padding: 10% 0;
+}
+
+.title2 {
+    width: 100%;
+    color: #838486;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+
+/* slider */
+
+.my-gallery {
+    width: 270px;
+    height: 500px;
+    display: none;
+    margin: 0 auto;
+}
+
+.dots,
+.dot-item,
+.dot {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    background: transparent;
+}
+
+.dots {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    list-style: none;
+    font-size: 0;
+}
+
+.dot-item {
+    list-style: none;
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    font-size: 0;
+    border: solid 1px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.no-touch .dot-item:hover .dot {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dot-item:active .dot,
+.dot-item.active .dot {
+    background-color: white;
+}

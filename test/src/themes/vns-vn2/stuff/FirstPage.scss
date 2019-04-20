@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+.venetianFirst{
+  .testt{
+    background: url("images/index/title_first2.jpg") top no-repeat;
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .ttttt{
+    position: absolute;
+    left: -300px;
+    right: 0;
+    top: 0;
+    margin: auto;
+  }
+
+  .main{
+    background:url("images/index/bg01.png");
+    width: 100%;
+    height: 442px;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 442px;
+      top: 0;
+      left: 0;
+      background: url("images/index/container_bg.png")no-repeat center top;
+    }
+    .centerBox{
+      width: 1050px;
+      height: 442px;
+      margin: auto;
+      text-align: center;
+      .items{
+        display: inline-block;
+        height: 364px;
+        margin-top:50px;
+        position: relative;
+        z-index: 999;
+        cursor: pointer;
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+      .leftBox{
+        width: 275px;
+        height: 364px;
+        margin: 50px 8px 0 2px;
+        background: url("images/index/c_mleft_bg.png");
+        .leftBtns{
+          display: block;
+          width: 275px;
+          height: 97px;
+          cursor: pointer;
+        }
+        .b1{
+          background: url("images/index/btn_joinus02.png") center top no-repeat;
+            &:hover{
+              background: url("images/index/btn_joinus02.png") 0 -97px no-repeat;
+            }
+        }
+        .b2{
+          margin-top: 27px;
+          background: url("images/index/btn_promotions.png") center top no-repeat;
+            &:hover{
+              background: url("images/index/btn_promotions.png") 0 -97px no-repeat;
+            }
+        }
+        .b3{
+          margin-top: 27px;
+          background: url("images/index/btn_download.png") center top no-repeat;
+            &:hover{
+              background: url("images/index/btn_download.png") 0 -97px no-repeat;
+            }
+        }
+      }
+      .middleBox{
+        width: 300px;
+        .vip{
+          display: block;
+          width: 300px;
+          height: 230px;
+          background: url("images/index/c_btn_vip.png") center top no-repeat;
+          &:hover{
+            background: url("images/index/c_btn_vip.png") 0 -230px no-repeat;
+          }
+        }
+        .bonus{
+          position: relative;
+          width: 300px;
+          height: 110px;
+          background: url("images/index/prize_bg.png") 0 0 no-repeat;
+          .jackpot{
+            position: absolute;
+            top: 53px;
+            left: 100px;
+            text-align: center;
+            color: #EBC95E;
+            font-weight: bold;
+            font-size: 30px;
+          }
+        }
+      }
+      .rightBox{
+        width: 400px;
+        margin-left: 15px;
+        .gameList{
+          display: block;
+          width: 400px;
+          height: 115px;
+          padding: 50px 25px 0 150px;
+          text-align: left;
+          a{
+            color: #FFEDAD;
+            margin-right: 7px;
+            line-height: 22px;
+            text-decoration: none;
+            font-size: 10px;
+            &:hover{
+              color: #F2AB14;
+              text-decoration: underline;
+            }
+          }
+        }
+        .g1{
+          background: url("images/index/game01.png") center top no-repeat;
+          &:hover{
+            background: url("images/index/game01.png") 0 -115px no-repeat;
+          }
+        }
+        .g2{
+          background: url("images/index/game02.png") center top no-repeat;
+          &:hover{
+            background: url("images/index/game02.png") 0 -115px no-repeat;
+          }
+        }
+        .g3{
+          background: url("images/index/game03.png") center top no-repeat;
+          &:hover{
+            background: url("images/index/game03.png") 0 -115px no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+}

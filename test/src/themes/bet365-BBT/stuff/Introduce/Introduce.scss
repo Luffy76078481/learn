@@ -1,0 +1,43 @@
+.introduceCon{
+  min-width: 1300px;
+  min-width: 1100px\9;
+  max-width: 1920px;
+  margin:40px auto 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+  color:#5e5e5e;
+  font-size:16px;
+  ul{
+    padding-bottom:15px;
+    li{
+      list-style: disc inside;
+    }
+  }
+  a,a:hover{
+    color: #af0000;
+    text-decoration: none;
+  }
+  p{
+    line-height:28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .promo-banner-header {
+    background: #af0000;
+    margin: 0 auto;
+    padding: 12px 30px 4px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: left;
+  }
+  .mb-20 {
+    margin-bottom: 20px!important;
+  }
+  .promo-banner img {
+    width: 100%;
+    height: auto;
+  }
+}

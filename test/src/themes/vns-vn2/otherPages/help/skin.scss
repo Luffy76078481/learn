@@ -1,0 +1,311 @@
+@charset "utf-8";
+@import "variables";
+/* CSS Document */
+*{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+body,html{
+  font-family: "Microsoft YaHei" ! important;
+  background-color:$bg-color;
+
+}
+.main{
+  width: 980px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  min-height: 930px;
+}
+.header{
+  height: 130px;
+}
+.header_left{
+  width: 50%;
+  height: 130px;
+  float: left;
+  background: map-get($base, logo_img) 0 0 no-repeat;
+}
+
+.header_right{
+  width: 50%;
+  height: 130px;
+  float: right;
+  background: map-get($base, hader_right_img)  no-repeat right;
+
+}
+/*---------内文切换-------------*/
+.contents{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+/*---------菜单start-----------*/
+a{
+  color: $text-color-normal;
+  text-decoration:none;
+  font-weight: bold;
+
+}
+.main_content{
+  background-color: $bg-color-main-content;
+  height: auto;
+}
+.title_img{
+  width: 98.4%;
+  height: 30px;
+  background: $bg-color-header;
+  color: $text-header-title;
+  padding-left: 1rem;
+  line-height: 30px;
+  font-weight: bold;
+}
+.menu{
+  height: 32px;
+  border-bottom: 1px solid $border-color;
+}
+.navigation, .navigation li {
+  list-style: none;
+}
+.navigation{
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 0;
+}
+ul.navigation li {
+  position: relative;
+  float: left;
+  transition: all .3s;
+}
+ul.navigation li a{
+  display: block;
+  padding: 12px 20px;
+  color: $text-color-nav;
+  line-height: 2px;
+}
+ul.navigation ul{
+  display: none;
+  float: left;
+  width: 160px;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 0px;
+  //border: 1px solid #ffffff;
+}
+ul.navigation li:hover > ul{
+  border: 1px solid $border-color;
+}
+ul.navigation ul li {
+  border-bottom: 1px solid $nav-Separate-lines;
+}
+ul.navigation ul li:last-child {
+  border-bottom: none;
+}
+ul.navigation ul a {
+  text-align: center;
+  font-weight: 300;
+  width: 120px;
+  color:$text-color-normal;
+  background: $bg-color-nav;
+  transition: all .3s;
+}
+ul.navigation ul a:hover {
+  background: $bg-color-nav-hover;
+  color: $text-color-hightline;
+}
+.arrow-bottom {
+  display: inline-block;
+  margin-left: 5px;
+  border-top: 4px solid $text-color-normal;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  width: 1px;
+  height: 1px;
+}
+
+/*－－－－－－－－－－－－关于我们------------------*/
+.helpContent{
+  height: auto;
+  overflow: hidden;
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+}
+.helpContent li {
+  float: none;
+  width: 500px;
+  line-height: 30px;
+}
+.helpContent p{
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.helpContent a{
+  font-weight: 200;
+}
+.helpContent a:hover{
+  color: #ffea00;
+}
+.helpContent .title1 {
+  font-size: 16px;
+  font-family: '微软雅黑';
+  color: $text-color-nav;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.title2 {
+  background: $bg-color-title;
+  font-size: 12px;
+  font-weight: bold;
+  color: $title-color;
+  padding: 7px 10px;
+}
+.ReturnTop {
+  float: right;
+  color: $text-color-ReturnTop;
+  text-decoration: none;
+}
+
+/*-----------------一般常见问题------------------------------*/
+ADDRESS{
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+  font-style: normal;
+}
+/*-----------------娱乐成------------------------------*/
+.tab-TFinfo {
+  width: 650px;
+  background: $bg-color-title;
+  border-color: $border-color;
+  line-height: 26px;
+  margin: 10px auto;
+}
+
+.tab-tr-red {
+  background: $bg-color-main-content;
+}
+/*-----------------联系我们------------------------------*/
+.helpContent-contact {
+  height: auto;
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+}
+.contact_tab tr td {
+  width: 25%;
+  line-height: 22px;
+  padding: 10px 0px;
+}
+.huang {
+  color: $text-color-hightline;
+}
+.line{
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+}
+.contact-font b{
+  color:$text-color-normal;
+  font-weight:bolder;
+  font-size: 1.17em;
+}
+.contact-text {
+  background: $bg-color-contact;
+  padding: 15px;
+  width: 135px;
+  margin-top: 10px;
+  position: relative;
+  color: $text-color-normal;
+}
+.contact-btn {
+  background: $bg-color-contact-btn;
+  border: 0px;
+  width: 165px;
+  padding: 10px 0px;
+  font-size: 16px;
+  font-family: "黑体","微软雅黑";
+  transition: background 1s;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+  opacity: .8;
+}
+.contact-font input:hover {
+  opacity: 1;
+  //background: #e6c446;
+}
+/*------footer-------------*/
+.ReturnTopBtn{
+  position: relative;
+  bottom: 29px;
+  right: 10px;
+  font-size: 14px;
+}
+.foot{
+  background: $bg-color-footer;
+  margin-top: 10px;
+}
+.footer-bg{
+  background: map-get($base, footer_bg_img) no-repeat center;
+  height: 127px;
+}
+
+
+
+.header_bg #contact {
+  .title_img{
+    color: #ffe000;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .content-contact{
+    height: auto;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px;
+    line-height: 20px;
+      tr td {
+        width: 25%;
+        line-height: 22px;
+        padding: 10px 0;
+        span{
+          color: #ffea00;
+        }
+    }
+  }
+  .content {
+    height: auto;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px;
+    line-height: 20px;
+    .contact-text {
+      background: #312f2f;
+      padding: 15px;
+      width: 135px;
+      margin-top: 10px;
+      position: relative;
+      color: #fff;
+    }
+    .contact-btn {
+      background: #50e2e4;
+      border: 0;
+      width: 165px;
+      padding: 10px 0;
+      font-size: 16px;
+      font-style: normal;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+  }
+}

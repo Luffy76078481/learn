@@ -1,0 +1,120 @@
+#ag-game{
+  .main{
+    padding: 0 120px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .agGameList{
+     margin-top:0px;
+    &:after{
+      content:'';
+      clear: both;
+      display: block;
+    }
+    .listItem{
+      width:50%;
+      display: inline-block;
+      padding:0 50px;
+      text-align: center;
+      position: relative;
+      min-height:475px;
+      float:left;
+      cursor:pointer;
+      &:hover a{
+        background:#7d0b05;
+        color:#ffe000;
+        border-color:#7d0b05;
+        text-decoration: none;
+      }
+      h5{
+        background:#a80000;
+        font-size:20px;
+        font-weight: bold;
+        line-height:50px;
+        color:#fff;
+        margin:0;
+      }
+      img{
+        width:100%;
+      }
+      a{
+        display: block;
+        width: 145px;
+        height: 45px;
+        line-height: 40px;
+        font-size: 24px;
+        border-radius: 5px;
+        color: #a80000;
+        background-color: #ffe000;
+        border: 2px solid #ffe000;
+        transition: all .5s;
+        position: absolute;
+        bottom:20px;
+        left:50%;
+        margin-left:-72.5px;
+      }
+    }
+  }
+}
+
+.street_box{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  // background: #1d0d17;
+  .street_center{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    &>div{
+      width: 49%;
+      height: 370px;
+      position: relative;
+      .street_start{
+        position: absolute;
+        color: #ffe000;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 130px;
+        height: 50px;
+        text-align: center;
+        margin: auto;
+        z-index: 10;
+        border: 2px solid #ffe000;
+        // background: #1d0d17;
+        display: none;
+        line-height: 47px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .2s linear;
+        &:hover{
+          background: #ffe000;
+          color: #1d0d17;
+        }
+      }
+      .shadom{
+        width: 100%;
+        height: 100%;
+        background: black;
+        display: none;
+        opacity: .4;
+       
+      }
+    }
+    &>div:hover .shadom,&>div:hover .street_start{
+      display: block;
+    }
+    .street_ag{
+      background: url(./images/ag.png) 0 0/100% 100%;
+      float: left;
+    }
+    .street_bbin{
+      background: url(./images/bbin.png) 0 0/100% 100%;
+      float: right;
+    }
+  }
+  
+}

@@ -1,0 +1,64 @@
+.goHome{
+  i{
+    font-size:20px;
+  }
+}
+.inputItem{
+  display: block;
+  background:rgba(255,255,255,.25);
+  border-radius:10px;
+  height:.9rem;
+  margin:15px 0;
+
+  i{
+    color:#fff;
+    font-size:20px;
+    float:left;
+    line-height:.9rem;
+    margin:0 5%;
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+  }
+  input[type="text"],input[type="password"]{
+    border:none;
+    background:none;
+    display:inline-block;
+    font-size:.3rem;
+    line-height:.8rem;
+    height:.8rem;
+    padding-right:.5rem;
+    width:72%;
+    color:#fff;
+  }
+}
+.loginBtn{
+  border-radius: .35rem;
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+  line-height: .7rem;
+  font-size: .3rem;
+  text-align: center;
+  display: block;
+  width: 90%;
+  margin: 40px auto;
+}
+.loginBt{
+  a{
+    display: inline-block;
+    width:40%;
+    margin:0 5%;
+    color:#fff;
+    text-underline: #fff;
+  }
+}

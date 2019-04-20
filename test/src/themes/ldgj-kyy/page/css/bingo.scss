@@ -1,0 +1,176 @@
+
+
+@import "../index/variables";
+#wrapwcent{
+  min-width: 1300px;
+  min-width: 1100px\9;
+  max-width: 1920px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin:30px auto;
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .wrapper-game-list-item{
+    width:50%;
+    display: inline-block;
+    padding:5px;
+    &:hover .game-hover{
+      display:block;
+    }
+    .game-hover {
+      a{
+        padding:6px 20px;
+        text-decoration: none;
+      }
+    }
+    .room-info-wrapper {
+      position: relative;
+      background: #8b0000;
+      height: 45px;
+      text-align: center;
+      .room-info {
+        width: 100%;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        .room-title{
+          font-size:20px;
+        }
+      }
+    }
+  }
+  .coming{
+    font-size:35px;
+    color: #8b0000;
+    width:100%;
+    min-height:200px;
+    line-height:200px;
+  }
+
+}
+
+.game-thumb {
+  width: 800px;
+  height: 361px;
+}
+#bingo .bingo-fname{
+  background: map-get($base, bingo_content_bg_img) no-repeat;
+}
+#bingo .bingo-fname .bing-desc-bbin {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.color-main{
+  color: #f7aa9d;
+}
+.bingo-title-img{
+  text-align: center;
+  display: inline-block;
+  width: 192px;
+  height: 53px;
+  background: map-get($base, bingo-title-img) no-repeat;
+}
+.bingo-title-img3{
+  text-align: center;
+  display: inline-block;
+  width: 192px;
+  height: 53px;
+  background: map-get($base, bingo-title-img3) no-repeat;
+}
+.bingo-title-img2{
+  text-align: center;
+  display: inline-block;
+  width: 192px;
+  height: 53px;
+  background: map-get($base, bingo-title-img2) no-repeat;
+}
+.bingo-title-img3{
+  text-align: center;
+  display: inline-block;
+  width: 192px;
+  height: 53px;
+  background: map-get($base, bingo-title-img3) no-repeat;
+}
+.bingo-title-img4{
+  display: inline-block;
+  width: 192px;
+  height: 53px;
+  background:map-get($base, bingo-title-img4) no-repeat;
+}
+#bingo .bingo-fname .bingo-platform-list div {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffdf1b;
+}
+#bingo .bingo-fname .bingo-platform-list div .bingo-platform-img{
+  width: 136px;
+  height: 139px;
+  display: inline-block;
+}
+#bingo .bingo-fname .bingo-platform-list div span {
+  display: block;
+  color: #ffdf1b;
+}
+#bingo .bingo-fname .bing-desc-bbin p {
+  padding: 15px 0;
+  line-height: 24px;
+}
+.bing-desc-inco-bg{
+  height: 1px;
+  display: block;
+  background: map-get($base,bingo_bbinlogo_img)center center no-repeat;
+}
+.bingo-platform-cqssc{
+  background: map-get($base, bingo-platform-cqssc)
+}
+.bingo-platform-pk10{
+  background: map-get($base, bingo-platform-pk10)
+}
+.bingo-platform-pcdd{
+  background: map-get($base, bingo-platform-pcdd)
+}
+.bingo-platform-ssxw{
+  background: map-get($base, bingo-platform-ssxw)
+}
+.bingo-platform-ks{
+  background: map-get($base, bingo-platform-pls)
+}
+.bingo-platform-xglhc{
+  background: map-get($base, bingo-platform-xglhc)
+}
+.bingo-platform-fcsd{
+  background: map-get($base,bingo-platform-fcsd)
+}
+.bingo-platform-pls{
+  background: map-get($base,bingo-platform-pls)
+}
+.bingo-platform-ogc{
+  background: map-get($base,bingo-platform-ogc)
+}
+.bingo-platform-cgc{
+  background: map-get($base,bingo-platform-cgc)
+}
+.bingo-platform-jndc{
+  background: map-get($base,bingo-platform-jndc)
+}
+.bingo-platform-jndbs{
+  background: map-get($base,bingo-platform-jndbs)
+}
+.bingo-platform-bjklb{
+  background: map-get($base,bingo-platform-bjklb)
+}
+.bingo-platform-tjsfc{
+  background: map-get($base,bingo-platform-tjsfc)
+}
+.bingo-platform-bbklc{
+  background: map-get($base,bingo-platform-bbklc)
+}
+.bingo-platform-aysyq{
+  background: map-get($base,bingo-platform-aysyq)
+}

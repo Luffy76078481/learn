@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>dafabet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+<div class="main">
+    <div class="top">
+        <img src="imgs/top_pcdd.png" width="100%" alt="">
+    </div>
+    <div class="download">
+        <div class="qr">
+            <img id="qrCode" src="" alt="">
+            <p>扫二维条码下载</p>
+        </div>
+        <div class="loadBtn">
+            <a id="downloadBtn" href="downPage.html">
+                <div class="btn">
+                    <img src="imgs/icon.png" alt="" width="100%" style="border-radius: 15px;">
+                </div>
+            </a>
+            <p class="loadBtnP">点击下载</p>
+        </div>
+    </div>
+    <div class="textArea">
+        <span style="font-weight:bold;">首頁：</span>
+        <span>多款游戏，可供选择</span>
+    </div>
+    <div class="picArea">
+        <img class="pic" src="imgs/sj1.png" width="35%" height="auto" alt="">
+    </div>
+    <div class="textArea">
+        <span style="font-weight:bold;">充值：</span>
+        <span>包括支付宝、微信支付、银联支付</span>
+    </div>
+    <div class="picArea">
+        <img class="pic" src="imgs/sj2.png" width="35%" height="auto" alt="">
+    </div>
+    <div class="textArea">
+        <span style="font-weight:bold;">玩游戏：</span>
+        <span>各式各样，多样选择</span>
+    </div>
+    <div class="picArea">
+        <img class="pic" src="imgs/sj3.png" width="35%" height="auto" alt="">
+    </div>
+    <div class="textArea">
+        <span style="font-weight:bold;">客服服务：</span>
+        <span>即时线上客服</span>
+    </div>
+    <div class="picArea">
+        <img class="pic" src="imgs/sj4.png" width="35%" height="auto" alt="">
+    </div>
+    <!--<div class="service">-->
+        <!--<p><i class="fa fa-envelope"></i>&nbsp&nbsp&nbsp邮箱 : 234932932382@qq.com</p>-->
+        <!--<p><i class="fa fa-weixin"></i>&nbsp&nbsp&nbsp微信 : text001</p>-->
+    <!--</div>-->
+    <footer>
+        <p>copyright &nbsp©&nbspdafabet</p>
+    </footer>
+</div>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+    $(function(){
+        var isIos = false;
+        var qrcode = "/api/v0/qcode.png?code=" + encodeURIComponent(document.location.href);
+        $("#qrCode").attr("src", qrcode);
+        if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)){
+            isIos = true;
+        }
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        window.channel = getUrlParam("channel") || "";
+        window.version = getUrlParam("version") || "";
+        if (window.channel == "null") {
+            window.channel = "";
+        }
+        if (isIos) {
+            var link = "downPage.html?channel=" + window.channel;
+            if (window.version) {
+                link += "&version=" + window.version;
+            }
+            $("#downloadBtn").attr("href", link);
+        } else {
+            var androidLink = "/api/v0/download_apk.api?channel=" + channel;
+            if (window.version) {
+                androidLink += "&version=" + window.version;
+            }
+            $("#downloadBtn").attr("href", androidLink);
+        }
+    });
+</script>
+</body>
+
+</html>

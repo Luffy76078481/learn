@@ -1,0 +1,78 @@
+
+.affix-online-server{
+    position: fixed;
+    top: 300px;
+    right: 0;
+    z-index: 9999;
+    background-color: #44423d;
+    border-radius: 10px 0 0 10px;
+    color: #FFF;
+    .hd{
+      width: 28px;
+      padding: 10px 5px;
+      text-align: center;
+      line-height: 25px;
+      float:left;
+      border-right: 1px solid #676565;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .bd{
+      width: auto;
+      display:block;
+      float: left;
+      padding: 10px 0;
+      box-sizing: border-box;
+      max-width: 0;
+      overflow: hidden!important;
+      transition: max-width .52s;
+      -moz-transition: max-width .52s; /* Firefox 4 */
+      -webkit-transition: max-width .52s; /* Safari 和 Chrome */
+      -o-transition: max-width .52s; /* Opera */
+      div{
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        white-space: nowrap;
+      }
+      a{
+        color:#FFF;
+        text-decoration: none;
+      }
+      .qrcode{
+        height: 120px;
+        margin-left: 68px;
+        margin-top: 20px;
+        div{
+          padding: 0;
+          width: 100px;
+          height: 10px;
+          text-align: center;
+        }
+      }
+    }
+    .label-warning{
+      background-color: #f0ad4e;
+      border-radius: 5px;
+      font-size: 12px;
+      color: #FFF;
+      padding: 2px 4px;
+      cursor: pointer;
+    }
+    .mybtn{
+      text-align: center;
+      margin-top: 5px;
+    }
+    .label-warning{
+      background-color:#019393 ;
+    }
+  
+  }
+  .affix-online-server:hover .bd{
+    max-width: 500px;
+    transition: max-width .5s;
+    -moz-transition: max-width .5s; /* Firefox 4 */
+    -webkit-transition: max-width .5s; /* Safari 和 Chrome */
+    -o-transition: max-width .5s; /* Opera */
+  
+  }

@@ -1,0 +1,69 @@
+.promotion{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  .am-navbar{
+    border: 0;
+    background:transparent;
+  }
+  .scroll-content{
+    .myListView{
+      position: absolute !important;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      .am-list-item{
+        border-bottom:1px solid #ccc;
+      }
+      .am-list-view-scrollview-content{
+        position: initial !important;
+      }
+    }
+  }
+  .listItem{
+    a{
+      color:#000;
+    }
+    .promoImg{
+      display: block;
+      width: 100%;
+      height:auto;
+      min-height:20px;
+      margin-bottom: 10px;
+      &.statement{
+        height:3rem;
+        background-image:url('./images/liushuiwang.jpg');
+        background-size: 100% 100%;
+      }
+      &.lotto{
+        height:3rem;
+        background-image:url('./images/dazhuanpan.jpg');
+        background-size: 100% 100%;
+      }
+    }
+    small.time{
+      float:right;
+      color:#888;
+    }
+    .am-list-line {
+      .am-list-content{
+        font-size:.28rem;
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+      .am-list-extra{
+        font-size:.24rem;
+        padding-top:20px;
+        padding-bottom:20px;
+      }
+    }
+    .Badge{
+      margin-right:10px;
+      font-size:12px;
+    }
+  }
+
+
+}

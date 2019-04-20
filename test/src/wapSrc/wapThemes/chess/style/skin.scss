@@ -1,0 +1,69 @@
+
+// ======================================================== 点击效果
+.animate_shake:active{
+    transform:scale(0.97);
+    -ms-transform:scale(0.97); 	/* IE 9 */
+    -moz-transform:scale(0.97); 	/* Firefox */
+    -webkit-transform:scale(0.97); /* Safari 和 Chrome */
+}
+.translateActive:active{
+    transform: translate(1px);
+    -ms-transform:translate(1px); 	/* IE 9 */
+    -moz-transform:translate(1px); 	/* Firefox */
+    -webkit-transform:translate(1px); /* Safari 和 Chrome */
+}
+@keyframes rota1{
+    0%{transform:rotate(0deg)}
+    50%{transform: rotate(360deg)}
+    100%{transform: rotate(0deg)}
+}
+.rotateActive:active{
+    animation: rota1 .5s linear;
+    -ms-animation:rota1 .5s linear; 	/* IE 9 */
+    -moz-animation:rota1 .5s linear; 	/* Firefox */
+    -webkit-animation:rota1 .5s linear; /* Safari 和 Chrome */
+}
+.chooseActive:active{
+    transform:scale(1.03);
+    -ms-transform:scale(1.03); 	/* IE 9 */
+    -moz-transform:scale(1.03); 	/* Firefox */
+    -webkit-transform:scale(1.03); /* Safari 和 Chrome */
+}
+// 公共
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    position: relative;
+    width : 100% ;
+    height : 100% ;
+    background: #000!important;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+img{
+    font-size: 0;
+}
+button{
+    border: none;
+    outline: none!important;
+}
+#rotatingPage{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

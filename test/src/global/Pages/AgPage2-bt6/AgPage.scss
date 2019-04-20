@@ -1,0 +1,338 @@
+#ag-game{
+  .agBanner{
+    background-image:url('/images/agby/cover.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height:800px;
+    .carousel_wrapper{
+      width: 1500px;
+      height:100%;
+      left: -750px;
+      margin-left: 50%;
+      position: relative;
+    }
+    .item{
+      width: 470px;
+      height: 540px;
+      position: relative;
+      .gameBtn{
+        display: block;
+        position: absolute;
+        width:70%;
+        height:18%;
+        left:15%;
+        bottom:0;
+      }
+      .hoverBg{
+        width: 100%;
+        height: 100%;
+      }
+      img{
+        background-size: cover;
+        position: absolute;
+        top:0;
+      }
+      &.active{
+        background-image:url('/images/agby/light.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: b .5;
+        .isShow{
+          visibility: hidden;
+        }
+        img{
+          &#ag{
+            background-image: url('/images/agby/ag/agSprite-min.png');
+            animation: d 4s steps(90) infinite;
+          }
+          &#pt{
+            background-image:url('/images/agby/pt/ptSprite-min.png');
+            animation: d 4s steps(90) infinite;
+          }
+          &#gd{
+            background-image:url('/images/agby/gd/gdSprite-min.png');
+            animation: c 4s steps(90) infinite;
+          }
+          &#bbinfe{
+            background-image:url('/images/agby/bbinfe/bbinfeSprite-min.gif');
+          }
+          &#bbinfm{
+            background-image:url('/images/agby/bbinfm/bbinfmSprite-min.gif');
+          }
+        }
+      }
+      &.agItem .hoverBg:hover{
+        background-image:url('/images/agby/ag/AG-hover-background@tiny.png');
+        background-size: cover;
+      }
+      &.gdItem .hoverBg:hover,&.bbinfeItem .hoverBg:hover,&.bbinfmItem .hoverBg:hover{
+        background-image:url('/images/agby/gd/GD-hover-background@tiny.png');
+        background-size: cover;
+      }
+      &.ptItem .hoverBg:hover{
+        background-image:url('/images/agby/pt/PT-hover-background@tiny.png');
+        background-size: cover;
+      }
+    }
+  }
+
+  .main{
+    color:#333;
+    h1 {
+      font-size: 65px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+    h4 {
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 105px;
+      padding-left: 1%;
+    }
+    .right-banner{
+      margin-top: 10.6%;
+      margin-left: -13%;
+    }
+    .num{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      font-size: 26px;
+      position: absolute;
+      line-height: 38px;
+      font-weight: 700;
+    }
+    p{
+      margin-left: 50px;
+      font-size: 14px;
+    }
+    a{
+      color:#c83434;
+      &:hover{
+        color:#333;
+      }
+    }
+    .step-1{
+      background-color: #f3f3f3;
+      padding: 20px 0;
+      min-height: 532px;
+    }
+    .container{
+      width:1200px;
+      margin:0 auto;
+    }
+    .tabsChange{
+      ul li{
+        width: 20%;
+        text-align: center;
+        float: left;
+        font-size: 15pt;
+        height: 60px;
+        line-height: 66px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #fff !important;
+        text-shadow: 1px 1px #000;
+        &:last-child{
+          border-right:none !important;
+        }
+      }
+    }
+    .detailItem{
+      display:none;
+      width:1200px;
+      padding: 50px 30px;
+      min-height: 465px;
+      margin-bottom: 40px;
+      float: left;
+      background-color: #f3f3f3;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      &.selected{
+        display: block;
+      }
+      &>div{
+        font-size: 13px;
+        margin-left: 0;
+        margin-top: 20px;
+        line-height: 30px;
+        text-align: justify;
+        img{
+          max-width:90%;
+        }
+        h2{
+          display: block;
+          font-size: 22px;
+          font-weight: 700;
+          text-align: justify;
+        }
+        p{
+          font-size: 13px;
+          margin-left: 0;
+          margin-top: 20px;
+          line-height: 30px;
+          text-align: justify;
+        }
+      }
+      ol{
+        display: block;
+        list-style: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        counter-reset: a;
+        margin-top: 15px;
+        height: 270px;
+        li{
+          margin-top: 12px;
+          line-height: 30px;
+          margin-right: 17px;
+          text-align: justify;
+          &::before{
+            counter-increment: a;
+            content: counter(a);
+            font: 700 16px sans-serif;
+            text-align: center;
+            color: #fff;
+            width: 18px;
+            height: 18px;
+            margin-top: 7px;
+            background: #3484d6;
+            border-radius: 999px;
+            padding: 4px 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .step-2{
+      background:#fff;
+      .detailItem:first-child{
+        display:block;
+      }
+
+    }
+    .tabsAg{
+      h1{color:#57cdef;}
+      .num{
+        background:#57cdef;
+      }
+      .tabsChange{
+        background:url('/images/agby/ag/agLayer.png') 0 0 no-repeat;
+        ul li{
+          border-right: 1px solid #00c6cd;
+          &.select,&:hover{
+            background-color: rgba(104,235,249,.5);
+            color: #fff !important;
+            text-shadow: 1.5px 1.5px #000;
+          }
+        }
+      }
+    }
+    .tabsGd{
+      h1{color:#e5a40f;}
+      .num{
+        background:#e5a40f;
+      }
+      .tabsChange{
+        background:url('/images/agby/gd/gdLayer.jpg') 0 0 no-repeat;
+        ul li{
+          border-right: 1px solid #e5a40f;
+          &.select,&:hover{
+            background-color:rgba(246,226,32,.7);;
+            color: #fff;
+            text-shadow: 1.5px 1.5px #000;
+          }
+        }
+      }
+    }
+    .tabsPt{
+      h1{color:#0266c7;}
+      .num{
+        background:#0266c7;
+      }
+      .tabsChange{
+        background:url('/images/agby/pt/ptLayer.png') 0 0 no-repeat;
+        ul li{
+          width:16.66666%;
+          border-right: 1px solid #0266c7;
+          &.select,&:hover{
+            background-color: rgba(104,235,249,.5);
+            color: #fff;
+            text-shadow: 1.5px 1.5px #000;
+          }
+        }
+      }
+    }
+    .tabsBBINfe{
+      h1{color:#9846b7;}
+      .num{
+        background:#9846b7;
+      }
+      .tabsChange{
+        background:url('/images/agby/bbinfe/bbinfeLayer.png') 0 0 no-repeat;
+        ul li{
+          border-right: 1px solid #9846b7;
+          &.select,&:hover{
+            background-color: rgba(212,162,232,.5);
+            color: #fff;
+            text-shadow: 1.5px 1.5px #000;
+          }
+        }
+      }
+    }
+    .tabsBBINfm{
+      h1{color:#2c5aad;}
+      .num{
+        background:#2c5aad;
+      }
+      .tabsChange{
+        background:url('/images/agby/bbinfm/bbinfmLayer.png') 0 0 no-repeat;
+        ul li{
+          border-right: 1px solid #2c5aad;
+          &.select,&:hover{
+            background-color: rgba(104,235,249,.5);
+            color: #fff;
+            text-shadow: 1.5px 1.5px #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+.col-md-1{
+  display: none;
+}
+@keyframes b {
+  0% {
+    opacity: .9
+  }
+
+  to {
+    opacity: 1
+  }
+}
+@keyframes c {
+  0% {
+    background-position: 0 0
+  }
+
+  to {
+    background-position: 0 -48600px
+  }
+}
+@keyframes d {
+  0% {
+    background-position: 0
+  }
+
+  to {
+    background-position: -43200px
+  }
+}

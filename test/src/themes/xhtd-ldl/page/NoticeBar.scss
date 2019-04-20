@@ -1,0 +1,111 @@
+.notice-bar{
+  line-height: 30px;
+  a , input{
+    outline:none !important;
+  }
+  .popBox{
+    opacity: 0;
+    /*width: 33vw;*/
+    /*height: 33vh;*/
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 20%;
+    left: 0;
+    margin: auto;
+    z-index: 999999;
+    border: 1px solid #000;
+    position: fixed;
+    transition: .5s;
+    /*display: none;*/
+  }
+
+  .popBox .popBox_title{
+    height: 15%;
+    width: 100%;
+    font-size: 22px;
+    line-height:50px;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+
+  .popBox .popBox_pic{
+    color: #ffe887;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  .popBox_close{
+    color: #ffe887;
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    font-size: 25px;
+    border: 1px solid rgba(255,255,255,.3);
+    width: 30px;
+    text-align: center;
+    background-color: rgba(76, 45, 40, 0.54);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .popBox .popBox_body li{
+    list-style-type:none;
+    /*list-style-image: url("../images/index/bestNew1.png");*/
+  }
+
+  .popBox .popBox_body{
+    width: 100%;
+    height: 85%;
+    border: solid 1px #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+    overflow: auto;
+    padding: 0px 55px;
+    color: #000;
+    /*background: url("../images/index/bestNewBg.png") repeat-y 40px 10px;*/
+  }
+
+  .popBox .popBox_body .popBox_body_date{
+    margin: 15px 3px 0 0;
+    color:#a62e00;
+    font-weight:bolder;
+  }
+
+  .popBox .popBox_body .popBox_body_title{
+    margin: 3px;
+    font-weight:bold;
+  }
+
+  .popout{
+    opacity: 1 !important;
+    width: 600px !important;
+    height: 350px !important;
+  }
+  //-------------- marqueen Animateion -----------------
+  .marquee {
+    width: 100%;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .marquee a {
+    display: inline-block;
+    padding-left: 50%;  /* show the marquee just outside the paragraph */
+    animation: marquee 45s linear infinite;
+  }
+  /* Make it move */
+  @keyframes marquee {
+    0%   { -moz-transform: translateX(0%); /* Firefox bug fix */
+      -webkit-transform: translateX(0%); /* Firefox bug fix */
+      transform: translateX(0%);
+    }
+    100% {-moz-transform: translateX(-100%); /* Firefox bug fix */
+      -webkit-transform: translateX(-100%); /* Firefox bug fix */
+      transform: translateX(-100%);  }
+  }
+
+}

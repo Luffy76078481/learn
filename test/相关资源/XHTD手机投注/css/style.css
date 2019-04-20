@@ -1,0 +1,224 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #a9b1b3;
+    font-size: 14px;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+.desc-section pre, .releases-section .release-view .version-info .changelog .wrapper, body, html {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+*, .wechat-tips {
+    box-sizing: border-box;
+}
+.out-container{
+     background:#121C27  url("./../imgs/body.jpg") no-repeat center -40px;
+     height: 550px;
+}
+.pattern {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    max-width: 312px;
+    width: 21.66%;
+    transition: all .5s;
+}
+.pattern.left {
+    left: 0;
+}
+.pattern.right {
+    right: 0;
+}
+.main {
+    margin: 0px auto ;
+	width: 1200px;
+	position: relative;
+}
+.l-side{
+    margin: 500px 0 0 0;
+	float: left;
+	position: relative;
+	width: 400px;
+}
+.r-side{
+	float: right;
+	position: relative;
+	width: 750px;
+	padding: 300px 0 0 0;
+}
+.main span {
+    z-index: 2;
+	display: block;
+}
+.main .qrcode {
+    background-color: #eff2f2;
+    -webkit-transition: all .25s;
+	transition: all .25s;
+    width: 160px;
+    height: 160px;
+    border: 8px solid transparent;
+	border-radius: 25px;
+	left: 0;
+	top: 0;
+}
+.main .qrcode img {
+    width: 140px;
+    height: 140px;
+    display: block;
+    margin: auto
+}
+.main .qrcode:hover {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    box-shadow: 0 1px 5px rgba(0,0,0,.3);
+}
+.qr_btn:hover{background: url(../imgs/btnh.png) no-repeat}
+.qr_bc{float: right;}
+.qr_btn {
+    display: block;
+    width: 296px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background: url(../imgs/btn1.png) no-repeat;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.i_mb {
+    display: inline-block;
+    width: 19px;
+    height: 30px;
+    line-height: 30px;
+    background: url(../imgs/p_icn.png) no-repeat;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+.icon-container{ 
+    height: 200px;
+    position: relative;
+    margin: 0 0 0 100px;
+    width: 470px;
+}
+.icon-container span{ position: absolute}
+.des{
+	width: 100%;
+	margin: 100px auto 0;
+	padding: 0
+}
+.des h1{
+	position: relative;
+    color: #000;
+    text-align: left;
+    font-weight: 400;
+    font-size: 28px;
+}
+.icon-warp{
+    font-size: 18px;
+}
+.des span{
+	display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+	line-height: 1.6;
+	vertical-align: bottom;
+}
+.des p{
+    width: 400px;
+    text-align: left;
+    line-height: 32px;
+    font-size: 20px;
+    color: #000
+}
+.des a.text-black{
+	color: #505556;
+	cursor: pointer;
+}
+.des a.text-black:hover{text-decoration: underline}
+.release-info{
+	position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.release-info p {
+	margin-bottom: 4px;
+	margin-top: 0
+}
+.release-info:before{
+	position: absolute;
+    top: 0;
+    left: 30%;
+    display: block;
+    margin-left: -30%;
+    width: 80%;
+    border-top: 1px solid #dae2e3;
+    content: ' ';
+}
+.mobile{
+	position: relative;
+	width: 300px;
+    height: 478px;
+    float: left;
+    margin: 80px 20px 0;
+}
+.phone{
+	margin: 0 auto;
+    padding: 40px 0 0 7px;
+}
+.phoneIos{
+    background: url("./../imgs/iphone.png");
+    width: 206px;
+    height: 410px;
+}
+.phoneAndro{
+    background: url("./../imgs/android.png");
+    width: 211px;
+    height: 412px;
+}
+.iosList .pic1{ background-image: url("../imgs/1.png")}
+.iosList .pic2{ background-image: url("../imgs/2.png")}
+.iosList .pic3{ background-image: url("../imgs/3.png")}
+.iosList .pic4{ background-image: url("../imgs/4.png")}
+.iosList .pic5{ background-image: url("../imgs/5.png")}
+.iosList .pic6{ background-image: url("../imgs/6.png")}
+.iosList .pic7{ background-image: url("../imgs/7.png")}
+.iosList .pic8{ background-image: url("../imgs/8.png")}
+.iosList .pic9{ background-image: url("../imgs/9.png")}
+.iosList .pic10{ background-image: url("../imgs/10.png")}
+
+
+.androList .pic1{ background-image: url("./../imgs/a1.jpg") }
+.androList .pic2{ background-image: url("./../imgs/a2.jpg") }
+.androList .pic3{ background-image: url("./../imgs/a3.jpg") }
+.androList .pic4{ background-image: url("./../imgs/a4.jpg") }
+.androList .pic5{ background-image: url("./../imgs/a5.jpg") }
+.slide-inner ul{padding: 0;margin: 0;list-style: none}
+.slide-inner ul li{width: 195px;height: 335px;background-size:100% 100%;background-repeat: no-repeat}
+.slide-indicators{position: absolute}
+.mobile .next{
+	display: block;
+    width: 20px;
+    height: 47px;
+    background: url(./../imgs/next.png) no-repeat;
+    position: absolute;
+    right: -5%;
+    top: 185px;
+    cursor: pointer;
+}
+.mobile .prev {
+    display: block;
+    width: 20px;
+    height: 47px;
+    background: url(./../imgs/prev.png) no-repeat;
+    position: absolute;
+    left: -5%;
+    top: 185px;
+    cursor: pointer;
+}
+.slide-indicators{display: none}

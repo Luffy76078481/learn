@@ -1,0 +1,304 @@
+@import "../../style/variables.scss";
+
+.game-content{
+  margin-top:1rem;
+  margin-bottom:51px;
+  border-top:1px solid $theme-noticeBg-color;
+  position: relative;
+  background:$theme-border-color2;
+  .gamesPage{
+    z-index:1;
+    .dataLoading{
+      color:#fff;
+    }
+    .game-categorys{
+      background:$theme-firstBg-color;
+      ul{
+        padding:0;
+        margin:0;
+        &:after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+        li{
+          float:left;
+          text-align: center;
+          border: 1px solid $theme-border-color2;
+          border-right:0;
+          height:1rem;
+          list-style: none;
+          box-sizing: border-box;
+          border-top: 0;
+          width: 16.6%;
+          line-height: 1rem;
+          font-size: .25rem;
+          position: relative;
+          &:first-child{
+            border-left:none;
+          }
+          &:last-child{
+            border-right:1px solid $theme-border-color2;
+          }
+          a{
+            color:#fff;
+            position: absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+
+            &.active{
+              background:$theme-border-color2;
+            }
+            svg{
+              fill:#fff;
+              height:80%;
+              margin-top:10%;
+            }
+            .platIcon{
+              height: 25px;
+              margin-top: .1rem;
+              width:100%;
+              fill:$theme-textActive-color;
+            }
+            p{
+              margin: 0;
+              line-height: .35rem;
+              font-size: .2rem;
+            }
+          }
+        }
+      }
+    }
+    .categorys-drawer.am-drawer.am-drawer-right .am-drawer-sidebar{
+      left:initial;
+      background: #373737;
+    }
+    .chose-category{
+      h2{
+        background:$theme-firstBg-color;
+        color:#fff;
+        font-size: .35rem;
+        padding: .25rem 0;
+        text-align: center;
+        font-weight:600;
+        margin:0;
+      }
+      ul{
+        padding:0;
+        margin:0;
+        border-top:1px solid #5e5e5e;
+        &:after{
+          content:'';
+          display: block;
+          clear: both;
+        }
+        li{
+          width:50%;
+          border-right:1px solid #5e5e5e;
+          border-bottom:1px solid #5e5e5e;
+          box-sizing: border-box;
+          float:left;
+          list-style: none;
+          &:nth-child(even){
+            border-right: 0;
+          }
+          a{
+            color: #fff;
+            text-align: center;
+            display: block;
+            height: 1.3rem;
+            padding: .08rem 0;
+            &.active{
+              background:$theme-firstBg-color;
+            }
+            .platIcon{
+              height:70%;
+              fill:$theme-textActive-color;
+              margin-bottom: 5px;
+            }
+            .name{
+              display: block;
+              font-size:.28rem;
+            }
+            svg{
+              fill:#fff;
+              height:70%;
+            }
+          }
+        }
+      }
+    }
+    .tabs{
+      position: relative;
+      background:$theme-firstBg-color;
+      height:.7rem;
+      .am-search{
+        background:$theme-firstBg-color;
+        height:.7rem;
+        .am-search-cancel{
+          height:.7rem;
+          line-height:.7rem;
+          color:#fff;
+        }
+        .am-search-input .am-search-synthetic-ph{
+          z-index:0;
+        }
+      }
+      .search{
+        color:#fff;
+        float:left;
+        text-align: center;
+        svg{
+          margin: .1rem;
+        }
+      }
+      .tabsList{
+        overflow-x: auto;
+        white-space: nowrap;
+        text-align: left;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        margin-left: .7rem;
+        a{
+          display: inline-block;
+          line-height: .7rem;
+          font-size: .25rem;
+          color: #fff;
+          padding:0 .2rem;
+          flex: 1;
+          text-align: center;
+          &.active{
+            background:$theme-border-color2;
+          }
+
+        }
+      }
+
+    }
+    .singleList{
+      min-height:450px;
+      background:$singleList-bg;
+      .dataLoading{
+        color:#969696;
+      }
+      .myListView{
+        padding: 2% 1% 1.75%;
+        box-sizing: border-box;
+        .am-list-footer{
+          clear:both;
+          color:#969696;
+        }
+        .listItem{
+          float:left;
+          width:47%;
+          margin: 1.5% 1.5% .1rem;
+          box-sizing: border-box;
+          position: relative;
+          height:2.2rem;
+          display: inline-block;
+
+          .gameInfo{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 10px;
+            height: 10px;
+            color: #fff;
+          }
+          h5{
+            color:#e5c99b;
+            font-size:.25rem;
+            text-align: center;
+            margin:0;
+          }
+          img{
+            border: 1px solid #e5c99b;
+            width:100%;
+            //height:1.8rem;
+          }
+        }
+      }
+    }
+    .gamelist{
+      min-height:500px;
+      .myListView{
+        padding:0% 1% 1.75%;
+        box-sizing: border-box;
+        &.streetMachine{
+          .listItem{
+            width:47%;
+            margin: 1.5% 1.5% .1rem;
+            padding:0;
+            height:2.5rem;
+            border: 1px solid #e5c99b;
+            p{
+              position: absolute;
+              background: rgba(0, 0, 0, 0.5);
+              color: #fff;
+              margin: 0;
+              font-size: .25rem;
+              text-align: center;
+              left: 0%;
+              right: 0%;
+              bottom: 0%;
+              line-height: .5rem;
+            }
+          }
+          img{
+            height:auto;
+          }
+        }
+        .am-list-footer{
+          clear:both;
+          color:#fff;
+        }
+
+        .listItem{
+          float:left;
+          width: 33.33333333%;
+          padding:1%;
+          box-sizing: border-box;
+          position: relative;
+          height:1.8rem;
+          display: inline-block;
+          .gameInfo{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 10px;
+            height: 10px;
+            color: #fff;
+          }
+          img{
+            width:100%;
+            height:100%;
+          }
+          p{
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            margin: 0;
+            font-size: .2rem;
+            text-align: center;
+            left: 3%;
+            right: 3%;
+            bottom: 4%;
+            line-height: .4rem;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  html:not([data-scale]) .game-content .am-list-body::after {
+    height:0 !important;
+  }
+}
+

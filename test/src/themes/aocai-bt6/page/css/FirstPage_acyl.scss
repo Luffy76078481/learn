@@ -1,0 +1,698 @@
+@charset "utf-8";
+.inner-content{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid transparent;
+}
+
+.cup-content {
+  margin: 0 auto;
+  padding:0px 0;
+}
+.cup-content .left, .cup-content .right{
+  position: relative;
+  float: left;
+}
+
+
+
+/*顶部侧悬浮*/
+.notice-module {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+.notice-module .bottom .right h3 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: .5em;
+  color: rgba(0,0,0,.85);
+  font-weight: 500;  
+  font-size: 14px;
+}
+.notice-module {
+  width: 220px;
+  height: 265px;
+  padding: 8px 20px;
+  background: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.notice-module .ant-tabs-tab {
+  padding: 8px 10px;
+  font-size: 15px;
+  margin: 0 5px;
+}
+.firstLetter{
+  font-size:12px;
+  line-height:30px;
+  &:first-letter{
+    font-size:24px;
+    font-weight: bold;
+    color:red;
+  }
+}
+.notice-module .bottom {
+  height: 90px;
+  border-top: 1px solid #efefef;
+  margin-top: 10px;
+}
+.notice-module .bottom div {
+  float: left;
+  width: 47%;
+}
+.notice-module .bottom .qrcode img {
+  width:100%;
+  margin: 6px 0;
+}
+.notice-module .bottom .right h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+.notice-module .bottom .right p {
+  font-size: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #e11222;
+}
+
+
+/*左侧*/
+.lottery-nav-module {
+  width: 250px;
+  background: #fff;
+  padding: 10px 0 0;
+  border: 1px solid #ef3745;
+  -webkit-box-sizing: unset;
+  box-sizing: unset
+}
+
+.lottery-nav-module .hot {
+  padding-bottom: 10px;
+  z-index: 10;
+  background: #fff;
+  position: relative;
+  border-bottom: 1px dotted #ccc
+}
+
+.lottery-nav-module .hot div {
+  display: block;
+  height: 57px;
+  margin-bottom: 3px
+}
+
+.lottery-nav-module .hot div:hover {
+  background: rgba(220,56,52,.1)
+}
+
+.lottery-nav-module .hot div:hover .button {
+  background: #ef3745!important
+}
+
+.lottery-nav-module .hot div img {
+  width: 45px;
+  height: 45px
+}
+
+.lottery-nav-module .hot div p {
+  display: block;
+  height: 50px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0
+}
+
+.lottery-nav-module .hot div p>span {
+  display: block
+}
+
+.lottery-nav-module .hot div p.image {
+  padding: 8px;
+  width: 50px
+}
+
+.lottery-nav-module .hot div p.title {
+  padding: 5px 10px;
+  margin-top: 5px;
+  width: 200px
+}
+
+.lottery-nav-module .hot div p.title .name {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #333
+}
+
+.lottery-nav-module .hot div p.title .name .button {
+  float: right;
+  margin-right: 5px;
+  color: #fff;
+  background: #ef3745;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  margin-top: 8px;
+  cursor: pointer
+}
+
+.lottery-nav-module .hot div p.title .countdown {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #bbb
+}
+
+.lottery-nav-module .hot div p.title .countdown span {
+  color: #ef3745
+}
+
+.lottery-nav-module .hot div p.title .countdown .issue {
+  float: right;
+  color: #bbb
+}
+
+.lottery-nav-module .all {
+  margin: 0;
+  z-index: 9;
+  position: relative
+}
+
+.lottery-nav-module .all .outer-div {
+  position: relative;
+  padding: 0;
+  height: 36px;
+  line-height: 36px;
+  z-index: 1;
+  background: #fff;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden
+}
+
+.lottery-nav-module .all .outer-div .inner-div {
+  height: 36px;
+  line-height: 36px;
+  min-width: 250px
+}
+
+.lottery-nav-module .all .outer-div:hover {
+  width: auto;
+  z-index: 0;
+  height: 36px;
+  white-space: nowrap;
+  display: table;
+  border: 1px solid #ef3745;
+  padding-right: 0;
+  margin: -1px
+}
+
+.lottery-nav-module .all .outer-div .tl {
+  line-height: 21px;
+  display: inline-block;
+  width: 50px;
+  background: #ef3745;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  word-break: keep-all;
+  letter-spacing: normal;
+  font-size: 12px;
+  margin-left: 10px
+}
+
+.lottery-nav-module .all .outer-div .tl:hover {
+  color: #fff
+}
+
+.lottery-nav-module .all .outer-div span {
+  display: inline-block;
+  margin: 3px 5px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #000;
+}
+
+.lottery-nav-module .all .outer-div span:hover {
+  color: #ef3745
+}
+
+
+.app-promotion-module .inner {
+  width: 250px;
+  margin:30px auto;
+  height: 485px;
+  background-image: url('../images/phone_ad.png');
+  background-size: cover;
+  position: relative
+}
+
+.app-promotion-module .inner img {
+  position: absolute;
+  height: 135px;
+  left: 58px;
+  top: 195px
+}
+
+
+/*中间部分*/
+.cup-content .right{
+  padding:0 0 0 20px;
+  width:940px;
+}
+  /*热门游戏*/
+.hot-lotteries {
+  margin: 10px 0 0;
+  position: relative;
+  .box-title{
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .ant-tabs-nav .ant-tabs-tab{
+    margin:0 5px 0 0;
+  }
+  .ant-tabs-nav .ant-tabs-tab:hover {
+    color: #e11222;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active{
+    color:#e11222;
+  }
+  .ant-tabs-ink-bar{
+    background-color:#e11222;
+  }
+  .ant-tabs-bar{
+    padding-left:100px;
+    margin-bottom: 6px;
+  }
+
+  .lottery-head-module {
+    position: relative;
+  }
+  .lottery-head-module .last-draw {
+    float: left;
+    position: relative;
+  }
+  .lottery-head-module .last-draw .left {
+    float: left;
+    margin: 10px 10px 10px 0;
+    min-height:auto;
+  }
+  .lottery-head-module .last-draw .left img {
+    height: 90px;
+    width: 90px;
+  }
+  .lottery-head-module .last-draw .right {
+    float: left;
+    margin-top: 5px;
+    width:320px;
+    margin-left:20px;
+  }
+  .lottery-head-module .last-draw .right .hd {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .lottery-head-module .last-draw .right .hd .title {
+    font-size: 19.2px;
+    color: #333;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  .lottery-head-module .last-draw .right .hd .issue {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  .lottery-head-module .last-draw .right .hd .issue em {
+    font-size: 14px;
+    font-style: normal;
+    color: #333;
+    font-weight:bold;
+    margin-left:3px;
+  }
+
+  .ball {
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    color: #b1191a;
+    font-weight: 500;
+    margin: 0 1.6px;
+    font-family: Lato;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+  }
+
+  .ball.N,.ball.NO {
+    width: 32px;
+    border-radius: 50rem;
+    border: 1px solid #b1191a
+  }
+
+  .ball.N.RECTANGLE,.ball.NO.RECTANGLE {
+    border-radius: 5px
+  }
+
+  .ball.N.fill.N,.ball.N.fill.NO,.ball.NO.fill.N,.ball.NO.fill.NO {
+    background: #b1191a;
+    color: #fff
+  }
+
+  .ball.small.N,.ball.small.NO {
+    width: 20px
+  }
+  .ball.large {
+    font-size: 16px;
+    font-weight: 700;
+    height:34px;
+    line-height:34px;
+  }
+
+  .ball.large.N,.ball.large.NO {
+    width:34px;
+  }
+
+  .ball.RED {
+    color: #cd0005;
+    border-color: #cd0005
+  }
+
+  .ball.RED.fill.N,.ball.RED.fill.NO {
+    background: #cd0005
+  }
+
+  .ball.BLUE {
+    color: #108ee9;
+    border-color: #108ee9
+  }
+
+  .ball.BLUE.fill.N,.ball.BLUE.fill.NO {
+    background: #108ee9
+  }
+
+  .ball.GREEN {
+    color: #56a55c;
+    border-color: #56a55c
+  }
+
+  .ball.GREEN.fill.N,.ball.GREEN.fill.NO {
+    background: #56a55c
+  }
+
+  .ball.YELLOW {
+    color: #cc0;
+    border-color: #cc0
+  }
+
+  .ball.YELLOW.fill.N,.ball.YELLOW.fill.NO {
+    background: #cc0
+  }
+
+  .ball.GREY {
+    color: #888;
+    border-color: #888
+  }
+
+  .ball.GREY.fill.N,.ball.GREY.fill.NO {
+    background: #888
+  }
+
+  .ball.ORANGE {
+    color: #f96;
+    border-color: #f96
+  }
+
+  .ball.ORANGE.fill.N,.ball.ORANGE.fill.NO {
+    background: #f96
+  }
+
+  .ball.CYAN {
+    color: #039;
+    border-color: #039
+  }
+
+  .ball.CYAN.fill.N,.ball.CYAN.fill.NO {
+    background: #039
+  }
+
+  .ball.PURPLE {
+    color: #636;
+    border-color: #636
+  }
+
+  .ball.PURPLE.fill.N,.ball.PURPLE.fill.NO {
+    background: #636
+  }
+
+  .ball.LIGHTGREY {
+    color: #ccc;
+    border-color: #ccc
+  }
+
+  .ball.LIGHTGREY.fill.N,.ball.LIGHTGREY.fill.NO {
+    background: #ccc
+  }
+
+  .ball.COFFEE {
+    color: #c96;
+    border-color: #c96
+  }
+
+  .ball.COFFEE.fill.N,.ball.COFFEE.fill.NO {
+    background: #c96
+  }
+  .ball.BLUE.fill.N, .ball.BLUE.fill.NO {
+    background: #108ee9;
+  }
+
+  .current {
+    float: right;
+    height: 100px;
+    width: 310px;
+    margin-left: 20px;
+    position: relative;
+    .hd {
+      margin-top: 18px;
+      margin-bottom: 8px;
+      white-space: nowrap;
+      .issue {
+        font-size: 13px;
+        margin-right: 10px;
+        em {
+          font-size: 15px;
+          color: #333;
+          font-weight: 700;
+        }
+      }
+    }
+    .result {
+      margin-top: 2px;
+      .timer {
+        font-size: 28.8px;
+        font-size: 1.8rem;
+        color: #e11222;
+        position: relative;
+        .countdown-pc .static-day, .countdown-pc .static-hour, .countdown-pc .static-minute, .countdown-pc .static-month {
+          margin-right: 24px;
+          float: left;
+          position: relative;
+        }
+        .countdown-pc .static-day:after,.countdown-pc .static-hour:after,.countdown-pc .static-minute:after,.countdown-pc .static-month:after {
+          content: "分";
+          display: block;
+          position: absolute;
+          font-size: 14px;
+          bottom: 10px;
+          right: -18px;
+          height: 12px;
+          line-height: 12px;
+          color: #333;
+          font-weight: 400
+        }
+
+        .countdown-pc .static-month:after {
+          content: "月"
+        }
+
+        .countdown-pc .static-day:after {
+          content: "日"
+        }
+
+        .countdown-pc .static-hour:after {
+          content: "时"
+        }
+        .countdown-pc {
+          height: 36px;
+          margin-bottom:14px;
+          .card {
+            display: inline-block;
+            height: 36px;
+            line-height: 36px;
+            width: 40px;
+            text-align: center;
+            background: #f7f7f7;
+            border-radius: 5px;
+            font: normal 29px/36px Lato;
+            -webkit-box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .2), inset 2px 2px 0 0 hsla(0, 0%, 100%, .08);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), inset 3px 3px 0 0 hsla(0, 0%, 88%, .08);
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .extmsg {
+    position: absolute;
+    float: left;
+    width: 230px;
+    height: 20px;
+    left: 504px;
+    bottom: 6px;
+  }
+
+}
+
+
+
+
+
+.contentR{
+  margin-top:20px;
+}
+  /*热门跟投*/
+  .follow-bet-module{
+    width:600px;
+    float:left;
+    .hd{
+      border-bottom:1px solid #ccc;
+      h2{
+        font-size:15px;
+        font-weight:bold;
+        span{
+          font-size:13px;
+          cursor:pointer;
+          float:right;
+          color:#555;
+          font-weight: normal;
+          &:hover{
+            color:#af0000;
+          }
+        }
+      }
+    }
+    .items{
+      ul li{
+        padding:8px 20px;
+        border-bottom:1px dotted #eee;
+        &:after{
+          content: '';
+          display: block;
+          clear: both;
+        }
+        .left{
+          width:75%;
+          float:left;
+          .top{
+            line-height:22px;
+            color:#555;
+            em{
+              font-weight: bold;
+              font-style: normal;
+              color:#222;
+            }
+          }
+          .bot{
+            margin-top:10px;
+            em{
+              height: 13px;
+              width: 1px;
+              background: #b5b5b5;
+              display: inline-block;
+            }
+            span{
+              margin:0 10px;
+              cursor:pointer;
+              color:#666;
+              i{
+                margin-right:5px;
+              }
+              &:first-child{
+                margin-left:0;
+              }
+              &:hover i{
+                font-size:15px;
+              }
+            }
+          }
+        }
+        .rBtn{
+          float:right;
+          a{
+            padding: 0 7px;
+            font-size: 14px;
+            border-radius: 3px;
+            height:24px;
+            line-height:24px;
+            display: block;
+            color: #fff;
+            background-color: #e11222;
+            border-color: #e11222;
+            i{
+              font-size:12px;
+              margin-right:5px;
+            }
+            &:hover{
+              background-color: #ed3942;
+              border-color: #ed3942;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*中奖快讯*/
+  .winning-module {
+    width: 280px;
+    float:right;
+    .hd {
+      height: 117px;
+      background-image: url(data:image/png;base64,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);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 280px;
+      border-top: 1px solid transparent;
+      p {
+        font-size: 13px;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 1px;
+        em {
+          font-weight: 700;
+          font-size: 24px;
+          color: #fef55c
+        }
+      }
+      .p1 {
+        margin-top: 44px
+      }
+
+    }
+    .bd li {
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px dashed #efefef;
+      font-size: 12px;
+      color: rgba(0,0,0,.65);
+      em {
+        float: right;
+        font-style: normal;
+      }
+    }
+  }
+
+
+

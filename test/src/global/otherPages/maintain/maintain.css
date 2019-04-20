@@ -1,0 +1,71 @@
+body{
+    background: url("./images/noservicebg.jpg") 0 0 no-repeat !important;
+    font-family: "Arial", "Microsoft YaHei";
+}
+#root{
+    background: none !important;
+    height: 500px !important;
+}
+.maintainPage{
+    width: 1200px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.maintainPage .logo {
+    display: block;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    background-size: 100%;
+    padding-right: 58px;
+}
+
+.maintainPage .logo .innerLogo{
+    width: 300px ;
+    height: 100px ;
+    margin: auto;
+    background-size: 100%;
+}
+.maintainPage .item{
+    display: inline-block;
+    vertical-align: middle;
+}
+.maintainPage .icon{
+    width: 500px;
+}
+.maintainPage .txt{
+    width: 615px;
+    text-align: center;
+    font-size: 20px;
+}
+.maintainPage .txt p,span{
+    color: #f0eff0;
+}
+.maintainPage .txt .time{
+    font-size: 35px;
+    font-weight: bold;
+}
+.maintainPage .txt h1{
+    color: #ffae00;
+    font-size: 70px;
+}
+.maintainPage .txt a{
+    text-decoration: none;
+    color: #fcdf00;
+    font-size: 22px;
+}
+.maintainPage .txt a:hover{
+    text-decoration: underline;
+    color: #ffaa14;
+    font-size: 22px;
+}
+
+.maintainPage .logo:before{
+    content: "" !important;
+    background: none !important;
+}

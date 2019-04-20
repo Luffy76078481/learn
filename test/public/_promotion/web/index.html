@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dafabet</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<script>
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        window.channel = getUrlParam("channel") || "";
+        window.version = getUrlParam("version") || "";
+        if(/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)){
+            var link = "../wap/index.html?channel=" + window.channel;
+            if (window.version) {
+                link += "&version=" + window.version;
+            }
+            window.location = link;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="area1">
+            <div class="logo">
+                <img src="imgs/logo.png" width="15%" height="auto" alt="">
+            </div>
+            <div class="area1_left">
+                <div id="phone">
+                    <img src="imgs/phone2.png" width="100%" alt="">
+                </div>
+            </div>
+            <div class="area1_right">
+                <div class="text">
+                    <h1>给你最极致的游戏体验</h1>
+                    <p>众多优惠礼包等你来领取，还不赶快行动？</p>
+                </div>
+                <a href="#download">
+                    <div class="btns">
+                            <span style="color: #fff;">立即下载</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="area2">
+            <div class="area2_left">
+                <div class="text2">
+                    <p class="text_title">界面展示</p>
+                    <p>
+                        首页侧滑菜单
+                        <br/> 游戏平台
+                        <br/> 多样选择
+                        <br/>
+                    </p>
+                </div>
+                <a href="#download">
+                    <div class="btn2">
+                            <span style="color: #fff;">立即下载</span>
+                    </div>
+                </a>
+            </div>
+            <div class="area2_right">
+                <div class="pic">
+                    <img src="imgs/info1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="area3">
+            <div class="title3">
+                <p>本平台游戏类型</p>
+            </div>
+            <div class="content">
+                <div id="phone2">
+                    <img src="imgs/phone1.png" width="100%" alt="">
+                </div>
+                <div class="textArea">
+                    <p id="t1">优质网络线路，更多游戏玩法支持，原生用户体验，刺激，
+                        <br/>好玩又有趣，在这里向每一个好朋友大力推荐！ ！ ！
+                    </p>
+                    <p id="t2">用户名：完美胜利</p>
+                </div>
+            </div>
+        </div>
+        <div class="area4">
+            <div class="area4_content">
+                <p class="title4">“爱玩？？？就来大发！！！”</p>
+                <div class="txtArea">
+                    <div class="t-box">
+                        <div class="icons">
+                            <img src="imgs/icon1.png" alt="">
+                        </div>
+                        <div class="txt1">
+                            <p class="p1">更丰富</p>
+                            <p class="p2">本平台不仅有目前最流行的游戏，并且更多游戏正在努力开发中，敬请期待！</p>
+                        </div>
+                    </div>
+                    <div class="t-box">
+                        <div class="icons">
+                            <img src="imgs/icon2.png" alt="">
+                        </div>
+                        <div class="txt1 tt">
+                            <p class="p1">更权威</p>
+                            <p class="p2">目前多款游戏的数据源分别国内国际官方的数据，保证数的准确性、权威性。</p>
+                        </div>
+                    </div>
+                    <div class="t-box">
+                        <div class="icons">
+                            <img src="imgs/icon3.png" alt="">
+                        </div>
+                        <div class="txt1">
+                            <p class="p1">更及时</p>
+                            <p class="p2">目前多款游戏均采用超高速数据获取、顶级配置服务器，保证在第一时间为用户显示数据结果，更及时、更高效。</p>
+                        </div>
+                    </div>
+                    <div class="t-box">
+                        <div class="icons">
+                            <img src="imgs/icon4.png" alt="">
+                        </div>
+                        <div class="txt1 tt">
+                            <p class="p1">更懂你</p>
+                            <p class="p2">让你有贵宾VIP的待遇，让您玩的尽兴！丰富的优惠與福利，让您玩的更刺激！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="download" class="downloadArea">
+            	<p class="title4">游戏下载</p>
+            	<div class="buttons">
+                    <div class="d-btn android">
+                        <div class="QR">
+                            <img class="downloadQR" width="180px" alt="">
+                        </div>
+                        <div class="a1">
+                            <img class="downloadIcon" src="imgs/android.png" width="40px" height="auto" alt="">
+                            <span>安卓</span>
+                        </div>
+                        <p>扫二维码下载客户端</p>
+                    </div>
+                    <div class="d-btn ios">
+                        <div class="QR">
+                            <img class="downloadQR" width="180px" alt="">
+                        </div>
+                        <div class="a1">
+                            <img class="downloadIcon " src="imgs/apple.png" width="40px" height="auto" alt="">
+                            <span>IOS</span>
+                        </div>
+                        <p>扫二维码下载客户端</p>
+                    </div>
+            	</div>
+            </div>
+        </div>
+        <div class="area5">
+            <div class="info">
+                <div class="i-box">
+                    <div id="icon_pic">
+                        <img src="imgs/logo1.png" width="80%" alt="">
+                    </div>
+                    <div id="info_txt">
+                        <span> 公平、公正、好玩、有趣，就在大发！</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixedBox">
+    	<div id="service">
+    		<a id="serviceLink" href="" target="_blank" >
+    		<img src="imgs/consult_icon.gif" alt="">
+    		</a>
+    	</div>
+    	<div id="qrpic">
+    		<img id="smallQr" src="" width="70px" alt="">
+    		<img id="bigQr" src="" width="150px" alt="">
+    	</div>
+    	<div id="top">
+    		<p><i class="fa fa-angle-up" ></i></p>
+    	</div>		
+    </div>
+    <footer>
+    	<p>copyright &nbsp©&nbsp at dafabet</p>
+    </footer>
+    <script src="js/jquery-3.1.0.min.js" ></script>
+    <script src="js/ctrl.js" ></script>
+
+
+    <script>
+
+        $(function(){
+
+            var key = "online_service_link";
+            var platfrom;
+            var version;
+
+            $.ajax({
+                type: "POST",
+                //the url where you want to sent the userName and password to
+                url: '/api/v0/sys_conf.api',
+                contentType : 'application/json',
+                dataType: 'json',
+                async: false,
+                //json object to sent to the authentication url
+                data: JSON.stringify({
+                    key:key,
+                    platfrom:platfrom,
+                    version:version
+                }),
+                success: function (data) {
+                    if (data.status == 0) {
+                        $('#serviceLink').attr("href", data.content)
+                    }
+                }
+            });
+
+            var wapLink = document.location.protocol + "//" + document.location.host + "/_promotion/wap/index.html?channel=" + window.channel;
+            if (window.version) {
+                wapLink += "&version=" + window.version;
+            }
+            var qrcode = "/api/v0/qcode.png?code=" + encodeURIComponent(wapLink);
+            $(".downloadQR").attr("src", qrcode);
+
+            var serviceQrCode = "/api/v0/qcode.png?code=" + encodeURIComponent($("#serviceLink").attr("href"));
+            $("#smallQr").attr("src", serviceQrCode);
+            $("#bigQr").attr("src", serviceQrCode);
+        });
+
+    </script>
+</body>
+
+</html>

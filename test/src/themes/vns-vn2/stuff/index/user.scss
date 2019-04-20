@@ -1,0 +1,111 @@
+.member2 {
+    a{
+        text-decoration: none;
+    }
+    .deposit{
+        padding: 0 20px;
+        .tooltiptextuc{
+            width: 100px;
+            background-color: #ffffe4;
+            color: #cf271e;
+            text-align: center;
+            border-radius: 6px;
+            padding: 4px;
+            border: 1px solid #e6adaa;
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            margin-left: -50px;  
+            &::after{
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                transform: rotate(45deg);
+                border: 1px solid #e6adaa;
+                background: #ffffe4;
+                border-left: none;
+                border-top: none;
+                bottom: -6px;
+                left: 50%;
+                margin-left: -5px;
+            }        
+        }
+    }
+    .tabsUl {
+        border-bottom: 1px solid #d0cece;
+        margin: auto;
+        margin-top: 70px;
+        height: 24px;
+        li{
+            float: left;
+            display: inline;
+            margin: 0 25px;
+            padding: 0;
+            font-size: 13px; 
+            &.selected_red  a{
+                font-weight: 700;
+                border-bottom: 4px solid #d0963a;
+            }
+            a{
+                color: #717171;
+                display: block;
+                position: relative;
+            }
+        }
+    }  
+    .dpt_credit{
+        margin-top: 25px;
+    }
+    .money{
+        margin-top: 25px;
+        p{
+            text-align: left;
+        }
+        label{
+            display: inline-block;
+            text-align: left;
+            width: 90px;      
+        }
+        select{
+            width: 200px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding-left: 4px;
+            height: 36px;
+        }
+        input{
+            width: 200px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding-left: 4px;
+            height: 36px;
+        }
+        .font_red{
+            color: #ff0000;
+            margin-left: 10px;
+        }
+    }
+    .tips{
+        padding: 5px;
+        border: 1px dashed #ccc7c7;
+        line-height: 24px;
+        font-size: 12px;
+        width: 460px!important;
+        font-weight: 700;
+        margin-top: 30px;
+        color: #9a7c41;
+    }
+    .memberBtn{
+        display: block;
+        width: 156px;
+        text-align: center;
+        color: #fff;
+        background: #ab7f38;
+        padding: 9px 0;
+        border: 0;
+        margin-left: 100px;
+        font-size: 18px;   
+    }
+}

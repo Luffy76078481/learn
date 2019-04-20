@@ -1,0 +1,27 @@
+@import "../../style/variables.scss";
+
+.helpPage{
+    padding: 0 .2rem;
+    border-top:1px solid #ccc;
+    background:#fff;
+    
+    h5{
+        color: $theme-text-color;
+        font-weight: bold;
+        margin: 0.3rem 0 0 0;
+        padding: 0.5em;
+        border-left: 3px solid #eaeaea;
+        background: #F5F5F5;
+        text-align: left;
+        font-size:.3rem;
+    }
+    p{
+        color: #333333;
+        padding: 1em .5em 1.6em;
+        text-align: left;
+        line-height: 1.6em;
+        background: #FFFFFF;
+        font-size:.25rem;
+        margin: 0;
+    }
+}

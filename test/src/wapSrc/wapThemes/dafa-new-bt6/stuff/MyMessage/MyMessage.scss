@@ -1,0 +1,142 @@
+@import "../../style/variables.scss";
+
+.MyMessage {
+    background: #efefef;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    &.noTabs {
+        background: #fff;
+
+        .scroll-content {
+            top: 0;
+
+        }
+    }
+
+    .am-navbar {
+        border: 0;
+        background: transparent;
+    }
+
+    .SegmentedCon {
+        text-align: center;
+        position: fixed;
+        top: 1rem;
+        width: 100%;
+
+        .tabsItem {
+            height: 100%;
+            line-height: 35px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .Segmented {
+            height: 35px;
+            margin: 0 auto;
+            width: 80%;
+
+            .am-badge-text {
+                background: $theme-text-color;
+                font-weight: bold;
+            }
+
+            .am-segment-item {
+                color: $theme-text-color;
+                border-color: $theme-text-color;
+            }
+
+            .am-segment-item-selected {
+                background: $theme-text-color;
+            }
+        }
+    }
+
+    .scroll-content {
+        top: 50px;
+
+        .myListView {
+            position: absolute !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .am-list-view-scrollview-content {
+                position: initial !important;
+            }
+        }
+    }
+
+    .listItem {
+        .promoImg {
+            display: block;
+            width: 100%;
+            height: auto;
+            min-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        small.time {
+            float: right;
+            color: #888;
+        }
+
+        .am-list-line {
+            .am-list-content {
+                font-size: .28rem;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .am-list-extra {
+                font-size: .24rem;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .Badge {
+            margin-right: 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+.ReadMessage .scroll-content {
+    margin-bottom: 0;
+    padding: 0 .1rem;
+    z-index: 1;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .read {
+        p {
+            text-align: left;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            margin: 0;
+            padding: .3rem .1rem;
+            line-height: 22px;
+        }
+
+        .bot {
+            text-align: left;
+            font-size: .2rem;
+            color: #555;
+            padding-top: .1rem;
+
+            span.time {
+                float: right;
+            }
+        }
+    }
+}

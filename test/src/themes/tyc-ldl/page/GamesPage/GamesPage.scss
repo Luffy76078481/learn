@@ -1,0 +1,265 @@
+.gamePage{
+  position: relative;
+  .banner_wrapper{
+    width:1200px;
+    margin-left:-600px;
+    position: absolute;
+    height:320px;
+    top:0;
+    left:50%;
+    z-index: 10;
+    .winner-list-wrapper{
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      padding: 50px 92px 0;
+      height: 232px;
+      width: 405px;
+      background: url(./images/winnerlist.png) no-repeat top;
+      .winner-list{
+        height:144px;
+        overflow: hidden;
+        .slick-list{
+          height:auto !important;
+        }
+        .item{
+          font-weight:bold;
+          &>div:after{
+            content:'';
+            display: block;;
+            clear: both;
+          }
+          .top{
+            margin-bottom:8px;
+          }
+          .left{
+            color:#222;
+            float:left;
+          }
+          .right{
+            float:right;
+            color:#ff4a45;
+          }
+        }
+      }
+    }
+    .banner-jackpot{
+      position: absolute;
+      bottom:0;
+      display: table;
+      width: 100%;
+      text-align: center;
+      .item{
+        vertical-align: middle;
+        text-align: left;
+        display: table-cell;
+        position: relative;
+        padding:5px 10px;
+        background: #e43e3a;
+        background-image: linear-gradient(135deg, #e43e3a 0%,#fc4944 25%,#ed423e 52%,#cb322f 100%);
+        width: 16.67%;
+        .text{
+          font-size: 28px;
+          color: #f8ef99;
+          text-align: left;
+        }
+        .jackpot_top_right{
+          font-size: 13px;
+          color: #f8ef99;
+          text-align: left;
+          margin: 2px 0 0 9px;
+          position: absolute;
+          background-color: rgb(189, 41, 37);
+          padding: 0 4px;
+          border-radius: 5px;
+          font-weight: bold;
+          letter-spacing: 1.5px;
+        }
+        &:first-child{
+          width: 33.33%;
+          .text{
+            font-size:38px;
+          }
+        }
+      }
+    }
+  }
+  .game-list{
+    min-height:300px;
+    width:1200px;
+    margin:30px auto;
+    .game-list-categories{
+      &:after{
+        content:'';
+        display: block;
+        clear: both;
+      }
+      .title{
+        float:left;
+        font-size: 24px;
+        color: #c83434;
+        label{
+          font-size:13px;
+          color:#666;
+          font-weight: normal;
+          input{
+            position: relative;
+            top:2px;
+            margin-right:3px;
+          }
+        }
+      }
+      ul li{
+        float:left;
+        &:hover{
+          a{
+            color:#333;
+          }
+        }
+        &.active{
+          a{
+            color: #fd4944;
+            border-bottom: 4px solid #ca322f;
+          }
+        }
+        a{
+          color: #333;
+          padding: 10px 15px;
+          display: block;
+          border: 0 solid transparent;
+          border-bottom: 4px solid transparent;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .gameTabs{
+      display: table;
+      width: 100%;
+      text-align: center;
+      margin-top: 1px;
+      border-bottom: 1px solid #fff;
+      a{
+        color: #fff;
+        display: table-cell;
+        border-right: 1px solid #fff;
+        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+        font-size: 14px;
+        text-align: center;
+        line-height:30px;
+        background-color: #8d271b;
+        &:hover{
+          background-color: #f44;
+        }
+        &.active{
+          background-color: #c83434;
+        }
+      }
+    }
+
+
+    .list-items{
+      margin:10px 0;
+      .ant-list-item{
+        padding:0;
+        margin: 0;
+      }
+      .game-list-item{
+        width:100%;
+        position: relative;
+        padding:5px;
+        &:hover{
+          background:#c83434;
+          .game-title{
+            color:#fff
+          }
+        }
+
+        .itemImg{
+          background:url('./images/seamless_loading.gif') 0 0 no-repeat #fff;
+          background-size:100%;
+          position: relative;
+          height:135px;
+        }
+        .game-title{
+          font-size: 14px;
+          padding: 10px;
+          font-weight: 700;
+        }
+        &:hover .game-hover{
+          display:block;
+        }
+        img{
+          width:100%;
+          vertical-align: middle;
+        }
+        .game-hover {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 10px 0;
+          transition: opacity .5s;
+          background: #000;
+          background: rgba(0,0,0,.5);
+          color: #fff;
+          font-size: 14px;
+          text-align: center;
+          display: none;
+          .game-hover-inner, .game-info-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: table;
+          }
+          .game-hover-wrapper{
+            display: table-cell;
+            vertical-align: middle;
+          }
+
+          .btn{
+            font-size:14px;
+            padding: 5px 20px;
+            margin-bottom: 3px;
+            line-height: 1.42857;
+            color: #fff;
+            background-color:rgba(255,255,255,.5);
+            border:0;
+            border-radius:10px;
+            transition: color .3s,background .3s,border-color .3s;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            cursor: pointer;
+            vertical-align: middle;
+            touch-action: manipulation;
+          }
+        }
+      }
+    }
+
+    .loading-container{
+      text-align: center;
+      padding:30px 0;
+      .ant-spin{
+        .ant-spin-dot i{
+          background-color:#333;
+        }
+        color:#bbb;
+      }
+    }
+    .noMore{
+      padding: 20px 0;
+      font-size: 14px;
+      color: #bbb;
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+  }
+}

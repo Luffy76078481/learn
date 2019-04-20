@@ -1,0 +1,259 @@
+#game3{
+  margin-top: 10px;
+ .container{
+   width: 1010px;
+   margin: auto;
+   background: #321D1A;
+   padding: 0;
+   .one{
+     width: 100%;
+     margin-bottom: 10px ;
+     .top{
+       display: inline-block;
+       width: 227px;
+       background: #4e2a25;
+       h1{
+         width: 113px;
+         line-height: 35px;
+         height: 35px;
+         color: #fff000;
+         background: #704f4a ;
+         font-size: 16px;
+         text-align: center;
+         margin-bottom: 0;
+         box-shadow: 3px -2px 2px rgba(0,0,0,0.3);
+       }
+       .box{
+         ul{
+           background: #704f4a;
+           li{
+             width: 227px;
+             height: 25px;
+             background: url("image/pt_newsLiBg.png") top no-repeat;
+             line-height: 25px;
+             span{
+               vertical-align: bottom;
+               display: inline-block;
+               line-height: 20px;
+             }
+             span:nth-child(1){
+               width: 27px;
+               height: 19px;
+               background: url("image/iconBg.png") -729px -225px no-repeat;
+               text-align: center;
+             }
+           }
+           .pic{
+             height: 78px;
+             padding:5px;
+             img{width: 123px; height: 68px;}
+           }
+           .pic1 img{ content: url("image/t1.jpg")}
+           .pic2 img{ content: url("image/t2.jpg")}
+           .pic3 img{ content: url("image/t3.jpg")}
+           .pic4 img{ content: url("image/t4.jpg")}
+           .pic5 img{ content: url("image/t5.jpg")}
+           .pic6 img{ content: url("image/t6.jpg")}
+           .pic7 img{ content: url("image/t7.jpg")}
+           .pic8 img{ content: url("image/t8.jpg")}
+         }
+       }
+     }
+     .ad_box{
+       display: inline-block;
+       width: 770px;
+       vertical-align: top;
+       margin-left: 10px;
+       padding-left: 8px;
+       .boxA{
+         width: 250px;
+         display: inline-block;
+         .ad{
+           width: 244px;
+           height: 208px;
+           margin-bottom: 30px;
+         }
+         .txt{
+           width: 250px;
+           height: 50px;
+           padding: 0 10px;
+           .t{
+             float: left;
+             p:nth-child(1){
+               color: #ffaa9e;
+               font-size: 18px;
+               font-weight: 700;
+               margin-bottom: 0;
+             }
+             p:nth-child(2){
+               color: #a2625a;
+               font-size: 12px;
+             }
+           }
+           .a-btn{
+             a{
+               display: block;
+               float: right;
+               width: 70px;
+               height: 25px;
+               background: #854a42;
+               border-radius: 5px;
+               border: 1px #a0645b solid;
+               color: #fff;
+               text-align: center;
+               line-height: 25px;
+               &:hover{
+                 text-decoration: none;
+                 background: #cd8829;
+               }
+             }
+           }
+
+         }
+       }
+       .a3{margin-left: 0}
+       .a1 .ad{background: url("image/b1.jpg") center no-repeat;}
+       .a2 .ad{background: url("image/b2.jpg") center no-repeat;}
+       .a3 .ad{background: url("image/b3.gif") center no-repeat;}
+
+     }
+   }
+   .two{
+     width: 100%;
+     margin-bottom: 10px ;
+     .pot{
+       display: inline-block;
+       width: 620px;
+       height: 140px;
+       outline: 2px #5a332d solid;
+       margin-right: 15px;
+       vertical-align: top;
+       .winner{
+         display: inline-block;
+         vertical-align: top;
+         .title{
+           width: 270px;
+           height: 32px;
+           border-bottom: 1px #a15f55 solid;
+           padding: 5px 10px;
+           margin-left: 10px;
+           span:nth-child(1){
+             color: #FDA101;
+             font-size: 17px;
+             margin-right: 8px;
+           }
+           span:nth-child(2){
+             color: #8D6C69;
+           }
+         }
+         .run{
+           margin-top: 16px;
+           padding-left: 10px;
+           height: 90px;
+           .run-cont{
+             height: 90px;
+           }
+           img{display: inline-block; margin-right: 10px;}
+           .dzyy_right{display: inline-block; vertical-align: middle;}
+           img.m1{content: url("image/r1.jpg");}
+           img.m2{content: url("image/r2.jpg");}
+           img.m3{content: url("image/r3.jpg");}
+           img.m4{content: url("image/r4.jpg");}
+         }
+       }
+       .money{
+         display: inline-block;
+         width: 320px;
+         height: 120px;
+         background: url("image/jackpotBg.png") center no-repeat ;
+         margin-left: 5px;
+         margin-top: 10px;
+         position: relative;
+         span{
+           font-size: 45px;
+           position: absolute;
+           bottom: 0;
+           left: 35px;
+         }
+       }
+     }
+     .banner{
+       display: inline-block;
+       width: 370px;
+       height: 140px;
+       outline: 2px #5a332d solid;
+
+     }
+
+   }
+   .three{
+     width: 100%;
+     margin-bottom: 10px;
+     background: url("image/noticeBg.png") center no-repeat ;
+     .notice-bar{
+       margin-left: 5px;
+       .marquee {width: 870px;}
+     }
+   }
+ }
+  .four{
+    width: 100%;
+    margin-bottom: 10px;
+    background: url("image/jiangchiBg2.jpg") repeat-x;
+    .f-title{
+      display: inline-block;
+      width: 155px;
+      height: 80px;
+      vertical-align: top;
+      color: #fed6d0;
+      font-size: 24px;
+      font-size: 24px;
+      line-height: 80px;
+      text-align: center;
+      margin-right: 40px;
+    }
+    .f-games{
+      display: inline-block;
+      vertical-align: top;
+      width: 650px;
+      height: 80px;
+      padding-top: 10px;
+      ul{
+        li{
+          width: 157px;
+          height: 70px;
+          float:left ;
+          text-align: center;
+          p:nth-child(1){
+            color: #fff000;
+            padding-top: 5px;
+          }
+          P:nth-child(2){
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+            color: rgb(254, 214, 208);
+            font-size: 12px;
+            background: rgb(33, 18, 17);
+            border-bottom: 1px solid rgb(114, 85, 81);
+            border-right: 1px solid rgb(91, 78, 76);
+          }
+        }
+        li:nth-child(1){
+          position: relative;
+          &:before{
+            width: 78px;
+            height: 66px;
+            content: url("image/zap.png");
+            position: absolute;
+            top: -5px;
+            left: -40px;
+          }
+        }
+      }
+    }
+
+  }
+  .now{display: block;}
+  .hide{display: none;}
+}

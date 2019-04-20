@@ -1,0 +1,67 @@
+@import "../../style/variables.scss";
+.shopPage{
+  .am-list-item .am-input-label.am-input-label-5{
+    width:30px;
+    font-size:.45rem;
+  }
+  .am-navbar-right{
+    .am-icon-xs{
+      position: relative;
+      top: 3px;
+      margin-left: 3px;
+    }
+  }
+  .am-search-cancel{
+    color:#fff !important;
+  }
+  .myListView{
+    position: absolute !important;
+    top:44px;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow: auto;
+    .listItem{
+      position: relative;
+      padding: .2rem;
+      border-bottom: 1px solid #eee;
+      font-size: .25rem;
+      margin: 0 .15rem;
+      .itemL {
+        img{
+          width: 100%;
+        }
+      }
+      .itemR{
+        h5{
+          font-size: .3rem;
+          font-weight: 400;
+          margin: .1rem 0 .3rem;
+        }
+        .item_price{
+          font-weight: bold;
+          text-align: right;
+          color:$theme-text-color;
+        }
+        .item_claim{
+          width: 50%;
+          bottom: .2rem;
+          position: absolute;
+          .am-stepper.showNumber {
+            width: 50%;
+            margin-right: .3rem;
+          }
+          .am-button-primary {
+            background-color: $theme-btnBg;
+            border: 1PX solid $theme-btnBg;
+            border-radius: 5px;
+            top:.25rem;
+            &:before{
+              border: 1PX solid $theme-btnBg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

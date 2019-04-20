@@ -1,0 +1,95 @@
+#casino{
+  .container{
+    width:1250px;
+    margin:50px auto;
+    .casino-platform-list{
+      .item{
+        position: relative;
+        color:#fff;
+        overflow: hidden;
+        cursor:pointer;
+        transition: all .3s;
+        margin-bottom:15px;
+        &:hover{
+          .casino-list-bot{
+            bottom:0px;
+          }
+        }
+        .casino-list-img{
+          width:100%;
+          //height:394px;
+          height: 270px;
+          background-size: 100% 100%;
+          img{
+            width:100%;
+          }
+          &.AG{
+            background-image:url('./images/AG.jpg');
+          }
+          &.BBIN{
+            background-image:url('./images/bbin.jpg');
+          }
+          &.TGP{
+            background-image:url('./images/TGP.jpg');
+          }
+          &.OG{
+            background-image:url('./images/OG.jpg');
+          }
+          &.AB{
+            background-image:url('./images/AB.jpg');
+          }
+          &.MG2{
+            background-image:url('./images/MG.jpg');
+          }
+          &.PT{
+            background-image:url('./images/PT.jpg');
+          }
+          &.eBET{
+            background-image:url('./images/Ebet.jpg');
+          }
+          //height:345px;
+        }
+        .casino-list-bot{
+          transition: bottom .3s;
+          background-color: #c83434;
+          box-sizing: border-box;
+          position: absolute;
+          bottom: -38px;
+          margin: 0 5px;
+          right: 0;
+          left: 0;
+          &:hover{
+            bottom:0px;
+          }
+          .room-info{
+            background-color: #c83434;
+            text-align: center;
+            padding: 10px;
+            line-height: 28px;
+            font-size: 18px;
+          }
+          .btn-list{
+            a{
+              background-color: #8e0e0e;
+              font-size: 15px;
+              text-align: center;
+              border-radius: 0;
+              display: inline-block;
+              float: left;
+              width: 50%;
+              padding: 8px 15px;
+              color: #fff;
+              &:hover{
+                background-color: #f2f2f2;
+                color: #8d271b;
+              }
+              &:first-child{
+                border-right: 1px solid #c83434;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

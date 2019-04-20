@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+body,html{
+	font-family: "Microsoft YaHei" ! important;
+	color:#333;
+	background:#ccc;
+}
+h1,h2,h3,h4,h5{
+	font-weight: bold;
+}
+.right{
+	float:right;
+}
+
+table{
+	border: 1px solid #fff;
+}
+td{
+	border: 1px solid #fff;
+}
+th{
+	border-right: 1px solid #fff;
+}
+.main{
+	width: 980px;
+	min-height: 930px;
+	margin: 0px auto;
+}
+.header{
+	height: 130px;
+}
+.header_left{
+	width: 50%;
+	height: 130px;
+	float: left;
+
+}
+.header_right{
+	width: 50%;
+	height: 130px;
+	float: right;
+	background: url("../images/help.png")  no-repeat right;
+}
+/*---------内文切换-------------*/
+.contents{
+	margin: 0 auto 0 auto;
+	display: none;
+}
+
+.contents.active{
+	display: block;
+}
+
+/*---------菜单start-----------*/
+a{
+	color: #ffffff;
+	text-decoration:none;
+	font-weight: bold;
+
+}
+.main_content{
+	background-color: #ddd;
+	height: auto;
+}
+.title_img{
+	height:40px;
+	background:linear-gradient(to bottom, #421c1c, #331a18);
+	padding-left: 1rem;
+	line-height:40px;
+	color: #fff;
+}
+.menu{
+	height: 32px;
+	background: #6f1f19;
+}
+.navigation, .navigation li {
+	list-style: none;
+}
+.navigation{
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 0;
+}
+ul.navigation li {
+	position: relative;
+	float: left;
+	transition: all .3s;
+}
+ul.navigation li a{
+	display: block;
+	padding: 0px 20px;
+	color: #FFF;
+	line-height: 32px;
+	height:32px;
+}
+ul.navigation li a:hover{
+	color:#ffea00;
+}
+ul.navigation ul{
+	display: none;
+	float: left;
+	width: 160px;
+	position: absolute;
+	left: 0;
+	margin: 0;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 0px;
+	border: 1px solid #ffffff;
+}
+ul.navigation li:hover > ul{
+	border: 1px solid #976161;
+}
+ul.navigation ul li {
+	border-bottom: 1px solid #471a17;
+}
+ul.navigation ul li:last-child {
+	border-bottom: none;
+}
+ul.navigation ul a {
+	text-align: center;
+	font-weight: 300;
+	width: 120px;
+	color:#fff;
+	background: #4f201d;
+	transition: all .3s;
+}
+ul.navigation ul a:hover {
+	background: #331a18;
+	color: #ffea00;
+}
+.arrow-bottom {
+	display: inline-block;
+	margin-left: 5px;
+	border-top: 4px solid #FFF;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	width: 1px;
+	height: 1px;
+}
+
+/*－－－－－－－－－－－－关于我们------------------*/
+.helpContent{
+	height: auto;
+	overflow: hidden;
+	color: #333;
+	font-size: 12px;
+	padding: 15px;
+	line-height: 20px;
+}
+.helpContent li {
+	float: none;
+	width: 500px;
+	line-height: 30px;
+}
+.helpContent p{
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+.helpContent a{
+	font-weight: normal;
+}
+.helpContent a:hover{
+	color: #af0000;
+}
+.helpContent .title1 {
+	font-size: 16px;
+	font-family: '微软雅黑';
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+.title2 {
+	background: #823832;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	padding: 7px 10px;
+}
+.ReturnTop {
+	float: right;
+	color: #cf918c;
+	text-decoration: none;
+}
+.ReturnTop:hover{
+	color: #cf918c;
+	text-decoration: underline;
+}
+/*-----------------一般常见问题------------------------------*/
+ADDRESS{
+	color: #fff;
+	font-size: 12px;
+	padding: 15px;
+	line-height: 20px;
+	font-style: normal;
+}
+/*-----------------娱乐成------------------------------*/
+.tab-TFinfo {
+	width: 650px;
+	color:#fff;
+	background: #8e3a34;
+	border-color: #fff;
+	line-height: 26px;
+	margin: 10px auto;
+}
+
+.tab-tr-red {
+	background: #8e3a34;
+}
+/*-----------------联系我们------------------------------*/
+.helpContent-contact {
+	height: auto;
+	color: #fff;
+	font-size: 12px;
+	padding: 15px;
+	line-height: 20px;
+}
+.contact_tab tr td {
+	width: 25%;
+	line-height: 22px;
+	padding: 10px 0px;
+}
+.huang {
+	color: #ffff00;
+}
+.line{
+	width: 100%;
+	border-bottom: 1px solid #66352E;
+}
+.contact-text {
+	background: #f52929;
+	padding: 15px;
+	width: 135px;
+	margin-top: 10px;
+	position: relative;
+}
+.helpContent-text::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 26.0px 15px 0 15px;
+	/*border-color: #f52929 transparent transparent transparent;*/
+	border-color: #ffffff transparent transparent transparent;
+}
+.contact-btn {
+	/*background: #fffe91;*/
+	border: 0px;
+	width: 165px;
+	padding: 10px 0px;
+	font-size: 16px;
+	font-family: "黑体","微软雅黑";
+	transition: background 1s;
+	-moz-transition: background 1s;
+	-webkit-transition: background 1s;
+	-o-transition: background 1s;
+}
+.contact-font input:hover {
+	background: #e6c446;
+}
+/*------footer-------------*/
+.ReturnTopBtn{
+	position: relative;
+	bottom: 29px;
+	right: 10px;
+	font-size: 14px;
+}
+.foot{
+	background: #180e0c;
+	margin-top: 10px;
+}
+.footer-bg{
+	background: url("../images/footer.jpg") no-repeat center;
+	height: 127px;
+}
+
+/*---------------------help2-----------------------*/
+#help2 .header{
+	
+	width: 100%;
+	height: 50px;
+}
+
+.help-btn {
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	border-radius: 3px;
+	background: #0088fe;
+	overflow: hidden;
+	z-index: 0;
+}
+.help-btn span{
+	display: block;
+	width:120px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+.help-btn:before{
+	 content: "";
+	 width: 30px;
+	 height: 30px;
+	 background: #FF9100;
+	 position: absolute;
+	 top: 0;
+	 right: 50px;
+	 border-radius: 50%;
+	 z-index: -1;
+	 opacity: 0;
+	 transition: .5s all;
+ }
+.help-btn:hover{
+	 text-decoration: none;
+}
+.help-btn:hover:before{
+	transform: scale(6);
+	opacity: 1;
+}

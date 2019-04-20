@@ -1,0 +1,1941 @@
+@font-face {
+    font-family: 'Playbill';
+    /*给自定义字体命名*/
+    src: url('../../style/images/chess/font/_-webfont.eot');
+    src: url('../../style/images/chess/font/_-webfont.eot?#iefix') format('eot'),
+        url('../../style/images/chess/font/_-webfont.woff') format('woff'),
+        url('../../style/images/chess/font/_-webfont.ttf') format('truetype'),
+        url('../../style/images/chess/font/_-webfont.svg') format('svg');
+}
+
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    font-weight: bold;
+}
+ul,li{
+    list-style: none;
+}
+
+.aatest {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.chesspop-box {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 10;
+    left: 0;
+    top: 0;
+    font-family: "Playbill" !important;
+
+    .pop_index {
+        padding: 0 13px 13px 13px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 10px;
+        background: #0000002e;
+        -moz-box-shadow: 2px 0px 31px #fff inset;
+        /* For Firefox3.6+ */
+        -webkit-box-shadow: 2px 0px 31px #fff inset;
+        /* For Chrome5+, Safari5+ */
+        box-shadow: 2px 0px 31px #fff inset;
+        /* For Latest Opera */
+
+    }
+
+    .pop_close,
+    .chesspop-head-title,
+        {
+        background-image: url(../../style/images/chess/pops.png);
+        background-size: 22.7rem;
+        background-repeat: no-repeat;
+    }
+  
+
+    .chesspop-self-left-li-normal,
+    .chesspop-self-left-li-active,
+    .chesspop-grxx-button-tx,
+    .chesspop-grxx-button-qrxg {
+        background-image: url(../../style/images/chess/pops.png);
+        background-size: 20rem;
+        background-repeat: no-repeat;
+    }
+
+
+    .pop_index_animi {
+        animation: myfirst .5s;
+        -moz-animation: myfirst .5s;
+        /* Firefox */
+        -webkit-animation: myfirst .5s;
+        /* Safari and Chrome */
+        -o-animation: myfirst .5s;
+        /* Opera */
+    }
+
+    .pop_close {
+        position: absolute;
+        right: .1rem;
+        top: .1rem;
+        width: .7rem;
+        height: .7rem;
+        background-position: -3.15rem -.3rem;
+        z-index: 10;
+    }
+
+
+    .pop_index {
+        .chesspop-neibox {
+            width: 100%;
+            height: 87%;
+
+            .chesspop-botbox-allstyle {
+                background: linear-gradient(#f9fbe0, #fdf7bf);
+            }
+
+            .chesspop-head {
+                text-align: center;
+                height: .68rem;
+                line-height: .68rem;
+                position: relative;
+
+                .chesspop-head-title {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    margin: auto;
+                    height: 100%;
+                    width: 4.8rem;
+                    background-position: 0.1rem -3.56rem
+                }
+                .chesspop-head-title-ranking{
+                    background-position: 0.1rem -14.78rem;
+                    width: 5.79rem;
+                    height: 1.34rem;
+                    top: -.5rem;
+                }
+            }
+
+            .chesspop-white-titlefont {
+                color: #fbffea;
+                font-size: 0.38rem;
+                font-weight: bold;
+            }
+
+            .chesspop-green-titlefont {
+                color: #803c19;
+                font-size: 0.38rem;
+                font-weight: bold;
+            }
+
+            .chesspop-botbox {
+                width: 100%;
+                height: 100%;
+                margin-top: 8px;
+                border-radius: 5px;
+                overflow: hidden;
+
+                //个人中心左边选项卡
+                .chesspop-self-left {
+                    display: inline-block;
+                    float: left;
+                    width: 25%;
+                    position: relative;
+                    z-index: 2;
+                    height: 100%;
+                    background: linear-gradient(#ecdfb1, #e9e0b0);
+
+                    .chesspop-self-left-li-normal {
+                        width: 2.6rem;
+                        height: .9rem;
+                        background-position: 0.1rem -.96rem;
+
+                        .chesspop-self-left-li-title {
+                            color: #7c3d19;
+                            font-size: 0.32rem;
+                            font-weight: bold;
+                            line-height: .95rem;
+                            margin-left: .5rem;
+                        }
+                    }
+
+                    .chesspop-self-left-li-active {
+                        width: 2.6rem;
+                        height: .9rem;
+                        background-position: 0.1rem -0.07rem;
+
+                        .chesspop-self-left-li-title {
+                            color: #fbffea;
+                            font-size: 0.32rem;
+                            font-weight: bold;
+                            line-height: .9rem;
+                            margin-left: .5rem;
+                        }
+                    }
+
+
+                }
+
+                //个人中心右边内页
+                .chesspop-self-right {
+                    display: inline-block;
+                    float: right;
+                    position: relative;
+                    z-index: 1;
+                    width: 75%;
+                    height: 100%;
+                    background: linear-gradient(#f9fbe0, #fdf7bf);
+
+                    .chesspop-grxx {
+
+                        //个人信息选项卡内页
+                        .chesspop-grxx-txbox {
+                            width: 1.74rem;
+                            height: 1.74rem;
+                            border: 1px solid #d3c8ac;
+                            border-radius: 8px;
+                            position: absolute;
+                            left: 1rem;
+                            top: .4rem;
+                            padding: .04rem;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .chesspop-grxx-button-tx {
+                            width: 1.84rem;
+                            height: .56rem;
+                            position: absolute;
+                            left: .98rem;
+                            top: 2.3rem;
+                            background-position: 0rem -1.86rem;
+                            text-align: center;
+
+                            .chesspop-grxx-button-tx-title {
+                                color: #fbffea;
+                                font-weight: bold;
+                                line-height: .59rem;
+                            }
+                        }
+
+                        .chesspop-grxx-admlist {
+                            list-style: none;
+                            position: absolute;
+                            left: 3.4rem;
+                            top: .4rem;
+                            color: #8e3627;
+                            font-size: .25rem;
+                            font-weight: bold;
+
+                            li {
+                                margin-bottom: .2rem;
+                            }
+
+                            input {
+                                margin-left: .07rem;
+                                background: #ebe0b3;
+                                border: 1px solid #d3c69d;
+                                border-radius: 3px;
+                                padding: .1rem;
+                                width: 2rem;
+                                color: #ba885b;
+                            }
+
+                            .chesspop-specbirth {
+                                margin-left: .07rem;
+                                background: #ebe0b3;
+                                border: 1px solid #d3c69d;
+                                border-radius: 3px;
+                                padding: .1rem;
+                                width: 2rem;
+                                color: #ba885b;
+                                display: inline-block;
+                            }
+
+                            input::-webkit-input-placeholder {
+                                /* placeholder颜色  */
+                                color: #ba885b;
+                            }
+
+                            .chesspop-grxx-spec {
+                                div {
+                                    display: inline-block;
+                                }
+                            }
+
+                            .chesspop-grxx-button-qrxg {
+                                width: 1.81rem;
+                                height: 0.58rem;
+                                background-position: -.1rem -2.46rem;
+                                text-align: center;
+                                margin-left: auto;
+
+                                .chesspop-grxx-button-qrxg-title {
+                                    color: #fbffea;
+                                    font-weight: bold;
+                                    line-height: .61rem;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .chesspop-tglj {
+                        .chesspop-tglj-title {
+                            text-align: center;
+                            color: #9c3c15;
+                            font-size: .28rem;
+                            margin-top: .7rem;
+                            font-weight: bold;
+                        }
+
+                        input {
+                            background: #ebe0b3;
+                            border: 1px solid #d3c69d;
+                            border-radius: 3px;
+                            padding: .1rem;
+                            width: 3.5rem;
+                            color: #9c3c15;
+                        }
+
+                        .chesspop-tglj-speccolor {
+                            color: #ce8156
+                        }
+
+                        textarea {
+                            background: none;
+                            border: 0;
+                            resize: none;
+                            width: 4.6rem;
+                            color: #ce8156;
+                            font-size: .22rem;
+                            font-weight: bold;
+                            line-height: 0.5rem;
+                            height: 2.5rem;
+                        }
+
+                        .chesspop-tglj-spectitle {
+                            margin-top: .13rem;
+                        }
+
+                        .chesspop-tglj-copy {
+                            background-size: 20rem;
+                            background-repeat: no-repeat;
+                            background-position: -3.47rem -0.37rem;
+                            display: inline-block;
+                            background-image: url("../../style/images/chess/pops.png");
+                            width: .4rem;
+                            height: .4rem;
+                            vertical-align: -0.1rem;
+                            margin-left: .1rem;
+                        }
+                    }
+
+                    .chesspop-ptye {
+                        height: 100%;
+                        overflow: auto;
+
+                        ul {
+                            padding: .25rem .5rem 0 .5rem;
+                            list-style: none;
+                            display: -webkit-flex;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            align-content: center;
+
+                            .chesspop-ptye-li {
+                                width: 1.8rem;
+                                height: .8rem;
+                                background: #ebe0b3;
+                                color: #ce8156;
+                                font-size: .23rem;
+                                font-weight: bold;
+                                margin-bottom: .25rem;
+                                text-align: center;
+                                border-radius: 3px;
+                                border: 1px solid #d4c19b;
+
+                                span {
+                                    display: block;
+                                    margin: .1rem 0 0 0;
+                                }
+                            }
+                        }
+
+                    }
+
+
+                    .chesspop-mmgl {
+                        position: absolute;
+                        width: 4rem;
+                        height: 4.2rem;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+
+                        .chesspop-tab {
+                            width: 1.9rem;
+                            height: 0.56rem;
+                            background-position: 0rem -5.433rem;
+                            background-image: url(../../style/images/chess/pops.png);
+                            background-size: 20rem;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            z-index: 1;
+                            text-align: center;
+                            line-height: .57rem;
+                            font-weight: bold;
+                            color: #7c3d19;
+                        }
+
+                        .chesspop-tab-left {
+                            top: .1rem;
+                            left: .1rem;
+                        }
+
+                        .chesspop-tab-right {
+                            top: .1rem;
+                            left: 1.7rem;
+                        }
+
+                        .chesspop-tab-active {
+                            background-position: 0rem -6.06rem;
+                            z-index: 2;
+                            color: #fbffea;
+                        }
+
+                        .chesspop-grxx-passlist {
+                            list-style: none;
+                            position: absolute;
+                            left: .21rem;
+                            top: 1rem;
+                            color: #8e3627;
+                            font-size: .25rem;
+                            font-weight: bold;
+
+                            li {
+                                margin-bottom: .2rem;
+                            }
+
+                            input {
+                                margin-left: .07rem;
+                                background: #ebe0b3;
+                                border: 1px solid #d3c69d;
+                                border-radius: 3px;
+                                padding: .1rem;
+                                width: 2.3rem;
+                                color: #ba885b;
+                            }
+
+                            .chesspop-specbirth {
+                                margin-left: .07rem;
+                                background: #ebe0b3;
+                                border: 1px solid #d3c69d;
+                                border-radius: 3px;
+                                padding: .1rem;
+                                width: 2rem;
+                                color: #ba885b;
+                                display: inline-block;
+                            }
+
+                            input::-webkit-input-placeholder {
+                                /* placeholder颜色  */
+                                color: #ba885b;
+                            }
+
+                            .chesspop-grxx-spec {
+                                div {
+                                    display: inline-block;
+                                }
+                            }
+
+                            .chesspop-mmgl-button-tj,
+                            .chesspop-mmgl-button-kf {
+                                width: 1.81rem;
+                                height: 0.58rem;
+                                background-position: .0rem -2.21rem;
+                                text-align: center;
+                                background-image: url(../../style/images/chess/pops.png);
+                                background-size: 18rem;
+                                background-repeat: no-repeat;
+                                display: inline-block;
+
+                                .chesspop-mmgl-button-tj-title,
+                                .chesspop-mmgl-button-kf-title {
+                                    color: #fbffea;
+                                    font-weight: bold;
+                                    line-height: .61rem;
+                                }
+                            }
+                        }
+                    }
+
+
+
+                    .chesspop-yhk {
+                        position: absolute;
+                        width: 6.2rem;
+                        height: 4rem;
+                        left: .6rem;
+                        top: .1rem;
+                        margin: auto;
+
+                        .chesspop-tab {
+                            width: 1.9rem;
+                            height: 0.56rem;
+                            background-position: 0rem -5.433rem;
+                            background-image: url(../../style/images/chess/pops.png);
+                            background-size: 20rem;
+                            background-repeat: no-repeat;
+                            position: absolute;
+                            z-index: 1;
+                            text-align: center;
+                            line-height: .57rem;
+                            font-weight: bold;
+                            color: #7c3d19;
+                        }
+
+                        .chesspop-tab-left {
+                            top: .1rem;
+                            left: .1rem;
+                        }
+
+                        .chesspop-tab-right {
+                            top: .1rem;
+                            left: 1.7rem;
+                        }
+
+                        .chesspop-tab-active {
+                            background-position: 0rem -6.06rem;
+                            z-index: 2;
+                            color: #fbffea;
+                        }
+
+                        .chesspop-grxx-passlist {
+                            list-style: none;
+                            position: absolute;
+                            left: .21rem;
+                            top: .8rem;
+                            color: #8e3627;
+                            font-size: .25rem;
+                            font-weight: bold;
+
+                            li {
+                                margin-bottom: .13rem;
+                            }
+
+                            input {
+                                margin-left: .07rem;
+                                background: #ebe0b3;
+                                border: 1px solid #d3c69d;
+                                border-radius: 3px;
+                                padding: .075rem;
+                                width: 2.3rem;
+                                color: #ba885b;
+                            }
+
+                            .chesspop-specbirth {
+                                margin-left: .07rem;
+                                background: #ebe0b3;
+                                border: 1px solid #d3c69d;
+                                border-radius: 3px;
+                                padding: .1rem;
+                                width: 2rem;
+                                color: #ba885b;
+                                display: inline-block;
+                            }
+
+                            input::-webkit-input-placeholder {
+                                /* placeholder颜色  */
+                                color: #ba885b;
+                            }
+
+                            .chesspop-grxx-spec {
+                                div {
+                                    display: inline-block;
+                                }
+                            }
+
+                            .chesspop-yhk-button-tj {
+                                width: 1.81rem;
+                                height: 0.58rem;
+                                background-position: .0rem -2.21rem;
+                                text-align: center;
+                                background-image: url(../../style/images/chess/pops.png);
+                                background-size: 18rem;
+                                background-repeat: no-repeat;
+                                margin: auto;
+
+                                .chesspop-yhk-button-tj-title {
+                                    color: #fbffea;
+                                    font-weight: bold;
+                                    line-height: .61rem;
+                                }
+                            }
+                        }
+
+                        .chesspop-yhk-delbox {
+                            width: 100%;
+                            height: 100%;
+                            padding-top: .8rem;
+                            overflow: auto;
+
+                            .chesspop-yhk-delbox-itembox {
+                                width: 100%;
+                                height: .5rem;
+                                margin-bottom: .2rem;
+
+                                &>div {
+                                    margin-right: .06rem;
+                                    background: #ebe0b3;
+                                    border: 1px solid #d3c69d;
+                                    border-radius: 3px;
+                                    padding: .1rem;
+                                    color: #ba885b;
+                                    display: inline-block;
+                                    height: .5rem;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap
+                                }
+
+                                .chesspop-yhk-cardImg {
+                                    width: .55rem;
+                                    height: .45rem;
+                                    border: none;
+                                    background-color: rgba(0, 0, 0, 0);
+                                    background-image: url(../../style/images/chess/pops.png);
+                                    background-size: 20rem;
+                                    background-repeat: no-repeat;
+                                    background-position: -.1rem -4.99rem;
+                                    vertical-align: .05rem;
+
+                                }
+
+                                .chesspop-yhk-cardUserName {
+                                    width: 1rem;
+                                }
+
+                                .chesspop-yhk-cardName {
+                                    width: 1.6rem;
+                                }
+
+                                .chesspop-yhk-cardNumber {
+                                    width: 2.7rem;
+                                }
+
+                                .chesspop-yhk-cardSwich {
+                                    padding: 0;
+                                    width: .5rem;
+
+                                    .mygougoubox {
+                                        width: 100%;
+                                        height: 100%;
+                                        position: relative;
+
+                                        .yhk-gou1 {
+                                            width: .16rem;
+                                            height: .05rem;
+                                            background: #ba885b;
+                                            position: absolute;
+                                            left: .05rem;
+                                            top: .22rem;
+                                            transform: rotate(50deg);
+                                            border-radius: 14px;
+                                        }
+
+                                        .yhk-gou2 {
+
+                                            width: .36rem;
+                                            height: .05rem;
+                                            background: #ba885b;
+                                            position: absolute;
+                                            left: .11rem;
+                                            top: .19rem;
+                                            transform: rotate(-50deg);
+                                            border-radius: 14px;
+                                        }
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+
+                    .chesspop-ptzz {
+                        width: 100%;
+                        height: 100%;
+                        padding: .4rem;
+                        color: #8e3627;
+                        font-size: .25rem;
+                        font-weight: bold;
+                        padding-top: .8rem;
+
+                        .chesspop-ptzz-listbox {
+                            width: 100%;
+                            height: .6rem;
+                            margin-bottom: .3rem;
+
+                            &>div {
+                                display: inline-block;
+                            }
+
+                            &>span {
+                                display: inline-block;
+                                height: .5rem;
+                                width: 1.2rem
+                            }
+                        }
+
+                        input {
+                            background: #ebe0b3;
+                            border: 1px solid #d3c69d;
+                            border-radius: 3px;
+                            padding: .1rem;
+                            width: 1.9rem;
+                            color: #ba885b;
+                        }
+
+                        .chesspop-ptzz-reloding {
+                            background-size: 20rem;
+                            background-repeat: no-repeat;
+                            background-position: -3.82rem -.37rem;
+                            display: inline-block;
+                            background-image: url(../../style/images/chess/pops.png);
+                            width: .355rem;
+                            height: .4rem;
+                            vertical-align: -0.1rem;
+                            margin-left: .2rem;
+                            margin-right: .207rem;
+                        }
+
+                        .chesspop-ptzz-zdzzbox {
+                            background: #ebe0b3;
+                            border: 1px solid #d3c69d;
+                            border-radius: 3px;
+                            width: 2rem;
+                            height: .5rem;
+                            vertical-align: .03rem;
+                            line-height: .52rem;
+                            color: #ba885b;
+                            display: inline-block;
+                            padding-left: .2rem;
+                            position: relative;
+
+                            i {
+                                background-size: 20rem;
+                                background-repeat: no-repeat;
+                                background-position: -2.9rem -0.85rem;
+                                display: inline-block;
+                                background-image: url(../../style/images/chess/pops.png);
+                                width: .38rem;
+                                height: .4rem;
+                                vertical-align: -0.1rem;
+                                margin-left: .2rem;
+                                position: absolute;
+                            }
+
+                            .chesspop-ptzz-zdzzbox-iactive {
+                                background-position: -3.3rem -0.85rem;
+                            }
+
+                        }
+
+
+                        .chesspop-ptzz-ptzzbox {
+                            background: #ebe0b3;
+                            border: 1px solid #d3c69d;
+                            border-radius: 3px;
+                            width: 1.9rem;
+                            height: .5rem;
+                            vertical-align: .03rem;
+                            line-height: .52rem;
+                            color: #ba885b;
+                            display: inline-block;
+                            padding-left: .2rem;
+                            position: relative;
+
+                            i {
+                                background-size: 20rem;
+                                background-repeat: no-repeat;
+                                background-position: -2.9rem -0.85rem;
+                                display: inline-block;
+                                background-image: url(../../style/images/chess/pops.png);
+                                width: .38rem;
+                                height: .4rem;
+                                vertical-align: -0.1rem;
+                                margin-left: .2rem;
+                            }
+
+                        }
+
+
+
+                        .chesspop-button1 {
+                            margin-left: .8rem;
+                            margin-right: .1rem;
+                        }
+
+                        button {
+                            width: 1.25rem;
+                            height: .5rem;
+                            background-position: 0 -9.86rem;
+                            text-align: center;
+                            background-image: url(../../style/images/chess/pops.png);
+                            vertical-align: -0.15rem;
+                            background-size: 18rem;
+                            background-repeat: no-repeat;
+                            display: inline-block;
+                            background-color: rgba(0, 0, 0, 0);
+                        }
+
+                        .chesspop-ptzz-jiantou {
+                            background-size: 20rem;
+                            background-repeat: no-repeat;
+                            background-position: -4.155rem -0.37rem;
+                            display: inline-block;
+                            background-image: url(../../style/images/chess/pops.png);
+                            width: .38rem;
+                            height: .4rem;
+                            vertical-align: -0.1rem;
+                            margin-left: .2rem;
+                            margin-right: .207rem;
+                        }
+
+                        .chesspop-ptzz-listbox-forinput {
+                            &>input {
+                                position: relative;
+
+                                span {}
+                            }
+                        }
+
+                        .chesspop-ptzz-button {
+                            width: 1.81rem;
+                            height: 0.58rem;
+                            background-position: 0rem -2.21rem;
+                            text-align: center;
+                            background-image: url(../../style/images/chess/pops.png);
+                            background-size: 18rem;
+                            background-repeat: no-repeat;
+                            display: inline-block;
+                            color: #fbffea;
+                            font-weight: bold;
+                            line-height: .61rem;
+                        }
+
+                        .chesspop-ptzz-listbox-spec {
+                            text-align: center;
+                        }
+                    }
+
+
+                }
+
+
+
+
+
+
+
+
+            }
+        }
+
+
+
+        //各种转账记录
+        .Segmented {
+            margin: .3rem .35rem .1rem .35rem;
+            height: .6rem;
+
+            .am-segment-item {
+                font-weight: bold;
+                color: #7c3d19;
+                border: 0;
+                font-size: .25rem;
+                border-right: 1px solid rgba(0,0,0,0);
+            }
+
+            .tabsItem {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: .6rem;
+                background-image: url(../../style/images/chess/pops.png);
+                background-size: 22rem;
+                background-repeat: no-repeat;
+                background-position: -.1rem -9.85rem;
+            }
+
+            .am-segment-item-selected {
+                background: none;
+
+                .tabsItem {
+                    background-position: -0.1rem -9.05rem
+                }
+            }
+        }
+
+        .am-navbar {
+            border: 0;
+            background: transparent;
+        }
+
+        .timeBtn {
+
+            text-align: center;
+
+            a {
+                display: inline-block;
+                padding: 5px 10px;
+                border-radius: 5px;
+                background: #ebe0b3;
+                color: #ba885b;
+            }
+        }
+
+        .scroll-content .myListView {
+            position: absolute !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .timeChoose {
+            z-index: 999;
+            position: fixed;
+            -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            .mask {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, .5);
+            }
+
+            .timeCon {
+                position: absolute;
+                bottom: 0;
+                height: auto;
+                background: #fff;
+                width: 100%;
+
+                .timeConBtn {
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: .3rem;
+                    color: #d37505;
+                    padding: 0 10px;
+
+                    .left {
+                        float: left;
+                        color: #000
+                    }
+
+                    .right {
+                        float: right;
+                        color: #000
+                    }
+
+                }
+
+                .am-picker-col {
+                    height: 102px;
+                }
+
+                .sub-title {
+                    text-align: center;
+                    background: #eee;
+                    line-height: 26px;
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+        }
+
+        .scroll-content {
+            // border-top: 1px solid #ba885b;
+            border-top: 0;
+            top: 2rem;
+            margin: auto;
+            width: 9.4rem;
+            height: 3.8rem;
+            background: none;
+
+            .am-list-body {
+                background: none;
+            }
+
+            .noResult {
+                font-size: .25rem;
+                color: #888;
+                line-height: 2rem;
+                text-align: center;
+            }
+
+            .am-list-footer {
+                color: #ba885b;
+            }
+
+            .listItem {
+                padding: .15rem .2rem;
+                border-bottom: 1px solid #ba885b;
+                border-left: 1px solid #ba885b;
+                border-right: 1px solid #ba885b;
+                border-top: 1px solid #ba885b;
+                color: #ba885b;
+                line-height: 20px;
+                text-align: center;
+
+                &>div {
+                    display: inline-block;
+                    float: left;
+                }
+
+                .itemL {
+                    width: 25%;
+                    color: #ba885b;
+                    font-size: .2rem;
+                }
+
+                .itemC {
+                    width: 50%;
+
+                    span {
+                        display: block;
+                    }
+
+                    .bot {
+                        color: #ba885b;
+                        font-size: .2rem;
+                    }
+                }
+
+                .itemR {
+                    width: 25%;
+
+                    .badg {
+                        display: inline-block;
+                        padding: .05rem .15rem;
+                        font-size: .2rem;
+                        color: #fff;
+                        border-radius: .1rem;
+                        background: #d37505;
+
+                        &.red {
+                            background: #f1ce7a;
+                        }
+
+                        &.blue {
+                            background: #a46005;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //提款弹窗
+        .TKpage {
+            color: #8e3627;
+            font-size: .25rem;
+            font-weight: bold;
+
+            .TKpage-monetTitle {
+                color: #7c3d19;
+                font-size: .32rem;
+                text-align: center;
+                margin-top: .4rem;
+                margin-bottom: .4rem;
+
+            }
+
+            .TKpage-ALL {
+                width: 1rem;
+                height: .5rem;
+                background-position: 0 -10.4rem;
+                text-align: center;
+                background-image: url(../../style/images/chess/pops.png);
+                vertical-align: -.15rem;
+                background-size: 18rem;
+                background-repeat: no-repeat;
+                display: inline-block;
+                margin-left: .2rem;
+            }
+
+            .TKpage-ulList {
+                width: 8.5rem;
+                margin: auto;
+                list-style: none;
+
+                li {
+                    margin-bottom: .2rem;
+
+                    input {
+                        margin-left: .07rem;
+                        background: #ebe0b3;
+                        border: 1px solid #d3c69d;
+                        border-radius: 3px;
+                        padding: .075rem;
+                        width: 2rem;
+                        color: #ba885b;
+                        margin-left: .265rem;
+                    }
+
+                    .TKpage-choessCard {
+                        background: #ebe0b3;
+                        border: 1px solid #d3c69d;
+                        border-radius: 3px;
+                        width: 5.55rem;
+                        height: .5rem;
+                        line-height: .52rem;
+                        color: #ba885b;
+                        display: inline-block;
+                        padding-left: .2rem;
+                        position: relative;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .TKpage-ulList-button {
+                        width: 1.81rem;
+                        height: 0.58rem;
+                        background-position: .0rem -2.21rem;
+                        text-align: center;
+                        background-image: url(../../style/images/chess/pops.png);
+                        background-size: 18rem;
+                        background-repeat: no-repeat;
+                        margin: auto;
+                        margin-top: .4rem;
+
+                        .TKpage-ulList-button-title {
+                            color: #fbffea;
+                            font-weight: bold;
+                            line-height: .61rem;
+                        }
+                    }
+
+                }
+
+                .chesspop-grxx-spec {
+                    &>div {
+                        display: inline-block;
+
+                        .TKpage-choessCard {
+                            vertical-align: -0.13rem;
+                            padding-right: .4rem;
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                border-left: 0.1rem solid rgba(0, 0, 0, 0);
+                                border-right: 0.1rem solid rgba(0, 0, 0, 0);
+                                border-top: .12rem solid #ba885b;
+                                position: absolute;
+                                right: .15rem;
+                                top: .16rem;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        //提款弹窗
+        .CKpage {
+            color: #8e3627;
+            font-size: .25rem;
+            font-weight: bold;
+
+            .CKpage-monetTitle {
+                text-align: center;
+                margin-bottom: .2rem;
+            }
+
+            .CKpage-payTabs {
+                color: #7c3d19;
+                font-size: .32rem;
+                text-align: center;
+                margin-top: .2rem;
+                margin-bottom: .2rem;
+
+                .tabsItem {
+                    display: inline-block;
+                    width: 2rem;
+                    height: .6rem;
+                    text-align: center;
+                    line-height: .6rem;
+                    background-image: url(../../style/images/chess/pops.png);
+                    background-size: 22rem;
+                    background-repeat: no-repeat;
+                    background-position: -.1rem -9.85rem;
+                }
+
+                .active {
+                    background-position: -.1rem -9.05rem;
+                    color: #fbffea;
+                }
+            }
+
+            .CKpage-scollbox {
+                overflow: auto;
+                height: 3.9rem;
+            }
+
+            .TKpage-ulList {
+                width: 8.9rem;
+                margin: auto;
+                list-style: none;
+                position: relative;
+
+                li {
+                    margin-bottom: .2rem;
+
+                    input {
+                        background: #ebe0b3;
+                        border: 1px solid #d3c69d;
+                        border-radius: 3px;
+                        padding: .075rem;
+                        width: 2rem;
+                        color: #ba885b;
+                    }
+
+                    .TKpage-choessCard {
+                        background: #ebe0b3;
+                        border: 1px solid #d3c69d;
+                        border-radius: 3px;
+                        width: 3.55rem;
+                        height: .5rem;
+                        line-height: .52rem;
+                        color: #ba885b;
+                        display: inline-block;
+                        padding-left: .2rem;
+                        position: relative;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .TKpage-choessCard-spec {
+                        width: 2rem;
+                    }
+
+                    .TKpage-ulList-button {
+                        width: 1.81rem;
+                        height: 0.58rem;
+                        background-position: .0rem -2.21rem;
+                        text-align: center;
+                        background-image: url(../../style/images/chess/pops.png);
+                        background-size: 18rem;
+                        background-repeat: no-repeat;
+                        margin: auto;
+                        margin-top: .4rem;
+
+                        .TKpage-ulList-button-title {
+                            color: #fbffea;
+                            font-weight: bold;
+                            line-height: .61rem;
+                        }
+                    }
+
+                }
+
+                .chesspop-grxx-spec {
+                    &>div {
+                        display: inline-block;
+
+                        .TKpage-choessCard {
+                            vertical-align: -0.13rem;
+                            padding-right: .4rem;
+                            position: relative;
+
+                            &::after {
+                                content: "";
+                                border-left: 0.1rem solid rgba(0, 0, 0, 0);
+                                border-right: 0.1rem solid rgba(0, 0, 0, 0);
+                                border-top: .12rem solid #ba885b;
+                                position: absolute;
+                                right: .15rem;
+                                top: .16rem;
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .tipsAmount {
+                font-size: .22rem;
+            }
+
+            .quick-box {
+                position: absolute;
+                width: 5rem;
+                right: .23rem;
+                top: .695rem;
+                font-size: .23rem;
+
+                .am-flexbox-item {
+                    padding: 0.1rem;
+                    background: #ebe0b3;
+                    color: #ce8156;
+                    font-size: .23rem;
+                    font-weight: 700;
+                    margin-bottom: .21rem;
+                    text-align: center;
+                    border-radius: 3px;
+                    border: 1px solid #d4c19b;
+                }
+
+                .active {
+                    background: #c5b98b;
+                }
+            }
+
+            .chesspop-paybox {
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: linear-gradient(#f9fbe0, #fdf7bf);
+                width: 100%;
+                font-size: .24rem;
+
+                .chesspop-zhuanleft,
+                .chesspop-zhuanright {
+                    background: #ebe0b3;
+                    display: inline-block;
+                    width: 43%;
+                    overflow: hidden;
+                    height: 2.8rem;
+                    color: #CE8055;
+                    border-radius: 6px;
+
+                    p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        padding: .25rem .1rem 0 .1rem;
+                        white-space: nowrap;
+                    }
+                }
+
+                .chesspop-zhuanleft {
+                    margin-right: 4%;
+                    width: 53%;
+                }
+
+                .amount {
+                    font-size: .26rem;
+                    color: #8e3627;
+                    padding: .25rem .1rem 0 .1rem;
+                }
+
+                .chesspop-specli {
+                    padding: .16rem 0rem 0 .1rem;
+                    margin: 0;
+
+                    .TKpage-choessCard {
+                        height: .4rem;
+                        line-height: .45rem;
+                        color: #CE8055;
+                        width: 2.4rem;
+                        margin-left: .24rem;
+
+                        &::after {
+                            border-top: .12rem solid #CE8055 !important;
+                        }
+                    }
+
+                    input {
+                        height: .4rem;
+                        width: 2.4rem;
+                    }
+
+                    ::-webkit-input-placeholder {
+                        color: #CE8055;
+                    }
+                }
+
+                .chesspop-specli2 {
+                    padding: .12rem 0rem 0 .1rem;
+                    margin: 0;
+                }
+
+                .chesspop-specli3 {
+                    padding: .11rem 0rem 0 .1rem;
+                }
+
+                .TKpage-ulList-button {
+                    margin-top: .2rem !important;
+                    display: inline-block;
+                }
+
+            }
+
+            .chesspop-paybox-qrCode {
+                padding: .2rem 1.1rem 0 1.1rem;
+                height: 3.8rem;
+
+                .qrcode {
+                    display: inline-block;
+                    background: #ebe0b3;
+                }
+
+                .text {
+                    display: inline-block;
+                    width: 4.07rem;
+                    margin-left: .7rem;
+                    vertical-align: top;
+                    line-height: .5rem;
+                    color: #CE8055;
+
+                    .amount {
+                        padding: 0;
+                    }
+
+                    strong {
+                        color: #8e3627;
+                    }
+                }
+
+            }
+
+            .chesspop-paybox-YHqrCode {
+                padding:0rem .7rem 0 .7rem !important;
+                .amount{
+                    padding: .1rem .1rem .1rem 0rem!important;
+                }
+                .qrcode {
+                    padding: .15rem;
+                    img {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                    }
+                }
+                .text{
+                    display: block!important;
+                    margin-left: 0!important;
+                    width: 100%;
+                    line-height: .34rem!important;
+                    margin-bottom: -.1rem!important;
+                }
+
+                .chesspop-YHspecbox{
+                    display: inline-block;
+                    margin-left: .5rem;
+                    width: 4.5rem;
+                    height: 2.3rem;
+                    vertical-align: top;
+                    p{
+                        padding-top: 1px;
+                        padding-bottom:.13rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .chesspop-specli{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .ranking{
+            .chesspop-rankBox{
+                margin: .4rem .7rem;
+                overflow: auto;
+                height:83%;
+                padding: 1px 1px;
+                li{
+                    width: 100%;
+                    height: .7rem;
+                    border: 1px solid #CE8055;
+                    border-radius:6px; 
+                    margin-bottom: .1rem;
+                    padding: .05rem .2rem;
+                    &>div{
+                        display: inline-block;
+                        color: #CE8055;
+                        height: 100%;
+                        line-height: .7rem;
+                        vertical-align: top;
+                        margin-right: .3rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .rank-index1,.rank-index2,.rank-index3,.rank-money-icon,.rank-prize-icon{
+                        background-image: url(../../style/images/chess/pops.png);
+                        background-size: 20rem;
+                        background-repeat: no-repeat;
+                    }
+                    .rank-index{
+                        width: .4rem;
+                        text-align: center;
+                        color: #8e3627;
+                    }
+                    .rank-index1{
+                        background-position: -0.1rem -12.27rem;
+                    }
+                    .rank-index2{
+                        background-position: -0.53rem -12.27rem;
+                    }
+                    .rank-index3{
+                        background-position: -.96rem -12.27rem;
+                    }
+                    .rank-img{
+                        width: .6rem;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .rank-username{
+                        width: 1.1rem;
+                    }
+
+                    .rank-money{
+                        line-height: .7rem;
+                        width: 2rem;
+                        .rank-money-icon{
+                            display: inline-block;
+                            height: 100%;
+                            width: .55rem;
+                            background-position: -1.32rem -12.39rem;
+                        }
+                        span{
+                            vertical-align: top;
+                        }
+                    }
+
+                    .rank-prize{
+                        line-height: .7rem;
+                        width: 2rem;
+                        .rank-prize-icon{
+                            display: inline-block;
+                            height: 100%;
+                            width: .55rem;
+                            background-position: -1.85rem -12.37rem;
+                        }
+                        span{
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+        }
+
+        .SZpage{
+            .SZpage-buttonlist{
+                display: inline-block;
+                vertical-align: top;
+                margin: .2rem .2rem 0 .2rem;
+                .SZpage-button{
+                    width: 1.81rem;
+                    height: .58rem;
+                    background-position: -.1rem -2.46rem;
+                    text-align: center;
+                    background-image: url(../../style/images/chess/pops.png);
+                    background-size: 20rem;
+                    background-repeat: no-repeat;
+                    margin:.3rem;
+                    .SZpage-button-title{
+                        color: #fbffea;
+                        font-weight: 700;
+                        line-height: .61rem;
+                    }
+                }
+            }
+
+            .SZpage-imgbox{
+                vertical-align: top;
+                background: #fff;
+                width: 4.5rem;
+                height: 3.5rem;
+                padding: .1rem;
+                position: relative;
+                margin: .3rem 0 0 0;
+                display: inline-block;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+                .SZpage-flg,.SZpage-button-absl{
+                    position: absolute;
+                    background-image: url(../../style/images/chess/pops.png);
+                    background-size: 20rem;
+                    background-repeat: no-repeat;
+                }
+                .SZpage-flg{
+                    width: 1.5rem;
+                    height: 0.94rem;
+                    background-position: -1.3rem -11.3rem;
+                    left: -0.2rem;
+                    top: .15rem;
+
+                }
+                .SZpage-button-absl{
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    bottom: .2rem;
+                    width: 2rem;
+                    height: 0.64rem;
+                    background-position: -2.96rem -11.3rem;
+
+                }
+            }
+        }
+
+        .Message{
+            .scroll-content{
+                margin-top: 0;
+                margin-bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+                position: absolute;
+                display: block;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+                will-change: scroll-position;
+                contain: size style layout;
+                top: 1rem;
+                width: 90%;
+                height: 4.6rem;
+                .chesspopliitem{
+                    color: #8e3627;
+                    font-weight: bold;
+                    font-size: .25rem;
+                    margin-top: .24rem;
+                    span{
+                        margin-left: .2rem;
+                    }
+                    .Badge{
+                        vertical-align: top;
+                        width: .2rem;
+                        display: inline-block;
+                    }
+                    margin-bottom: .1rem;
+                    .message-content{
+                        display: inline-block;
+                        width: 4.3rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        vertical-align: top;
+                        margin-right: .4rem;
+                        padding-top: 1px;
+                    }
+                    .message-date{
+                        display: inline-block;
+                        width: 2.4rem;
+                        vertical-align: top;
+                    }
+                }
+               
+            }
+            .chesspopMess{
+                p{
+                    padding:.2rem .45rem;
+                    color: #CE8055;
+                    font-size: .28rem;
+                    line-height: .47rem;
+                }
+                .chesspopMess-specP{
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .Activity{//活动弹窗
+        .chesspop-head-title{
+            position: relative!important;
+            display: inline-block!important;
+            width: 3.2rem !important;
+            background-position: -6.4rem -0.3rem!important;
+        }
+        .chesspop-head-title-active{
+            background-position: -6.4rem -1.34rem !important;
+        }
+
+        .chesspop-head-title2{
+            background-position: -9.76rem -1.34rem !important;
+        }
+        .chesspop-head-title2-active{
+            background-position: -9.76rem -0.3rem !important;
+        }
+
+        .chesspop-self-right{
+            width: 72%!important;
+            border-radius: 10px;
+            padding: 1%;
+            overflow: auto;
+        }
+
+        .chesspop-self-left{
+            background: rgba(0,0,0,0)!important;
+            width: 26.5%!important;
+            border: 2px solid #717178;
+            border-radius: 10px;
+            ul{
+                height: 100%;
+                overflow-y: auto;
+                width: 108%;
+                li{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: .2rem;
+                        top: .03rem;
+                        width: 0.6rem;
+                        height: .78rem;
+                        background-image: url(../../style/images/chess/pops.png);
+                        background-size: 20rem;
+                        background-repeat: no-repeat;
+                        background-position: -2.5rem -12.1rem;
+                    }
+                }
+                li.hot{
+                    &::before{
+                        background-position: -3.17rem -12.1rem;
+                    }
+                }
+            }
+        }
+
+        .chesspop-self-left-li-title{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 73%;
+            display: inline-block;
+            position: relative;
+            margin-left: .65rem!important;
+        }
+
+        .home-pop-content-rightImg{
+            color: #ce8156;
+            font-size: .27rem;
+            font-weight: bold;
+            line-height: .4rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+       
+    }
+    .Headpro{
+        color: #8e3627;
+        font-size: .27rem;
+        font-weight: bold;
+        .chesspop-botbox{
+            margin-top: 5px!important;
+            .chesspop-self-left{
+                width: 30%!important;
+                text-align: center;
+                p{
+                    margin-top: .8rem;
+                    margin-bottom: .4rem;
+                }
+                .leftTX-img{
+                    margin: auto;
+                    border: 1px solid #d4c19b;
+                    border-radius: 10px;
+                    padding: .07rem;
+                    background-color: linear-gradient(#f9fbe0, #fdf7bf);
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    overflow: hidden;
+                    margin-bottom: .4rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: .07rem;
+                    }
+                }
+                .leftTX-button{
+                    width: 1.81rem;
+                    height: .58rem;
+                    background-position: -.1rem -2.46rem;
+                    text-align: center;
+                    background-image: url(../../style/images/chess/pops.png);
+                    background-size: 20rem;
+                    background-repeat: no-repeat;
+                    margin: auto;
+                    span{
+                        color: #fbffea;
+                        font-weight: 700;
+                        line-height: .61rem;
+                    }
+                }
+            }
+            .chesspop-self-right{
+                width: 70%!important;
+                .tabchange{
+                    text-align: center;
+                    margin:.2rem 0;
+                    .tabsItem{
+                        display: inline-block;
+                        width: 1.5rem;
+                        height: .6rem;
+                        text-align: center;
+                        line-height: .6rem;
+                        background-image: url(../../style/images/chess/pops.png);
+                        background-size: 22rem;
+                        background-repeat: no-repeat;
+                        background-position: -.1rem -9.85rem;
+                    }
+                    .active{
+                        background-position: -.1rem -9.05rem;
+                        color: #fbffea;
+                    }
+                }
+                .sexBox{
+                    display: -webkit-flex;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-content: center;
+                    padding: 0 .6rem;
+                    .sexItem{
+                        width: 1.1rem;
+                        height: 1.1rem;
+                        padding: .07rem;
+                        margin-bottom: .15rem;
+                        border-radius: 10px;
+                        border: 1px solid #d4c19b;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
+                        }
+                    }
+                    .itemActive{
+                        border: 1px solid #8e3627;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@keyframes myfirst {
+    33% {
+        transform: scale(.9);
+    }
+
+    66% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes myfirst
+
+/* Firefox */
+    {
+    33% {
+        transform: scale(.9);
+    }
+
+    66% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes myfirst
+
+/* Safari and Chrome */
+    {
+    33% {
+        transform: scale(.9);
+    }
+
+    66% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes myfirst
+
+/* Opera */
+    {
+    33% {
+        transform: scale(.9);
+    }
+
+    66% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

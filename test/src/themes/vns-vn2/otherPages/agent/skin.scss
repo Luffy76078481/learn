@@ -1,0 +1,351 @@
+@charset "utf-8";
+@import "variables";
+
+body{
+  background-color: $bg-color;
+  color: $text-color-normal;
+}
+
+.header {
+  border-bottom: 1px solid $nav-Separate-lines-top;
+}
+.menuNav{
+  border-top: 1px solid $nav-Separate-lines-bottom;
+}
+.header_left {
+  background: map-get($base,logo_img) 0 0 no-repeat;
+}
+.header_right {
+  background: map-get($base,hader_right_img)  no-repeat right;
+}
+.now{
+  color:$text-color-hightline  ;
+  font-weight: bolder;
+  text-shadow: 0 0 10px #000;
+}
+.menuNav ul li a {
+  color: $text-color-normal;
+
+}
+.text {
+  font-family: normal;
+  font-size: 14px;
+}
+#agent .content_bottom .textRight .textRight_content #sqBtnStyle {
+  background: #f2d369;
+  color: #643b1d;
+}
+#agent .footerNav .footerNavBtn a{
+  color: #fff;
+}
+//-----------footer-------------
+.footerNav {
+  background: $bg-footer-nav;
+}
+.footerNav a {
+  color: $text-color-normal;
+}
+.footerNavBtn a:hover{
+  color: $footer-hover;
+}
+.footer {
+  background: $bg-color-footer;
+}
+.footer_bg {
+  background: map-get($base,footer_bg_img) no-repeat;
+
+}
+
+//--------------网站首页-----------
+
+.bannerImg {
+  background: map-get($base,index_banner_img) no-repeat;
+}
+
+.imgLeft {
+  background: map-get($base,index_banner_img_two) no-repeat;
+}
+
+#sqBtnStyle {
+  background: $bg-color-btn;
+  color: $button-color;
+}
+
+#sqBtnStyle:hover{
+  background: $btn-hover;
+}
+
+.content_up {
+  border-bottom: 1px solid $nav-Separate-lines-top;
+  padding-bottom: 25px;
+}
+
+//------------品牌介紹-------------
+#BrandContent  .banner{
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .brandBanner {
+  background: map-get($base,brand_banner_img) no-repeat;
+}
+#BrandContent .contentText1 {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .contentText2 {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .contentText3 {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .contentText4 {
+  border-top: 1px solid $nav-Separate-lines-top;
+}
+
+#BrandContent .productMix {
+  background: $bg-color-btn;
+  color: $text-color-2;
+}
+
+#BrandContent .productMix:hover{
+  background: $btn-hover;
+}
+
+#BrandContent .icon1 {
+  background:  map-get($base,brand_icon1) no-repeat center;
+}
+#BrandContent .icon2 {
+  background:  map-get($base,brand_icon2) no-repeat center;
+}
+#BrandContent .icon3 {
+  background:  map-get($base,brand_icon3) no-repeat center;
+}
+
+#BrandContent .LocaHref {
+  background: $bg-color-btn;
+  color: $text-color-normal;
+}
+#BrandContent .productListImgTy {
+  background: map-get($base,productListImgTy) no-repeat top center;
+}
+#BrandContent .productListImgZr {
+  background: map-get($base,productListImgZr) no-repeat top center;
+}
+#BrandContent .productListImgLhj {
+  background: map-get($base,productListImghj) no-repeat top center;
+}
+#BrandContent .productListImgCp {
+  background: map-get($base,productListImgCp) no-repeat top center;
+}
+
+#BrandContent .productListImg {
+  border: 1px solid $border-color2;
+}
+
+#BrandContent .productListImg1 {
+  background: map-get($base,productListImg1) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg2 {
+  background: map-get($base,productListImg2) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg3 {
+  background: map-get($base,productListImg3) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg4 {
+  background: map-get($base,productListImg4) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg5 {
+  background: map-get($base,productListImg5) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg6 {
+  background: map-get($base,productListImg6) no-repeat;
+  background-size: 100%;
+}
+#BrandContent{
+  .introduce{
+    h3{
+      color: $text-color-2;
+    }
+  }
+}
+//--------合營計畫--------
+#AllianceContent{
+  h3{
+    color:$text-color-hightline ;
+  }
+}
+
+#AllianceContent{
+  .heiti{
+    color:$text-color-2 !important;
+  }
+}
+.juzhong{
+  span{
+    color:$text-color-2 ;
+  }
+}
+.money-fousImg{
+  background: map-get($base,Cooperation_head_img) top center no-repeat;
+  height: 574px;
+
+}
+.money-text span {
+  color: $text-color-2;
+}
+
+.borderHeng {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+
+.moneyStepList {
+  background: $bg-color2;
+}
+
+.moneyBorderSan {
+  border-left: 30px solid $border-color;
+}
+
+.tableList {
+  color: $text-color-normal;
+  border-bottom: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  background: $bg-title-color;
+}
+
+.tableList tr td {
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+}
+
+.register_title_img{
+  background: url("resources/ag_reg.png") center no-repeat!important;
+}
+
+//__________________________立即加入________________
+
+
+.rg1 {
+  border: 1px solid $border-color2;
+}
+
+.submit_btn_input {
+  background: $bg-color-btn !important;
+  color: $text-color-2!important;
+  border: 1px solid $border-color2!important;
+}
+
+
+//__________________________營銷工具________________
+
+.marke-fousImg{
+  background: map-get($base,tools_head_img) top center no-repeat;
+  height: 520px;
+}
+
+#ToolsContent{
+  .fnameCenter{
+    span{
+      color:$text-color-2;
+      i{  color:#B54A3A  }
+    }
+    h3{  color:$text-color-2;  }
+    p{  color:$text-color-normal;  }
+  }
+}
+
+.productMix{
+  background-color: $bg-color-btn;
+  color: $text-color-2;
+}
+.productMix:hover{
+  background-color: $bg-color-btnhover;
+}
+
+
+
+
+//__________________________常見問題________________
+
+#FaqContent .img{
+  background: map-get($base,problem_head_img);
+}
+
+.helpStyle{
+  h3{
+    background-color: $bg-color-btn;
+    border-bottom: 1px solid $nav-Separate-lines-top;
+    border-left: 2px solid $nav-Separate-lines-top;
+    color: $bg-color !important;
+  }
+  .helpList{
+    background-color: $bg-content-color;
+    a{
+      color:$text-color-normal;
+      border-top: 1px solid $nav-Separate-lines-bottom2;
+      border-bottom: 1px solid $nav-Separate-lines-top2;
+    }
+    p{
+      color:$text-color-normal;
+      border-top: 1px solid $nav-Separate-lines-bottom;
+      border-bottom: 1px solid $nav-Separate-lines-top;
+    }
+    hengTwoList{
+      border-bottom: 1px solid $nav-Separate-lines-bottom;
+    }
+  }
+}
+
+//__________________________聯絡我們________________
+
+.contact-fousImg{
+  background: map-get($base,contact_head_img) top center no-repeat;
+}
+
+.iconGroup{
+  color: $text-color-2!important;
+}
+.fnameCenter{
+  span{
+    color:$text-color-2;
+    i{  color:$text-color-2  }
+  }
+  h3{  color:$text-color-normal;}
+  p{  color:$text-color-normal;  }
+}
+
+.huang {
+  color: $bg-color-btn;
+}
+
+
+.logoImg{
+  background:  map-get($base,contact_bottom_logo_img) no-repeat center;
+  background-size: 80%;
+}
+.content_up{
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+
+.content_bottom {
+  border-top: 1px solid $nav-Separate-lines-top;
+}
+
+.iconGroup {
+  color:$contact-icon-color
+}
+
+
+
+
+
+
+
+

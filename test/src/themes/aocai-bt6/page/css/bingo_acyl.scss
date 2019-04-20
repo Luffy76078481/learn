@@ -1,0 +1,220 @@
+/*bingo页面*/
+.lottery-content-module {
+  background: url(../images/lottory_bg.jpg) no-repeat top;
+  padding-top: 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.lottery-content-module .content {
+  padding-top: 0;
+  width: 1100px;
+  display: inline-block;
+}
+
+.lottery-content-module .content .listBox {
+  text-align: left;
+  width: 100%;
+  margin: 40px auto 45px;
+  padding: 0;
+}
+
+.lottery-content-module .content .listBox .lotto {
+  display: inline-block;
+  cursor: pointer;
+  width: 300px;
+  height: 145px;
+  border: 5px solid transparent;
+  -webkit-box-sizing: unset;
+  box-sizing: unset;
+  background: url(https://rs.cswym.cn/lbt1-macau/pc/images/button.c9f7dbebdc02.png) no-repeat 50%;
+  background-size: cover;
+  margin: 0 25px 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg {
+  width: 120px;
+  height: 125px;
+  background: url('../images/18.png') no-repeat
+}
+
+.lottery-content-module .content .listBox .lotto .rule {
+  display: none
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_LHC {
+  background-position: 15px -1367px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_FC3D {
+  background-position: 15px -597px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_PL3 {
+  background-position: 15px -750px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_XYFT {
+  background-position: 0 -3190px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_BJSC {
+  background-position: 0 0
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_SELF_JSSCPK10 {
+  background-position: 15px -1673px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_CQSSC {
+  background-position: 15px -1521px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_XJSSC {
+  background-position: 15px -2134px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_TJSSC {
+  background-position: 0 -580px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_SELF_FFC {
+  background-position: 15px -1979px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_SELF_LFC {
+  background-position: 15px -1825px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_SELF_WFC {
+  background-position: 15px -2283px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_SELF_WFLHC {
+  background-position: 0 -1160px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_GDKLSF {
+  background-position: 15px -138px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_CQKLSF {
+  background-position: 15px -290px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_BJ28 {
+  background-position: 15px 18px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_JND28 {
+  background-position: 15px -1213px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_GXK3 {
+  background-position: 15px -442px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_JSK3 {
+  background-position: 15px -442px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_AHK3 {
+  background-position: 15px -442px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_SD11X5 {
+  background-position: 15px -905px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_JX11X5 {
+  background-position: 15px -1059px
+}
+
+.lottery-content-module .content .listBox .lotto .lottoimg_GD11X5 {
+  background-position: 15px -2438px
+}
+.lottery-content-module .content .listBox .lotto .lottoimg {
+  width: 141px;
+  height: 141px;
+  display: inline-block;
+  vertical-align: top
+}
+
+
+.lotto-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 52%
+}
+
+.lottery-content-module .content .listBox .lotto .lotto-left .txt {
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 30px
+}
+
+.lottery-content-module .content .listBox .lotto .lotto-left .into {
+  display: block;
+  padding: 5px 0;
+  width: 100px;
+  color: #ddd;
+  border: 2px solid #bbb;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  height: 30px;
+  position: relative;
+  margin: auto
+}
+
+.lottery-content-module .content .listBox .lotto .lotto-left .into:before {
+  content: "进入游戏";
+  text-align: center;
+  font-size: 13px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100px;
+  height: 30px;
+  line-height: 30px
+}
+
+.lottery-content-module .content .listBox .lotto .lotto-left .into:hover {
+  border: 2px solid #ffc600;
+  color: #ffc600
+}
+
+.lottery-content-module .content .listBox .lotto .lotto-left .rule {
+  display: none
+}
+
+.lottery-content-module .content .listBox .lotto .lotto-left .rule a {
+  display: block;
+  width: 100px;
+  color: #ddd;
+  border: 2px solid #bbb;
+  border-radius: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  height: 30px;
+  margin: 10px auto 0;
+  text-align: center;
+  line-height: 28px
+}
+
+.lottery-content-module .content .listBox .lotto .lotto-left .rule:hover a {
+  color: #ffc600;
+  border: 2px solid #ffc600
+}
+
+.lottery-content-module .content .listBox .lotto:hover {
+  border: 5px solid red;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000
+}

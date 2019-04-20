@@ -1,0 +1,544 @@
+.usefulcss{
+  background:#e6e7e9 !important;
+}
+#RegisterNewPage{
+  margin-top:20px;
+  .content{
+    height:auto;
+    background:none;
+  }
+  .reg-steps {
+    margin: 0 0 15px;
+    text-align: center;
+    font-size: 0;
+    padding-top: 15px
+  }
+
+  .reg-steps ul {
+    margin: 0;
+    padding: 0;
+    min-width: 320px
+  }
+
+  .reg-steps li {
+    display: inline-block;
+    width: 145px
+  }
+
+  .reg-steps li div {
+    text-align: center;
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    background: #d3d3d3;
+    color: #494949;
+    text-decoration: none;
+    position: relative;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 600
+  }
+
+  .reg-steps li div.first-child {
+    margin-left: -5px
+  }
+
+  .reg-steps li div.last-child {
+    margin-right: 0
+  }
+
+  .reg-steps li div.first-child:before,.reg-steps li div.last-child:after {
+    display: none
+  }
+
+  .reg-steps li div:before {
+    left: 0;
+    border: 30px solid #d3d3d3;
+    border-left: 30px solid transparent;
+    border-right: 0;
+    margin-left: -35px
+  }
+
+  .reg-steps li div:after,.reg-steps li div:before {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: inline-block
+  }
+  .reg-steps li div:before {
+    border: 30px solid #D3D3D3;
+    border-left: 30px solid transparent;
+  }
+  .reg-steps li div:after {
+    /* right:0; */
+    /* border:30px solid transparent; */
+    /* border-left:30px solid #d3d3d3; */
+    border-right: 0;
+    margin-right: -30px;
+  }
+
+  .reg-steps li.register {
+    width: 52%
+  }
+
+  .reg-steps li.deposit {
+    width: 48%
+  }
+
+  .reg-steps li div.active {
+    color: #ffe000;
+    background: #ae0000
+  }
+
+  .reg-steps li div.active:before {
+    border: 30px solid #ae0000;
+    border-left: 30px solid transparent
+  }
+
+  @media (min-width: 769px) {
+    .reg-steps li {
+      width:310px
+    }
+
+    .reg-steps li div.first-child {
+      margin-left: -2px
+    }
+
+    .reg-steps li.deposit {
+      margin-right: -3px
+    }
+  }
+
+  @media (min-width: 768px) {
+    .reg-steps li div:after,.reg-steps li div:before {
+      border-width:30px
+    }
+
+    .reg-steps li div:before {
+      margin-left: -35px
+    }
+
+    .reg-steps li div:after {
+      margin-right: -25px
+    }
+  }
+
+  .form-wrapper{
+    background: #D3D3D3;
+  }
+
+  .icon-validation {
+    position: absolute;
+    top: 8px;
+    right: -28px;
+    display: none;
+    background-image: url('../images/sprite.png');
+    width: 23px;
+    height: 23px;
+  }
+
+  .has-error .icon-validation,.has-success .icon-validation {
+    display: inline-block
+  }
+
+  .has-error .icon-validation {
+    background-position: -240px -400px
+  }
+
+  .has-success .icon-validation {
+    background-position: -280px -400px
+  }
+
+
+  .registration-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px 30px 0
+  }
+
+  .registration-form .has-error input[type=color],.registration-form .has-error input[type=date],.registration-form .has-error input[type=datetime-local],.registration-form .has-error input[type=datetime],.registration-form .has-error input[type=email],.registration-form .has-error input[type=month],.registration-form .has-error input[type=number],.registration-form .has-error input[type=password],.registration-form .has-error input[type=search],.registration-form .has-error input[type=tel],.registration-form .has-error input[type=text],.registration-form .has-error input[type=time],.registration-form .has-error input[type=url],.registration-form .has-error input[type=week],.registration-form .has-error select,.registration-form .has-error textarea {
+    border-color: #ff0000
+  }
+
+  .registration-form .registration-form-error {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid #ff0000;
+    color: #ff0000
+  }
+  .showAnnotation .form-annotation{
+    display: block;
+  }
+  .form-annotation {
+    position: relative;
+    display: none;
+    margin-top: 11px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    box-shadow: 2px 3px 3px rgba(0,0,0,.4);
+    background: #373737;
+    color: #fff;
+    font-size: 14px
+  }
+
+  .form-annotation:before {
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #373737;
+    border-left: 8px solid transparent;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    margin-left: -5px;
+    border-bottom-width: 9px;
+    content: ""
+  }
+  .registration-form .form-item {
+    clear: both;
+    padding: 0 15px 0 10px
+  }
+
+  .registration-form .form-item .form-label {
+    position: relative;
+    float: left;
+    width: 5%;
+    margin-top: 0;
+    padding-top: 7px;
+    padding-right: 15px;
+    line-height: 26px;
+    text-align: right
+  }
+
+  .registration-form .form-item .form-label .form-label-text {
+    display: none
+  }
+
+  .registration-form .form-item .form-field {
+    position: relative;
+    text-align: left;
+    float: left;
+    width: 94%;
+    margin-bottom: 10px;
+    .registerDatePick{
+      height: 40px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      line-height: 40px !important;
+      margin-top: 5px;
+      border: 1px solid #999;
+      background-color: #fff;
+      div{
+        color: #757575 !important;
+        line-height: 18px;
+      }
+      input{
+        color: #333;
+        -webkit-text-fill-color: #333 !important;
+      }
+    }
+  }
+
+  .registration-form .form-item input,.registration-form .form-item select {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+    border: 1px solid #999;
+    &:focus{
+      border-color: #129fea;
+    }
+  }
+
+  .registration-form .form-item input[readonly],.registration-form .form-item select[readonly],.registration-form .form-item textarea[readonly] {
+    border-color: #999;
+    background: #fff;
+    color: #373737
+  }
+  .form-item.has-error .form-help-block{
+    display: block;
+  }
+  .registration-form .form-help-block,.registration-form .form-warning-block {
+    display: inline-block;
+    margin: 8px 0 0;
+    color: #FF0000;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    display: none;
+  }
+
+  .registration-form .form-warning-block {
+    font-style: italic;
+    color: #00a551
+  }
+
+  .registration-form .date-of-birth {
+    font-size: 0
+  }
+
+  .registration-form .date-of-birth select {
+    width: 30%
+  }
+
+  .registration-form .date-of-birth label,.registration-form .date-of-birth select {
+    font-size: 12px
+  }
+
+  .registration-form .date-of-birth .day-field,.registration-form .date-of-birth .month-field {
+    margin-right: 5%
+  }
+
+  .registration-form hr {
+    clear: both;
+    margin: 15px 0;
+    border-top: 1px solid #969696
+  }
+
+  @media (max-width: 767px) {
+    .registration-form hr {
+      margin-right:-30px
+    }
+  }
+
+  .registration-form .accept-terms {
+    clear: both;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 16px;
+    a:hover{
+      text-decoration: none;
+    }
+  }
+
+  .registration-form .mobile-number {
+    position: relative
+  }
+
+  .registration-form .mobile-number input {
+    padding-left: 70px
+  }
+
+  .registration-form .mobile-number-select {
+    position: absolute;
+    width: auto!important;
+    top: 1px;
+    left: 1px;
+    border: 0;
+    height: 32px
+  }
+
+
+  .registration-form .password-visibility-icon.icon-show {
+    background-position: -430px -290px
+  }
+
+  .registration-form .password-visibility-icon.icon-hide {
+    background-position: -470px -290px
+  }
+
+  .ie-7 .registration-form .password-visibility-icon,.ie-8 .registration-form .password-visibility-icon {
+    display: none
+  }
+
+  .registration-form .currency-country-mobile {
+    clear: both;
+    width: 99%
+  }
+
+  @media (max-width: 767px) {
+    .registration-form .currency-country-mobile .form-item {
+      clear:none;
+      float: left;
+      width: 51%
+    }
+
+    .registration-form .currency-country-mobile .form-item .form-label {
+      width: 6%
+    }
+
+    .registration-form .currency-country-mobile .form-item .form-field {
+      width: 84%
+    }
+
+    .registration-form .currency-country-mobile .form-item+.form-item {
+      width: 49%;
+      padding: 0 10px 0 15px
+    }
+
+    .registration-form .currency-country-mobile input,.registration-form .currency-country-mobile select {
+      padding-left: 3px;
+      padding-right: 3px
+    }
+  }
+
+  @media (min-width: 360px) and (max-width:767px) {
+    .registration-form .currency-country-mobile {
+      width:100%
+    }
+  }
+
+  @media (min-width: 375px) and (max-width:767px) {
+    .registration-form .currency-country-mobile .form-item .form-label {
+      padding-right:16px
+    }
+  }
+
+  @media (min-width: 414px) and (max-width:767px) {
+    .registration-form .currency-country-mobile .form-item .form-label {
+      padding-right:17px
+    }
+  }
+
+  @media (min-width: 480px) and (max-width:767px) {
+    .registration-form .currency-country-mobile .form-item .form-label {
+      padding-right:21px
+    }
+  }
+
+  @media (min-width: 680px) and (max-width:767px) {
+    .registration-form .currency-country-mobile .form-item .form-label {
+      width:10%;
+      padding-right: 14px
+    }
+
+    .registration-form .currency-country-mobile .form-item .form-field {
+      width: 86%
+    }
+  }
+
+  @media (max-width: 767px) {
+    .registration-form .currency-country-mobile .error-container,.registration-form .currency-country-mobile .warning-container {
+      clear:both;
+      display: block;
+      margin: 0 5%;
+      padding: 0 0 0 10px
+    }
+  }
+
+  .form-submit-wrapper {
+    text-align: center
+  }
+
+  .form-submit-wrapper .form-submit {
+    padding: 0 30px;
+    width: auto!important;
+    min-width: 140px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 23px;
+    height: 58px;
+    line-height: 55px
+  }
+  .registration-form span.required-field{
+    color: #FF0000;
+  }
+  @media (min-width: 768px) {
+    .icon-validation {
+      right:-33px
+    }
+
+    .form-wrapper {
+      background: #d3d3d3
+    }
+
+    .registration-form {
+      margin-top: 8px;
+      padding-top: 25px;
+      padding-left: 40px;
+      padding-right: 40px
+    }
+
+    .registration-form .form-item {
+      padding-left: 15px
+    }
+
+    .registration-form .form-item .form-label {
+      width: 28%;
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-top: 7px;
+      padding-right: 20px;
+      line-height: 26px;
+      text-align: right
+    }
+
+    .registration-form .form-item .form-label .form-label-text {
+      display: inline-block;
+      margin-right: 4px;
+      font-size:16px;
+      color:#555;
+    }
+
+    .registration-form .form-item .form-field {
+      width: 50%;
+      margin-bottom: 15px
+    }
+
+    .registration-form .form-item input,.registration-form .form-item select {
+      font-size: 16px
+    }
+
+    .registration-form .form-action-container {
+      display: table;
+      width: 77%;
+      margin-right: 23%
+    }
+    .registration-form .accept-terms {
+      display: table-cell;
+      width: auto!important;
+      padding: 0 15px;
+      text-align: right;
+      vertical-align: top;
+      font-size: 16px;
+      color:#555;
+      strong{
+        color: #FF0000;
+      }
+    }
+
+    .registration-form .form-submit-wrapper {
+      display: table-cell;
+      width: 140px!important;
+      padding: 0;
+      vertical-align: top;
+      text-align: right
+    }
+
+    .registration-form .form-submit-wrapper .form-submit {
+      font-size: 30px;
+      height: 50px;
+      line-height: 46px;
+    }
+    .registration-form .form-submit {
+      border-color: #FFE000;
+      background-color: #FFE000;
+      color: #373737;
+      padding: 0 30px;
+      width: auto!important;
+      min-width: 140px;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .registration-form {
+      padding-left:70px;
+      padding-right: 70px
+    }
+
+    .registration-form .mobile-number-select {
+      height: 37px
+    }
+  }
+
+}

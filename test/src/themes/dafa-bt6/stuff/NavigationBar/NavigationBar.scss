@@ -1,0 +1,269 @@
+
+  .mobile-item-kehuduan a:before {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    // background-image: url(../images/kehuduan.png);
+    background: url(../images/kehuduan.png)  -3px -1px/100% 100% no-repeat;
+    text-indent: -9999px;
+    content: "123";
+    margin-right: 6px;
+}
+.mobile-item-kehuduan a{
+  border-right: 1px solid #4f4f4f;
+}
+.mobile-item-kehuduan a:hover{
+  background: none!important;
+}
+.mobile-item-kehuduan a:hover:before{
+  background: url(../images/kehuduan2.png)  -3px -1px/100% 100% no-repeat;
+}
+//显示二级菜单开关
+.switch-menu{
+  position: relative;
+  &:hover{
+    .switchIcon{
+      color:#ffe000;
+    }
+    .switchCon{
+      display: block;
+    }
+  }
+  .switchIcon{
+    color:#fff;
+    i{
+      top: 8px;
+      font-size: 22px;
+    }
+  }
+  .switchCon{
+    display: none;
+    position: absolute;
+    top:50px;
+    right:0;
+    z-index:10;
+    background:#af0000;
+    -webkit-box-shadow:0 0 2px 2px rgba(51, 51, 51, .2);
+    -moz-box-shadow:0 0 2px 2px rgba(51, 51, 51, .2);
+    box-shadow: 0 0 2px 2px rgba(51, 51, 51, .2);
+    padding:10px;
+    width: 380px;
+    &:before{
+      display: block;
+      content: '';
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid #af0000;
+      position: absolute;
+      right: 0px;
+      top: -10px;
+    }
+    .title{
+      &:after{
+        content:'';
+        display: block;
+        clear: both;
+      }
+      h5{
+        color: #ffe000;
+        font-size:14px;
+        font-weight: bold;
+        float:left;
+      }
+      .switch{
+        position: relative;
+        width:50px;
+        line-height: 20px;
+        .balance-checkbox {
+          cursor:pointer;
+          position: absolute;
+          top: 6px;
+          right: 0px;
+          display: inline-block;
+          width: 20px;
+          height: 10px;
+          border-radius: 5px;
+          background: #640000
+        }
+        .balance-checkbox span {
+          position: absolute;
+          top: 0;
+          left: 1px;
+          display: block;
+          width: 10px;
+          height: 10px;
+          content: "";
+          background: #ffe000;
+          border-radius: 50%;
+          transition: left .05s linear
+
+        }
+        .balance-checkbox.unchecked{
+          background: #888;
+          span{
+            left: 8px;
+          }
+        }
+      }
+    }
+    .img{
+      margin:5px 0;
+      border:1px solid #333;
+      img{
+        width:100%;
+      }
+    }
+    .foot{
+      font-size:12px;
+      line-height:20px;
+    }
+  }
+}
+
+
+//二级菜单
+.secondNav{
+  background:#af0000;
+  position: absolute;
+  z-index:5;
+  width: 100%;
+  display: none;
+  padding-top: 10px;
+  .item{
+    padding:0 8px !important;
+  }
+  .row{
+    margin-left:-3px;
+    margin-right:-3px;
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+      padding-left:3px;
+      padding-right:3px;
+    }
+  }
+  .secNavWrap{
+    margin:0 100px;
+    min-height:200px;
+    .fullHeight{
+      height: 185px;
+      &:hover{
+        border-bottom:4px solid #ffe000;
+      }
+      .game-img{
+        img{
+          height: 115px;
+        }
+      }
+    }
+    p{
+      margin-bottom:0;
+      font-size:12px;
+      padding-top:3px;
+      line-height: 16px;
+    }
+    h5.title{
+      line-height: 20px;
+      margin: 5px 0px;
+      border-bottom: 1px solid lightgray;
+      font-size: 14px;
+      color:#fff;
+      .more{
+        float:right;
+        color:#ffe000;
+        font-size:12px;
+        font-weight: normal;
+        i{
+          color:#ffe000;
+          font-size:10px;
+          margin-left:5px;
+        }
+      }
+    }
+    .img-title{
+      text-align: center;
+      color:#fff;
+      font-size:12px;
+      margin-top: 2px;
+      margin-bottom: 8px;
+    }
+
+    .game-img{
+      border:1px solid red;
+      position: relative;
+
+      &.noTitle{
+        margin-bottom:5px;
+        img{
+          height:95px;
+        }
+        .game-img-hover{
+         .game-name {
+            position: absolute;
+            top: 20%;
+            font-size: 14px;
+            left: 0;
+            text-align: center;
+            right: 0;
+          }
+          a.btn{
+            transform: translateY(-8%);
+          }
+        }
+      }
+      .tag{
+        position: absolute;
+        top:0;
+        right:0;
+        color: rgb(55, 55, 55);
+        background-color: rgb(255, 255, 0);
+        font-size:12px;
+        padding:2px 5px;
+      }
+      img{
+        width:100%;
+        height: 70px;
+      }
+      .game-img-hover{
+        display: none;
+        position: absolute;
+        top:0;
+        left:0;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,.7);
+        .game-name{
+          font-size:12px;
+          margin-bottom:5px;
+        }
+        a.btn{
+          font-size:12px;
+          padding:1px 13px;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          line-height: 1.9;
+          border-radius: 2px;
+          color: #ffe000;
+          background-color: transparent;
+          border: 2px solid #ffe000;
+          transition: all .3s;
+          &:hover{
+            color:#333;
+            background:#ffe000;
+          }
+        }
+      }
+      &:hover{
+        border-color:#ffe000 ;
+        .game-img-hover{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,188 @@
+@import "../../style/variables.scss";
+
+.HistoryPage {
+    background: #efefef;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    .am-navbar {
+        border: 0;
+        background: transparent;
+    }
+
+    .Segmented {
+        height: 35px;
+        width: 80%;
+        position: fixed;
+        top: 1rem;
+        padding: 0 10%;
+
+        .tabsItem {
+            height: 100%;
+            text-align: center;
+            line-height: 35px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .am-segment-item {
+            color: $theme-text-color;
+            border-color: $theme-text-color;
+        }
+
+        .am-segment-item-selected {
+            background: $theme-text-color;
+        }
+    }
+
+    .timeBtn {
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: $theme-btnBg;
+            color: #fff;
+        }
+    }
+
+    .scroll-content {
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        .myListView {
+            position: absolute !important;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .timeChoose {
+        z-index: 999;
+        position: absolute;
+        -webkit-animation-duration: .5s;
+        animation-duration: .5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        .mask {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .timeCon {
+            position: absolute;
+            bottom: 0;
+            height: auto;
+            background: #fff;
+            width: 100%;
+
+            .timeConBtn {
+                height: 30px;
+                line-height: 30px;
+                font-size: .3rem;
+                color: #00FEFE;
+                padding: 0 10px;
+
+                .left {
+                    float: left;
+                }
+
+                .right {
+                    float: right;
+                }
+
+            }
+
+            .am-picker-col {
+                height: 145px;
+            }
+
+            .sub-title {
+                text-align: center;
+                background: #eee;
+                line-height: 26px;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+
+    .scroll-content {
+        top: 80px;
+
+        .noResult {
+            font-size: .25rem;
+            color: #888;
+            line-height: 2rem;
+            text-align: center;
+        }
+
+        .listItem {
+            padding: .15rem .2rem;
+            border-bottom: 1px solid #ccc;
+            color: #333;
+            line-height: 20px;
+            text-align: center;
+
+            & > div {
+                display: inline-block;
+                float: left;
+            }
+
+            .itemL {
+                width: 25%;
+                color: #888;
+                font-size: .2rem;
+            }
+
+            .itemC {
+                width: 50%;
+
+                span {
+                    display: block;
+                }
+
+                .bot {
+                    color: #888;
+                    font-size: .2rem;
+                }
+            }
+
+            .itemR {
+                width: 25%;
+
+                .badg {
+                    display: inline-block;
+                    padding: .05rem .15rem;
+                    font-size: .2rem;
+                    color: #fff;
+                    border-radius: .1rem;
+                    background: #aaa;
+
+                    &.red {
+                        background: #B1191A;
+                    }
+
+                    &.blue {
+                        background: #53b6f3;
+                    }
+                }
+            }
+        }
+    }
+}

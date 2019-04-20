@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>dafabet</title>
+    <link rel="stylesheet" href="css/jquery.swipeshow.css">
+    <link rel="stylesheet" href="css/style_download.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+<div class="main">
+    <img class="pattenLeft" src="imgs/download_pattern_left.png" width="20%" height="auto" alt="">
+    <img class="pattenRight" src="imgs/download_pattern_right.png" width="20%" height="auto" alt="">
+    <div class="icon">
+        <img src="imgs/icon.png" width="33%" height="auto" alt="">
+    </div>
+    <div class="title">
+        <p>dafabet</p>
+    </div>
+    <div class="version">
+        <p>正式版－3.6(Build 3.6) - 12005.25KB</p>
+        <p>更新于：2017-06-21 10:00</p>
+    </div>
+    <div class="butGroup">
+        <a class="go" id="downloadBtn" href="javascript:void(0)">
+            <div class="btns action" id="action1">下载安装</div>
+        </a>
+        <div class="btns action" id="install">安装步骤</div>
+    </div>
+
+    <div class="my-gallery swipeshow">
+        <ul class="slides">
+            <li class="slide"> <img src="imgs/step1.png" width="270px" height="auto" alt=""> </li>
+            <li class="slide"> <img src="imgs/step2.png" width="270px" height="auto" alt=""> </li>
+            <li class="slide"> <img src="imgs/step3.png" width="270px" height="auto" alt=""> </li>
+            <li class="slide"> <img src="imgs/step4.png" width="270px" height="auto" alt=""> </li>
+            <li class="slide"> <img src="imgs/step5.png" width="270px" height="auto" alt=""> </li>
+            <li class="slide"> <img src="imgs/step6.png" width="270px" height="auto" alt=""> </li>
+        </ul>
+        <div class='dots'></div>
+    </div>
+</div>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/jquery.swipeshow.min.js"></script>
+<script src="js/ctrl.js"></script>
+
+<script>
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+    window.channel = getUrlParam("channel") || "";
+    if (window.channel == "null") {
+        window.channel = "";
+    }
+    window.version = getUrlParam("version") || "";
+    var iosLink = "itms-services://?action=download-manifest&amp;url=https://" + document.location.host + "/api/v0/download_ipa.api%3Fchannel%3D" + channel;
+    if (window.version) {
+        iosLink += "%26version%3D" + window.version;
+    }
+    $("#downloadBtn").attr("href", iosLink);
+</script>
+</body>
+
+</html>

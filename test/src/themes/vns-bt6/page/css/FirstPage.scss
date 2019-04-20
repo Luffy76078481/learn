@@ -1,0 +1,685 @@
+@charset "utf-8";
+
+.gdhFirst {
+  margin-top: -93px;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  // background: url("../images/bg01.jpg") center top no-repeat;
+  background: #4d2b1a;
+
+  .noticeBox {
+    position: absolute;
+    left: 0;
+    top: 141px;
+    width: 100%;
+    background: #251610;
+    height: 30px;
+
+    .note {
+      width: 100%;
+      padding-left: 150px;
+      background: url("../images/news_bg01.png") 0 center no-repeat;
+      margin: auto;
+      width: 1055px;
+
+      .notice-bar {
+        width: 100%;
+
+        a {
+          color: #E9BD7F !important;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .slider-bottom-box {
+      height: 40px;
+      background: #251610;
+
+      .slider-inline-box {
+        width: 1050px;
+        height: 100%;
+        margin: auto;
+
+        &>a {
+          position: relative;
+          top: -20px;
+          z-index: 21;
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          margin: 0 66px;
+          color: #e1c588;
+          font-size: 12px;
+          text-align: center;
+          line-height: 40px;
+          text-decoration: none;
+          background: #4d2b1a;
+          -moz-border-radius: 20px;
+          -webkit-border-radius: 20px;
+          border-radius: 20px;
+          -moz-transition: 1s;
+          -webkit-transition: 1s;
+          transition: 1s;
+        }
+
+        &>a:hover {
+          color: #2c1810;
+          -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+          background: #ffdfa6;
+        }
+      }
+    }
+  }
+
+  .main {
+    width: 1000px;
+    margin: auto;
+    padding-top: 538px;
+
+    .pa1:after,
+    .pa2:after,
+    .pa3:after,
+    .pa4:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .pa1 {
+      width: 100%;
+      height: auto;
+
+      .slider {
+        width: 730px;
+        float: left;
+      }
+
+      .inter {
+        width: 270px;
+        float: left;
+
+        .wap {
+          display: inline-block;
+          width: 270px;
+          height: 100px;
+          vertical-align: top;
+
+          a {
+            display: block;
+            width: 270px;
+            height: 100px;
+            background: url("../images/btn_mobile.png") 0 0 no-repeat;
+
+            &:hover {
+              background-position: 0 -100px;
+            }
+          }
+        }
+
+        ul {
+          vertical-align: top;
+          display: inline-block;
+          width: 270px;
+          text-align: center;
+
+          li {
+            float: left;
+            width: 135px;
+            height: 120px;
+
+            a {
+              display: inline-block;
+              width: 135px;
+              height: 120px;
+            }
+          }
+
+          li:nth-child(1) {
+            border-right: 1px solid #6d3f27;
+
+            a {
+              background: url("../images/btn_deposit.png") 0 0 no-repeat;
+
+              &:hover {
+                background-position: 0 -122px
+              }
+
+            }
+          }
+
+          li:nth-child(2) {
+            border-right: 1px solid #6d3f27;
+
+            a {
+              background: url("../images/btn_receive.png") 0 0 no-repeat;
+
+              &:hover {
+                background-position: 0 -122px
+              }
+            }
+          }
+
+          li:nth-child(3) {
+            border-right: 1px solid #6d3f27;
+
+            a {
+              background: url("../images/btn_download.png") 0 0 no-repeat;
+
+              &:hover {
+                background-position: 0 -122px
+              }
+            }
+          }
+
+          li:nth-child(4) {
+            a {
+              background: url("../images/btn_agent.png") 0 0 no-repeat;
+
+              &:hover {
+                background-position: 0 -122px
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .pa2 {
+      .nav {
+        padding-top: 42px;
+        background: url("../images/game_title01.png") left 35px no-repeat;
+        width: 100%;
+        height: 97px;
+
+        ul {
+          li {
+            cursor: pointer;
+            float: right;
+            margin-right: 15px;
+            width: 173px;
+            height: 55px;
+
+            a {
+              display: block;
+              width: 173px;
+              height: 55px;
+            }
+
+          }
+
+          li:nth-child(3) {
+            background: url("../images/btn_bbincasino.png")center top no-repeat;
+
+            &:hover {
+              background-position: center bottom;
+            }
+          }
+
+          li:nth-child(2) {
+            background: url("../images/btn_mgcasino.png") center top no-repeat;
+
+            &:hover {
+              background-position: center bottom;
+            }
+          }
+
+          li:nth-child(1) {
+            background: url("../images/btn_gnscasino.png") center top no-repeat;
+
+            &:hover {
+              background-position: center bottom;
+            }
+          }
+        }
+      }
+
+      .games {
+        position: relative;
+        padding: 20px 20px 0 277px;
+        background: url("../images/first_gamebg.png") center top no-repeat;
+        height: 342px;
+
+        .person {
+          position: absolute;
+          left: -180px;
+          bottom: -32px;
+          width: 443px;
+          height: 392px;
+          background: url("../images/c_01.png") center center no-repeat;
+        }
+
+        .items {
+          width: 703px;
+          height: 320px;
+
+          ul {
+            li {
+              display: inline-block;
+              margin-left: 8px;
+              margin-top: 5px;
+              width: 166px;
+              height: 140px;
+
+              &:hover {
+                a {
+                  display: block;
+                }
+              }
+
+              a {
+                display: none;
+                width: 166px;
+                height: 140px;
+                background: rgba(0, 0, 0, 0.7);
+                position: relative;
+                border: 2px solid #BB8F55;
+
+                span {
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  width: 100px;
+                  height: 30px;
+                  line-height: 30px;
+                  text-align: center;
+                  font-size: 12px;
+                  background: #b51212;
+                  color: #f1f1f1;
+                }
+              }
+            }
+
+            li:nth-child(1) {
+              background: url("../images/game/147027611823.png") 0 0 no-repeat;
+            }
+
+            li:nth-child(2) {
+              background: url("../images/game/147027616320.png") 0 0 no-repeat;
+            }
+
+            li:nth-child(3) {
+              background: url("../images/game/147027620152.png") 0 0 no-repeat;
+            }
+
+            li:nth-child(4) {
+              background: url("../images/game/147027630845.png") 0 0 no-repeat;
+            }
+
+            li:nth-child(5) {
+              background: url("../images/game/147027634101.png") 0 0 no-repeat;
+            }
+
+            li:nth-child(6) {
+              background: url("../images/game/147027638802.png") 0 0 no-repeat;
+            }
+
+            li:nth-child(7) {
+              background: url("../images/game/147027644892.png") 0 0 no-repeat;
+            }
+
+            li:nth-child(8) {
+              background: url("../images/game/147027647910.png") 0 0 no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .pa3 {
+      height: 316px;
+      margin-top: 90px;
+
+      ul {
+        li {
+          display: inline-block;
+          margin-left: 20px;
+
+          a {
+            display: block;
+            width: 320px;
+            height: 316px;
+
+            &:hover {
+              background-position: 0 -316px !important;
+            }
+          }
+        }
+
+        li:nth-child(1) {
+          margin-left: 0;
+
+          a {
+            background: url("../images/first_livegame.png") 0 0 no-repeat;
+          }
+        }
+
+        li:nth-child(2) {
+          a {
+            background: url("../images/first_sportsgame.png") 0 0 no-repeat;
+          }
+        }
+
+        li:nth-child(3) {
+          a {
+            background: url("../images/first_lotterygame.png") 0 0 no-repeat;
+          }
+        }
+      }
+    }
+
+    .pa4 {
+      margin-top: 60px;
+      background: url("../images/c_03.png") right no-repeat;
+      height: 345px;
+
+      .text {
+        background: url("../images/game_title02.png")left no-repeat;
+        width: 500px;
+        height: 252px;
+
+        .group {
+          padding-top: 160px;
+        }
+
+        .icons {
+          width: 500px;
+          height: 49px;
+          background: url("../images/c_02.png") center center no-repeat;
+        }
+
+        p {
+          color: #C7934B;
+          font-size: 13px;
+          line-height: 25px;
+        }
+
+        .more {
+          position: relative;
+          width: 150px;
+          height: 35px;
+          line-height: 35px;
+          border-radius: 90px;
+          background: #6B3B21;
+          font-size: 14px;
+          text-align: center;
+          color: #fff;
+
+          a {
+            display: block;
+            width: 150px;
+            height: 35px;
+            color: #fff;
+          }
+
+          &:hover {
+            background: #AC6235;
+          }
+
+          &:before {
+            content: " ";
+            position: absolute;
+            right: 40px;
+            top: 11.5px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 0 5px 8.7px;
+            border-color: transparent transparent transparent #fff;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.home-slots {
+  h3 {
+    color: #ffdfa6;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .jackpot {
+    width: 100%;
+    height: 45px;
+    padding-left: 30px;
+    color: #ffdfa6;
+    font-size: 32px;
+    letter-spacing: .25em;
+    text-align: center;
+    background: url(../images/firstpage/jackpot.png) no-repeat center;
+  }
+
+  .slot-hot {
+    position: relative;
+    width: 100%;
+    height: 384px;
+    background: url(../images/firstpage/slot_img.png) no-repeat center;
+  }
+
+  .slot-hot>div {
+    position: absolute;
+    display: inline-block;
+    width: 243px;
+    height: 188px;
+    background: #251610;
+    border: solid 4px #251610;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 235px;
+      height: 136px;
+      border-bottom: 1px solid #251610;
+    }
+
+    &:hover {
+      background: #efd273;
+      border: solid 4px #efd273;
+
+      label {
+        color: #865809
+      }
+
+      span {
+        color: #865809;
+        background-position: right bottom;
+      }
+    }
+
+    label {
+      color: #ffdfa6;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: left;
+      line-height: 40px;
+    }
+
+    span {
+      float: right;
+      display: inline-block;
+      padding-right: 70px;
+      color: #ffdfa6;
+      font-size: 12px;
+      text-align: left;
+      line-height: 40px;
+      background: url(../images/firstpage/star.png) no-repeat right top;
+      -moz-transition: 1s;
+      -webkit-transition: 1s;
+      transition: 1s;
+    }
+  }
+
+  .data-hot01 {
+    top: 0;
+    left: 0;
+
+    &::before {
+      background: url(../images/firstpage/slot_01.jpg);
+    }
+  }
+
+  .data-hot02 {
+    top: 0;
+    right: 0;
+
+    &::before {
+      background: url(../images/firstpage/slot_02.jpg);
+    }
+  }
+
+  .data-hot03 {
+    bottom: 0;
+    left: 0;
+
+    &::before {
+      background: url(../images/firstpage/slot_03.jpg);
+    }
+  }
+
+  .data-hot04 {
+    bottom: 0;
+    right: 0;
+
+    &::before {
+      background: url(../images/firstpage/slot_04.jpg);
+    }
+  }
+
+  .slot-tab {
+    margin: 10px auto;
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+
+    &>li {
+      float: left;
+      width: 125px;
+      height: 71px;
+      background-color: #4d2b1a;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 2px solid #865809;
+      cursor: pointer;
+
+      &:hover {
+        border-color: #ffdfa6;
+
+      }
+    }
+
+    .game-box-mg {
+      background-image: url(../images/firstpage/mg.png)
+    }
+
+    .game-box-pt {
+      background-image: url(../images/firstpage/pt.png)
+    }
+
+    .game-box-ag {
+      background-image: url(../images/firstpage/ag.png)
+    }
+
+    .game-box-bb {
+      background-image: url(../images/firstpage/bb.png)
+    }
+
+    .game-box-hb{
+      background-image: url(../images/firstpage/hb.png)
+    }
+    .game-box-cq{
+      background-image: url(../images/firstpage/cq.png)
+    }
+    .game-box-qt{
+      background-image: url(../images/firstpage/qt.png)
+    }
+    .game-box-by{
+      background-image: url(../images/firstpage/by.png)
+    }
+  }
+
+  .home-lobby {
+    h3 {
+      color: #ffdfa6;
+      font-size: 24px;
+      text-align: center;
+
+      span {
+        display: block;
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+
+    a {
+      position: relative;
+      top: 0;
+      display: inline-block;
+      width: 323px;
+      height: 518px;
+      margin: 10px 3px;
+      color: #ffdfa6;
+      padding-top: 400px;
+      text-align: center;
+      text-decoration: none;
+      background-repeat: no-repeat;
+      background-position: center top;
+      -moz-transition: all linear .4s;
+      -o-transition: all linear .4s;
+      -webkit-transition: all linear .4s;
+      transition: all linear .4s;
+
+      label {
+        font-size: 18px;
+      }
+
+      .line {
+        display: block;
+        margin: 10px auto;
+        width: 90px;
+        height: 4px;
+        background: #ffdfa6;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      &:hover {
+        top: -15px;
+      }
+    }
+
+    a.live {
+      background-image: url(../images/firstpage/live.png);
+    }
+
+    a.sport {
+      background-image: url(../images/firstpage/sports.png);
+    }
+
+    a.lottery {
+      background-image: url(../images/firstpage/lottery.png);
+    }
+  }
+
+
+
+}

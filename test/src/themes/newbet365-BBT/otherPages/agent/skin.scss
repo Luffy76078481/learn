@@ -1,0 +1,411 @@
+@charset "utf-8";
+@import "variables";
+
+body{
+  background-color: #FFF;
+  color: $text-color-normal;
+}
+
+
+
+.header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid $nav-Separate-lines-top;
+  .logo_img{
+    width: 990px;
+    height: 800px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.header_bg{
+  background: #06855f;
+}
+.menuNav{
+  border-top: 1px solid $nav-Separate-lines-bottom;
+  height: 47px;
+      border-top: 1px solid #047353;
+    background: #06855f;
+    -webkit-box-shadow: inset 0 1px 0 0 #2a9576;
+    box-shadow: inset 0 1px 0 0 #2a9576;
+}
+.header .logo_img .header_left {
+  background: map-get($base,logo_img) 0 0 no-repeat;
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+.header_right {
+  width: 20%;
+  background: map-get($base,hader_right_img)  no-repeat right;
+}
+.now{
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+  background-color: #0c6e51;
+  border-radius: 3px;
+  line-height: 23px;
+}
+.menuNav .menuBtn ul {
+  li {
+    width: 128px;
+    a {
+      color:#FFF;
+      display: block;
+      line-height: 45px;
+      text-align: center;
+      z-index: 15;
+    }
+  }
+ 
+}
+
+#Registered .bw .register_title_img{
+  background: url("./resources/ag_reg.png")center center no-repeat!important;
+}
+#Registered .bw .reg-fnameContent .inptfont{
+  color: #555!important
+}
+//-----------footer-------------
+.footerNav {
+  background: #fff;
+}
+.footerNav .footerNavBtn{
+  color: #000!important;
+}
+.footerNav .footerNavBtn a {
+  color: #000;
+  transition: all .5s;
+  font-size: 12px;
+}
+.footerNavBtn a:hover{
+  color: $footer-hover;
+}
+.footer {
+  background: #f6f6f6;
+}
+.footer_bg {
+  background: map-get($base,footer_bg_img) no-repeat!important;
+
+}
+
+//--------------网站首页-----------
+
+.bannerImg {
+  background: map-get($base,index_banner_img) center no-repeat;
+}
+
+.imgLeft {
+  background: map-get($base,index_banner_img_two) no-repeat;
+  width: 58%;
+  height: 243px!important;
+  float: left;
+}
+.content_bottom .textRight,#BrandContent .contentText1,#BrandContent .contentText2{
+  color: #000!important;
+}
+.content_bottom .textRight .textRight_content #sqBtnStyle{
+  background: $bg-color-btn;
+  color: #000;
+}
+
+#sqBtnStyle:hover{
+  background: $btn-hover;
+}
+
+.content_up {
+  padding-bottom: 25px;
+  color: #000;
+}
+
+//------------品牌介紹-------------
+
+#BrandContent .brandBanner {
+  background: map-get($base,brand_banner_img) center no-repeat;
+}
+
+
+#BrandContent .productMix {
+  background: $bg-color-btn;
+  color: $bg-color2;
+}
+
+#BrandContent .productMix:hover{
+  background: $btn-hover;
+}
+
+#BrandContent .icon1 {
+  background:  map-get($base,brand_icon1) no-repeat center;
+}
+#BrandContent .icon2 {
+  background:  map-get($base,brand_icon2) no-repeat center;
+}
+#BrandContent .icon3 {
+  background:  map-get($base,brand_icon3) no-repeat center;
+}
+#BrandContent .contentText4{
+  margin-bottom: 0!important;
+}
+#BrandContent .LocaHref {
+  background: $bg-color-btn;
+  color: $bg-color2;
+}
+#BrandContent .productListImgTy {
+  background: map-get($base,productListImgTy) no-repeat top center;
+}
+#BrandContent .productListImgZr {
+  background: map-get($base,productListImgZr) no-repeat top center;
+}
+#BrandContent .productListImgLhj {
+  background: map-get($base,productListImghj) no-repeat top center;
+}
+#BrandContent .productListImgCp {
+  background: map-get($base,productListImgCp) no-repeat top center;
+}
+
+#BrandContent .productListImg {
+  border:0 solid $border-color2;
+}
+
+#BrandContent .productListImg1 {
+  background: map-get($base,productListImg1) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg2 {
+  background: map-get($base,productListImg2) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg3 {
+  background: map-get($base,productListImg3) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg4 {
+  background: map-get($base,productListImg4) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg5 {
+  background: map-get($base,productListImg5) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg6 {
+  background: map-get($base,productListImg6) no-repeat;
+  background-size: 100%;
+}
+#BrandContent{
+  .introduce{
+    h3{
+      color:#000;
+    }
+  }
+}
+//--------合營計畫--------
+#AllianceContent{
+  h3{
+    color:$text-color-2 !important;
+  }
+}
+.juzhong{
+  span{
+    color:$text-color-2 ;
+  }
+}
+.money-fousImg{
+  background: map-get($base,Cooperation_head_img) top center no-repeat;
+  height: 574px;
+
+}
+.money-text span {
+  color: $menu-click-color;
+}
+
+#AllianceContent .fnameCenter .moneyStep .moneyStepList {
+  background: $bg-Process-color;
+  p{
+    color: #000;
+  }
+}
+
+.moneyBorderSan {
+  border-left: 30px solid $border-color;
+}
+
+.tableList {
+  color: #06855f;
+  border: 1px solid #bbb;
+  background: none!important;
+}
+
+.tableList tr td {
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+}
+
+//__________________________立即加入________________
+
+.register_title_img{margin-top: 20px;}
+
+.rg1 {
+  border: 1px solid #14886a ;
+}
+.rg2{
+  background-image: map-get($base,register_bg_img);
+}
+
+.reg-fnameContent {
+  border: 0 solid $border-color2!important;
+  background: #f6f6f6!important;
+  color: $menu-click-color;
+}
+
+.submit_btn_input {
+  background: #06855f!important;
+  color: $text-color-normal!important;
+  border: 1px solid $border-color2!important;
+}
+
+
+//__________________________營銷工具________________
+
+.marke-fousImg{
+  background: map-get($base,tools_head_img) top center no-repeat;
+  height: 520px;
+}
+
+#ToolsContent{
+  .fnameCenter{
+    span{
+      color:#000;
+      i{  color:#B54A3A  }
+    }
+    h3{  color:#000;  }
+    p{  color:#000;  }
+  }
+}
+
+.productMix{
+  background-color: $bg-color-btnhover;
+  color:$text-color-normal;
+}
+.productMix:hover{
+  background-color: $bg-color-btn;
+}
+
+
+
+
+//__________________________常見問題________________
+
+#FaqContent .img{
+  background: map-get($base,problem_head_img) center no-repeat!important;
+}
+
+.helpStyle{
+  h3{
+    background-color: #007B5B;
+    border-bottom: 1px solid #FFF;
+    border-left: 2px solid #FFF;
+  }
+  .helpList{
+    border-left: 2px solid #FFF;
+    a{
+      color: #000!important;
+      border-top: 1px solid #FFF;
+      border-bottom: 1px solid #FFF;
+    }
+    p{
+      color:#000!important;
+      border-top: 1px solid #FFF;
+      border-bottom: 1px solid #FFF;
+    }
+    hengTwoList{
+      border-bottom: 1px solid $nav-Separate-lines-bottom;
+    }
+  }
+}
+
+//__________________________聯絡我們________________
+
+.contact-fousImg{
+  background: map-get($base,contact_head_img) top center no-repeat;
+}
+
+.iconGroup{
+  color: #FED65C!important;
+}
+.fnameCenter{
+  span{
+    color:#000;
+    i{  color:#FED65C  }
+  }
+  h3{  color:#000;}
+  p{  color:#000;  }
+}
+
+.huang {
+  color: #bf8109;
+}
+
+#AllianceContent .fnameCenter.money-text p {
+  font-size: 17px;
+  color: #000;
+}
+#ContactContent .fnameCenter{
+  span i {
+    color: #000;
+}
+}
+.header .logo_img .header_left{
+  background:  map-get($base,contact_bottom_logo_img3) no-repeat left;
+}
+#ContactContent .fnameCenter .contactHzImg .logoImg{
+  background:  map-get($base,contact_bottom_logo_img) no-repeat center;
+  background-size: 80%;
+  width: 155px;
+  height: 60px;
+  p{
+   
+  }
+}
+#ContactContent .fnameCenter .contactHzImg span {
+  color: #000;
+  position: relative;
+  top: -19px;
+}
+.textListText{
+  font-size: 14px !important;
+}
+
+
+
+.iconGroup {
+  color:#000
+}
+.formRight{
+  p{position: relative;}
+}
+//.tab_inco5{
+//  &:before{
+//    content: "834661888";
+//    position: absolute;
+//    top: 3px;
+//    left: 131px;
+//    width: 100px;
+//    height: 29px;
+//    background: #45290c;
+//    color: #fff;
+//    font-size: 18px;
+//  }
+//}
+
+
+
+
+
+#AllianceContent {
+  .moneyStep{
+    .heiti{
+    color: #000!important;
+  } 
+  }  
+}
+

@@ -1,0 +1,190 @@
+#topHead{
+    .topLeft{
+        float: left;
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+    .menu-nav ul li {
+        float: left;
+        width: 120px;
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+    }
+    .aaa{
+        float: left;
+        position: relative;
+        left: 50px;
+        top: 20px;
+    }
+    .noticeLeft a {
+        margin: 0px 5px;
+        text-decoration: none;
+    }
+    .top_livechat {
+        float: right;
+    }
+    .timeNumber {
+        float: left;
+        margin-top: 20px;
+    }
+    .timeNumber span, .timeNumber a {
+        float: left;
+        font-size: 12px;
+    }
+    .timeNumber i{
+        margin-right: 5px;
+    }
+    .loginForm {
+        float: right;
+        color: #fff;
+    }
+
+    .loginForm .mt10 {
+        border: 0 solid #64563f;
+        padding-top: 55px;
+        font-size: 16px;
+        float: right;
+        margin-right: -60px;
+    }
+    .menu-nav ul li a.active {
+        color: #f00b0d;
+    }
+    .memberItem a{
+        text-decoration: underline;
+    }
+    .memberItem .agent{
+        border-right: none;
+        animation: navanimat2 1s linear alternate infinite !important;
+    }
+    .memberItem .member-msg{
+        text-decoration: none;
+    }
+    .timeNumber .personal{
+        display: block;
+        cursor: pointer;
+        padding: 0;
+    }
+    .timeNumber .personalHide{
+        display: none;
+    }
+    .timeNumber .personal:hover{
+        text-decoration: underline;
+        color: #ffea00;
+    }
+    .item{
+        padding: 0 2px;
+    }
+    .timeNumber span, .timeNumber a {
+        padding-right: 10px;
+    }
+
+    #login-form{
+        .code-input{
+            display: none;
+        }
+        .code-image{
+            display: none;
+        }
+        &.require_verify_code{
+            .account-input{
+                width: 125px;
+            }
+            .pwd-input{
+                width: 125px;
+            }
+            .code-input{
+                display:inline-block;
+                width: 70px;
+            }
+            .code-image{
+                display: inline-block;
+                width: 70px;
+                background: #4d4332;
+                height: 28px;
+                border: 1px solid #4d4332;
+                img{
+                    width: 67px;
+                }
+
+            }
+        }
+
+    }
+}
+.main-menu {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.main-menu-item {
+    float: left;
+}
+.separator a {
+    border-right: 1px solid #4f4f4f;
+}
+.main-menu-link {
+    position: relative;
+    z-index: 16;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+}
+.mobile-item a:before, .promotion-item a:before, .vip-item a:before {
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -360px -20px;
+    text-indent: -9999px;
+    content: "";
+    margin-right: 6px;
+}
+.mobile-item a:before, .promotion-item a:before, .vip-item a:before {
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -360px -20px;
+    text-indent: -9999px;
+    content: "";
+    margin-right: 6px;
+}
+.mobile-item a:before{
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -360px -59px;
+    text-indent: -9999px;
+    content: "";
+    margin-right: 6px;
+}
+.pull-right {
+    float: right;
+}
+
+.main-menu-item ul li {
+    /* float: left; */
+    /* color: #fff; */
+    font-size: 16px;
+    line-height: 36px;
+    width: 20px;
+    /* text-align: center; */
+}
+item.active>.main-menu-link, .mobile-item>.main-menu-link:hover, .promotion-item.active>.main-menu-link, .promotion-item>.main-menu-link:hover, .vip-item.active>.main-menu-link, .vip-item>.main-menu-link:hover {
+    background: transparent;
+    color: #ffe000 !important;
+}

@@ -1,0 +1,141 @@
+    .member2 {
+        .fucktime-box{
+                position: relative;
+                .fucktime-shadom{
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                }
+                .fucktime-date-box{
+                    position: absolute;
+                    width: 310px;
+                    height: 430px;
+                    background: white;
+                    color: black;
+                    border: 1px solid black;
+                    font-size: 16px;
+                    left: 0;
+                    top: 30px;
+                    z-index: 1;
+                    .fucktime-years{
+                        background: #AE0000;
+                        font-size: 16px;
+                        text-align: left;
+                        color: white;
+                        margin-bottom: 0;
+                        padding: 5px
+                    }
+                    .fucktime-month{
+                        background: #AE0000;
+                        font-size: 22px;
+                        text-align: left;
+                        color: white;
+                        text-align: center;
+                        margin-bottom: 0;
+                        padding: 5px;
+                        padding-bottom: 10px;
+                    }
+
+                    .fucktime-chose-box{
+                        font-size: 15px;
+                        color: black;
+                        text-align: center;
+                        padding: 0 25px;
+                        cursor: pointer;
+                        margin-bottom: 0;
+                        .fucktime-chose-left{
+                            float: left;
+                        }
+                        .fucktime-chose-right{
+                            float: right;
+                        }
+
+                    }
+
+                    .fucktime-datebox{
+                        padding: 0 20px;
+                        .fucktime-dateborder{
+                            width: 30px;
+                            height: 30px;
+                            color: black;
+                            margin: 4px;
+                            font-size: 13px;
+                            text-align: center;
+                            position: relative;
+                            cursor: pointer;
+                            &:hover{
+                                &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    background: #AE0000;
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 100%;
+                                    opacity: .6;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .fucktime-dateweek{
+                            color: #909090;
+                        }
+                        .fucktime-dateactive{
+                            &::after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                margin: auto;
+                                background: #AE0000;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 100%;
+                                opacity: .6;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .timeButton{
+                        display: block;
+                        margin: 0 30px;
+                        text-align: left;
+                        position: relative;
+                        label{
+                            width: 25%
+                        }
+                        #hourMinEnter{
+                            font-size: 16px;
+                            letter-spacing: 10px;
+                            width: 50%;
+                            padding: 0 5px 0 0;
+                            text-indent: 5px;
+                            margin: 0 auto 10px;
+                        }
+                        button{
+                            background: transparent;
+                            border: none;
+                            color: #000;
+                            margin-right: 10px;
+                            text-decoration: underline;
+                            &:hover{
+                                color: #ff0000;
+                                text-decoration:none
+                            }
+                        }
+                    }
+                }
+        }        
+    }
+ 

@@ -1,0 +1,72 @@
+.bgChangePage{
+    height: 100%;
+    position: relative;
+    .bgChangePage-button{
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 4.5rem;
+        width: 1.85rem;
+        height: .6rem;
+        background-image: url(../../style/images/chess/pops.png);
+        background-size: 20rem;
+        background-repeat: no-repeat;
+        background-position: -.1rem -2.46rem;
+        text-align: center;
+        color: #fbffea;
+        font-weight: 700;
+        line-height: .61rem;
+    }
+    .tabsbox{
+        height: 100%;
+        margin-top: -.8rem;
+        .tabContent{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            position: fixed;
+            height: 134%;
+           
+        }
+        .am-tabs-default-bar-tab{
+            width: 18%!important;
+            margin-right: 1.8%;
+            margin-bottom: .2rem;
+            height: 1.5rem;
+            .cjbox{
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                z-index: 1;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: 2px solid #bd9860;
+            }
+            .chose{
+                &::after{
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: .46rem;
+                    height: .5rem;
+                    background-image: url(../../style/images/chess/pops.png);
+                    background-size: 20rem;
+                    background-repeat: no-repeat;
+                    background-position: -3.73rem -.956rem;
+                }
+            }
+        }
+        .am-tabs-tab-bar-wrap{
+            margin-left: 3%
+        }
+        .am-tabs-default-bar-underline{
+            border: 0;
+        }
+       
+    }
+}

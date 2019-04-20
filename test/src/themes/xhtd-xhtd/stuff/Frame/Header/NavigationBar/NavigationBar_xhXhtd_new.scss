@@ -1,0 +1,142 @@
+.option_box{
+    position: relative;
+    &:before{
+        top: -8px;
+    }
+}
+
+
+.show_option{
+    z-index: 1000;
+    height: 200px;
+    display: inline-block;
+    li{
+        float: left;
+        width: 80px;
+        text-align: center;
+        font-size: 16px;
+        margin-right: 15px;
+        position: relative;
+        line-height: 40px;
+        height: 100%;
+        padding: 0 10px;
+    }
+    a{
+        height: 90px;
+        width: 90px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -45px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2b1704;
+        line-height: 33px;
+        display: block;
+        text-shadow: 0 1px 1px #e2d2a1;
+    }
+    // 体育
+    .opus{background: url(../image/NavigationBar_xhXhtd_new/opus.png) center center no-repeat / 100% 100%;}
+    .tb{background: url(../image/NavigationBar_xhXhtd_new/nsp.png) center center no-repeat / 100% 100%;}
+    .sb{background: url(../image/NavigationBar_xhXhtd_new/sb.png) center center no-repeat / 100% 100%;}
+    .n188{background: url(../image/NavigationBar_xhXhtd_new/tiyu188.png) center center no-repeat / 100% 100%;}
+
+    // 真人
+    .casino_ag{background: url(../image/NavigationBar_xhXhtd_new/nvyou.png) center center no-repeat / 100% 100%;}
+    .casino_og{background: url(../image/NavigationBar_xhXhtd_new/dongfang.png) center center no-repeat / 100% 100%;}
+    .casino_xpj{background: url(../image/NavigationBar_xhXhtd_new/oubo.png) center center no-repeat / 100% 100%;}
+    .casino_pt{background: url(../image/NavigationBar_xhXhtd_new/ouzhou.png) center center no-repeat / 100% 100%;}
+    .casino_mg{background: url(../image/NavigationBar_xhXhtd_new/meizhou.png) center center no-repeat / 100% 100%;}
+    .casino_bbin{background: url(../image/NavigationBar_xhXhtd_new/taiwan.png) center center no-repeat / 100% 100%;}
+    .casino_opus{background: url(../image/NavigationBar_xhXhtd_new/yinni.png) center center no-repeat / 100% 100%;}
+    .casino_tgp{background: url(../image/NavigationBar_xhXhtd_new/shenbo.png) center center no-repeat / 100% 100%;}
+    // 电子
+    .pt_ag{background: url(../image/NavigationBar_xhXhtd_new/pt_ag.png) center center no-repeat / 100% 100%;}
+    .pt_hb{background: url(../image/NavigationBar_xhXhtd_new/pt_hb.png) center center no-repeat / 100% 100%;}
+    .pt_mg2{background: url(../image/NavigationBar_xhXhtd_new/pt_mg.png) center center no-repeat / 100% 100%;}
+    .pt_opus2{background: url(../image/NavigationBar_xhXhtd_new/pt_opus.png) center center no-repeat / 100% 100%;}
+    .pt_pt{background: url(../image/NavigationBar_xhXhtd_new/pt_pt.png) center center no-repeat / 100% 100%;}
+    .pt_bbin{background: url(../image/NavigationBar_xhXhtd_new/pt_bbin.png) center center no-repeat / 100% 100%;}
+    .pt_qt{background: url(../image/NavigationBar_xhXhtd_new/pt_qt.png) center center no-repeat / 100% 100%;}
+    .pt_ky{background: url(../image/NavigationBar_xhXhtd_new/pt_ky.png) center center no-repeat / 100% 100%;}
+    .pt_cq{background: url(../image/NavigationBar_xhXhtd_new/cq.png) center center no-repeat / 100% 100%;}
+    // 电子——单独游戏
+    .bingqiutupo{background: url(../image/NavigationBar_xhXhtd_new/bingqiutupo.png) center center no-repeat / 100% 100%;}
+    .hongchunyouhuo{background: url(../image/NavigationBar_xhXhtd_new/hongchunyouhuo.png) center center no-repeat / 100% 100%;}
+    .tangguopaidui{background: url(../image/NavigationBar_xhXhtd_new/tangguopaidui.png) center center no-repeat / 100% 100%;}
+    .shuiguolaba{background: url(../image/NavigationBar_xhXhtd_new/shuiguolaba.png) center center no-repeat / 100% 100%;}
+
+    // 彩票
+    .CQSSC1{background: url(../image/NavigationBar_xhXhtd_new/cp_chongqing.png) center center no-repeat / 100% 100%;}
+    .HK60{background: url(../image/NavigationBar_xhXhtd_new/cp_xianggang.png) center center no-repeat / 100% 100%;}
+    .BJPK101{background: url(../image/NavigationBar_xhXhtd_new/cp_beijin.png) center center no-repeat / 100% 100%;}
+    .CG{background: url(../image/NavigationBar_xhXhtd_new/cp_cg.png) center center no-repeat / 100% 100%;}
+    .BBIN{background: url(../image/NavigationBar_xhXhtd_new/cp_bbin.png) center center no-repeat / 100% 100%;}
+    .FC{background: url(../image/NavigationBar_xhXhtd_new/cp_fc.png) center center no-repeat / 100% 100%;}
+    // 棋牌
+    .qp_qznn{background: url(../image/NavigationBar_xhXhtd_new/qp_qznn.png) center center no-repeat / 100% 100%;}
+    .qp_zjh{background: url(../image/NavigationBar_xhXhtd_new/qp_zjh.png) center center no-repeat / 100% 100%;}
+    .qp_ddz{background: url(../image/NavigationBar_xhXhtd_new/qp_ddz.png) center center no-repeat / 100% 100%;}
+    .qp_tm{background: url(../image/NavigationBar_xhXhtd_new/TM.png) center center no-repeat / 100% 100%;}
+    .qp_ky{background: url(../image/NavigationBar_xhXhtd_new/KY.png) center center no-repeat / 100% 100%;}
+    //捕鱼
+    .agFish{background: url(../image/NavigationBar_xhXhtd_new/ag.png) center center no-repeat / 100% 100%}
+    .bbFish{background: url(../image/NavigationBar_xhXhtd_new/bbin.png) center center no-repeat / 100% 100%}
+}
+.Navigation{
+    .bomb{
+        background-color: #fff440;
+        color: #045E47;
+        border-radius: 8px;
+    }
+    li{  
+        ul.items{
+            position: absolute;
+            top: 197px;
+            outline: 2px solid #ebc155;
+            width: 105px;
+            z-index: 999999;
+            text-align: center;
+            background: #43280b;
+            margin-left: -10px;
+            padding-bottom: 5px;
+            transition: all .4s;
+            display: none;
+            height: auto;
+            padding-left: 0;
+            li{
+                display: block;
+                width: 80px;
+                height: 25px;
+                line-height: normal ;
+                font-size: 14px;
+                padding-top: 5px;
+                margin: auto;
+                a{
+                    width: 80px;
+                    height: 25px;
+                    color: #ebc155;
+                    white-space: nowrap;
+                    &:hover{
+                        color: #fff000;
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+.nav_icon{
+    width: 22px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    vertical-align: text-bottom;
+    -webkit-font-smoothing: antialiased;
+} 
+.nav_kyIcon{ background: url(./../image/NavigationBar_xhXhtd_new/nav3.png) no-repeat -4px 0 / cover; }
+.nav_lottery{ background: url(./../image/NavigationBar_xhXhtd_new/nav2.png) no-repeat -4px 0 / cover;margin-left: -10px;  }
+.nav_casino{ background: url(./../image/NavigationBar_xhXhtd_new/nav5.png) no-repeat -4px 0 / cover; }
+.nav_game{ background: url(./../image/NavigationBar_xhXhtd_new/nav1.png) no-repeat 0px 0 / cover; width: 26px;margin-right: 4px;}
+.nav_sports { background: url(./../image/NavigationBar_xhXhtd_new/nav6.png) no-repeat -4px 0 / cover;}
+.nav_ag{ background: url(./../image/NavigationBar_xhXhtd_new/nav4.png) no-repeat -4px 0 / cover;}

@@ -1,0 +1,58 @@
+#ag-game{
+  .main{
+    padding: 0 120px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .agGameList{
+     margin-top:0px;
+    &:after{
+      content:'';
+      clear: both;
+      display: block;
+    }
+    .listItem{
+      width:50%;
+      display: inline-block;
+      padding:0 50px;
+      text-align: center;
+      position: relative;
+      min-height:475px;
+      float:left;
+      cursor:pointer;
+      &:hover a{
+        background:#7d0b05;
+        color:#ffe000;
+        border-color:#7d0b05;
+        text-decoration: none;
+      }
+      h5{
+        background:#a80000;
+        font-size:20px;
+        font-weight: bold;
+        line-height:50px;
+        color:#fff;
+        margin:0;
+      }
+      img{
+        width:100%;
+      }
+      a{
+        display: block;
+        width: 145px;
+        height: 45px;
+        line-height: 40px;
+        font-size: 24px;
+        border-radius: 5px;
+        color: #a80000;
+        background-color: #ffe000;
+        border: 2px solid #ffe000;
+        transition: all .5s;
+        position: absolute;
+        bottom:20px;
+        left:50%;
+        margin-left:-72.5px;
+      }
+    }
+  }
+}

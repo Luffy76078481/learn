@@ -1,0 +1,232 @@
+pointer-events:none  /  auto      时间冒泡点击
+opacity:0     元素透明度
+
+radial-gradient(circle, #666 10%, transparent 10.01%)
+circle = 指定圆形的径向渐变
+
+
+transition:width 3s    过渡效果
+
+
+transform: scale(10, 10); 放大   rotate(360deg);旋转2d
+
+
+:active   点击激活后触发CSS
+
+transparent 100%  颜色透明
+
+
+animation: always-movie infinite  linear   动画名称，几秒，永动，匀速运动
+
+let a=["a","b","c","d","e","f","g"]
+    a.forEach((listVal)=>{
+        console.log(listVal);
+    })
+
+
+display:flex   布局属性 https://www.cnblogs.com/qingchunshiguang/p/8011103.html
+
+
+http://www.php.cn/course/600.html    ES6
+
+
+<style scoped>  局部范围样式
+
+ display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+        overflow: hidden;                指定行数文本溢出处理
+
+
+https://www.jianshu.com/p/bd8f9837bee2     package.json     proxy实现跨域请求转发（必须服务器支持）
+
+
+https://www.cnblogs.com/qingchunshiguang/p/8011103.html   布局属性
+https://blog.csdn.net/ermaner666/article/details/78995234    vue脚手架正确流程
+https://www.cnblogs.com/SamWeb/p/6610733.html              vue路由详解
+https://segmentfault.com/a/1190000012015742                     vuex详解
+https://blog.csdn.net/u012860063/article/details/68063919    vue全家桶学习资源
+https://www.jb51.net/article/113003.htm                               vux样式库组件配置安装
+https://www.cnblogs.com/baihuaxiu/p/6654496.html            移动web开放注意事项
+https://www.jb51.net/tools/zhengze.html                              正则表达式
+http://bbs.boniu6668.com/thread-35195-1-1.html                 常用正则表达式
+http://www.17sucai.com/pins/tag/3886.html                         花了5块钱的！！！
+https://www.cnblogs.com/yuanke/archive/2016/02/26/5221853.html     formitable中文API
+https://blog.csdn.net/hjh15827475896/article/details/78207066  VUE资源集合
+https://mrxn.net/php/qrcode-support-https-http-mrxnqrapi.html  可以生成HTTPS的二维码
+qr.liantu.com           百度一下，，二维码生成地址（PHP）
+https://www.fontsquirrel.com/tools/webfont-generator      字体转换网站
+https://blog.csdn.net/qq_37512323/article/details/80693445    GITHUB使用教程
+https://www.jianshu.com/p/6beed4fbe7b0    RN loading组件
+
+
+https://tinypng.com/           图片压缩网站
+.
+
+https://www.bilibili.com/video/av19641847/?p=2                   node
+
+
+
+width:calc(60% - 50px)            计算宽度或者高度什么的
+
+window.addEventListener('touchmove', function(event) { 
+event.preventDefault(); 
+}, { passive: false})   移动端阻止默认事件
+document.body.addEventListener('touchmove', function(event) { 
+event.preventDefault(); 
+}, { passive: false});
+document.addEventListener('touchmove', function(event) { 
+event.preventDefault(); 
+}, { passive: false});
+
+
+通过设置css属性 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);取消掉手机端webkit浏览器 点击按钮或超链接之类的 默认灰色背景色 
+区域性 overflow: scroll | auto 滚动时使用原生效果：-webkit-overflow-scrolling: touch （ios8+，Android4.0+）
+
+
+
+
+
+初始化样式
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;user-select: none;}    
+html,body{font-size: 100px;;width: 100%;height: 100%;overflow: hidden;width: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}    
+/* html,body{font-family: 'HansHandItalic';font-size: 100px;;width: 100%;height: 100%;overflow: hidden;}     */
+a{text-decoration:none}    
+em{font-style:normal}    
+li{list-style:none}    
+img{border:0;}    
+table{border-collapse:collapse;border-spacing:0}    
+p{word-wrap:break-word}   
+iframe{border: none}
+
+
+
+
+配置本地接口路由代理node
+    proxyTable: {
+        '/node': {
+          target: 'http://192.168.0.69:4000',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/node': ''
+          }
+      },
+    },
+
+    // Various Dev Server settings
+    host: '192.168.0.69', // can be overwritten by process.env.HOST
+
+
+mongoDB使用流程
+官网下载安装，(在盘符运行或添加全局变量)
+输入mongod --dbpath e:mongo(路径名) 开启数据库
+另开启一个CMD  输入mongo运行数据库
+use testmongo  新建或使用数据库
+db.user.insert({"admin":"123456","password":"0000"})  新建(插入)集合
+show collections 显示所有集合
+db.user.find()  查找数据；
+
+
+
+URLSearchParams 处理URL get参数
+this.$nextTick(function () {}           VUE所有元素加载后执行
+
+
+
+VUE配置全局样式
+build/utils.js下面配置
+scss: generateLoaders('sass').concat(
+      {
+        loader: 'sass-resources-loader',
+        options: {
+          resources: path.resolve(__dirname, '../themes/gy.scss')
+        }
+      }
+    ),
+
+sass-resources-loader 记得install 依赖
+
+
+
+contenteditable  可编辑标签
+
+2201817617   ★QQ
+3188807428
+
+louisvotton2@gmail.com  ★谷歌邮箱
+
+npm install @ionic/app-scripts@latest --save-dev   ▲Angular项目的坑（ Error: Cannot find module './src'）
+
+
+
+https://luffycn.github.io/Luffy.github.io/
+
+
+
+
+
+
+
+
+
+1**：信息，服务器收到请求，需要请求者继续执行操作
+
+100	继续。客户端应继续其请求
+101	切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议
+
+
+2**：成功，操作被成功接收并处理
+
+200	请求成功。一般用于GET与POST请求
+201	已创建。成功请求并创建了新的资源
+202	已接受。已经接受请求，但未处理完成
+203	非授权信息。请求成功。
+204	无内容。服务器成功处理，但未返回内容。
+205	重置内容。服务器处理成功，用户终端（例如：浏览器）应重置文档视图。
+206	部分内容。服务器成功处理了部分GET请求
+
+
+3**：重定向，需要进一步的操作以完成请求
+
+300	请求的资源可在多处得到
+301	删除请求数据
+302	在其他地址发现了请求数据
+303	建议客户访问其他URL或访问方式
+304	客户端已经执行了GET，但文件未变化
+305	请求的资源必须从服务器指定的地址得到
+306	前一版本HTTP中使用的代码，现行版本中不再使用
+307	申明请求的资源临时性删除
+
+
+4**：客户端错误，请求包含语法错误或无法完成请求
+
+400	错误请求，如语法错误
+401	请求授权失败
+402	保留有效ChargeTo头响应
+403	请求不允许
+404	没有发现文件、查询或URl
+405	用户在Request-Line字段定义的方法不允许
+406	根据用户发送的Accept拖，请求资源不可访问
+407	类似401，用户必须首先在代理服务器上得到授权
+408	客户端没有在用户指定的时间内完成请求
+409	对当前资源状态，请求不能完成
+410	服务器上不再有此资源且无进一步的参考地址
+411	服务器拒绝用户定义的Content-Length属性请求
+412	一个或多个请求头字段在当前请求中错误
+413	请求的资源大于服务器允许的大小
+414	请求的资源URL长于服务器允许的长度
+415	请求资源不支持请求项目格式
+416	请求中包含Range请求头字段，在当前请求资源范围内没有range指示值，请求也不包含If-Range请求头字段
+417	服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求
+
+
+5**：服务器错误，服务器在处理请求的过程中发生了错误
+
+500	服务器产生内部错误
+501	服务器不支持请求的函数
+502	服务器暂时不可用，有时是为了防止发生系统过载
+503	服务器过载或暂停维修
+504	关口过载，服务器使用另一个关口或服务来响应用户，等待时间设定值较长
+505	服务器不支持或拒绝支请求头中指定的HTTP版本
+

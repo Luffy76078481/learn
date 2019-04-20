@@ -1,0 +1,103 @@
+
+@keyframes popupUp {
+    0%{top:-50%}
+    50%{top:10%}
+    100%{top:0%}
+
+}
+.popupArea{
+    z-index: 9999999993;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: auto;
+    min-width: 15%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    min-height: 6%;
+    animation: popupUp .8s forwards;
+    text-align: center;
+    border-radius:13px;
+    margin:23% 0 0 0%;
+    padding-top: 8px;
+    
+}
+
+.bet365Toast{
+    height: 150px;
+    width: 283px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none!important;
+    margin-left: -142px;
+}
+.bet365Toast .bet365title{
+    height:43px ;  
+    color: #fff;
+    font-size: 20px;
+    line-height: 43px;
+    background-color: #12a267;
+    display: block;
+    margin:0;
+}
+.bet365Toast .bet365Msg{
+    height:97px ;  
+    color: #12a267;
+    font-size: 16px;
+    line-height: 97px;
+    background-color: #fff;
+    display: block;
+    margin: 0;
+}
+.popupArea span{
+    margin-right: 5%;
+
+}
+
+.globe-popbox{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.7;
+    z-index: 2007;
+}
+
+.globe-popbox-popbox{
+    width: 320px;
+    height: 160px;
+    background: #fff;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2008;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.globe-popbox-popbox p{
+    text-align: center;
+    font-weight: bold;
+}
+.globe-popbox-popbox p:nth-child(1){
+    color: black;
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+.globe-popbox-popbox p:nth-child(2){
+    color: red;
+    padding-top: 12px;
+    border-top: 1px solid #dbdbdf;
+    font-size: 20px;
+}
+#globe-show{
+    display: none;
+}
+
+

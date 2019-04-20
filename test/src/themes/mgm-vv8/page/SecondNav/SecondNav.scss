@@ -1,0 +1,323 @@
+.clear{
+  clear: both;
+}
+.secondNav{
+
+  a{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  z-index: 99999999;
+  .main{
+    width: 100%;
+    background: url("images/nav_drop_bg.png")0 0 repeat-x;
+    height: 200px;
+    position: relative;
+  }
+  .saocaozuo{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 10000000000000;
+    pointer-events: none;
+
+  }
+  .tab{
+    width: 1230px;
+    margin: auto;
+    ul{
+      li{
+        display: inline-block;
+        vertical-align: middle;
+        &:hover{
+          border-right: 1px solid #dddddd;
+          border-left: 1px solid #dddddd;
+        }
+        &:hover .pic h4 a{
+          color: #c83434;
+        }
+        .numb:hover{
+            border-right: none  ;
+            border-left: none ;
+        }
+        .pic{
+          vertical-align: middle;
+          .p-pic{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            cursor: pointer;
+          }
+          h4{
+            cursor: pointer;
+            text-align: center;
+            a{
+              color: #000;
+              text-decoration: none;
+              &:hover{color: #c83434;}
+            }
+          }
+        }
+        .txt{
+          height: 60px;
+          font-size: 14px;
+          text-align: center;
+          vertical-align: middle;
+          color: #5d5d5d;
+          cursor: pointer;
+          a{
+            color: #5d5d5d;
+            text-decoration: none;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+          span{
+            text-align: center;
+            line-height: 20px;
+          }
+        }
+        .one{line-height: 60px;
+          margin: auto;}
+        .two{padding-top: 10px;}
+      }
+      li:nth-child(1){
+        &:hover{
+          border-right: 0px;
+          border-left: 0px;
+
+        }
+      }
+    }
+  }
+  .sport{
+    li{
+      width: 220px;
+      height: 140px;
+      .pic{
+        width: 220px;
+        height: 140px;
+
+        .p-pic{
+          width: 220px;
+        }
+      }
+      .txt{
+        width: 220px;
+
+      }
+    }
+    li:nth-child(1){
+      .pic{background: url("images/nav_pic_sports.png") center center no-repeat;  }
+      .txt{  width: 220px; margin: auto; }
+    }
+    li:nth-child(2){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") -450px -399px no-repeat;  }
+        }
+    }
+    li:nth-child(3){
+      width: 450px;
+      .pic{
+        width: 450px;
+        .p-pic{
+           background: url("images/nav_hd_spirits.png") -102px -566px no-repeat;
+           width: 450px;
+           height: 140px;
+          }
+        }
+      .txt{
+        width: 450px;
+        .left{
+          width: 50%;
+          float: left;
+        }
+        .right{
+          width: 50%;
+          float: right;
+        }
+      }
+    }
+    li:nth-child(4){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") -300px 0 no-repeat;  }
+      }
+    }
+  }
+  .casino{
+    li{
+      width: 132px ;
+      margin-left: 10px;
+      .pic{
+        width: 132px ;
+        .p-pic{
+          width: 132px;
+        }
+      }
+      .txt{
+        width: 132px;
+      }
+      .two{
+        line-height: 40px;
+      }
+    }
+    li:nth-child(1){
+      width: 220px;
+      .pic{width: 220px; height:140px;background: url("images/nav_pic_keno.png") center center no-repeat;  }
+    }
+    li:nth-child(2){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0 0 no-repeat;  }
+      }
+    }
+    li:nth-child(3){
+      .pic{
+        .p-pic{
+          background: url("images/nav_hd_spirits.png")  0 -600px no-repeat;
+        }
+      }
+
+    }
+    li:nth-child(4){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0px -500px no-repeat;  }
+      }
+    }
+    li:nth-child(5){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0px -300px no-repeat;  }
+      }
+    }
+    li:nth-child(6){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0 -100px no-repeat;  }
+      }
+    }
+    li:nth-child(7){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0 -200px no-repeat;  }
+      }
+    }li:nth-child(8){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0 -400px no-repeat;  }
+      }
+    }li:nth-child(9){
+       .pic{
+         .p-pic{background: url("images/nav_hd_spirits.png") 0 -700px no-repeat;  }
+       }
+     }
+  }
+  .games{
+    li{
+      width: 132px ;
+      margin-left: 10px;
+      .pic{
+        width: 132px ;
+        .p-pic{
+          width: 132px;
+        }
+      }
+      .txt{
+        width: 132px;
+      }
+      .two{
+        line-height: 40px;
+      }
+    }
+    li:nth-child(1){
+      width: 220px;
+      .pic{width: 220px; height:140px;background: url("images/nav_pic_keno.png") center center no-repeat;  }
+    }
+    li:nth-child(2){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") -150px -100px no-repeat;  }
+      }
+    }
+    li:nth-child(3){
+      .pic{
+        .p-pic{
+          background: url("images/nav_hd_spirits.png")  -150px -200px no-repeat;
+        }
+      }
+
+    }
+    li:nth-child(4){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") -150px -300px  no-repeat;  }
+      }
+    }
+    li:nth-child(5){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") -150px -400px no-repeat;  }
+      }
+    }
+    li:nth-child(6){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") -150px 0 no-repeat;  }
+      }
+    }
+    li:nth-child(7){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0 -200px no-repeat;  }
+      }
+    }
+    li:nth-child(8){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") 0 -700px no-repeat;  }
+      }
+    }
+  }
+  .bingo{
+    li{
+      width: 250px ;
+      margin-left: 10px;
+      .pic{
+        width: 250px ;
+        .p-pic{
+          width: 250px;
+        }
+      }
+      .txt{
+        width: 250px;
+      }
+      .two{
+        line-height: 20px;
+      }
+    }
+    li:nth-child(1){
+      width: 220px;
+      .pic{width: 220px; height:140px;background: url("images/nav_pic_keno.png") center center no-repeat;  }
+    }
+    li:nth-child(4){
+      .pic{
+        .p-pic{background: url("images/nav_hd_spirits.png") -450px -100px no-repeat;  }
+      }
+    }
+    li:nth-child(3){
+      .pic{
+        .p-pic{
+          background: url("images/nav_hd_spirits.png")  -450px -300px no-repeat;
+        }
+      }
+    }
+    li:nth-child(2){
+      .pic{
+        .p-pic{
+          background: url("images/CG_145.png")  center no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+.color-highlight.fav{
+  margin-left: 20px;
+}
+.personal{
+  margin-left: 20px;
+}

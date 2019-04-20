@@ -1,0 +1,92 @@
+
+.casino-content-module {
+
+  .inner {
+    width: 1200px;
+    margin:0 auto;
+    ul {
+      list-style-type: none;
+      padding-top: 50px;
+      text-align: left;
+      &:after{
+        content:'';
+        display: block;
+        clear: both;
+      }
+      li {
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        position: relative;
+        width: 391px;
+        height: 361px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 5px 4px 35px;
+        float:left;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+        &:hover:before{
+          opacity: 0;
+          -webkit-transition: all 1s ease;
+          transition: all 1s ease;
+          cursor:pointer;
+        }
+        &.c_og:before {
+          background: url('../images/og2.png') no-repeat 50%
+        }
+        &.c_xpj:before {
+          background: url('../images/ab2.png') no-repeat 50%
+        }
+        &.c_pt:before {
+          background: url('../images/pt2.png') no-repeat 50%
+        }
+        &.c_mg:before {
+          background: url('../images/mg2.png') no-repeat 50%
+        }
+        &.c_ag:before {
+          background: url('../images/ag2.png') no-repeat 50%
+        }
+        &.c_bbin:before {
+          background: url('../images/bbin2.png') no-repeat 50%
+        }
+        &.c_opus:before {
+          background: url('../images/opus2.png') no-repeat 50%
+        }
+        &.c_TGP:before {
+          background: url('../images/TGP2.png') no-repeat 50%
+        }
+
+        &.c_og:hover {
+          background: url('../images/og.png') no-repeat 50%
+        }
+        &.c_xpj:hover {
+          background: url('../images/ab.png') no-repeat 50%
+        }
+        &.c_pt:hover {
+          background: url('../images/pt.png') no-repeat 50%
+        }
+        &.c_mg:hover {
+          background: url('../images/mg.png') no-repeat 50%
+        }
+        &.c_ag:hover {
+          background: url('../images/ag.png') no-repeat 50%
+        }
+        &.c_bbin:hover {
+          background: url('../images/bbin.png') no-repeat 50%
+        }
+        &.c_opus:hover {
+          background: url('../images/opus.png') no-repeat 50%
+        }
+        &.c_TGP:hover {
+          background: url('../images/TGP.png') no-repeat 50%
+        }
+      }
+    }
+  }
+}

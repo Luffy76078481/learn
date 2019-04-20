@@ -1,0 +1,69 @@
+.sport-content-module{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  .content{
+    padding: 0;
+    width: 1200px;
+    margin:0 auto;
+    .sportBox {
+      float: none;
+      display: inline-block;
+      width: 300px;
+      height: 682px;
+      position: relative;
+      cursor: pointer;
+      margin: 10px 0;
+      &:hover{
+        .sportimg {
+          -webkit-filter: none;
+          filter: none;
+          &.OPUS{
+            background: url(https://rs.cswym.cn/lbt1-macau/pc/resource/67/69/6769C88C74AF47689694EFB62635039A) no-repeat 50%;
+          }
+          &.SB{
+            background: url(https://rs.cswym.cn/lbt1-macau/pc/resource/AC/7A/AC7AA3B1F8B244D787CA39A123086149) no-repeat 50%;
+          }
+          &.N188{
+            background: url('../images/188after.png') no-repeat 50%;
+          }
+          &.TB{
+            background: url(https://rs.cswym.cn/lbt1-macau/pc/resource/FA/1E/FA1EA4044C124C6FBC0059341717F5D1) no-repeat 50%;
+          }
+        }
+      }
+      &:hover:before{
+        opacity: 0;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      &.OPUS:before {
+        background: url(https://rs.cswym.cn/lbt1-macau/pc/images/opus.284888dac51b.png) no-repeat 50%
+      }
+      &.TB:before {
+        background: url(https://rs.cswym.cn/lbt1-macau/pc/images/tb.a26ebe63904e.png) no-repeat 50%
+      }
+      &.SB:before {
+        background: url(https://rs.cswym.cn/lbt1-macau/pc/images/sb.c1b77e342b71.png) no-repeat 50%
+      }
+      &.N188:before {
+        background: url('../images/188before.png') no-repeat 50%
+      }
+      .sportimg{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+      }
+    }
+  }
+}

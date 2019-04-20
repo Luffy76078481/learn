@@ -1,0 +1,480 @@
+.Navigation {
+    .mainTitle {
+        width: 103px;
+        
+        .dropdown_menu {
+            box-sizing: border-box;
+            min-height: 40px;
+            width: 130px;
+            border: none;
+            position: absolute;
+            top: 100%;
+            text-align: center;
+            -webkit-perspective: 500px;
+            -moz-perspective: 500px;
+            -ms-perspective: 500px;
+            -o-perspective: 500px;
+            perspective: 500px;
+            z-index: -1;
+            
+            &.sportList {
+                left: 9.5%;
+                
+                li {
+                    &:first-child {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/sport/opus.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(2) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/sport/huangguan.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(3) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/sport/188.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(4) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/sport/shaba.png") no-repeat 0 0/100%;
+                        }
+                    }
+                }
+            }
+            
+            &.casino {
+                left: 18%;
+                
+                li {
+                    &:first-child {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/og.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(2) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/pt.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(3) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/mg.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(4) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/ag.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(5) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/bbin.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(6) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/opusty.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(7) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/sunbet.png") no-repeat 0 0/100%;
+                        }
+                    }
+                }
+            }
+            
+            &.electricGames {
+                left: 26.5%;
+                
+                li {
+                    &:first-child {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/elec/ag.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(2) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/elec/yoplay.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(3) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/elec/bbin.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(4) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/pt.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(5) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/elec/cq.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(6) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/elec/vt.png") no-repeat 0 0/100%;
+                            
+                        }
+                    }
+                    
+                    &:nth-child(7) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/elec/hb.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(8) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/opusty.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(9) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/elec/qt.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(10) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/person/mg.png") no-repeat 0 0/100%;
+                        }
+                    }
+                }
+            }
+            
+            &.bingo {
+                left: 35.5%;
+                
+                li {
+                    &:first-child {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/bingo/cg.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    &:nth-child(2) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/bingo/kg.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    &:nth-child(3){
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/bingo/bbin.png") no-repeat 0 0/100%;
+                        }
+                    }
+                }
+            }
+            
+            &.fishGames {
+                left: 44%;
+                
+                li {
+                    &:first-child {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/fish/ag.png") no-repeat 0 0/100%;
+                        }
+                    }
+                }
+            }
+            
+            &.chessGames {
+                left: 52.5%;
+                
+                li {
+                    &:first-child {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/chess/tm.png") no-repeat 0 0/100%;
+                        }
+                    }
+                    
+                    &:nth-child(2) {
+                        .gameIcon {
+                            background: url("../images/nav_bar_icon/chess/ky.jpg") no-repeat 0 0/100%;
+                        }
+                    }
+                }
+            }
+            
+            li {
+                width: 100% !important;
+                border: 1px solid #ffff00;
+                border-bottom: none;
+                position: relative;
+                color: #d9c064;
+                font-size: 12px;
+                line-height: 40px;
+                text-align: center;
+                background: rgba(0, 0, 0, .3);
+                opacity: 0;
+                -webkit-transform: rotateY(90deg);
+                -moz-transform: rotateY(90deg);
+                -ms-transform: rotateY(90deg);
+                -o-transform: rotateY(90deg);
+                transform: rotateY(90deg);
+                -webkit-transition: opacity .4s, -webkit-transform .8s;
+                -moz-transition: opacity .4s, -moz-transform .8s;
+                -o-transition: opacity .4s, -o-transform .8s;
+                transition: opacity .4s, transform .8s;
+                
+                &:last-child {
+                    border-bottom: 1px solid #ffff00;
+                }
+                
+                a {
+                    padding: 0 0 0 10px;
+                    line-height: 39px;
+                    font-size: 12px;
+                    white-space: nowrap;
+                    display: block;
+                    color: #fff;
+                    font-weight: normal;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    &:hover {
+                        color: #ebc155;
+                        text-decoration: none;
+                    }
+                    
+                    .gameIcon {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 6px;
+                        margin-top: -3px;
+                    }
+                    
+                    span {
+                        flex: 1;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+        &:hover .dropdown_menu {
+            height: auto;
+            z-index: 11;
+            
+            li {
+                opacity: 1;
+                transform: none;
+                // -webkit-transition-delay: 0s;
+                // -moz-transition-delay: 0s;
+                // -o-transition-delay: 0s;
+                // transition-delay: 0s;
+                
+                &:nth-child(1) {
+                    -webkit-transition-delay: 0s;
+                    -moz-transition-delay: 0s;
+                    -o-transition-delay: 0s;
+                    transition-delay: 0s
+                }
+                
+                &:nth-child(2) {
+                    -webkit-transition-delay: 200ms;
+                    -moz-transition-delay: 200ms;
+                    -o-transition-delay: 200ms;
+                    transition-delay: 200ms
+                }
+                
+                &:nth-child(3) {
+                    -webkit-transition-delay: 300ms;
+                    -moz-transition-delay: 300ms;
+                    -o-transition-delay: 300ms;
+                    transition-delay: 300ms
+                }
+                
+                &:nth-child(4) {
+                    -webkit-transition-delay: 400ms;
+                    -moz-transition-delay: 400ms;
+                    -o-transition-delay: 400ms;
+                    transition-delay: 400ms
+                }
+                
+                &:nth-child(5) {
+                    -webkit-transition-delay: 500ms;
+                    -moz-transition-delay: 500ms;
+                    -o-transition-delay: 500ms;
+                    transition-delay: 500ms
+                }
+                
+                &:nth-child(6) {
+                    -webkit-transition-delay: 600ms;
+                    -moz-transition-delay: 600ms;
+                    -o-transition-delay: 600ms;
+                    transition-delay: 600ms
+                }
+                
+                &:nth-child(7) {
+                    -webkit-transition-delay: 700ms;
+                    -moz-transition-delay: 700ms;
+                    -o-transition-delay: 700ms;
+                    transition-delay: 700ms
+                }
+                
+                &:nth-child(8) {
+                    -webkit-transition-delay: 800ms;
+                    -moz-transition-delay: 800ms;
+                    -o-transition-delay: 800ms;
+                    transition-delay: 800ms
+                }
+                
+                &:nth-child(9) {
+                    -webkit-transition-delay: 900ms;
+                    -moz-transition-delay: 900ms;
+                    -o-transition-delay: 900ms;
+                    transition-delay: 900ms
+                }
+                
+                &:nth-child(10) {
+                    -webkit-transition-delay: 1000ms;
+                    -moz-transition-delay: 1000ms;
+                    -o-transition-delay: 1000ms;
+                    transition-delay: 1000ms
+                }
+                
+                &:nth-child(11) {
+                    -webkit-transition-delay: 1100ms;
+                    -moz-transition-delay: 1100ms;
+                    -o-transition-delay: 1100ms;
+                    transition-delay: 1100ms
+                }
+                
+                &:nth-child(12) {
+                    -webkit-transition-delay: 1200ms;
+                    -moz-transition-delay: 1200ms;
+                    -o-transition-delay: 1200ms;
+                    transition-delay: 1200ms
+                }
+                
+                &:nth-child(13) {
+                    -webkit-transition-delay: 1300ms;
+                    -moz-transition-delay: 1300ms;
+                    -o-transition-delay: 1300ms;
+                    transition-delay: 1300ms
+                }
+                
+                &:nth-child(14) {
+                    -webkit-transition-delay: 1400ms;
+                    -moz-transition-delay: 1400ms;
+                    -o-transition-delay: 1400ms;
+                    transition-delay: 1400ms
+                }
+                
+                &:nth-child(15) {
+                    -webkit-transition-delay: 1500ms;
+                    -moz-transition-delay: 1500ms;
+                    -o-transition-delay: 1500ms;
+                    transition-delay: 1500ms
+                }
+                
+                &:nth-child(16) {
+                    -webkit-transition-delay: 1600ms;
+                    -moz-transition-delay: 1600ms;
+                    -o-transition-delay: 1600ms;
+                    transition-delay: 1600ms
+                }
+                
+                &:nth-child(17) {
+                    -webkit-transition-delay: 1700ms;
+                    -moz-transition-delay: 1700ms;
+                    -o-transition-delay: 1700ms;
+                    transition-delay: 1700ms
+                }
+                
+                &:nth-child(18) {
+                    -webkit-transition-delay: 1800ms;
+                    -moz-transition-delay: 1800ms;
+                    -o-transition-delay: 1800ms;
+                    transition-delay: 1800ms
+                }
+                
+                &:nth-child(19) {
+                    -webkit-transition-delay: 1900ms;
+                    -moz-transition-delay: 1900ms;
+                    -o-transition-delay: 1900ms;
+                    transition-delay: 1900ms
+                }
+                
+                &:nth-child(20) {
+                    -webkit-transition-delay: 2000ms;
+                    -moz-transition-delay: 2000ms;
+                    -o-transition-delay: 2000ms;
+                    transition-delay: 2000ms
+                }
+            }
+        }
+    }
+    
+    .bomb {
+        color: #045E47;
+        border-radius: 8px;
+    }
+    
+    li {
+        &:hover {
+            ul.items {
+                display: block;
+            }
+        }
+        
+        ul.items {
+            position: absolute;
+            top: 197px;
+            outline: 2px solid #ebc155;
+            width: 105px;
+            z-index: 999999;
+            text-align: center;
+            background: #43280b;
+            margin-left: -10px;
+            padding-bottom: 5px;
+            transition: all .4s;
+            display: none;
+            height: auto;
+            padding-left: 0;
+            
+            li {
+                display: block;
+                width: 80px;
+                height: 25px;
+                line-height: normal !important;
+                font-size: 14px;
+                padding-top: 5px;
+                margin: auto;
+                
+                a {
+                    width: 80px;
+                    height: 25px;
+                    color: #ebc155;
+                    white-space: nowrap;
+                    
+                    &:hover {
+                        color: #fff000;
+                    }
+                }
+            }
+        }
+    }
+}
+

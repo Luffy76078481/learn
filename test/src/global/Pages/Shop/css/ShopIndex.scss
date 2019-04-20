@@ -1,0 +1,148 @@
+.shopIndex{
+  padding-bottom:30px;
+  .vip_divider{
+    width:100%;
+    max-width:980px;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    padding:50px 0px 40px 0px;
+    .vip_title{
+      background:#FFFFFF;
+      white-space:nowrap;
+      float:left;
+      color: #ad1001;
+      font-size:20pt;
+      padding: 0px 20px 0px 10px;
+      a{
+        color: #ad1001;
+        &:hover{
+          color:#e92c1a;
+          text-decoration:none;
+        }
+      }
+    }
+    .line-separator {
+      float: left;
+      margin-top: 21px;
+      height: 1px;
+      background: #999999;
+      width: 100%;
+      position: absolute;
+      z-index:-1;
+    }
+    .know_more {
+      white-space: nowrap;
+      float: right;
+      background:#FFFFFF;
+      margin-top: 10px;
+      padding: 0px 0px 0px 10px;
+      font-size: 14px;
+      a{
+        color: #555555;
+        &:hover{
+          color:#e92c1a;
+        }
+      }
+    }
+  }
+  .vip_home_icon_conteniar{
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &.mall{
+      .title{
+        font-size: 14px;
+        margin: 10px 10px;
+        line-height: 26px;
+        color: #ad1001;
+        font-weight: bold;
+      }
+      .item{
+        padding: 10px 0px 10px 0px;
+        a{
+          width:308px;
+          height:215px;
+          &.mall1{
+            background:url('../images/mall_icon1.png') 0 0 no-repeat;
+            &:hover{
+              background:url('../images/mall_icon1_hover.png') 0 0 no-repeat;
+            }
+          }
+          &.mall2{
+            background:url('../images/mall_icon2.png') 0 0 no-repeat;
+            &:hover{
+              background:url('../images/mall_icon2_hover.png') 0 0 no-repeat;
+            }
+          }
+          &.mall3{
+            background:url('../images/mall_icon3.png') 0 0 no-repeat;
+            &:hover{
+              background:url('../images/mall_icon3_hover.png') 0 0 no-repeat;
+            }
+          }
+          &.mall4{
+            background:url('../images/mall_icon4.png') 0 0 no-repeat;
+            &:hover{
+              background:url('../images/mall_icon4_hover.png') 0 0 no-repeat;
+            }
+          }
+          &.mall5{
+            background:url('../images/mall_icon5.png') 0 0 no-repeat;
+            &:hover{
+              background:url('../images/mall_icon5_hover.png') 0 0 no-repeat;
+            }
+          }
+          &.mall6{
+            background:url('../images/mall_icon6.png') 0 0 no-repeat;
+            &:hover{
+              background:url('../images/mall_icon6_hover.png') 0 0 no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .item{
+      float:left;
+      padding:30px;
+      a{
+        display: block;
+        height:173px;
+        width:173px;
+        &.icon1{
+          background:url('../images/icon1.png') 0 0 no-repeat;
+          &:hover{
+            background:url('../images/icon1_hover.png') 0 0 no-repeat;
+          }
+        }
+        &.icon2{
+          background:url('../images/icon2.png') 0 0 no-repeat;
+          &:hover{
+            background:url('../images/icon2_hover.png') 0 0 no-repeat;
+          }
+        }
+        &.icon3{
+          background:url('../images/icon3.png') 0 0 no-repeat;
+          &:hover{
+            background:url('../images/icon3_hover.png') 0 0 no-repeat;
+          }
+        }
+        &.icon4{
+          background:url('../images/icon4.png') 0 0 no-repeat;
+          &:hover{
+            background:url('../images/icon4_hover.png') 0 0 no-repeat;
+          }
+        }
+      }
+      h5{
+        color:#222;
+        font-weight: bold;
+        font-size:20px;
+        text-align: center;
+      }
+    }
+
+  }
+}

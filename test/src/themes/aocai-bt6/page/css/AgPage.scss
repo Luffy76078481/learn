@@ -1,0 +1,195 @@
+#ag-game{
+  position: relative;
+
+  .fishing_title {
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+    padding-top: 80px;
+    margin: 0px 0 0 -500px;
+    animation: titshake 1000ms linear infinite alternate;
+    -webkit-animation: titshake 1000ms linear infinite alternate;
+    -moz-animation: titshake 1000ms linear infinite alternate;
+    -o-animation: titshake 1000ms linear infinite alternate;
+    -ms-animation: titshake 1000ms linear infinite alternate;
+  }
+  .fishing_bg {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    height: 890px;
+    background: url('../images/fishing_bg.jpg') no-repeat center top;
+  }
+  .fishing{
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    .btn1{
+      color:#005284;
+      border-top: 2px solid #fff9a4;
+      border-bottom: 2px solid #f7a400;
+      background: -webkit-linear-gradient(#ffed00, #f7a400);
+    }
+    .fh_qrcode{
+      background-color: rgba(255, 255, 255, 0.5);
+      p{
+        color:#005284;
+      }
+    }
+    .numpop{
+      background-color:rgba(40, 26, 255, 0.35);
+      p{
+        color:rgba(255, 255, 255, 0.8);
+        span {
+          font-size: 42px;
+          line-height: 42px;
+        }
+      }
+    }
+    button {
+      width: 100%;
+      height: 70px;
+      font-weight: 600;
+      font-size: 19px;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 5;
+      cursor: pointer;
+    }
+  }
+  .fish_float_box {
+    overflow: hidden;
+    width: 100%;
+    height: 890px;
+    position: absolute;
+
+    .top_shark {
+      background: url("../images/top_shark.png") center;
+      width: 343px;
+      height: 267px;
+      background-size: cover;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      margin-left: 390px;
+    }
+    .float_turtle {
+      position: absolute;
+      top: 550px;
+      left: -80px;
+      z-index: -1;
+      animation: float_turtle 200s ease;
+      -webkit-animation: float_turtle 200s ease;
+      -moz-animation: float_turtle 200s ease;
+      -o-animation: float_turtle 200s ease;
+      -ms-animation: float_turtle 200s ease;
+    }
+    .float_fish {
+      position: absolute;
+      top: 440px;
+      right: -100px;
+      z-index: -1;
+      animation: float_fish 60s ease;
+      -webkit-animation: float_fish 60s ease;
+      -moz-animation: float_fish 60s ease;
+      -o-animation: float_fish 60s ease;
+      -ms-animation: float_fish 60s ease;
+    }
+  }
+
+  .fishing_box {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 240px 0px 205px 0px;
+
+    .fishing {
+      width: 1000px;
+      height: auto;
+      background: rgba(255, 255, 255, 0.35);
+      padding: 14px;
+      margin: 0px auto 0px auto;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+
+      .fh_ban{
+        vertical-align: top;
+        clear: right;
+        width: 740px;
+        height: 415px;
+      }
+
+      ul {
+        float: right;
+        width: 230px;
+        vertical-align: top;
+        li{
+          .fh_qrcode{
+            width: 100%;
+            height: 170px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.5);
+
+            img {
+              width: 110px;
+              margin-top: 18px;
+              border:2px solid #fff;
+            }
+            p {
+              font-size: 15px;
+              line-height: 26px;
+              font-weight: 600;
+            }
+          }
+          .numpop{
+            width: 100%;
+            height: 105px;
+            padding-top: 18px;
+            text-align: center;
+            background: rgba(40, 26, 255, 0.35);
+          }
+        }
+      }
+    }
+
+  }
+}
+@keyframes titshake {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -12px);
+  }
+}
+@-webkit-keyframes titshake {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(0px, -12px);
+  }
+}
+@-moz-keyframes titshake {
+  0% {
+    -moz-transform: translate(0px, 0px);
+  }
+  100% {
+    -moz-transform: translate(0px, -12px);
+  }
+}
+@-o-keyframes titshake {
+  0% {
+    -o-transform: translate(0px, 0px);
+  }
+  100% {
+    -o-transform: translate(0px, -12px);
+  }
+}
+@-ms-keyframes titshake {
+  0% {
+    -ms-transform: translate(0px, 0px);
+  }
+  100% {
+    -ms-transform: translate(0px, -12px);
+  }
+}

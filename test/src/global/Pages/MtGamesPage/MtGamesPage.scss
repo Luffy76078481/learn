@@ -1,0 +1,48 @@
+.Mg-content {
+    position: relative;
+    width: 100%;
+    #MGbg {
+        min-height: 954px;
+        background: url(images/fishing_bg.png) no-repeat center center;
+        .box {
+            position: relative;
+            top: 260px;
+            height: 305px;
+            width: 1000px;
+            margin: auto;
+            .qr {
+                width: 170px;
+                float: right;
+                margin-right: 80px;
+            }
+            .downBtn {
+                float: right;
+                margin-top: 242px;
+                padding: 30px 105px;
+                margin-right: -193px;
+            }
+        }
+    }
+}
+.qr_content {
+    width: 866px;
+    margin: auto;
+    height: 300px;
+    background: transparent;
+    position: relative;
+    top: 240px;
+}
+.quit_code {
+    float: right;
+    width: 188px;
+    height: 188px;
+}
+.down {
+    position: relative;
+    float: right;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    top: 70px;
+    height: 62px;
+}

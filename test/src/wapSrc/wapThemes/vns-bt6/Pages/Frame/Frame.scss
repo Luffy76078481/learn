@@ -1,0 +1,66 @@
+.my-drawer {
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.homePromotion{
+  position: fixed;
+  z-index: 2;
+  width: 300px;
+  height: 250px;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -125px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #525252;
+  background: #fff;
+  p{
+    margin:0;
+  }
+
+  a.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #FFF;
+    background: #000;
+    font-size: 12px;
+    width: 30px;
+    height: 20px;
+    line-height:20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+.my-drawer .am-drawer-sidebar {
+  background-color: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.my-drawer.am-drawer.am-drawer-left .am-drawer-draghandle{
+  width:0;
+}
+
+.shortCutImg.item{
+  background:url('./images/shortCutImg.png') 0 0 no-repeat;
+  background-size:100%;
+  width: 3rem !important;
+  height: 2rem !important;
+  bottom:0;
+}
+.shortCutGif{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:999;
+  background:url('./images/Android.gif') 0 0 no-repeat;
+  background-size: 100% 100%;
+  &.ios{
+    background:url('./images/IOS.gif') 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+}

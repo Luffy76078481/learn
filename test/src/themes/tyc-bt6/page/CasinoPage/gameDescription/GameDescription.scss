@@ -1,0 +1,521 @@
+#GameDescription{
+  .container{
+    width:1200px;
+    margin:20px auto;
+  }
+  .headTitle{
+    border-bottom:1px solid #ccc;
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    h2{
+      font-size: 24px;
+      color: #c83434;
+    }
+    ul li{
+      float:left;
+      &:hover{
+        a{
+          color:#333;
+        }
+      }
+      &.active{
+        a{
+          color: #fd4944;
+          border-bottom: 4px solid #ca322f;
+        }
+      }
+      a{
+        color: #333;
+        padding: 10px 15px;
+        display: block;
+        border: 0 solid transparent;
+        border-bottom: 4px solid transparent;
+        text-decoration: none;
+      }
+    }
+
+  }
+  .sidebarWrapper{
+    width:25%;
+    float:left;
+    .leftNav{
+      margin: 20px 0;
+      .ant-collapse{
+        border:0;
+        border-radius:4px 4px 0 0;
+      }
+      .ant-collapse-header{
+        background-color: #ccc;
+        font-weight:700;
+        border-radius:4px 4px 0 0;
+      }
+      .ant-collapse-content-box{
+        padding:0;
+        border-top:0;
+      }
+      a{
+        display: block;
+        color: #333;
+        background-color: #f2f2f2;
+        padding: 10px 15px 10px 30px;
+        border-bottom:1px solid #e0e0e0;
+        &:last-child{
+          border-bottom:none;
+        }
+        &:hover{
+          color:#000;
+        }
+        &.active{
+          color:#c83434
+        }
+      }
+    }
+    .leftGame{
+      li{
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom:10px;
+        img{
+          width:100%;
+        }
+        a{
+          position: absolute;
+          bottom:0;
+          width: 100%;
+          border-radius: 4px;
+          background-color: #c83434;
+          color: #fff;
+          display: block;
+          padding: 10px;
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .contentWrapper{
+    float:left;
+    width:75%;
+    padding: 20px 0 30px 50px;
+    margin-bottom: 15px;
+    .dashBoard{
+      .item{
+        border:1px solid #ccc;
+        height: 190px;
+          margin-bottom: 15px;
+          h3{
+            background-color: #c83434;
+            color: #fff;
+            padding: 7px;
+            margin-bottom: 15px;
+            font-size: 18px;
+          }
+          .contentTxt{
+            &:after{
+              content:'';
+              display: block;
+              clear: both;
+            }
+            p{
+              padding: 0 10px 15px;
+              width: 63%;
+              float: left;
+              max-height: 85px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .txtImg{
+              width: 35%;
+              float:left;
+              height:76px;
+              background-size: 100%;
+            }
+
+            }
+          a{
+            clear: both;
+            display: block;
+            padding-left:15px;
+            color: #c83434;
+            &:hover{
+              color:#333;
+            }
+        }
+      }
+
+    }
+    .inside-content{
+      .h4, .h5, .h6, h4, h5, h6 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight:bold;
+      }
+      .inside-content p {
+        line-height: 1.6;
+      }
+      .table {
+        color: #000;
+        text-align: center;
+        tr>td,tr>th {
+          border-width: 0;
+          border-right: 1px solid #e0e0e0;
+          &.gray {
+            color: #c83434;
+            background-color: #fff;
+            border-width: 1px;
+          }
+        }
+        thead {
+          background-color: #c83434;
+          color: #fff;
+        }
+        tbody>tr:nth-child(2n) {
+          background-color: #f2f2f2;
+        }
+      }
+      h3{
+        color: #c83434;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      figure{
+        div{
+          height:430px;
+          background-size:100%;
+        }
+      }
+    }
+
+    .inside-content h3 {
+      color: #c83434;
+      font-size: 18px
+    }
+
+    .inside-content .poker-img {
+      display: block;
+      margin: 0 20px 10px 0;
+      max-width: 25%;
+      float: left
+    }
+
+    .inside-content figure img {
+      display: block;
+      margin: 30px auto;
+      max-width: 100%
+    }
+
+    .inside-content figure .full {
+      width: 100%
+    }
+
+    .inside-content figure .left {
+      margin-left: 0
+    }
+
+    .inside-content figure .no-bottom {
+      margin-bottom: 0
+    }
+
+    .inside-content p {
+      line-height: 1.6
+    }
+
+    .inside-content .panel-collapse,.inside-content .panel-collapse p,.inside-content section,.inside-content section p {
+      margin-bottom: 10px
+    }
+
+    .inside-content .panel-collapse .pic,.inside-content section .pic {
+      width: 100%
+    }
+
+    .inside-content .panel-collapse h4,.inside-content section h4 {
+      font-size: 15px
+    }
+
+    .inside-content .title {
+      display: block;
+      font-weight: 700;
+      padding: 10px 0
+    }
+
+    .inside-content h5 {
+      color: #c1392b;
+      padding: 20px 0 10px
+    }
+
+    .inside-content>ul {
+      margin-left: 0
+    }
+
+    .inside-content li {
+      list-style-type: decimal
+    }
+  }
+
+
+  /*图片*/
+  .TGP_0{
+    background:url('./images/TGP/0.jpg')
+  }
+  .TGP_1{
+    background:url('./images/TGP/1.jpg')
+  }
+  .TGP_2{
+    background:url('./images/TGP/2.jpg')
+  }
+  .TGP_3{
+    background:url('./images/TGP/3.jpg')
+  }
+  .TGP_4{
+    background:url('./images/TGP/4.jpg')
+  }
+  .TGP_5{
+     background:url('./images/TGP/5.jpg')
+   }
+  .TGP_6{
+    background:url('./images/TGP/6.jpg')
+  }
+  .TGP_7{
+    background:url('./images/TGP/7.jpg')
+  }
+
+
+  .AG_0{
+    background:url('./images/AG/0.jpg')
+  }
+  .AG_1{
+    background:url('./images/AG/1.jpg')
+  }
+  .AG_2{
+    background:url('./images/AG/2.jpg')
+  }
+  .AG_3{
+    background:url('./images/AG/3.jpg')
+  }
+  .AG_4{
+    background:url('./images/AG/4.jpg')
+  }
+  .AG_5{
+    background:url('./images/AG/5.jpg')
+  }
+  .AG_6{
+    background:url('./images/AG/6.jpg')
+  }
+  .AG_7{
+    background:url('./images/AG/7.jpg')
+  }
+
+  .BBIN_0{
+    background:url('./images/BBIN/0.jpg')
+  }
+  .BBIN_1{
+    background:url('./images/BBIN/1.jpg')
+  }
+    .BBIN_1-1{
+      background:url('./images/BBIN/1-1.jpg');
+      height:518px;
+      width:681px;
+    }
+  .BBIN_2{
+    background:url('./images/BBIN/2.jpg')
+  }
+    .BBIN_2-1{
+      display:inline-block;
+      width:106px;
+      height:103px;
+      background:url('./images/BBIN/2-1.png')
+    }
+    .BBIN_2-2{
+      display:inline-block;
+      width:106px;
+      height:103px;
+      background:url('./images/BBIN/2-2.png')
+    }
+  .BBIN_2-3{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-3.png')
+  }
+  .BBIN_2-4{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-4.png')
+  }
+  .BBIN_2-5{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-5.png')
+  }
+  .BBIN_2-6{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-6.png')
+  }
+  .BBIN_2-7{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-7.png')
+  }
+  .BBIN_2-8{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-8.png')
+  }
+  .BBIN_2-9{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-9.png')
+  }
+  .BBIN_2-10{
+    display:inline-block;
+    width:106px;
+    height:103px;
+    background:url('./images/BBIN/2-10.png')
+  }
+  .BBIN_3{
+    background:url('./images/BBIN/3.jpg')
+  }
+  .BBIN3-img{
+    width:36px;
+    height:46px;
+    display: inline-block;
+    &.diamonds-2{
+      background:url('./images/BBIN/saturn/2-diamonds.jpg');
+    }
+    &.diamonds-4{
+      background:url('./images/BBIN/saturn/4-diamonds.jpg');
+    }
+    &.diamonds-5{
+      background:url('./images/BBIN/saturn/5-diamonds.jpg');
+    }
+    &.diamonds-6{
+      background:url('./images/BBIN/saturn/6-diamonds.jpg');
+    }
+    &.diamonds-7{
+      background:url('./images/BBIN/saturn/7-diamonds.jpg');
+    }
+    &.diamonds-8{
+      background:url('./images/BBIN/saturn/8-diamonds.jpg');
+    }
+    &.diamonds-9{
+      background:url('./images/BBIN/saturn/9-diamonds.jpg');
+    }
+    &.diamonds-10{
+      background:url('./images/BBIN/saturn/10-diamonds.jpg');
+    }
+    &.hearts-2{
+      background:url('./images/BBIN/saturn/2-hearts.jpg');
+    }
+    &.hearts-4{
+      background:url('./images/BBIN/saturn/4-hearts.jpg');
+    }
+    &.hearts-5{
+      background:url('./images/BBIN/saturn/5-hearts.jpg');
+    }
+    &.hearts-6{
+      background:url('./images/BBIN/saturn/6-hearts.jpg');
+    }
+    &.hearts-7{
+      background:url('./images/BBIN/saturn/7-hearts.jpg');
+    }
+    &.hearts-8{
+      background:url('./images/BBIN/saturn/8-hearts.jpg');
+    }
+    &.hearts-9{
+      background:url('./images/BBIN/saturn/9-hearts.jpg');
+    }
+    &.hearts-10{
+      background:url('./images/BBIN/saturn/10-hearts.jpg');
+    }
+    &.spades-3{
+      background:url('./images/BBIN/saturn/3-spades.jpg');
+    }
+    &.spades-4{
+      background:url('./images/BBIN/saturn/4-spades.jpg');
+    }
+    &.spades-6{
+       background:url('./images/BBIN/saturn/6-spades.jpg');
+     }
+    &.spades-7{
+      background:url('./images/BBIN/saturn/7-spades.jpg');
+    }
+    &.spades-8{
+      background:url('./images/BBIN/saturn/8-spades.jpg');
+    }
+    &.spades-10{
+      background:url('./images/BBIN/saturn/10-spades.jpg');
+    }
+    &.clubs-4{
+      background:url('./images/BBIN/saturn/4-clubs.jpg');
+    }
+    &.clubs-6{
+      background:url('./images/BBIN/saturn/6-clubs.jpg');
+    }
+    &.clubs-7{
+      background:url('./images/BBIN/saturn/7-clubs.jpg');
+    }
+    &.clubs-8{
+      background:url('./images/BBIN/saturn/8-clubs.jpg');
+    }
+    &.clubs-10{
+      background:url('./images/BBIN/saturn/10-clubs.jpg');
+    }
+    &.a-spades{
+      background:url('./images/BBIN/saturn/a-spades.jpg');
+    }
+    &.j-diamonds{
+      background:url('./images/BBIN/saturn/j-diamonds.jpg');
+    }
+    &.j-hearts{
+      background:url('./images/BBIN/saturn/j-hearts.jpg');
+    }
+    &.q-diamonds{
+      background:url('./images/BBIN/saturn/q-diamonds.jpg');
+    }
+    &.q-hearts{
+      background:url('./images/BBIN/saturn/q-hearts.jpg');
+    }
+  }
+  .BBIN_4{
+    background:url('./images/BBIN/4.jpg')
+  }
+  .BBIN_5{
+    background:url('./images/BBIN/5.jpg')
+  }
+  .BBIN_6{
+    background:url('./images/BBIN/6.jpg')
+  }
+  .BBIN_7{
+    background:url('./images/BBIN/7.jpg')
+  }
+
+  .AB_0{
+    background:url('./images/AB/0.jpg')
+  }
+  .AB_1{
+    background:url('./images/AB/1.jpg')
+  }
+  .AB_2{
+    background:url('./images/AB/2.jpg')
+  }
+  .AB_3{
+    background:url('./images/AB/3.jpg')
+  }
+  .AB_4{
+    background:url('./images/AB/4.jpg')
+  }
+  .AB_5{
+    background:url('./images/AB/5.jpg')
+  }
+}

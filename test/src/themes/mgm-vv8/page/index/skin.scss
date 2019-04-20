@@ -1,0 +1,2122 @@
+@charset "utf-8";
+@import "variables";
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: map-get($base, input-placeholder) !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: map-get($base, input-placeholder) !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: map-get($base, input-placeholder) !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: map-get($base, input-placeholder) !important;
+}
+
+#RegisterNewPage .registerDatePick div{color: map-get($base, input-placeholder) !important;}
+
+button{
+  outline:none !important;
+}
+
+body {
+  font-family: $font-family;
+  background: $bg-color;
+  font-size: $font-size;
+  color: $text-color-normal;
+}
+
+//__________header________________
+
+.headBg {
+  text-align: center;
+  height: 197px;
+  background: map-get($base, header-background1) no-repeat;
+  background-color: #11100e;
+  border-bottom: 1px solid #23221f;
+}
+#topHead {
+  background: map-get($base, header-background2) top repeat-x;
+  .container{
+    position: relative;
+  }
+}
+.logo .innerLogo{
+  background: map-get($base, header-logo) left center no-repeat;
+  background-size: 85%;
+  margin-top: 10px;
+  width: 377px;
+  margin-left: 28px;
+  height: 100px;
+}
+.logo:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 469px;
+  width: 434px;
+  height: 123px;
+  background: url("resources/headright.png");
+}
+
+.headFname{
+  height: 123px;
+  width: 1180px;
+  position: relative;
+  .credit:before{
+    content: "4661.COM";
+    background: $bg-color;
+    padding: 5px;
+    height: 23px;
+    line-height: 18px;
+    width: 160px;
+    display: block;
+    margin-top: 35px;
+    margin-left: 8px;
+    color: $text-color-hightline;
+    font-size: 18px;
+  }
+}
+
+#topHead .notice {
+  overflow: inherit;
+}
+#topHead .noticeCenter {
+  height: 29px;
+  width: 800px;
+}
+
+.loginForm {
+  .timeNumber {
+    span {  color: $text-color;  }
+    a {  color: $text-color-hightline;  }
+  }
+  #login-form {
+    position: absolute;
+    top: 202px;
+    width: 1070px;
+    left: 80px;
+    &.require_verify_code{
+      .account-input{
+        width: 150px!important;
+        margin: 0px!important;
+      }
+      .pwd-input{
+        width: 150px!important;
+        margin: 0px!important;
+      }
+      .code-input{
+        width: 80px!important;
+        margin: 0!important;
+      }
+    }
+    .form-login-reg{
+      float: left;
+      width: 90px!important;
+    }
+    .form-login-input {
+      width: 470px;
+      text-align: left;
+      input {
+        background: #281501;
+        border: 1px solid #5e380f;
+        height: 38px;
+        width: 220px!important;
+        font-size: 14px !important;
+      }
+      .pwd-input{
+        width: auto;
+        margin-left: 20px;
+      }
+      input ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: map-get($base, header-input-placeholder) !important;  }
+      input ::-moz-placeholder { /* Firefox 19+ */
+        color: map-get($base, header-input-placeholder) !important;  }
+      input :-ms-input-placeholder { /* IE 10+ */
+        color: map-get($base, header-input-placeholder) !important;  }
+      input :-moz-placeholder { /* Firefox 18- */
+        color: map-get($base, header-input-placeholder) !important;  }
+      .account-input{
+        width: 160px;
+      }
+      .code-image{
+        position: absolute;
+        left: 388px;
+        height: 38px;
+        width: 92px;
+        img{
+          height: 36px;
+          width: auto;
+        }
+      }
+
+    }
+    .form-login-button {
+      width: 117px;
+      text-align: center;
+      .form-login-btn:before{
+        content: '登入';
+        color: #381f05;
+        line-height: 38px;
+      }
+      .form-login-btn {
+        float: left;
+        //background: map-get($base, header-login-btn) no-repeat;
+        background-color: #ecdd76;
+        border-radius: 5px;
+        width: 87px;
+        height: 38px;
+        border: 0;
+      }
+      .form-login-btn:hover {  background-position: 0px -25px;  }
+      a {
+        float: left;
+        color: $text-color-hightline;
+        position: absolute;
+        top: 10px;
+        left: 690px;
+      }
+    }
+    .form-login-reg {
+      text-align: center;
+      .form-reg-btn:before{
+        content: '注册';
+        color: #ecdd76;
+        line-height: 38px;
+      }
+
+      .form-reg-btn {
+        width: 87px;
+        height: 38px;
+        border-radius: 5px;
+        border:1px #ecdd76 solid;
+        background: #381f05;
+      }
+      .form-reg-btn:hover {
+        background-position: -102px -46px;
+        text-decoration:none;
+      }
+    }
+  }
+
+  .mt10 {
+    width: 1000px;
+    position: absolute;
+    left: 72px;
+    top: 171px;
+    //border: 1px solid $border-color;
+    >span {
+      color: $text-color-normal;
+      font-size: 14px;
+      border-right: 1px #d48f60 solid;
+      padding: 0 8px;
+    }
+    a {
+      color: $text-color-normal;
+      span {  color: map-get($base, color_warn);  }
+    }
+    a:hover {  color: $text-color-hightline;  }
+  }
+}
+
+.menu-nav {
+  height: 74px;
+  line-height: 74px;
+  color: $text-color-normal;
+  width: 90%;
+  display: inline-block;
+  ul {
+    color: $text-color-deep;
+    li {
+      color: $text-color-deep;
+      margin: 0 12px;
+      width: 100px;
+      height: 74px;
+      line-height: 101px;
+  
+      //position: relative;
+      a {
+        display: inline-block;
+        position: relative;
+        z-index: 100;
+        width: 86px;
+        height: 74px;
+        font-size: 14px;
+        color: #643b1d;
+        .agFish {  color: map-get($base, color_warn);  }
+        .glyphicon-home{  font-size: 34px;  }
+      }
+      a:hover {  color: #643b1d;  }
+
+      a.active {  color: #643b1d;  }
+      a.active:after{
+        content: '';
+        width: 86px;
+        height: 73px;
+        top: -28px;
+        right: 0px;
+        position: absolute;
+        background: url("resources/navhover.png");
+      }
+      .nav_inbox{
+        &:before{
+          content: '';
+          width: 86px;
+          height: 25px;
+          position: absolute;
+          top: 14px;
+          left: 29px;
+        }
+
+      }
+
+      .navbx1:before{background: url("resources/nav/nv_img1.png") no-repeat;}
+      .navbx2:before{background: url("resources/nav/nv_img2.png") no-repeat;}
+      .navbx3:before{background: url("resources/nav/nv_img3.png") no-repeat;}
+      .navbx4:before{background: url("resources/nav/nv_img4.png") no-repeat;}
+      .navbx6:before{background: url("resources/nav/nv_img6.png") no-repeat;}
+      .navbx7:before{background: url("resources/nav/nv_img7.png") no-repeat;}
+      .navbx8:before{background: url("resources/nav/nv_img8.png") no-repeat;}
+      .navbx9:before{background: url("resources/nav/nv_img9.png") no-repeat;}
+      .navbx7 i,.navbx8 i,.navbx9 i{display: none;}
+    }
+    //---------menu hotIcon--------------
+    .n-casino, .n-games, .n-bingo, .n-promo, .bomb {
+      .nav_inbox{
+        &:after{
+          content: "";
+          width: 23px;
+          height: 20px;
+          background: url("resources/hot.gif") center no-repeat;
+          position: absolute;
+          right: 3px ;
+          top: 5px;
+        }
+      }
+
+    }
+  }
+}
+.menu-nav .ul li:first-child{
+  display: none;
+}
+.notice {
+  color: $text-color-normal;
+  background: none;
+  border-top: 1px #a87a27 solid;
+  border-bottom: 1px #a87a27 solid;
+  margin-top: 68px;
+  overflow: visible;
+  .noticeLeft {
+    position: absolute;
+    right: 100px;
+    top: -52px;
+    text-align: right;
+    color: $title-color-warm;
+    //color: #1c1c1c;
+    a {
+      color: $text-color-hightline;
+      //display:none;
+      //color: map-get($base, header-color_3);
+    }
+    a:hover {  color: $text-color-hightline;  }
+    //.vip {  color: $text-color-hightline;  }
+    .color-main{
+      color: $title-color-warm;
+    }
+  }
+  //.noticeLeft:after{
+  //  color: $text-color;
+  //  content:"帮助中心 | 申请代理 | VIP";
+  //}
+  .noticeCenter {
+    width: 980px;
+  }
+  .noticeRight {
+    margin-left: 80px;
+ 
+  }
+  marquee{
+    width: 800px !important
+  }
+}
+.notice-bar{
+  position: relative;
+  height: 29px;
+  width: 800px;
+  &:before{
+    content: "";
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left:0;
+    background: url("resources/note.png") left center no-repeat ;
+    background-size: 100%;
+    z-index: 99;
+  }
+  .popout {
+    z-index: 999999999999;
+  }
+}
+
+
+.bomb{
+  background: transparent !important;
+  a{
+    //color: #342c1f !important;
+  }
+}
+
+.menu-nav{
+  .nav_inbox{
+    position: relative;
+  }
+}
+.affix-online-server-2{
+  .block {
+    //background-image: -webkit-linear-gradient(0deg, rgba(206, 206, 206, .8), rgba(56, 31, 5, .9), rgba(116, 94, 96, .9)) !important;
+    //background-image: linear-gradient(0deg, rgba(206, 206, 206, .8), rgba(56, 31, 5, .9), rgba(116, 94, 96, .9)) !important;
+    height: 70px!important;
+    width: 150px!important;
+    margin-top: -4px !important;
+    .title,.content{display: none !important;}
+
+  }
+  //.block.ft{
+  //  background-image: none !important;
+  //}
+}
+.affix-online-server-2 {
+  .hd {
+    background: url("resources/af/r1.png") bottom center no-repeat;
+    width: 150px;
+    height: 160px;
+    background-size: 100%;
+  }
+  .bd{
+    border: none;
+  }
+  .online-service{
+    background: url("resources/af/r2.png") center center no-repeat !important;
+
+  }
+  .online-qq{
+    background: url("resources/af/r3.png") center center no-repeat !important;
+    a{
+      display: block;
+      height: 70px;
+      width: 120px;
+    }
+
+  }
+.onlinetwoqq{
+  a{
+    height: 89px !important;
+    width: 150px !important;
+    margin-top: -4px !important;
+  }
+}
+  .online-phone{
+    background: url("resources/af/r4.png") top center no-repeat !important;
+    height: 158px !important;
+
+  }
+  .bd .qrcode {
+    display: none;
+    padding: 10px;
+    text-align: center;
+    background: rgba(185, 0, 0, 1);
+    margin-top: -62px;
+    height: 120px;
+    div{
+      color: transparent !important;
+    }
+  }
+  .ft span.left-span {
+    border-top-color: #8E0A0C;
+    border-right-color: #8E0A0C;
+  }
+  .ft span.right-span {
+    border-left-color: #8E0A0C;
+    border-top-color: #8E0A0C;
+  }
+  .ft span.center {
+    background:  #8E0A0C;
+    color: #fff000;
+  }
+}
+
+.affix-online-server-3 {
+  .hd {
+    background: url("resources/af/l1.png") bottom center no-repeat;
+    width: 150px;
+    height: 160px;
+    background-size: 100%;
+  }
+  .bd{
+    border: none;
+    .block{
+      width: 150px!important;
+      height: 76px;
+      background-image: none !important;
+      a{
+        display: block;
+        height: 70px;
+        width: 150px;
+        margin-top: -6px;
+      }
+    }
+    .title{display: none;}
+    .pay-box{display: none;}
+    .promotion-btn{
+      padding-top: 0;
+      background: url("resources/af/l2.png") center center no-repeat !important;
+      margin-top: -5px;
+    }
+    .agent-btn{
+      display: none;
+    }
+    .register-btn{
+      padding-top: 0;
+      background: url("resources/af/l3.png") center center no-repeat !important;
+      margin-top: -5px;
+    }
+    .weiChat{
+      padding-top: 0;
+      background: url("resources/af/l4.png") center center no-repeat !important;
+      height: 158px;
+      margin-top: -5px;
+
+    }
+  }
+  //.ft .left-span, .right-span{display: none !important;}
+  //.ft span.center {
+  //  background:  #8E0A0C;
+  //  color: #fff000;
+  //}
+  .ft{
+    margin: -4px;
+  }
+  .ft span.left-span {
+    border-top-color: #8E0A0C;
+    border-right-color: #8E0A0C;
+  }
+  .ft span.right-span {
+    border-left-color: #8E0A0C;
+    border-top-color: #8E0A0C;
+  }
+  .ft span.center {
+    background:  #8E0A0C;
+    color: #fff000;
+  }
+}
+
+//____________跑馬燈 + 跳出公告_________________
+
+//外部字顏色
+#NoticeList {
+  a {  color: $title-color;  }
+}
+
+.popBox {
+  background-color: $bg-color;
+  border: 1px solid map-get($base, popbox-borderColor) !important;
+  .popBox_title {
+    background-color: $bg-color-dark2;
+    font-size: map-get($base, popbox-title-fontsize);
+    line-height: map-get($base, popbox-title-lineheight);
+    color: $text-color;
+    .popBox_pic {
+      color: map-get($base, popbox-title-iconcolor);
+      font-size: map-get($base, popbox-title-leftIcon);
+    }
+    .popBox_close {
+      color: map-get($base, popbox-title-iconcolor);
+      border: 1px solid map-get($base, popbox-title-closeBorder);
+      width: 30px;
+      background-color: map-get($base, popbox-title-closeBg);
+      border-radius: 5px;
+    }
+  }
+  .popBox_body {
+    border: solid 1px map-get($base, popbox-body-bordercolor);
+    box-shadow: 0 0 5px map-get($base, popbox-body-shadow) inset;
+    //color: map-get($base, popbox-body-color);
+    background: map-get($base, popbox-body-bgImg) repeat-y 40px 10px;
+    ul {
+      li {
+        list-style-type: none;
+        list-style-image: map-get($base, popbox-body-pointImg);
+        .popBox_body_date {
+          color: map-get($base, popbox-body-titlecolor);
+          font-weight: bolder;
+        }
+        .popBox_body_title {
+          color: map-get($base, popbox-body-color);
+          font-weight: bold;
+        }
+        .popBox_body_content {
+          color: map-get($base, popbox-body-color);
+        }
+      }
+    }
+  }
+}
+
+.promotionAlert{
+  border: 0 !important;
+  box-shadow:  0 0 5px #000;
+}
+
+  //___________________sweet彈出窗_____________________
+
+.sweet-alert {
+  background-color: $bg-color;
+  border: 1px solid $border-color-deep;
+  box-shadow: 0 0 10px $text-color-normal inset;
+}
+.sweet-alert h2 {
+  color: map-get($base, sweet_title_color) ;
+}
+.sweet-alert p{
+  color: map-get($base, sweet_color) ;
+}
+
+.sweet-alert button{
+  background-color: $text-color-deep !important;
+  font-weight: bold;
+  color: $text-colo2;
+}
+
+
+//___________________系統訊息彈出窗_____________________
+
+
+.popupArea{
+  border: solid 1px $border-color;
+  background-color:map-get($base, footer-bgcolor2);
+  box-shadow: 4px 3px 0px map-get($base,SystemMessage_box_shadow);
+  color: $text-color-normal;
+}
+.popupTitle{
+  font-size: 18px;
+}
+
+
+//___________________會員登入彈出窗_____________________
+
+.preferential_popbox{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto !important;
+}
+
+.custom_modal_content .modal-header {
+  background: $text-color-deep;
+  border: 1px solid $border-color-deep;
+  color:$text-color-hightline;
+}
+.custom_modal_content .modal-header {
+  background: #311f0d;
+  h4{
+    color: #fefe74;
+  }
+
+}
+#reserveDialog_login .fast_booking_content input{
+  border: 1px solid #888;
+}
+.fast_booking_content p{
+  color: #d48f60;
+}
+.fast_booking_content input, .fast_booking_content select {
+  background: #43280b;
+  color: #eab74f;
+  border: 1px solid #888;
+}
+.custom_modal_content .modal-body {
+  //background: url(resources/bg_02.jpg) !important;
+  background: $bg-color !important;
+  border-bottom:1px solid $border-color-deep;
+  border-left:1px solid $border-color-deep;
+  border-bottom:1px solid $border-color-deep;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.fast_booking_content select, .fast_booking_content input {
+  background: $bg-color;
+  color: $text-colo2;
+  border: 1px solid $border-color-deep;
+}
+
+.fast_booking_content button {
+  background: $text-color-dark;
+  color: $text-color-deep ;
+}
+
+//__________footer________________
+
+#footer-nav {
+  display: none;
+  //background: map-get($base, footer-bgcolor1);
+  border-top:2px solid $border-color-deep;
+  a {  color: map-get($base, footer-color1);  }
+  .client-download {
+    a {
+      border: 1px solid map-get($base, footer-border_color_21);
+      border-radius: 4px;
+      color: map-get($base, footer-color1);
+    }
+  }
+}
+
+#footer {
+  background-color:#381f05;
+  .container{
+    width: 1365px;
+  }
+
+  .footer-help-share {
+    margin-bottom: 25px;
+    #foot_help {
+      //width: 523px;
+      h3 {
+        color: map-get($base, footer-color2);
+        padding-top: 20px;
+        i {  color: map-get($base, footer-color2);  }
+        span {  color: map-get($base, footer-color2);  }
+      }
+      div {
+        p {
+          a {  color: $footer-color-3;  }
+        }
+      }
+    }
+    #foot_share {
+      width: 360px;
+      margin-left: 15px;
+      margin-top: -16px;
+      h3 {
+        margin-top: 39px;
+        display: inline-block;
+        color: map-get($base, footer-color2);
+        i {  color: map-get($base, footer-color2);  }
+        span {  color: $footer-color-3;  }
+      }
+      .share-list {
+        padding-top: 15px;
+        margin-left: 36px;
+        display: inline-block;
+        a {  background: map-get($base, footer-share-list); 
+          transition: all .4s ease;
+          height: 35px;
+          width: 42px;
+          margin-right: 30px;
+          float: left;
+        }
+        .share-weibo {  background-position: 0px -38px;  }
+        .share-qzone {  background-position: -80px -37px;  }
+        .share-fackbook {  background-position: -165px -38px;  }
+        .share-twitter {  background-position: 45px -39px;  }
+        .share-fackbook:hover {  background-position: -165px 0px;  }
+        .share-twitter:hover {  background-position: 45px 0px;  }
+        .share-qzone:hover {  background-position: -80px 0px;  }
+        .share-weibo:hover {  background-position: 0px 0px;  }
+      }
+    }
+    #foot-mobile-img{
+      //background: url(resources/index/mobile.jpg);
+    }
+  }
+
+  #foot-Cagayan{
+    display: none;
+    div{
+      color: map-get($base, footer-color3);
+      a{  color: map-get($base, footer-color3);  }
+      p{  color: map-get($base, footer-color3);  }
+    }
+  }
+}
+
+#platform-inco{
+  background-color: $bg-color-dark;
+
+}
+
+.footer_bottom_img{
+  content: url("resources/footer_01_n.png");
+}
+
+//__________firstPage________________
+
+//casinolist_Slider
+#pt_bg_style{
+  background-color: map-get($base, firstPage_casinolist_Slider_bg);
+  .ptlist{
+    .platform-img{
+      .platform-Number{
+        i{color:$text-color;  }
+        span{color:$text-color;  }
+      }
+    }
+    .platform-Introduction{
+      h4{  color:$text-color;  }
+      p{  color:$text-color-normal;  }
+      a{
+        background: $bg-color-deep;
+        color:$text-color-normal;
+      }
+
+    }
+    //左右按鈕
+    .owl-controls{
+      .owl-nav{
+        .owl-prev{
+          opacity: 0.5;
+          background: map-get($base, firstPage_slider_icon_left) no-repeat;
+        }
+        .owl-next{
+          opacity: 0.5;
+          background: map-get($base, firstPage_slider_icon_right) no-repeat;
+        }
+        .owl-prev:hover{opacity: 1;}
+        .owl-next:hover{opacity: 1;}
+      }
+    }
+  }
+}
+
+//中間主題
+#indexContent{
+  .content-jackpot{
+    h3{
+      color:$text-color-normal;
+      i{  color:$title-color;  }
+      span{  color:$title-color;  }
+    }
+    ul{
+      li{
+        span{  color:$text-color-normal  }
+        i{
+          background-color: $bg-color-deep;
+          color:$text-color-hightline;
+          span{color:$text-color-hightline;}
+        }
+      }
+    }
+  }
+  .updateContent{
+    .updataAd{
+      background-color: $bg-color-deep;
+      h4{  color:$title-color;  }
+    }
+  }
+  .content-game{
+    h3{
+      color:$text-color-normal;
+      i{  color:$title-color;  }
+      span{  color:$title-color;  }
+    }
+    div{
+      .content-game-introduction{
+        h4{  color:$title-color;  }
+        p{  color:$text-color-normal;  }
+      }
+      a{
+        background-color: map-get($base, firstPage_game_btn_bgcolor);
+        color:$text-color-normal;
+      }
+
+    }
+  }
+
+  .content-bingo{
+    h3{
+      color:$text-color-normal;
+      i{  color:$title-color;  }
+      span{  color:$title-color;  }
+    }
+    .content-bingo-title{
+      a{  color:$text-color-normal;  }
+      .active{  background-color: map-get($base, firstPage_bingo_text_bgcolor);  }
+    }
+    .content-bingo-offers{
+      a{
+        color:$text-color;
+        i{  color:map-get($base, color_warn)  }
+        span{
+          background-color: map-get($base, firstPage_bingo_btn_bgcolor);
+          color:$text-color;
+          i{  color:$text-color;  }
+        }
+        span:hover{
+          background-color: map-get($base, firstPage_game_btn_bgcolor);
+          color:$text-color-normal;
+          i{  color:$text-color-normal;  }
+        }
+      }
+    }
+    .content-bingo-fname{
+      background: $bg-color-deep;
+      .content-bingo-list{
+        background: $bg-color;
+      }
+      .content-bingo-title{
+        .active{
+          background: $bg-color;
+        }
+      }
+    }
+
+  }
+  .content-data{
+    ul{
+      li{
+        div{
+          color:$text-color-normal;
+          i{  color:$text-color-normal;  }
+        }
+        .data_title{
+          background-color: $bg-color-deep;
+          span{
+            background-color: $title-color;
+            color:$bg-color-deep;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//__________sport________________
+
+.sport-nav{
+  background-color: map-get($base, sport_nav_bgcolor);
+  ul{
+    li{
+      a{color: $text-color-normal}
+    }
+    .nav-onchos{  background-color: $title-color;  }
+  }
+}
+#sport{
+  background: map-get($base, sport_bg) center -130px no-repeat;
+}
+
+  .sport-div {
+    background: map-get($base, sport2_div_bg) top center no-repeat !important;
+
+  }
+  .mgm_banner{
+    width: 1000px;
+    margin: auto;
+    height: 230px;
+    background: map-get($base, banner_bg);
+  }
+
+  .sport-content .sport-card li .body {width: 525px !important;}
+  .sport-card li .mask{
+    display: block;
+    background: transparent;
+    opacity: 1;
+    a{
+      margin-top: -60px !important;
+      width: 560px !important;
+      height: 400px !important;
+      background-color: transparent;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+  .sport-card{
+    width: 1180px;
+    text-align: center;
+  }
+
+  .sport-card li {
+    border: 0px;
+    display: inline-block !important;
+    width: 560px;
+    height: 400px;
+    float: none;
+    background: #8c511c !important;
+    box-shadow:  0 0 0 !important;
+    .logo{
+      position: absolute;
+      left: 0;
+      top: 65%;
+      background: map-get($base, sport-title) center center no-repeat;
+      color: #ffd45b;
+      &:before{
+        background: none;
+      }
+    }
+    .body{
+      width: 100%;
+      background: 100%;
+    }
+    .foot{
+      position: absolute;
+      left: 0;
+      bottom: 7%;
+      width: 100%;
+      color: #dd9859;
+    }
+    &:hover{
+      box-shadow: 0 0 0 ;
+    }
+    &:hover div{
+      border: 0 !important;
+      color: #f8d0bb !important;
+    }
+    &:hover .inner-logo{
+      &:before{
+       color: #f8d0bb !important;
+      }
+    }
+    .inner-logo{
+      &:before{
+        color:  #ffd45b !important;
+      }
+    }
+  }
+
+//__________casino________________
+
+#casino{
+  //background: map-get($base, casino_bgimg) top center no-repeat;
+  background-color: #45290c ;
+  .c-items{
+    margin: 40px !important;
+  }
+  .casino-platform-list{
+    text-align: -webkit-center;
+    width: 1180px;
+    padding-bottom: 12px;
+    .casino-platform-list-img{
+      height: 290px !important;
+      //background: url(resources/casino/yuleLiBg_00.png) no-repeat;
+      h3{  color:$text-color-normal;  }
+    }
+    .casino-platform-list-img:hover{
+      //background: url(resources/casino/yuleLiBg_00_hover.png) no-repeat;
+    }
+    .ag a{  background: map-get($base, casino_btn1) center center no-repeat;  }
+    .bbin a{  background: map-get($base, casino_btn2) center center no-repeat;  }
+    .mg a{  background: map-get($base, casino_btn3) center center no-repeat;  }
+    .pt a{  background: map-get($base, casino_btn4) center center no-repeat;  }
+    .opus a{  background: map-get($base, casino_btn5) center center no-repeat;  }
+    .xpj a{  background: map-get($base, casino_btn6) center center no-repeat;  }
+    .og a{  background: map-get($base, casino_btn7) center center no-repeat;  }
+    .TGP a{  background: url("resources/casino/08t.png") center center no-repeat;  }
+
+
+    .casino-platform-list-link{
+      transition: all .5s;
+      width: 308px;
+      background: #8c511c;
+      border-bottom: 2px solid #b2742a;
+      height: 65px;
+      margin-top: -15px;
+      margin-bottom:35px;
+      a{
+        margin-top: 10px;
+      }
+      &:hover{
+        background-color: #aa6527;
+        border-bottom: 2px solid #fff100;
+      }
+      &:hover a{
+        background-position: center center;
+      }
+    }
+  }
+}
+
+.cansino-nav{
+  li{
+    background-color: map-get($base, casino_nav_bgcolor1);
+    a{
+      color:$text-color-normal
+    }
+    .cansino-start-game{  background: map-get($base, casino_nav_img) no-repeat;  }
+  }
+  .cansino-nav-active{
+    //background-color: map-get($base, casino_nav_bgcolor2);
+    background-color: #343535;
+  }
+}
+
+
+
+
+//__________gamesPage________________
+
+#game{
+  width: 100%;
+  height: 355px;
+  background: map-get($base, game_upbg) top center no-repeat;
+  .game-jackpot-num{
+    span{  color:$text-color-normal;  }
+  }
+  .game-header-focus{  background: map-get($base, game_upboxbg) no-repeat;  }
+  .game-header-focus-left{  }
+  .game-header-focus-right{
+    li{
+      p{  color:$text-color-normal;  }
+      div{
+        color:$text-color-hightline;
+        i{
+          background: map-get($base, game_money_icon) no-repeat;
+          background-position: -6px -3px;
+        }
+      }
+    }
+  }
+}
+.broadcast-bg{  background: map-get($base, slider_img) top center no-repeat;  }
+
+
+//__________gamelistpanel___遊戲版塊_____________
+
+    .game-list-content{
+      //background: map-get($base, gamelistpanel_bg_img) top center no-repeat  ;
+      background-color: #45290c;
+      .platform_list2{
+        width: auto;
+        font-weight: 600;
+        margin: 4px 10px;
+        line-height: 44px;
+        font-size: 22px;
+        color: #787878;
+      }
+    }
+    .container{
+      width: 1294px;
+      .game_list_top_img{
+        background: url("resources/game/youyiTop.jpg");
+      }
+    }
+    .game-start-btn {
+      content:url("resources/game/vgeahv.png")
+    }
+
+    //   遊戲平台分類    platform_list__nav
+    //.game-list-bgbox{
+    //  .platform_list_QT{  background: map-get($base, gamelistpanel_platform_list_QT) no-repeat 0 -520px;  }
+    //  .platform_list_AG{  background: map-get($base, gamelistpanel_platform_list_AG) no-repeat 0 0;  }
+    //  .platform_list_BBIN{  background: map-get($base, gamelistpanel_platform_list_BBIN) no-repeat 0 -260px;  }
+    //
+    //  .platform_list_QT:hover{  background: map-get($base, gamelistpanel_platform_list_QT) no-repeat 0 -650px;  }
+    //  .platform_list_AG:hover{  background: map-get($base, gamelistpanel_platform_list_AG) no-repeat 0 -130px;  }
+    //  .platform_list_BBIN:hover{  background: map-get($base, gamelistpanel_platform_list_BBIN) no-repeat 0 -390px;  }
+    //
+    //  .platform_list_QT_onchoose{  background: map-get($base, gamelistpanel_platform_list_QT) no-repeat 0 -650px;  }
+    //  .platform_list_AG_onchoose{  background: map-get($base, gamelistpanel_platform_list_AG) no-repeat 0 -130px;  }
+    //  .platform_list_BBIN_onchoose{  background: map-get($base, gamelistpanel_platform_list_BBIN) no-repeat 0 -390px;  }
+    //}
+    //   左側遊戲分類   game-list-left-nav
+    .game-list-left-nav{
+      background-color: #fafafa;
+      .checkJackpot{    color:#333;  }
+      .checkJackpot:hover label{    color:$text-color-dark;  }
+      ul{
+        li{
+          a{  color:#333;  }
+          span{  color:#333;  }
+        }
+        .active{
+          a{  color:$text-color-dark !important;  }
+          span{  color:$text-color-dark;  }
+        }
+        li:hover a{  color:$text-color-dark;  }
+      }
+
+      .searchbar{
+        input{
+          color:$text-color-normal;
+          background-color: map-get($base, gamelistpanel_searchbar_bgcolor);
+        }
+        i{  color:$text-color-normal;  }
+      }
+      //.searchbar ::-webkit-input-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+      //.searchbar ::-moz-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+      //.searchbar :-ms-input-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+      //.searchbar :-moz-placeholder {  color: map-get($base, gamelistpanel_searchbar_input_placeholder) !important;  }
+    }
+
+    //   右側遊戲顯示   game-list-right-content
+    .game-list-right-content{
+      #GamesGridPopupMask {
+        opacity: 0.6;
+        background: map-get($base, gamelistpanel_Loading_hoverMask);
+      }
+      ul{
+          a{
+            span{
+              background: $bg-color-deep;
+              color:$text-color-normal;
+            }
+          }
+          .game-fuceng{  background:map-get($base, gamelistpanel_games_hoverMask) !important;  }
+      }
+
+    }
+    .gamesPic{
+      background: url("resources/mgbox.png") no-repeat;
+      width: 259px !important;
+      height: 145px !important;
+    }
+    .game-list-fname {
+      width: 1050px;
+      margin: 0px auto;
+    }
+
+
+    .game-list-right-content {
+      width: 883px !important;
+      li{
+        a{
+          margin: 9px 0 0 19px;
+          width: 222px;
+          span{
+            line-height: 42px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .game-list-content li .game-fuceng {
+      position: absolute;
+      top: -10px;
+      left: -19px;
+    }
+    
+    .game-list-right-box{
+      .bonus_box_content{
+
+        .bonus1{
+          .bonus1_img{
+            background: url("resources/game/bonus1.png") no-repeat center;
+            background-size: contain;
+          }
+        }
+        .bonus2{
+          .bonus2_img{
+            background: url("resources/game/bonus2.png") ;
+            background-size: contain;
+          }
+        }
+        .bonus3{
+          .bonus3_img{
+            background: url("resources/game/bonus3.jpg") ;
+            background-size: contain;
+          }
+        }
+        .bonus4{
+          .bonus4_img{
+            background: url("resources/game/bonus4.jpg") ;
+            background-size: contain;
+          }
+        }
+      }
+    }
+
+
+    //    遊戲頁數按鈕  game-page-btn
+    #game-page{
+        li{
+          a{
+            background: map-get($base, gamelistpanel_game_pageIcon_bg_color) !important;
+            color: $text-color-normal !important;
+            border: 1px solid map-get($base, gamelistpanel_game_pageIcon_border_color) !important;
+          }
+        }
+        .active{
+          //a{  background:  map-get($base, gamelistpanel_game_pageIcon_onchoosing) !important;  }
+        }
+
+    }
+
+
+
+.game-jackpot-num2 span {
+  background-color: #8c511c!important;
+}
+.list2_onchoose {
+  border-bottom-color: #b2742a!important;
+  color:#000 !important;
+}
+.game-list-left-nav li.active{
+  color: #FFD45B !important;
+
+}
+.games_box{
+  .gamesPic {
+    width: 259px !important;
+  }
+
+}
+
+
+//__________bingo________________
+
+    #bingo{
+      //background: map-get($base, bingo_content_bg_img) top center no-repeat;
+      //background-size: cover;
+      .bingo-fname {
+        //background: map-get($base, bingo_content_bg_img) top center no-repeat;
+      }
+      .bingo-head-img {
+        background: map-get($base, bingo_head_img) top center no-repeat;
+      }
+      .bingo-title-img{
+        display: inline-block;
+        width: 192px;
+        height: 53px;
+        background: map-get($base, bingo-title-img) no-repeat;
+      }
+      .bingo-title-img2{
+        text-align: center;
+        display: inline-block;
+        width: 192px;
+        height: 53px;
+        background: map-get($base, bingo-title-img2) no-repeat;
+      }
+      .bingo-title-img3{
+        text-align: center;
+        display: inline-block;
+        width: 192px;
+        height: 53px;
+        background: map-get($base, bingo-title-img3) no-repeat;
+      }
+      .bing-desc-bbin{
+        span{
+          background: map-get($base, bingo_bbinlogo_img) top center no-repeat;
+        }
+        p{  color:$text-color-normal;  }
+      }
+      .bingo-platform-list{ span{  color:$text-color-hightline;  } }
+
+      .bing-desc-inco-bg{
+        height: 1px;
+        display: block;
+        background: map-get($base,bingo_bbinlogo_img)center center no-repeat;
+      }
+      .bingo-platform-cqssc{
+        background: map-get($base, bingo-platform-cqssc)
+      }
+      .bingo-platform-pk10{
+        background: map-get($base, bingo-platform-pk10)
+      }
+      .bingo-platform-pcdd{
+        background: map-get($base, bingo-platform-pcdd)
+      }
+      .bingo-platform-ssxw{
+        background: map-get($base, bingo-platform-ssxw)
+      }
+      .bingo-platform-ks{
+        background: map-get($base, bingo-platform-pls)
+      }
+      .bingo-platform-xglhc{
+        background: map-get($base, bingo-platform-xglhc)
+      }
+      .bingo-platform-fcsd{
+        background: map-get($base,bingo-platform-fcsd)
+      }
+      .bingo-platform-pls{
+        background: map-get($base,bingo-platform-pls)
+      }
+      .bingo-platform-ogc{
+        background: map-get($base,bingo-platform-ogc)
+      }
+      .bingo-platform-cgc{
+        background: map-get($base,bingo-platform-cgc)
+      }
+      .bingo-platform-jndc{
+        background: map-get($base,bingo-platform-jndc)
+      }
+      .bingo-platform-jndbs{
+        background: map-get($base,bingo-platform-jndbs)
+      }
+      .bingo-platform-bjklb{
+        background: map-get($base,bingo-platform-bjklb)
+      }
+      .bingo-platform-tjsfc{
+        background: map-get($base,bingo-platform-tjsfc)
+      }
+      .bingo-platform-bbklc{
+        background: map-get($base,bingo-platform-bbklc)
+      }
+      .bingo-platform-aysyq{
+        background: map-get($base,bingo-platform-aysyq)
+      }
+    }
+
+
+//__________ptGame________________
+
+
+    #game-pt{
+      width: 100%;
+      height: 250px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      .ptgame_download_img{
+        width: 253px;
+        height: 150px;
+        background:  map-get($base, ptGame_download_img) no-repeat;
+      }
+      .mggame_download_img{
+        width: 253px;
+        height: 150px;
+        background:  map-get($base, mgGame_download_img) no-repeat;
+      }
+      li{
+        p{  color:$text-color-normal;  }
+        div{
+          color:$text-color-hightline;
+          i{
+            background: map-get($base, game_money_icon) no-repeat;
+            background-position: -6px -3px;
+          }
+        }
+      }
+    }
+    #PTbg{
+      .game-list-content{
+        //background: map-get($base, ptGame_bg_img) top center no-repeat;
+        background-color: #45290c;
+
+      }
+    }
+
+//__________mgGame________________
+
+    #MGbg{
+      .game-list-content{
+        //background: map-get($base, ptGame_bg_img) top center no-repeat;
+        background-color: #45290c;
+      }
+    }
+
+//__________agGame________________
+
+
+    #ag-game{
+      .fishing_bg{
+        background: map-get($base, agGame_bg_img) no-repeat center top;
+      }
+      .fishing{
+        background: map-get($base, agGame_gamebox_bgcolor);
+        border: 1px solid map-get($base, agGame_gamebox_bordercolor);
+        .btn1{
+          color: map-get($base, agGame_gamebox_btn_color);
+          border-top: 2px solid map-get($base, agGame_gamebox_btn_bordertopcolor);
+          border-bottom: 2px solid map-get($base, agGame_gamebox_btn_borderbottomcolor);
+          background: map-get($base, agGame_gamebox_btn_bgcolor);
+        }
+        .fh_qrcode{
+          background-color: map-get($base, agGame_gamebox_qrcode_bgcolor);
+          p{
+            color:map-get($base, agGame_gamebox_qrcode_color);
+          }
+        }
+        .numpop{
+          background-color:map-get($base, agGame_gamebox_onlinepeople_bgcolor);
+          p{
+            color:map-get($base, agGame_gamebox_onlinepeople_color);
+          }
+        }
+      }
+    }
+
+
+//__________promotions________________
+
+    #promotions{
+      //background: url("resources/promotions/bg.jpg");
+      background-color: #43280b;
+    }
+  #promotions{
+    .promotions-nav {
+      text-align: center;
+      ul{
+        display: inline-block;
+        li{
+          width: 120px;
+          height: 30px;
+          margin: 15px ;
+          //background: $border-color-pro;
+          //border: 3px $border-color solid;
+          //font-weight: bolder;
+          border-radius: 25px;
+          line-height: 30px;
+          a{
+            color: #fff;
+            font-size: 16px;
+          }
+        }
+        .active{
+          //border: 3px solid $border-color;
+          border-radius: 25px;
+          background-color: #E3CA5B;
+          a{
+            color: #231e05;
+          }
+        }
+      }
+
+    }
+  }
+
+    .promotions-list{
+      text-align: center;
+      background: map-get($base, promotions_list_bg_img) repeat-y 117px 0px;
+      background: none !important;
+      .wow{
+        background: map-get($base, promotions_list_liPoint_img) no-repeat 115px 27px;
+      }
+      ul{
+        display: inline-block;
+        li{
+          .promotions-list-left{
+            color: $text-color-deep;
+          }
+          .promotions-list-right{
+            .promotions-list-inco{
+              display: none;
+            }
+            .promotions-list-content{
+              margin: 0;
+              //border: 3px $border-color solid;
+              //outline: 2px solid #ccc;
+              //box-shadow: 0 0 13px #000;
+            }
+            .promotions-list-title{
+              background: map-get($base, promotions_list_title);
+              color: $text-color-normal;
+            }
+          }
+          .promotions-list-view{
+            width: 820px;
+            margin-top: 5px;
+            margin-left: 70px;
+            background-color: #fff;
+            height: auto;
+            /* overflow: auto; */
+            margin-bottom: 16px;
+            //background-color: $bg-color-dark;
+            padding:0;
+          }
+        }
+      }
+
+    }
+
+    .promotions-nav2 li.active a {
+      color: $text-color-normal;
+    }
+    .promotions-nav2 li a{
+      font-size: 17px;
+    }
+    .promotions-nav2 li.active{
+      background: $bg-color-deep ;
+    }
+
+//__________memberPage________________
+
+    //會員首頁
+    .Bgmember-main{
+      background:  map-get($base, memberPage_bg_img);
+      .tm{
+        .ht-t{  background: map-get($base, memberPage_title_img1) no-repeat;  }
+        .ht-nav::before{  background: map-get($base, memberPage_nav_border_img);  }
+        .ht-nav::after{  background: map-get($base, memberPage_nav_border_img);  }
+        .ht-nav{
+          li{
+            a{
+              color: map-get($base, memberPage_nav_icon_color);
+              i{
+                color: #a1a1a1;
+              }
+            }
+            a.on i,a:hover i{  color: #f1c202;  }
+            a.on ,a:hover{  color: map-get($base, memberPage_icon_onchoose_hover_color);  }
+            .tm1 {  background:map-get($base, memberPage_nav_img1) no-repeat;  }
+            .tm2 {  background:map-get($base, memberPage_nav_img2) no-repeat;  }
+            .tm3 {  background:map-get($base, memberPage_nav_img3) no-repeat;  }
+            .tm4 {  background:map-get($base, memberPage_nav_img4) no-repeat;  }
+          }
+          .active .tm1{  background: map-get($base, memberPage_navhover_img1) no-repeat;  }
+          .active .tm2{  background: map-get($base, memberPage_navhover_img2) no-repeat;  }
+          .active .tm3{  background: map-get($base, memberPage_navhover_img3) no-repeat;  }
+          .active .tm4{  background: map-get($base, memberPage_navhover_img4) no-repeat;  }
+        }
+      }
+    }
+    .tm .htico{
+      background-image: map-get($base, memberPage_nav_icon_img);
+    }
+
+    .ico{
+      background-image: map-get($base, memberPage_info_img);
+    }
+    .bbd.hyn .f20 , .p10 .f14 , .clearfix.bbd.t .f20 {
+      color: $text-color-normal;
+    }
+    .info .qhui{  color: $text-color-normal;  }
+    .logininfo span{  color: $text-color-normal;  }
+
+    .tm .clearfix.t20{
+      background: $bg-color_member;
+      border: 1px solid $bg-color-deep;
+    }
+
+//___________deposit____________
+.member2 .deposit .money .memberBtn, .member2 .deposit .dpt_credit .memberBtn{
+  background: #2f87dc;
+}
+  #promotab,#member_message,#maindata{
+    //background: map-get($base, memberPage_bg_img);
+    background-color: #232323;
+  }
+
+  .tm .ht-jinggao .info {
+    color: map-get($base, color_warn);
+  }
+  .tm .ht-cunkuan .t a.on {
+    color: map-get($base, memberPage_icon_onchoose_hover_color);
+    border: 1px solid  map-get($base, memberPage_icon_onchoose_hover_color);
+    text-decoration: none;
+  }
+  .tm .ht-cunkuan .t a:hover {
+    color: map-get($base, memberPage_icon_onchoose_hover_color);
+  }
+  .tm a {
+    color: $text-color-normal;
+  }
+
+  .huang.wraperl-xs, .border a {
+    color: $text-color-hightline;
+  }
+
+
+  #verifyField span{
+    color:$text-color-deep;
+  }
+
+  .tm .ml5{
+    color: $text-color-deep !important;
+  }
+
+  .select, .input {
+    color:  $text-color-input !important;
+  }
+
+  .tm .htbtnlg, .tm a.htbtnlg, .tm input.htbtnlg {
+    background-color: $text-color-dark;
+  }
+
+  .tm .htbtnlg, .tm a.htbtnlg, .tm input.htbtnlg {
+    color: $text-color-normal;
+  }
+
+  #bindCardPage .input-group-addon {
+    color: $text-color-normal;
+  }
+
+  .gminfolist div .c, .gminfolist div .t{
+    color: $text-color-normal;
+  }
+
+  .gminfolist div .total_money_title, .gminfolist div .total_money_number{
+    color: $text-color-hightline;
+    margin-top:20px;
+  }
+
+  .transbtns {
+    border: 1.5px solid $text-color-deep;
+    background-color: $bg-color-dark;
+    color:$text-color-normal;
+    //box-shadow: 0 0 5px 1px $text-color-normal inset;
+  }
+  .deposit_input{
+    input#deposit_money{
+      font-size: 16px!important;
+      font-weight: bold;
+
+    }
+  }
+
+
+  //會員表格
+
+.tm select.select{
+  border: 1px solid $border-color-input;
+  background-color: $bg-color-input;
+}
+
+.tm input.input ,#RegisterNewPage .registerDatePick{
+  border: 1px solid $border-color-input;
+  background-color: $bg-color-input;
+}
+
+.tm .table-msg th {
+  background-color: $bg-color-input;
+}
+
+.tm .table-border td, .tm .table-border th {
+  border-right: 1px solid $border-color-input;
+  border-bottom: 1px solid $border-color-input;
+}
+
+.tm .table-border {
+  border-left: 1px solid $border-color-input;
+  border-top: 1px solid $border-color-input;
+}
+
+.tm .table-border tr:hover td {
+  background: map-get($base, footer-bgcolor1);
+}
+
+.tm a.detail_link{
+  text-decoration: underline;
+  color:$text-color-deep;
+}
+
+.tm .report .t {
+  padding-bottom: 15px;
+  border-bottom: 1px solid $border-color-input;
+}
+
+.ggg {
+  border: solid 1px $border-color-input;
+  background-color: $bg-color-input;
+}
+.loginForm #login-form .form-login-input input{
+  border: solid 1px $border-color-input;
+  background-color: $bg-color-input;
+  color: $text-color-input;
+}
+#verifyField span {
+  color: map-get($base, color_warn);
+
+}
+.updataAd-img{
+  background: map-get($base, vip2_image) top center no-repeat;
+  background-size: 100% 100%;
+  height: 212px;
+}
+#foot-mobile-img{
+  background: map-get($base, foot-mobile-img) top center no-repeat;
+  background-size: 100% 100%;
+  height: 103px;
+  width: 318px;
+  margin-top: 35px;
+}
+
+#RegisterNewPage .content {
+  border: 1px solid $bg-color-deep;
+  background: transparent;
+  background: map-get($base, footer-bgcolor2);
+}
+
+#RegisterNewPage .ht-t{
+  background: map-get($base, RegisterPage_bg_img);
+}
+
+.content-jackpot ul li {
+  border-top: 1px dashed $border-color-deep;
+}
+
+.content-bingo-offers {
+  border-bottom: 1px dotted $border-color-deep;
+}
+
+.tm .ht-jinggao .info {
+  color: $text-color-deep;
+}
+
+body .tm .bbd{
+  border-bottom: 1px solid $text-color-deep;
+}
+
+.tm .gminfolist .row {
+  border-bottom: 1px solid $text-color-dark;
+}
+
+div .datelist{
+  border: 1px solid $border-color-deep;
+  background-color: $bg-color-dark;
+}
+.tm .btn-mid{
+  background-color: $text-color-dark;
+
+}
+.tm .report .t a.on {
+  color:  map-get($base, memberPage_icon_onchoose_hover_color);
+  border: 1px solid  map-get($base, memberPage_icon_onchoose_hover_color);
+}
+.headFname .credit{
+  display:block;
+  height: 68px;
+  float:left;
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  width: 174px;
+  background: url(resources/credit1.png) center center no-repeat;
+  background-size: 95%;
+  opacity: .9;
+}
+#promotions .promotions-list-img{
+  width: 960px;
+  box-sizing: content-box;
+  height: 155px;
+  overflow: hidden;
+}
+.promotions-list-content{
+  //background: #FFFFFF;
+  margin-left: 50px;
+}
+#promotions .promotions-list-content .promotions-list-img{
+  background-size: 100%;
+  background-position:center center;
+}
+.promotions-nav{
+  margin-left: 0;
+  padding: 0;
+}
+.promotions-list{
+  background:none;
+}
+.promotions-list-left{
+  display:none;
+}
+.promotions-list-right{
+  float: none;
+}
+.promotions-list .wow{
+  background:none;
+}
+.promotions-fname{
+  margin: 0 auto;
+  width: 1150px;
+}
+.promotions-list-title{
+  display: none;
+}
+.custom_modal_content{
+  border: 0 none;
+}
+#reserveDialog_login .fast_booking_content{
+  width: 100%;
+}
+
+.rightside .title{
+  color:$text-color-dark !important;
+}
+
+.member2 .rightside .tabs_holder .nav-tabs > li.active > a, .member2 .rightside .tabs_holder .nav-tabs > li.active > a:focus, .member2 .rightside .tabs_holder .nav-tabs > li.active > a:hover{
+  color:$text-color-dark
+}
+
+.member2 .rightside .tabs_holder .tblbottom span{
+  color:$text-color-dark
+}
+
+.member2 .rightside .tabs_holder .offerstbl tr td:first-child + td + td, .member2 .rightside .tabs_holder .bethistotbl tr td:first-child + td + td, .member2 .rightside .tabs_holder .bethistotbl tr td:first-child + td + td + td, .member2 .rightside .tabs_holder .rechargetbl tr td:first-child + td + td, .member2 .rightside .tabs_holder .withdrawrectbl tr td:first-child + td, .member2 .rightside .tabs_holder .withdrawrectbl tr td:first-child + td + td, .member2 .rightside .tabs_holder .transferrectbl tr td:first-child + td{
+
+  color:$text-color-dark
+}
+
+.onlinepay_left {
+  background-color: rgba(255,255,255,.1);
+  border: 1px $border-color-input solid;
+  color:$text-color-dark;
+}
+
+.member2 .cust_nav li:hover > a, .member2 .cust_nav li.active > a{
+  color:$text-color-dark !important;
+}
+.member2 .cust_nav li.sub a.active, .member2 .cust_nav li.sub a:hover{
+  color:$text-color-dark !important;
+}
+
+.member2 .cust_nav li.sub2:hover, .member2 .cust_nav li.active{
+  border-left: 3px solid $text-color-dark!important;
+}
+
+.onlinepay_right{
+  border-bottom: 1px $border-color-input solid;
+}
+
+.atmBox{
+  background: $bg-color-dark;
+  border: 2px solid $border-color-input;
+  .atmBox_btn{
+    background: #EAB74F;
+    color: #0f0807;
+    border: 0;
+    font-size: 18px;
+  }
+}
+
+.atmBox_title{
+  border-bottom: solid 2px $border-color-input;
+  color: $text-color-hightline;
+}
+
+
+
+.sport-card li{
+  border-color: #009e9e;
+  background-color: rgba(0, 115, 115, 0.9);
+}
+
+.Navigation li ul.items {
+  width: 120px !important;
+  li{
+    width: 120px;
+    a{
+      width: 120px;
+      text-align: center;
+    }
+  }
+}
+
+.member2{
+  .mgmHit{
+    width: 800px;
+    margin: 0 auto;
+    span{
+      color: #f00b0d;
+    }
+    a{
+      color: #f00b0d;
+      &:hover{text-decoration: underline !important}
+    }
+    p:nth-child(3){
+      text-align: center;
+    }
+  }
+}
+.affix-hongbao{
+  z-index: 100;
+}
+//-------------二级导航-----------------
+.secondSub{
+  width: 100%;
+  height: 0;
+  transition: .3s all;
+  overflow: hidden;
+  position: absolute;
+  top: 195px;
+  left: 0;
+  z-index: 99;
+}
+.hide{ height: 0 !important}
+.secondNav {
+  width: 100%;
+  position: absolute;
+  top: 196px;
+  //top: 0px;
+  z-index: 99;
+  //height: 0;
+  //overflow: hidden;
+  transition: .3s all;
+  .main{
+    background: rgba(69, 41, 12, 0.85);
+    transition: .3s all;
+    animation: toggle .5s ease both ;
+    overflow: hidden;
+    ul{
+      text-align: center;
+      li.numb{display: none;}
+      li{
+        cursor: pointer;
+        width: 80px !important;
+        margin-left: 25px;
+        height: 150px !important;
+        .pic,.p-pic{
+          width: 80px !important;
+          height: 150px !important;
+          position: relative;
+        }
+        &:hover{
+          border: none;
+          opacity: .8;
+        }
+        .tit,h4,.txt{display: none;}
+      }
+      li:nth-child(1){margin-left: 0;}
+    }
+  }
+  .show{ height: 150px !important;}
+  //.hide{overflow: hidden;}
+  @keyframes toggle {
+    0%{height: 0px;}
+    100%{height: 150px;}
+  }
+  .sport{
+    .tab{padding-left: 195px;}
+    ul{
+      text-align: left;
+      //li:nth-child(1) .pic {
+      //  background: none ;
+      //}
+      .TB .pic{ background: url("./resources/secondNav/scr.png") center no-repeat;}
+      .N188 .pic{
+        background: url("./resources/secondNav/s188.png") center no-repeat;
+        &:before{
+          content: "";
+          width: 16px;
+          height: 20px;
+          background: url("./resources/hot2.gif") center no-repeat;
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+      }
+      .SB .pic{
+        background: url("resources/secondNav/ssb.png") center no-repeat;
+        &:before{
+          content: "";
+          width: 16px;
+          height: 20px;
+          background: url("resources/hot2.gif") center no-repeat;
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+      }
+      .OPUS .pic{background: url("resources/secondNav/sopus.png") center no-repeat !important;}
+    }
+
+  }
+  .casino{
+    ul{
+      li .pt{background:url("resources/secondNav/cpt.png") center no-repeat !important;}
+      li .xpj{
+        background:url("resources/secondNav/cab.png") center no-repeat !important;
+        &:before{
+          content: "";
+          width: 16px;
+          height: 20px;
+          background: url("resources/hot2.gif") center no-repeat;
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+      }
+      li .bbin{background:url("resources/secondNav/cbbin.png") center no-repeat !important;}
+      li .opus{background:url("resources/secondNav/copus.png") center no-repeat !important;}
+      li .ag{
+        background:url("resources/secondNav/cag.png") center no-repeat !important;
+        &:before{
+          content: "";
+          width: 16px;
+          height: 20px;
+          background: url("resources/hot2.gif") center no-repeat;
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+      }
+      li .TGP{background:url("resources/secondNav/csun.png") center no-repeat !important;}
+      li .og{
+        background:url("resources/secondNav/cog.png") center no-repeat !important;
+        &:before{
+          content: "";
+          width: 16px;
+          height: 20px;
+          background: url("resources/hot2.gif") center no-repeat;
+          position: absolute;
+          top: 20px;
+          right: 0;
+        }
+      }
+      li .mg{background:url("resources/secondNav/cmg.png") center no-repeat !important;}
+    }
+  }
+  .games{
+    li .OPUS2{background: url("resources/secondNav/gopus.png") center no-repeat !important;}
+    li .HB{background: url("resources/secondNav/ghb.png") center no-repeat !important;}
+    li .AG{
+      background: url("resources/secondNav/gag.png") center no-repeat !important;
+      &:before{
+        content: "";
+        width: 16px;
+        height: 20px;
+        background: url("resources/hot2.gif") center no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+    }
+    li .MG2{
+      background: url("resources/secondNav/gmg.png") center no-repeat !important;
+      &:before{
+        content: "";
+        width: 16px;
+        height: 20px;
+        background: url("resources/hot2.gif") center no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+    }
+    li .BBIN{
+      background: url("resources/secondNav/gbbin.png") center no-repeat !important;
+      &:before{
+        content: "";
+        width: 16px;
+        height: 20px;
+        background: url("resources/hot2.gif") center no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+    }
+    li .QT{background: url("resources/secondNav/gqt.png") center no-repeat !important;}
+    li .PT{background: url("resources/secondNav/gpt.png") center no-repeat !important;}
+    li .YOPLAY{background: url("resources/secondNav/gyoplay.png") center no-repeat !important;}
+  }
+  .bingo{
+    li .cg{
+      background: url("resources/secondNav/tcg.png") center no-repeat !important;
+      &:before{
+        content: "";
+        width: 16px;
+        height: 20px;
+        background: url("resources/hot2.gif") center no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 0;
+      }
+    }
+    li .kg{background: url("resources/secondNav/tkg.png") center no-repeat !important;}
+    li .bbin{background: url("resources/secondNav/tbbin.png") center no-repeat !important;}
+  }
+  .fish{display: none;}
+}
+
+.affix-hongbao{
+  right: 1px!important;
+}
+
+#reserveDialog_login .fast_booking_content input{
+  color:#fff!important;
+}

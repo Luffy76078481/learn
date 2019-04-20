@@ -1,0 +1,33 @@
+.promotionAlert{
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  margin-left: -300px;
+  top: 25%;
+  display:none;
+  &.popout{
+    display: block;
+  }
+  &.popBox {
+
+    .popBox_body{
+      border: 0 none;
+      background: none;
+      padding: 0;
+      color: #FFFFFF;
+      height:300px;
+      width: 600px;
+      overflow: hidden;
+    }
+    .popBox_title{
+      width:600px;
+      padding: 0 10px;
+    }
+    .popBox_close{
+      float: right;
+      margin-top: 12px;
+      text-align: center;
+    }
+
+  }
+}

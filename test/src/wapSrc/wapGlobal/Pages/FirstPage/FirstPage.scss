@@ -1,0 +1,162 @@
+@import "../../style/variables.scss";
+.firstPage{
+  .am-navbar{
+    .am-navbar-title{
+      flex:1.5;
+      -webkit-box-flex: 1.5;
+      -webkit-flex: 1.5;
+    }
+  }
+}
+.closable.am-notice-bar{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  .am-notice-bar-content{
+    margin:auto .2rem;
+  }
+  .am-notice-bar-operation{
+    position: absolute;
+    top:3px;
+    right:-3px;
+  }
+  .am-notice-bar-marquee{
+    display: block !important;
+  }
+  .logo{
+    float: left;
+    width: 40px;
+    height: 50px;
+  }
+  .text{
+    float:left;
+    text-align: left;
+    margin: 3px .1rem;
+    line-height: .45rem;
+    p{
+      margin:0;
+      font-weight: bold;
+      font-size:.3rem;
+    }
+    span{
+      font-weight: normal;
+      font-size:.25rem;
+      margin:0 10px 0 0;
+    }
+  }
+  a.downAppBtn{
+    display: block;
+    float: right;
+    width:55px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFF77A;
+    border: 2px solid #FFF77A;
+    border-radius: 5px;
+    font-size: 13px;
+    margin: 13px .3rem 0 0;
+  }
+
+}
+
+.contentTab{
+  position: relative;
+  padding: .1rem .1rem 0;
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .tabs{
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: left;
+    display: flex;
+    display: -webkit-flex;
+    align-items:center;
+    a{
+      display: inline-block;
+      background:#f4f4f4;
+      line-height:.5rem;
+      font-size:.3rem;
+      color: #333;
+      padding: 0 .2rem;
+      border-bottom: 2px solid #fff;
+      flex: 1;
+      text-align: center;
+      &:first-child{
+        border-radius:.3rem 0 0 .3rem;
+      }
+      &:last-child{
+        border-radius:0 .3rem .3rem 0;
+      }
+      &:first-child:last-child{
+        border-radius:.3rem;
+      }
+      &.active{
+        background:$theme-text-color;
+        color:#fff;
+      }
+    }
+  }
+  .collection{
+    float:left;
+    font-size:.3rem;
+    margin:.15rem .1rem 0 0;
+  }
+  .tabsMore{
+    float:right;
+    font-size:.3rem;
+    margin:.15rem 0rem 0 0;
+  }
+}
+.contentList{
+  text-align: left;
+  .listGame{
+    display: inline-block;
+    width:47%;
+    margin:.1rem 0 .1rem 2%;
+    position: relative;
+    text-align: left;
+    .gameInfo{
+      position: absolute;
+      top:0;
+      right:0;
+      width: .5rem;
+      height: .5rem;
+      text-align: center;
+      line-height: .5rem;
+      &.removeFavorite{
+        i{
+          color:$theme-text-color;
+        }
+      }
+      i{
+        font-size: .2rem;
+        color: #fff;
+        padding:3px 2px 1px;
+        border-radius: 100%;
+        display: inline-block;
+      }
+    }
+    img.image{
+      width:100%;
+      min-height:1rem;
+      height:auto;
+    }
+    label{
+      font-size:.25rem;
+      line-height:.5rem;
+      color:#333;
+    }
+  }
+}
+

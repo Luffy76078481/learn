@@ -1,0 +1,29 @@
+.ServicePage{
+  padding:0 .3rem;
+  .list{
+    display: block;
+    width:100%;
+  }
+  h5.title{
+    background:#f4f4f4;
+    padding:7px;
+    text-align: center;
+    font-size:15px;
+    color:#555;
+  }
+  .am-list-item{
+    .am-list-line{
+      padding:.2rem 0;
+      .am-list-content{
+        i{
+          margin:0 .5rem 0 .2rem;
+          font-size:.4rem;
+          &.iconQQ,&.iconSky{
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

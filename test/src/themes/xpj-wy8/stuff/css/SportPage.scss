@@ -1,0 +1,229 @@
+
+
+.sport-content{
+  ul, li {
+    padding: 0px;
+    list-style: none;
+  }
+  .sport-banner{
+    height: 220px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .sport-content-module .content {
+    padding: 0px 0 !important;
+    width: 1200px;
+}
+  .sport-div{
+    background: url("../images/bg.jpg") top center no-repeat;
+    bordnpmer: 1px solid transparent;
+    padding: 30px 0 50px;
+  }
+  .sport-card{
+    width: 1100px;
+    margin: 0 auto ;
+    min-height: 800px;
+  }
+  .sport-card li{
+    display:block;
+    position: relative;
+    float:left;
+    width: 525px;
+    text-align: center;
+    //border: 2px solid #454545;
+    margin: 10px;
+    //background-color: rgba(0,0,0,.7);
+    overflow: hidden;
+    transition:border-color 1s ease, background-color 1s ease;
+    -moz-transition: border-color 1s ease, background-color 1s ease;
+    -webkit-transition: border-color 1s ease, background-color 1s ease;
+    -o-transition: border-color 1s ease, background-color 1s ease;
+    //box-shadow: 0 0 20px #000;
+  }
+  .sport-card li .logo{
+    //color: #FFFFFF;
+    height: 60px;
+    width: 100%;
+    text-align:center;
+    font-size: 30px;
+    line-height: 60px;
+    transition:color 1s ease;
+    color: #FFFFFF;
+  }
+  .sport-card li .body{
+    text-align: center;
+    width: 520px;
+    height: 250px;
+    margin: 0;
+    overflow: hidden;
+    position:relative;
+   
+  }
+  .sport-card li .body .inner-logo{
+    position:absolute;
+    z-index: 1;
+  }
+  .sport-card li.SB .body{
+    background: url(../images/bg/saba.png) no-repeat;
+    background-size:cover;
+  }
+  .sport-card li.SB .body .inner-logo{
+    width: 250px;
+    height: 118px;
+    background: url(../images/logo/saba.png) no-repeat;
+    background-size:cover;
+    top: 80px;
+    right: 20px;
+  }
+  .sport-card li.T188 .body, .sport-card li.N188 .body{
+    background: url(../images/bg/188.png) no-repeat;
+    background-size:cover;
+  }
+  .sport-card li.T188 .body .inner-logo, .sport-card li.N188 .body .inner-logo{
+    width: 210px;
+    height: 148px;
+    background: url(../images/logo/188.png) no-repeat;
+    background-size:cover;
+    top: 70px;
+    right: 10px;
+  }
+  .sport-card li.TB .body{
+    background: url(../images/bg/crown.png) no-repeat;
+    background-size:cover;
+  }
+  .sport-card li.TB .body .inner-logo{
+    width: 232px;
+    height: 224px;
+    background: url(../images/logo/crown.png) no-repeat;
+    background-size:cover;
+    top: 0px;
+    left: 0px;
+  }
+  .sport-card li.OPUS .body{
+    background: url(../images/bg/opus.png) no-repeat;
+    background-size:cover;
+  }
+  .sport-card li.OPUS .body .inner-logo{
+    width: 178px;
+    height: 135px;
+    background: url(../images/logo/opus.png) no-repeat;
+    background-size:cover;
+    top: 70px;
+    left: 30px;
+  }
+  .sport-card li.coming .body{
+    background: none;
+  }
+  .sport-card li.coming .body .inner-logo{
+    width: 100px;
+    height: 100px;
+    left: 210px;
+    top: 60px;
+  }
+  .sport-card li.coming .body .inner-logo::before{
+    font-family: 'FontAwesome';
+    content: "\F196";
+    font-size: 80px;
+    text-align: center;
+    display: block;
+    color: #FFFFFF;
+    transition:color 1s ease;
+    -moz-transition:color 1s ease;
+    -webkit-transition:color 1s ease;
+    -o-transition:color 1s ease;
+  }
+  .sport-card li .foot{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+    opacity: .7;
+    transition:color 1s ease, opacity 1s ease;
+    -moz-transition: color 1s ease, opacity 1s ease;
+    -webkit-transition: color 1s ease, opacity 1s ease;
+    -o-transition: color 1s ease, opacity 1s ease;
+    color: #FFFFFF;
+  }
+  .sport-card li .mask{
+    display: block;
+    position: absolute;
+    height: 250px;
+    width: 525px;
+    top: 60px;
+    left: 0;
+    //background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition:opacity 1s ease;
+    -moz-transition:opacity 1s ease;
+    -webkit-transition:opacity 1s ease;
+    -o-transition:opacity 1s ease;
+    z-index: 2;
+  }
+  .sport-card li .mask a{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    //background-color: #ecb934;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 110px;
+    transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    text-shadow: 1px 1px 0px #333;
+  }
+  .sport-card li .mask a:hover{
+    //background-color: #dd8003;
+    transition:background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    cursor: pointer;
+  }
+  .sport-card li:hover{
+    //border-color: #ecb934;
+    background-color:rgba(0,0,0,.8);
+    //box-shadow: 0 0 20px #ecb934;
+    transition:border-color 1s ease, background-color 1s ease, box-shadow 1s ease;
+    -moz-transition: border-color 1s ease, background-color 1s ease, box-shadow 1s ease;
+    -webkit-transition: border-color 1s ease, background-color 1s ease, box-shadow 1s ease;
+    -o-transition: border-color 1s ease, background-color 1s ease, box-shadow 1s ease;
+  }
+  .sport-card li:hover .foot{
+    //color: #ecb934;
+    opacity: 1;
+    transition:color 1s ease, opacity 1s ease;
+    -moz-transition: color 1s ease, opacity 1s ease;
+    -webkit-transition: color 1s ease, opacity 1s ease;
+    -o-transition: color 1s ease, opacity 1s ease;
+  }
+  .sport-card li:hover .logo{
+    //color: #ecb934;
+    transition:color 1s ease;
+    -moz-transition:color 1s ease;
+    -webkit-transition:color 1s ease;
+    -o-transition:color 1s ease;
+  }
+  .sport-card li:hover .body .inner-logo::before{
+    //color: #ecb934;
+    transition:color 1s ease;
+    -moz-transition:color 1s ease;
+    -webkit-transition:color 1s ease;
+    -o-transition:color 1s ease;
+  }
+  .sport-card li:hover .mask{
+    opacity: 1;
+    transition:opacity 1s ease-out;
+    -moz-transition:opacity 1s ease-out;
+    -webkit-transition:opacity 1s ease-out;
+    -o-transition:opacity 1s ease-out;
+  }
+
+}

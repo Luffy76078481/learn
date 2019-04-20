@@ -1,0 +1,169 @@
+@import "../../style/variables.scss";
+
+.withdrawPage {
+    .am-navbar {
+        .am-navbar-left {
+            color: #fff;
+        }
+        .am-navbar-title {
+            color: #fff;
+        }
+    }
+    .scroll-content {
+        border: none;
+        background: #f2f2f2;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        .profile {
+            background: #fff;
+            .am-flexbox {
+                padding: 0 0 0 .2rem;
+                .am-flexbox-item {
+                    i {
+                        width: .36rem;
+                        height: .36rem;
+                        background: url(../../style/images/user_icon1.png) no-repeat 0 0;
+                        background-size: 100% 100%;
+                        &:before {
+                            content: '';
+                        }
+                    }
+                    .itemR {
+                        span {
+                            display: inline-block;
+                            color: #333;
+                            font-weight: normal;
+                            margin: 0;
+                            &:last-child {
+                                -webkit-transform: translateY(1px);
+                                -moz-transform: translateY(1px);
+                                -ms-transform: translateY(1px);
+                                -o-transform: translateY(1px);
+                                transform: translateY(1px);
+                            }
+                        }
+                        .title {
+                            margin-right: .2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .am-list {
+            .am-list-body {
+                .am-list-item {
+                    .am-list-line {
+                        border-bottom: 1px solid #f2f2f2;
+                        .am-input-label {
+                            font-size: .28rem;
+                            color: #333;
+                        }
+                    }
+                }
+                .accounts {
+                    .am-list-content {
+                        color: #333;
+                        font-size: .28rem;
+                    }
+                    .am-list-extra {
+                        font-size: .28rem;
+                    }
+                }
+
+            }
+        }
+
+        .noPaddingLeft .am-list-item.am-input-item {
+            padding-left: 0;
+        }
+
+        .am-list-line .am-list-line:after {
+            height: 0 !important;
+        }
+
+        .am-list-item .am-list-line .am-list-extra {
+            flex-basis: 20%;
+        }
+
+        .accounts {
+            .am-list-item .am-list-line .am-list-extra {
+                flex-basis: 70%;
+            }
+        }
+
+        .tips {
+            padding: 5px 15px 0;
+            font-size: .2rem;
+            color: $theme-text-color;
+            line-height: 20px;
+            display: block;
+        }
+
+        .addAmount {
+            a {
+                display: inline-block;
+                padding: 3px 10px;
+                font-size: .25rem;
+                background: $theme-btnBg;
+                color: #fff;
+                margin-left: 10px;
+                border-radius: 5px;
+            }
+        }
+
+    }
+}
+
+
+.sendPhone {
+    span {
+        font-size: .25rem;
+        color: #af0000;
+    }
+
+    .item {
+        text-align: left;
+        margin: .2rem 0;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        input {
+            display: inline-block;
+            padding: 0 5px;
+            border: 1px solid #ccc;
+            width: 90%;
+            height: 28px;
+            line-height: 28px;
+            font-size: .25rem;
+            float: left;
+
+            &.code {
+                width: 50%;
+                border-right: 0;
+            }
+        }
+
+        .getCode {
+            display: inline-block;
+            padding: 1px 0;
+            width: calc(45% - 5px);
+            text-align: center;
+            float: left;
+            height: 28px;
+            line-height: 28px;
+            font-size: .25rem;
+            color: #fff;
+            background: #cf0000;
+
+            &.disabled {
+                background: #cecece;
+                cursor: default;
+            }
+        }
+    }
+}

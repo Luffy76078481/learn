@@ -1,0 +1,48 @@
+@import "../../style/variables.scss";
+.register.scroll-content{
+  background:#fff;
+  margin-bottom:0px;
+  z-index:2;
+  .am-list-body{
+    padding:20px 10px 0;
+    .am-list-item .am-input-label.am-input-label-5{
+      width:50px;
+      text-align: center;
+    }
+    i{
+      font-size:.35rem;
+    }
+  }
+
+  .checkPay{
+    .am-list-content{
+      padding: 0 !important;
+      .am-list-line{
+        &:after{
+          height:0px !important;
+        }
+        .am-list-content{
+          font-size:.25rem !important;
+        }
+      }
+    }
+  }
+  .verifyCode.am-list-item {
+    .am-input-label.am-input-label-5{
+      float:right;
+      width:100px;
+    }
+  }
+
+  .loginBt{
+    a{
+      color:$theme-text-color;
+      font-size:.25rem;
+      padding:.3rem 0;
+      margin:0 auto;
+      text-align: center;
+      width:100%;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "~animate.css";
+.HotActivity{
+    a{
+        display: block;
+        width:100%;
+        height:3.2rem;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        border-radius: .3rem;
+        overflow: hidden;
+        margin: .15rem .15rem 0;
+        &.statement{
+            background-image:url('./images/liushuiwang.jpg');
+        }
+        &.lotto{
+            background-image:url('./images/dazhuanpan.jpg');
+        }
+        &.more{
+            background-image:url('./images/morePic.png');
+        }
+    }
+}

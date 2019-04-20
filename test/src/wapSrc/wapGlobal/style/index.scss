@@ -1,0 +1,678 @@
+@import "../../../plugin/libs/font-awesome/css/font-awesome.css";
+@import "~antd-mobile/dist/antd-mobile.css";
+@import "./variables.scss";
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 42.667px;
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: .25rem;
+    color: #888;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: .25rem;
+    color: #888;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: .25rem;
+    color: #888;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size: .25rem;
+    color: #888;
+}
+
+.warning-placehoder input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #af0000 !important;
+}
+
+.warning-placehoder input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #af0000 !important;
+}
+
+.warning-placehoder input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #af0000 !important;
+}
+
+.warning-placehoder input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #af0000 !important;
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 393px) {
+    html {
+        font-size: 52.4px;
+    }
+}
+
+@media screen and (min-width: 394px) and (max-width: 412px) {
+    html {
+        font-size: 54.93px;
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 480px) {
+    html {
+        font-size: 64px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 540px) {
+    html {
+        font-size: 72px;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 640px) {
+    html {
+        font-size: 85.33px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 720px) {
+    html {
+        font-size: 96px;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+body {
+    font-size: .25rem;
+    font-family: $font-family;
+    background: $bg-color;
+}
+
+a {
+    color: $theme-text-color;
+}
+
+//listItem的line层级
+html:not([data-scale]) .am-list-body div:not(:last-child) .am-list-line::after {
+    z-index: 0 !important;
+}
+
+//badge层级
+.am-badge-not-a-wrapper .am-badge-text, .am-badge-not-a-wrapper .am-badge-dot {
+    z-index: 0 !important;
+    background-color: $theme-text-color;
+}
+
+//am-list-body上的border
+html:not([data-scale]) .am-list-body::before {
+    height: 0px;
+}
+
+//側邊導航
+.am-drawer {
+    position: fixed !important;
+}
+
+.am-drawer-overlay {
+    z-index: 3;
+}
+
+.am-drawer-sidebar {
+    z-index: 4;
+    width: 80%;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+
+    .item-inner {
+        background: map-get($image, nav-bg) no-repeat;
+        background-size: cover;
+    }
+
+    .side-logo {
+        width: 60px;
+        height: 80px;
+        background: map-get($image, login_logo) no-repeat center;
+        background-size: cover;
+        margin: 10px 0;
+    }
+    //bt6-dafa专有样式
+    .topLogo{
+        .logo{
+            background: map-get($image, logo) center no-repeat;
+        }
+    }
+}
+
+//下载APP
+.closable.am-notice-bar {
+    z-index: 1;
+    background: map-get($image, promo_bg) 0 0 no-repeat;
+    background-size: 100%;
+
+    .logo {
+        background: map-get($image, login_logo) 0 0 no-repeat;
+        background-size: cover;
+    }
+}
+
+//頭部導航
+.am-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    z-index: 1;
+    color: $theme-text-color;
+    border-bottom: 1px solid #ccc;
+
+    .logo {
+        display: inline-block;
+        background: map-get($image, logo) center no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+    }
+
+    .am-navbar-right a {
+        margin: 0 0 0 8px;
+        font-size: .3rem;
+    }
+
+    .am-navbar-title {
+        color: $theme-text-color;
+        font-weight: bold;
+    }
+
+    .am-navbar-left {
+        padding-left: .2rem;
+    }
+
+    .userInfo {
+        font-weight: bold;
+        margin-right: -10px;
+        font-size: .3rem;
+
+        i {
+            margin-left: 5px;
+            font-size: .35rem;
+        }
+
+        small {
+            font-size: .2rem;
+        }
+    }
+}
+
+//中間部分
+.scroll-content {
+    margin-top: 1rem;
+    margin-bottom: 51px;
+    border-top: 1px solid #ddd;
+    background: $bg-color;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    contain: size style layout;
+
+    .am-pull-to-refresh-content-wrapper {
+        min-height: 100%;
+    }
+
+    .am-list-footer { //解决向下滚动时有时看不到加载中提示的问题
+        min-height: 30px;
+    }
+}
+
+//banner
+.am-carousel {
+    min-height: 3rem !important;
+}
+
+//公告
+.am-notice-bar {
+    background: $theme-text-color;
+    color: #fff;
+    position: relative;
+    font-size: .2rem;
+    height: .5rem;
+
+    line-height: .5rem;
+}
+
+
+//登录
+
+.loginBg {
+    z-index: 1;
+    margin-bottom: 0;
+    padding: .3rem;
+    background: map-get($image, bg-login) 0 0 no-repeat #fff;
+    background-size: cover;
+
+    .login-logo {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 125px;
+        background: map-get($image, login_logo) no-repeat;
+        background-size: 100%;
+        margin-bottom: 20px;
+    }
+}
+.login-logo2{
+    background: map-get($image,logo) no-repeat;
+}
+
+
+//按钮
+.btn {
+    height: .9rem;
+    font-size: .3rem;
+    color: #fff;
+    background-color: $theme-btnBg;
+    margin: 0.2rem 5%;
+    width: 90%;
+    text-align: center;
+    line-height: .9rem;
+    display: block;
+    border: none;
+
+    &:disabled, &.disabled {
+        background-color: $theme-bgBg-disabled;
+    }
+}
+
+//资金管理
+
+.profile {
+    background: map-get($image, nav-bg) 0 0 no-repeat;
+    background-size: cover;
+    padding: .2rem;
+
+    .finance-logo {
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+        background: map-get($image, login_logo) no-repeat center;
+        background-size: 80%;
+    }
+
+    .userLevel {
+        font-size: .25rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .username {
+        font-size: .4rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .userCash {
+        color: #fff;
+        padding: .2rem .5rem 0rem;
+
+        i {
+            font-size: .6rem;
+            float: left;
+        }
+
+        .itemR {
+            float: left;
+            margin-left: 8px;
+
+            span {
+                display: block;
+                font-size: .3rem;
+                font-weight: bold;
+                margin-bottom: 2px;
+
+                em {
+                    font-size: .2rem;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            }
+
+            .title {
+                font-weight: normal;
+                font-size: .2rem;
+            }
+        }
+
+    }
+}
+
+//modalAlert弹出层
+.am-modal-title {
+    font-weight: bold;
+}
+
+.am-modal-button-group-h .am-modal-button:first-child {
+    color: $theme-text-color;
+    font-weight: normal;
+}
+
+.am-modal-button-group-h .am-modal-button, .am-modal-button-group-v .am-modal-button {
+    color: $theme-text-color;
+    font-weight: bold;
+}
+
+
+//搜索
+.am-search {
+    background: map-get($image, nav-bg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+//玩命加载中
+.dataLoading {
+    text-align: center;
+    line-height: 2rem;
+    color: #888;
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+//两侧悬浮
+.sideFloat {
+    position: fixed;
+    bottom: 70px;
+    z-index: 2;
+
+    .item {
+        width: 1.3rem;
+        height: 1.3rem;
+        display: block;
+        position: relative;
+
+        span {
+            display: inline-block;
+            float: right;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: .3rem;
+            height: .3rem;
+        }
+    }
+
+    &.left {
+        left: 0;
+
+        .statement_img {
+            background: map-get($image, statement_img) 0 0 no-repeat;
+            background-size: 100%;
+
+        }
+
+        .lotto_img {
+            margin-top: 20px;
+            background: map-get($image, lotto_img) 0 0 no-repeat;
+            background-size: 100%;
+        }
+    }
+
+    &.right {
+        right: 0;
+
+        .wechat_img {
+            background: map-get($image, wechat_img) 0 0 no-repeat;
+            background-size: 100%;
+        }
+    }
+}
+
+//银行卡icon
+.bankIcon {
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    margin: 10px auto 0;
+    background: url('./images/bank_icon_lg_0.png');
+    background-size: 90px auto;
+    background-color: #FFFFFF;
+    background-position: 45px 0;
+
+    &.YLPAY, &.YLPAY_GATE, &.YLPAY_WAP {
+        background-position: 45px 0;
+    }
+
+    &.WECHAT, &.WECHAT_GATE, &.WECHAT_WAP, &.WECHATOL {
+        background-position: 0 0;
+    }
+
+    &.ALIPAY, &.ALIPAY_WAP, &.ALIPAY_GATE, &.ALIPAYOL {
+        background-position: 0 -45px;
+    }
+
+    &.QQPAY, &.QQPAY_GATE, &.QQPAY_WAP {
+        background-position: 0 -90px;
+    }
+
+    &.JDPAY, &.JDPAY_WAP, &.JDPAY_GATE {
+        background-position: 0 -990px;
+    }
+
+    &.BQD {
+        background-position: 45px -90px;
+    }
+
+    &.JGB {
+        background-position: 45px -45px;
+    }
+
+    &.ABC {
+        background-position: 0 -135px;
+    }
+
+    &.COMM {
+        background-position: 0 -180px;
+    }
+
+    &.BOB {
+        background-position: 0 -225px;
+    }
+
+    &.BJBANK {
+        background-position: 0 -225px;
+    }
+
+    &.BOC {
+        background-position: 0 -270px;
+    }
+
+    &.CCB {
+        background-position: 0 -315px;
+    }
+
+    &.CEB {
+        background-position: 0 -360px;
+    }
+
+    &.CIB {
+        background-position: 0 -405px;
+    }
+
+    &.CMB {
+        background-position: 0 -450px;
+    }
+
+    &.CMBC {
+        background-position: 0 -495px;
+    }
+
+    &.CNCB {
+        background-position: 0 -540px;
+    }
+
+    &.GDB {
+        background-position: 0 -585px;
+    }
+
+    &.HXB {
+        background-position: 0 -630px;
+    }
+
+    &.HZCB {
+        background-position: 0 -675px;
+    }
+
+    &.ICBC {
+        background-position: 0 -720px;
+    }
+
+    &.NBCB {
+        background-position: 0 -765px;
+    }
+
+    &.PSBC {
+        background-position: 0 -810px;
+    }
+
+    &.BOS {
+        background-position: 0 -855px;
+    }
+
+    &.PAB {
+        background-position: 0 -900px;
+    }
+
+    &.SPDB {
+        background-position: 0 -945px;
+    }
+
+    &.GXIBBUGB {
+        background-position: 0 -1035px;
+    }
+
+    &.BAIDUPAY_GATE {
+        //background-position: 0 -1035px;
+    }
+
+}
+
+.YHtext {
+    color: $theme-text-color;
+    text-align: center;
+    font-weight: bold;
+}
+
+//平台Icon
+.platIcon {
+    display: block;
+    width: 100%;
+    min-height: 25px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: center;
+
+    &.AG {
+        background-image: url('./images/platIcon/AG.png');
+    }
+
+    &.BBIN {
+        background-image: url('./images/platIcon/BBIN.png');
+    }
+
+    &.CG {
+        background-image: url('./images/platIcon/CG.png');
+    }
+
+    &.CQ {
+        background-image: url('./images/platIcon/CQ.png');
+    }
+
+    &.HB {
+        background-image: url('./images/platIcon/HB.png');
+    }
+
+    &.KG {
+        background-image: url('./images/platIcon/KG.png');
+    }
+
+    &.MG2 {
+        background-image: url('./images/platIcon/MG2.png');
+    }
+
+    &.OG {
+        background-image: url('./images/platIcon/OG.png');
+    }
+
+    &.PT {
+        background-image: url('./images/platIcon/PT.png');
+    }
+    &.OPUS2,&.OPUS{
+        background-image: url('./images/platIcon/OPUS.png');
+    }
+    &.QT {
+        background-image: url('./images/platIcon/OG.png');
+    }
+
+    &.VT {
+        background-image: url('./images/platIcon/VT.png');
+    }
+
+    &.YOPLAY {
+        background-image: url('./images/platIcon/YOPLAY.png');
+    }
+
+    &.buyu{
+        background-image: url('./images/platIcon/buyu.png');
+    }
+    &.caipiao{
+        background-image: url('./images/platIcon/caipiao.png');
+    }
+    &.tiyudianjing{
+        background-image: url('./images/platIcon/tiyudianjing.png');
+    }
+    &.qipai{
+        background-image: url('./images/platIcon/qipai.png');
+    }
+    &.zhenren{
+        background-image: url('./images/platIcon/zhenren.png');
+    }
+}

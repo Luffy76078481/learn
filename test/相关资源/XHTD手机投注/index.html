@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新濠天地</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./assets/jquery-2.2.min.js"></script>
+    <script src="./assets/superSlide.js"></script>
+    <script src="./assets/qrcode.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script>
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        window.channel = getUrlParam("channel") || "";
+        window.version = getUrlParam("version") || "";
+        if(/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)){
+            var link = "../wap/index.html?channel=" + window.channel;
+            if (window.version) {
+                link += "&version=" + window.version;
+            }
+            window.location = getUrlParam("link");
+        }
+    </script>
+</head>
+<body>
+    <div class="out-container">
+        <div class="main">
+            <div class="l-side">
+                <div class="des">
+                    <h1>如何下载新濠天地/<span class="icon-warp">步骤演示</span></h1>
+                    <div class="release-info">
+                        <p><span class="cir"></span>建议使用UC浏览器或二维码扫描器扫描上方二维码; </p>
+                        <br><br>
+                        <p><span class="cir"></span>下载安装APP程式(以下以 新濠天地-新濠天地官方网站-新濠天地游戏为例) </p>
+                        <br><br>
+                        <p><span class="cir"></span>开启《 新濠天地-新濠天地官方网站-所有游戏》APP方式,登录玩！)</p>
+                    </div>
+                </div>   
+            </div>
+            <div class="r-side">
+                <div class="icon-container">
+                    <span class="qrcode" >
+                        <div id="qrcode" style="width:100px; height:100px;"></div>
+                    </span>
+                 
+                    <div class="qr_bc">
+                        <a class="qr_btn btn_ios" href="#"><i class="i_mb"></i>IOS下载</a>
+                        <a class="qr_btn btn_android" href="#"><i class="i_mb"></i>ANDROID下载</a>
+                    </div>
+                </div>   
+                <div class="mobile">
+                    <div class="phone phoneIos">
+                        <div class="slide">
+                            <div class="slide-inner">
+                                <ul class="iosList">
+                                    <li class="pic1"></li>
+                                    <li class="pic2"></li>
+                                    <li class="pic3"></li>
+                                    <li class="pic4"></li>
+                                    <li class="pic5"></li>
+                                    <li class="pic6"></li>
+                                    <li class="pic7"></li>
+                                    <li class="pic8"></li>
+                                    <li class="pic9"></li>
+                                    <li class="pic10"></li>
+                                </ul>
+                            </div>
+                            <span class="prev"></span><span class="next"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile">
+                    <div class="phone phoneAndro">
+                        <div class="slide">
+                            <div class="slide-inner">
+                                <ul class="androList">
+                                    <li class="pic1"></li>
+                                    <li class="pic2"></li>
+                                    <li class="pic3"></li>
+                                    <li class="pic4"></li>
+                                    <li class="pic5"></li>
+                                </ul>
+                            </div>
+                            <span class="prev"></span><span class="next"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //  ========== SuperSlide V2.1.1 ==========
+        jQuery(".slide").slide({
+            mainCell: ".slide-inner ul",
+            effect: "leftLoop",
+            autoPlay: true,
+            interTime: 2500,
+            autoPage: true,
+            trigger: "click"
+        });
+
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            width : 100,
+            height : 100
+        });
+        var link = getUrlParam("link");
+        qrcode.makeCode(link);
+    </script>
+</body>
+</html>

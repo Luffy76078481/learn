@@ -1,0 +1,168 @@
+@import "../../style/variables.scss";
+.my-drawer{
+  .am-drawer-sidebar{
+    width:95%;
+    background:#373737;
+  }
+}
+.SideBar{
+  .topLogo{
+    padding:0 20px;
+    height:1.4rem;
+    background:#fff;
+    position: relative;
+    .logo{
+
+      //background:url('../../style/#{$testImg}') no-repeat;//测试scss Img的路径
+      background-size: 100% auto !important;
+      width: 55%;
+      height: 100%;
+      margin: 0 auto;
+    }
+    .userInfo{
+      padding: .25rem 0;
+      .userIcon{
+        float:left;
+        background:$theme-border-color2;
+        color: #fff;
+        padding:.15rem;
+        border-radius:3px;
+        i{
+          font-size:.6rem;
+        }
+      }
+      .userMoney{
+        float: left;
+        line-height: .4rem;
+        color:$theme-border-color2;
+        margin-left: .2rem;
+        .userName{
+          font-size:.4rem;
+          span{
+            font-size:.2rem;
+            margin-left:.1rem;
+          }
+        }
+        .money{
+          font-size: .25rem;
+          margin-top: .1rem;
+        }
+      }
+    }
+    .close{
+      position: absolute;
+      width:20px;
+      height:20px;
+      background:$theme-firstBg-color;
+      color:#fff;
+      right: 5px;
+      top: 5px;
+      text-align: center;
+      line-height: 22px;
+      i{
+        font-size:15px;
+      }
+    }
+  }
+  .btnGroup{
+    button{
+      background-color:$theme-textActive-color;
+      width: 47%;
+      margin: 3% 0 3% 2%;
+      border: none;
+      padding-top: .15rem;
+      padding-bottom: .15rem;
+      text-transform: none;
+      font-size: 0.2rem;
+      font-weight: 600;
+      border-radius: 5px;
+      &.login{
+        background-color:#e4e4e4;
+      }
+    }
+  }
+  .navItems{
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .item{
+      box-sizing: border-box;
+      width: 31.2%;
+      margin: 0 0 1.5% 1.5%;
+      font-size: .25rem;
+      padding-top: .1rem;
+      position: relative;
+      float: left;
+      border: 1px solid #5e5e5e;
+      text-align: center;
+      line-height: .3em;
+      color: #fff;
+      transition: border-color 0.3s, color 0.3s;
+      .am-badge{
+        position: absolute;
+        top:.1rem;
+        right:.1rem;
+      }
+      .icon{
+        height:.8rem;
+      }
+      svg{
+        height:100%;
+        fill:#fff;
+      }
+      p{
+        color:#fff;
+        font-size: .2rem;
+      }
+    }
+  }
+  .line-heared{
+    margin:5% 1.5% 3%;
+    border-bottom: 1px solid #5e5e5e;
+    color: #5e5e5e;
+    text-align: center;
+    height:1px;
+    clear: both;
+    span{
+      position: relative;
+      top: -8px;
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      padding: 0 10px;
+      background: #373737;
+      font-size: .2rem;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
+  }
+ .QuickLinks{
+   padding:2% 0 0 0;
+   &:after{
+     content:'';
+     display: block;
+     clear: both;
+   }
+   .item{
+     box-sizing: border-box;
+     width:23%;
+     margin: 0 0 1.5% 1.5%;
+     font-size: .2rem;
+     padding-bottom: .2rem;
+     position: relative;
+     float: left;
+     border: 1px solid #5e5e5e;
+     text-align: center;
+     line-height:.3em;
+     color: #fff;
+     transition: border-color .3s,color .3s;
+     i{
+       display: block;
+       font-size: .6rem;
+       margin: .2rem;
+     }
+   }
+ }
+}

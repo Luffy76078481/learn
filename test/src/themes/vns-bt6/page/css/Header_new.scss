@@ -1,0 +1,383 @@
+#header {
+    position: fixed;
+    z-index: 222;
+    width: 100%;
+    background: #2c1810e0;
+    top: 0;
+    left: 0;
+
+    .wrapper {
+        position: relative;
+        width: 1061px;
+        margin: 0 auto;
+
+        #logo-bg {
+            position: relative;
+            display: inline-block;
+            width: 400px;
+            height: 74px;
+            margin: 7px auto;
+            background: url(../images/logo/logo.png) no-repeat 0 0/100% 100%;
+
+            &>a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #account-box {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            input {
+                width: 132px;
+                height: 28px;
+                color: #f1d896;
+                font-size: 14px;
+                text-indent: .5em;
+                line-height: 28px;
+                background-color: #300;
+                background-repeat: no-repeat;
+                background-position: 5px center;
+                border: 1px solid #a20009;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+                margin: 4px;
+            }
+
+            &>form {
+                position: relative;
+                display: inline-block;
+                margin: 30px auto;
+
+                input#login_account {
+                    text-indent: 1.8em;
+                    background-image: url(../images/firstpage/login_ico_01.png);
+                }
+
+                input#login_password {
+                    text-indent: 1.8em;
+                    background-image: url(../images/firstpage/login_ico_02.png);
+                }
+
+                #check-code-wrapper {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                button {
+                    width: 74px;
+                    height: 28px;
+                    font-size: 14px;
+                    border: none;
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    border-radius: 3px;
+                    margin: 3px;
+                    vertical-align: 1px;
+                }
+
+                .login-btn {
+                    color: #300;
+                    background: #ffa200;
+
+                    &:hover {
+                        background: #1c3cb1;
+                        color: white;
+                    }
+                }
+
+                .join-btn {
+                    color: #544101;
+                    background: #ffde00;
+
+                    &:hover {
+                        background: #df3a00;
+
+                        a {
+                            color: white;
+                        }
+
+                    }
+                }
+
+                #agree {
+                    display: none;
+                    position: absolute;
+                    top: 110%;
+                    right: 6px;
+                    z-index: 1;
+                    padding: 2px 5px;
+                    font-size: 12px;
+                    color: #fff;
+                    background-color: #520810;
+
+                    a {
+                        color: #ffa200;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            ul#account-info {
+                position: relative;
+                margin: 16px auto 5px;
+                display: inline-block;
+            }
+
+            ul#account-info>li {
+                float: left;
+                width: 200px;
+                height: 25px;
+                padding: 0 5px;
+                color: #fbe69a;
+                font-size: 12px;
+                line-height: 25px;
+            }
+
+            ul#account-info>li>span.account {
+                display: inline-block;
+                max-width: 6em;
+                color: #fff600;
+                font-weight: bold;
+                -ms-text-overflow: ellipsis;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                vertical-align: top;
+                overflow: hidden;
+                padding-left: 4px;
+            }
+
+            ul#account-info>li a {
+                color: #fff;
+                cursor: pointer;
+            }
+
+            #mailbox {
+                position: relative;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                vertical-align: top;
+                text-decoration: none;
+                background: url(../images/firstpage/m_icon.png) no-repeat;
+            }
+
+            #mailbox>span,
+            #mailbox>span:hover {
+                position: absolute;
+                left: 80%;
+                bottom: 60%;
+                min-width: 16px;
+                padding: 0 2px;
+                height: 16px;
+                color: #000;
+                font-size: 12px;
+                text-align: center;
+                line-height: 16px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background: #fff47e;
+            }
+
+            ul#account-nav {
+                display: block;
+                text-align: left;
+            }
+
+            ul#account-nav>li {
+                display: inline-block;
+            }
+
+            ul#account-nav>li>a {
+                display: inline-block;
+                color: #fbe69a;
+                font-size: 12px;
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            ul#account-nav>li:hover>a {
+                color: #ff0;
+            }
+
+            ul#account-nav>li+li:before {
+                content: '|';
+                color: #fbe69a;
+                margin: 5px;
+            }
+
+        }
+    }
+}
+
+
+#nav {
+    position: relative;
+    height: 47px;
+    text-align: center;
+    background: #2c1810;
+    border-top: 1px solid #2c2810;
+
+    ol,
+    ul {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        // width: 1100px;
+    }
+
+    &>ul>li {
+        float: left;
+        width: 84px;
+        height: 46px;
+        color: #ffdfa6;
+
+        a {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            color: #ffdfa6;
+            line-height: 46px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: transparent;
+        }
+    }
+}
+
+#nav>ul>li:hover {
+    background: #0a0705;
+}
+#nav>ul>li>.active {
+    background: #0a0705;
+}
+#nav>ul>li.hot1>a:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 22px;
+    height: 12px;
+    background: url(../images/firstpage/hot_01.gif);
+}
+
+#nav>ul>li.hot2>a:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 19px;
+    height: 25px;
+    background: url(../images/firstpage/hot_02.gif) no-repeat center top;
+}
+
+
+.tabNavBox {
+    width: 100%;
+    height: 177px;
+    background: url(../images/firstpage/sub_bg.png) repeat-x;
+    text-align: center;
+    min-width: 1080px;
+}
+
+.tabNavBox {
+    .game-box-first {
+        color: #ff0;
+        font-size: 50px;
+        line-height: 120px;
+        position: relative;
+    }
+
+    .game-box {
+        position: relative;
+        z-index: 1;
+        width: 120px;
+        height: 177px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        vertical-align: top;
+        border-left: 1px solid #403e3d;
+        cursor: pointer;
+        img{
+            position: absolute;
+            top: 31px;
+            left: 23px;
+          }
+    }
+
+    div {
+        display: inline-block;
+    }
+
+    .game-box-first:after {
+        content: '天天返水无上限';
+        display: block;
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        right: 0;
+        height: 50px;
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .game-box:after {
+        content: '进入游戏';
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        height: 50px;
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .game-box::before{
+        content: '';
+        display: block;
+        width: 120px;
+        height: 100px;
+        line-height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+       
+    }
+
+    .game-outbox{
+        vertical-align: 60px;
+    }
+}
+
+.errorMessage{
+    position: absolute;
+    left: 6px;
+    top: 40px;
+    color: white;
+    &::before{
+        margin-right: 5px;
+        width: 18px;
+        height: 18px;
+        background-image: url('../images/sprite.png');
+        background-position: -360px -320px;
+        content: "";
+        display: inline-block;
+        vertical-align: -5px;
+    }
+}

@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+// base
+$base: (
+  // html root使用100px
+        font-size-root: 100px,
+  // body的默认字体
+        font-size: 14px,
+  // font-family
+  //font-family:          #{"Helvetica Neue", Helvetica, STHeiTi, sans-serif},
+        font-family: #{arial,helvetica,STHeitiSC-Light,"Heiti SC",droidsansfallback,dengxian,"microsoft yahei"}, //线上touch国内字体
+  // lin-height
+        line-height: 1.5,
+  // 默认文本颜色
+        color: #fff,
+        color_2: #f7aa9d,
+        color_3: #ff9c00,
+        color_4: #000,
+        color_5: #cea7a2, //sport+casino_nav
+        color_lit: #ffea00,
+        color_warn: #f00,
+        bg_color: #2B1212,
+        bg_color_2: #6b423b,
+        border_color: #b45656,
+        border_color_2: #5f3b34,
+        input-placeholder: #888,
+		Form_Separateline:#693432,
+  //_____header
+        header-third-color: #825a55,
+        header-notice-bordercolor: #5a3834,
+        header-background1: url(images/index/headBg.jpg),
+        header-background2: url(images/index/headBgyy.png),
+        header-login-btn: url(images/index/inco_login.png),
+        header-reg-btn: url(images/index/inco_login.png),
+        header-bottom-background: url(images/index/subnavBg.png),
+        header-Service-btn: url(images/index/inco_a.png),
+        header-logo: url(images/index/logo2.png),
+  //____________RegisterPage
+		RegisterPage_bg_img:url(images/title_04.png),
+
+  //___________________sweet彈出窗_____________________
+        sweet_title_color:rgba(255, 255, 255, .8),
+        sweet_color:rgba(255, 255, 255, .6),
+  //_____popbox
+        popbox-bgColor: rgba(255, 255, 255, .8),
+        popbox-borderColor: #000,
+        popbox-title-iconcolor: #ffe887,
+        popbox-title-bgcolor: rgba(61, 34, 29, 0.8),
+        popbox-title-fontsize: 22px,
+        popbox-title-lineheight: 50px,
+        popbox-title-leftIcon: 18px,
+        popbox-title-closeBg: rgba(76, 45, 40, 0.54),
+        popbox-title-closeBorder: rgba(255, 255, 255, .3),
+        popbox-body-shadow: rgba(0, 0, 0, 0.8),
+        popbox-body-bgImg: url(images/index/bestNewBg.png),
+        popbox-body-pointImg: url(images/index/bestNew1.png),
+        popbox-body-color: #000,
+        popbox-body-titlecolor: #a62e00,
+        popbox-body-bordercolor: #000,
+  //__________________footer__________________
+        footer-bgcolor1: #4a1d19,
+        footer-bgcolor2: #2B1212,
+        footer-border-color1: #aa635c,
+        footer-color1: #e3c2bc,
+        footer-color2: #9c6c67,
+        footer-color3: #725a58,
+        footer-share-list: url(images/index/share-inco.png),
+        foot-mobile-img: url(images/index/mobile.png),
+  //__________________first_Page__________________
+  //	casinoSlider:,
+        first_Page_casinolist_Slider_bg:#2B1212,
+        firstPage_slider_icon_left:url(images/index/left.png),
+        firstPage_slider_icon_right:url(images/index/right.png),
+        firstPage_game_btn_bgcolor: #e37b00,
+        firstPage_bingo_text_bgcolor: #301b18,
+        firstPage_bingo_btn_bgcolor: #932312,
+  //__________________sport__________________
+        sport_bg: url(images/sport/bg.jpg),
+        sport_nav_bgcolor: #2a1814,
+  //__________________casino__________________
+        casino_bgimg: url(images/casino/bg.jpg),
+        casino_nav_bgcolor1: #39221d,
+        casino_nav_bgcolor2: #2a1814,
+        casino_nav_img: url(images/casino/yuleLiBg.jpg),
+        casino_go_btn: url(images/casino/yuleLiTitle.png),
+  //________________gamesPage________________
+        game_upbg: url(images/game/imgbg_02.jpg),
+        game_upboxbg: url(images/game/fous-bg_03.png),
+        game_money_icon:url(images/game/jackpot-inco.png),
+        slider_img: url(images/game/gd_02.png),
+        game_titlecontent_Separatelines:#b68530,
+  //__________gamelistpanel___遊戲版塊_____________
+        gamelistpanel_bg_img: url(images/game/imgbg_10.jpg),
+  //平台選單__platform_list__nav
+        gamelistpanel_platform_list: url(images/game/all.png),
+  //左側遊戲分類
+        gamelistpanel_searchbar_bgcolor: rgba(0, 0, 0, .9),
+        gamelistpanel_searchbar_input_placeholder: #aaa,
+        gamelistpanel_Loading_hoverMask:#000,
+        gamelistpanel_game_hoverMask:rgba(0, 0, 0, 0.58),
+        gamelistpanel_game_pageIcon_bg_color:#2c1512,
+        gamelistpanel_game_pageIcon_border_color:#4d2a25,
+        gamelistpanel_game_pageIcon_onchoosing:#ad6208,
+  //__________gamelistpanel___遊戲版塊_____________
+
+
+
+  //__________ptGame________________
+        ptGame_head_img:url(images/pt/headbg_02.jpg),
+        ptGame_bg_img:url(images/game/imgbg_08.jpg),
+		ptGame_download_img:url(images/pt/khd.png),
+  //__________mgGame________________
+		mgGame_download_img:url(images/mg/khd.png),
+  //__________agGame________________
+        agGame_bg_img: url(images/ag/fishing_bg.jpg),
+        agGame_gamebox_bgcolor: rgba(255, 255, 255, 0.35),
+        agGame_gamebox_bordercolor: rgba(255, 255, 255, 0.5),
+        agGame_gamebox_btn_color: #005284,
+        agGame_gamebox_btn_bgcolor: -webkit-linear-gradient(#ffed00, #f7a400),
+        agGame_gamebox_btn_bordertopcolor: #fff9a4,
+        agGame_gamebox_btn_borderbottomcolor:#f7a400,
+        agGame_gamebox_qrcode_bgcolor: rgba(255, 255, 255, 0.5),
+        agGame_gamebox_qrcode_color: #005284,
+        agGame_gamebox_onlinepeople_bgcolor:rgba(40, 26, 255, 0.35),
+        agGame_gamebox_onlinepeople_color: rgba(255, 255, 255, 0.8),
+  //__________promotions________________
+        promotions_list_bg_img:url(images/promotions/pageXianBg.jpg),
+        promotions_list_liPoint_img:url(images/promotions/yuan.jpg),
+        promotions_list_triangle_img:url(images/promotions/timerCon.jpg),
+        promotions_list_title:rgba(0, 0, 0, 0.8),
+  //__________memberPage________________
+		memberPage_bg_img:url(images/bg_02.jpg),
+        memberPage_nav_icon_color: #ba7e70,
+        memberPage_nav_icon_hovercolor:#ffcc00,
+        memberPage_content_box_bgcolor: rgba(0, 0, 0, 0.3),
+        memberPage_title_img1: url(images/title_03.png),
+        memberPage_nav_border_img: url(images/menu_img_03.png),
+        memberPage_nav_icon_img: url(images/htico.png?v1.2),
+        memberPage_info_img: url(images/ico.png),
+        memberPage_nav_img1: url(images/menu_img_hover_03.png),
+        memberPage_nav_img2: url(images/menu_img_09.png),
+        memberPage_nav_img3: url(images/menu_img_11.png),
+        memberPage_nav_img4: url(images/menu_img_13.png),
+        memberPage_navhover_img1: url(images/menu_img_hover_07.png),
+        memberPage_navhover_img2: url(images/menu_img_07.png),
+        memberPage_navhover_img3: url(images/menu_img_hover_05.png),
+        memberPage_navhover_img4: url(images/menu_img_hover_09.png),
+  //__________________other________________
+        white-color: #fff,
+        blue-color: #2996bd,
+        blues-color: #84cfe9,
+        hl-color: #ff6602,
+  // 默认链接色
+        link-color: #1ba9ba,
+  // 链接经过色
+        link-hover-color: #f60,
+        vip2_image: url(images/index/vip_self.jpg),
+//firstpage
+            geme_img0:url(images/index/game_0.jpg),
+            geme_img1:url(images/index/game_1.jpg),
+            geme_img2:url(images/index/game_2.jpg),
+            bingo_0:url(images/index/bingo_0.png)no-repeat,
+            bingo_1:url(images/index/bingo_1.png)no-repeat,
+            bingo_2:url(images/index/bingo_2.png)no-repeat,
+            bingo_3:url(images/index/bingo_3.png)no-repeat,
+            hous_03:url(images/index/hous_03.png)no-repeat,
+//casino
+            casino_title:url(images/casino/casino_title.png)no-repeat,
+            page_bg:url(images/casino/casino_title.png)no-repeat,
+            01t:url(images/casino/01t.png),
+            02t:url(images/casino/02t.png),
+            03t:url(images/casino/03t.png),
+            04t:url(images/casino/04t.png),
+            05t:url(images/casino/05t.png),
+            06t:url(images/casino/06t.png),
+            07t:url(images/casino/07t.png),
+            08t:url(images/casino/08t.png),
+            09t:url(images/casino/09t.png),
+);

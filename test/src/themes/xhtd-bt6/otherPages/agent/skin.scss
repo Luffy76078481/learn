@@ -1,0 +1,538 @@
+@charset "utf-8";
+@import "variables";
+
+body{
+  background-color: $bg-color;
+  color: $text-color-normal;
+}
+
+h3{
+  color:$text-color-hightline;
+}
+/* ----------------------------------------------------------------------------------------------  */
+
+#agent{
+  background: #381479 url("resources/allbg.jpg") no-repeat ;
+  .agent2{
+    .huang {
+      color: #ffa800;
+    }
+    .header_bg{
+      background: url("resources/headBg.jpg") ;
+      /* =============== Head =============== */
+      .header {
+        height: 123px;
+        border-bottom: none;
+        /* =============== Head Top =============== */
+        .logo_img{
+          position: relative;
+          width: 1200px;
+          height: auto;
+          &:after{
+            width: 600px;
+            height: 103px;
+            content: '';
+            position: absolute;
+            right: 0;
+            background: url("resources/headright.png") no-repeat center;
+          }
+          /* =============== Logo =============== */
+          .header_left {
+            width: 400px;
+            background: map-get($base,logo_img) 50% no-repeat;
+            height: 122px;
+          }
+          .header_right {
+            //background: map-get($base,hader_right_img)  no-repeat right;
+          }
+        }
+      }
+      /* =============== what's this =============== */
+      .selector{
+
+      }
+      /* =============== 导航Nav =============== */
+      .menuNav{
+        .menuBtn{
+          height: 44px;
+          ul{
+            margin-left: 300px;
+            li{
+              height: 39px;
+              width: 95px;
+              line-height: 39px;
+              a{
+                line-height: 39px;
+                color: #ffb;    
+                display: block;
+                &.now{
+                  background-color: #442086;
+                }    
+              }
+            }
+          }
+        }
+      }
+    }
+    //-------------主要內容 Main --------------
+    .main{
+      min-height: 700px;
+      margin: 50px auto;
+      padding: 10px;
+      background: #1f0058;
+      border: 1px solid #6130b9;
+      box-shadow: 0 5px 10px 2px rgba(0,0,0,.5);
+      width: 1075px;
+      box-sizing: content-box;
+      .rightContent{
+        width: 800px ;
+        margin: 0 20px ;
+        background: #472089;
+        padding-top: 0 ;
+        display: inline-block;
+        .mainCon{
+          .title{
+            width: 800px ;
+            height: 53px ;
+            background: url("resources/title.jpg") center no-repeat / 100% 100%;
+            margin-left: 0;
+            position: relative;
+          }
+          .center{
+            padding: 0 20px 0 40px;
+            margin-left: 0;
+          }
+        }
+
+      }
+      .banner{
+        height: 142px;
+        background: url("resources/agent_banner2.jpg") center no-repeat
+      }
+      .content{
+        margin-top: 8px;
+        margin-bottom: 20px;
+        .leftBar{
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          margin-top: 92px;
+          width: 231px;
+          .sideNav{
+            width: 220px;
+            ul{
+              li{
+                position: relative;
+                width: 231px;
+                height: 45px;
+                margin-bottom: 0 !important;
+                background: url("resources/left_bg.jpg") no-repeat center top;
+                a{
+                  // width: 231px !important;
+                  // height: 45px !important;
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
+              }
+              .sportnav{  background: url("resources/left_bg_1.jpg") no-repeat center top;  }
+              .bingonav{  background: url("resources/left_bg_2.jpg") no-repeat center top;  }
+              .casinonav{  background: url("resources/left_bg_3.jpg") no-repeat center top;  }
+              .gamesnav{  background: url("resources/left_bg_4.jpg") no-repeat center top;  }
+
+              .sportnav:hover{  background: url("resources/left_bg_1.jpg") no-repeat center bottom;  }
+              .bingonav:hover{  background: url("resources/left_bg_2.jpg") no-repeat center bottom;  }
+              .casinonav:hover{  background: url("resources/left_bg_3.jpg") no-repeat center bottom;  }
+              .gamesnav:hover{  background: url("resources/left_bg_4.jpg") no-repeat center bottom;  }
+
+            }
+          }
+        }
+        .leftBar:before{
+          content: '';
+          position: absolute;
+          width: 231px;
+          height: 92px;
+          top: -92px;
+          background: url("resources/left_top.jpg") no-repeat;
+        }
+        .leftBar:after{
+          content: '';
+          position: absolute;
+          width: 231px;
+          height: 264px;
+          bottom: -264px;
+          background: url("resources/left_bottom.jpg") no-repeat;
+        }
+      }
+    }
+    //-----------footer-------------
+    .footerNav {
+      background: #381479;
+      margin-top: 30px;
+    }
+    .footerNav a {
+      color: $text-footer;
+      margin-left: 10px;
+    }
+    .footerNavBtn a:hover{
+      color: $footer-hover;
+    }
+    .footerNavBtn{
+      color: #AEACAE;
+    }
+    .footer {
+      //background: $bg-color-footer;
+      background: transparent;
+    }
+    .footer_bg {
+      width: auto ;
+      height: 110px ;
+      background: url("resources/footer_bg.jpg") center no-repeat;
+
+    }
+  }
+}
+
+
+//----------------代裡合作-------------------
+#AboutUs .cont{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    .tit{
+    color: gold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+#ContactUs .cont{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  .info{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: gold;
+    margin-bottom: 15px;
+  }
+  .items{
+    font-size: 20px;
+    line-height: 40px;
+    .iconGroup{
+      font-size: 24px;
+    }
+  }
+}
+#Deposit{
+  .cont{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    .service{
+      color: gold;
+    }
+    .txt{line-height: 25px}
+    .block{
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      margin: 15px 0;
+    }
+  }
+}
+#BetRule .cont{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  .txt{
+    width: 690px;
+    span{
+      line-height: 25px;
+      .yy{
+        color: gold;
+      }  
+      span{
+        line-height: 25px;
+      }
+    }
+  }
+} 
+
+#Faq{
+  .title{
+    width: 200px;
+    height: 43px;
+    background-size: 100%;
+    margin-left: 10px;
+  }
+  .center{
+    margin-left: 55px;
+  }
+  .cont{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    .txt{
+      h4{
+        color: gold;
+        font-weight: 100;
+        cursor: pointer;
+        line-height: 22px;
+        font-size: 16px;
+        margin: 6px 0;
+      }
+      .ans{
+        line-height: 20px;
+        font-size: 13px;
+      }
+      span{display: none}
+    }
+
+    .tit{
+      color: #d85d0a;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-weight: 700;
+      .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    }
+  }
+}
+.agent2 #Wthdrawal .cont {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  .txt{
+      span{
+        line-height: 25px;
+      }
+      span.yy{
+        color: gold;
+      }
+      .ml{
+        margin-left: 15px;
+      }
+      .service{
+        color: gold;
+      }
+  }
+}
+
+
+#AllianceContent{
+  .menuBar{
+    ul{
+      width: 100% ;
+      padding-bottom: 0 ;
+      border-bottom: 2px solid #faf419 ;
+      margin-top: 35px;
+      li{
+        width: 87px ;
+        height: 35px;
+        line-height: 35px;
+        display: inline-block;
+        text-align: center;
+        a{
+          display: block;
+          width: 87px;
+          height: 35px;
+          line-height: 35px;
+          color: #fff;
+          &.now{
+            color: #000 ;
+            background: #faf419 ;
+          }
+          &:hover{
+            color: #000 ;
+            background: #faf419 ;
+          }          
+        }
+      }
+    }
+  }
+  #AlliancePlan{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    h3{
+      color: gold;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .step{
+      span{
+        line-height: 25px
+      }
+    }
+  }
+  .cont{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    .tit{
+      color: gold;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      span{
+        line-height: 25px;
+      }
+    }
+    .txt{
+      line-height: 25px;
+    }
+    .info{
+      margin-left: 15px;
+      color: gold;
+      margin-bottom: 15px;
+    }
+  }
+  .tableList tr td {
+    border: 1px #999 solid;
+  }
+  .title:before{
+    content: '合作伙伴';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+
+}
+.tableList {
+  color: $bg-content-color;
+  //border-bottom: 1px solid $border-color;
+  //border-right: 1px solid $border-color;
+  font-size: 14px;
+  background: #F6F6F6;
+  .table-title{
+    background:#EA6153 ;
+    color: $text-color-normal;
+  }
+}
+
+.tableList tr td {
+  //border-top: 1px solid $border-color;
+  //border-left: 1px solid $border-color;
+}
+.tableList tr:nth-child(odd){
+  background: #E9E9E9;
+}
+
+.rg1 {
+  border: 0;
+  background: none;
+}
+.rg2{
+  //background-image: map-get($base,register_bg_img);
+  background: none;
+}
+
+.reg-fnameContent {
+  border: 0;
+  background: none;
+  color: $menu-click-color;
+}
+
+.submit_btn_input {
+  background: #9A2120 !important;
+  color: $text-color-normal!important;
+  border: 0!important;
+}
+//----------------關於我們-------------------
+#AboutUs{
+  .title:before{
+    content: '关于我们';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------連絡我們-------------------
+#ContactUs{
+  .title:before{
+    content: '连络我们';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+  .contactHzImg{
+    display: none;
+  }
+  .intime{
+    display: none;
+  }
+}
+//----------------如何存款-------------------
+#Deposit {
+  .title:before{
+    content: '如何存款';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------如何取款-------------------
+#Wthdrawal {
+  .title:before{
+    content: '如何取款';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------常見問題-------------------
+#Faq {
+  .title:before{
+    content: '常见问题';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------責任博彩-------------------
+#BetRule {
+  .title:before{
+    content: '责任博彩';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+  .txt{
+    width: 690px;
+  }
+}
+
+

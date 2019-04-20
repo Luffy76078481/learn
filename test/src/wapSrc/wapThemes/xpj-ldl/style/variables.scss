@@ -1,0 +1,30 @@
+@charset "utf-8";
+//新葡京
+
+$font-family:            #{arial,helvetica,STHeitiSC-Light,"Heiti SC",droidsansfallback,dengxian,"microsoft yahei"};
+$bg-color:               #fff;//body背景色
+
+
+//色系
+$theme-text-color:       #a9493a;//主题字体颜色
+$theme-border-color:     #a9493a;//主题border颜色
+$theme-btnBg:            #a9493a;//主题按钮颜色
+$theme-bgBg-disabled:    #847570;//主题按钮disabled颜色
+$theme-card-bg :         #bd5241;//银行卡管理中卡片的背景色
+
+
+
+//图片
+$image:(
+        logo:url('./images/logo.png'),
+        nav-bg:url('./images/nav-bg.png'),
+        login_logo:url('./images/login_logo.png'),
+        bg-login:url('./images/bg-login.png'),
+        promo_bg:url('./images/promo_bg.png'),
+        lotto_img:url('./images/lotto_img.png'),
+        wechat_img:url('./images/weixinzhifu.png'),
+        statement_img :url('./images/wapico.png')
+);
+
+
+

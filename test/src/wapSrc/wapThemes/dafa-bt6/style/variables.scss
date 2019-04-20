@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+//大发娱乐场
+
+$font-family:            #{arial,helvetica,STHeitiSC-Light,"Heiti SC",droidsansfallback,dengxian,"microsoft yahei"};
+$bg-color:               #fff;//body背景色
+
+
+//色系
+$theme-firstBg-color:    #af0000;//首页背景颜色$theme-textActive-color
+$theme-noticeBg-color:   #560202;//公告背景颜色
+
+$theme-text-color:       #af0000;//字体颜色
+$theme-textActive-color: #ffe000;//字体选中颜色
+$theme-border-color:     #cc0505;//主题border颜色
+$theme-border-color2:     #900000;//主题border颜色
+$theme-btnBg:            #B1191A;//主题按钮颜色
+$theme-bgBg-disabled:    #dcdcdc;//主题按钮disabled颜色
+$theme-card-bg :         #ef4141;//银行卡管理中卡片的背景色
+$singleList-bg:         #333031;//单一游戏列表背景（没有分类）
+
+
+//图片
+$testImg:'images/login_logo.png';
+$image:(
+        logo:url('./images/logo.png'),
+        nav-bg:url('./images/nav-bg.png'),
+        login_logo:url('./images/login_logo.png'),
+        bg-login:url('./images/bg-login.png'),
+        promo_bg:url('./images/promo_bg.png'),
+        lotto_img:url('./images/lotto_img.png'),
+        wechat_img:url('./images/weixinzhifu.png'),
+        statement_img :url('./images/wapico.png')
+);
+
+
+

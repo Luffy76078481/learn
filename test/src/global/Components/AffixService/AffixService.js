@@ -1,0 +1,110 @@
+
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import {ApiAllSysConfigAction} from 'globalAction'
+import "./AffixService.scss";
+
+class AffixService extends Component{
+    componentWillMount(){
+        new ApiAllSysConfigAction().fly();
+    }
+    serversOpen(e){
+        e.preventDefault();
+        window.open(this.props.remoteSysConfs.online_service_link,'servers','width=700,height=600,directories=no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,resizable=no,left=5,top=50,screenX=550,screenY=250');
+        return false;
+    }
+    render(){
+        const options = window.r.props("AffixService");
+        const weixinName = options.weixinName || "微信公众号";
+        return (
+            <div className="affix-online-server">
+                <div className="hd">
+                    {!options.icon?<i className="fa fa-headphones"></i>:<i className="fa fa-qq"></i>}
+                        在线客服
+                </div>
+                <div className="bd">
+                    <div>
+                        <i className="fa fa-headphones"></i>&nbsp;<span>在线客服：</span>
+                        <span className="label-warning" onClick={this.serversOpen.bind(this)}><i className="fa fa-headphones"></i>&nbsp;在线客服</span>
+                    </div>
+                    {
+                        this.props.remoteSysConfs.online_service_qq?
+                        (<div>
+                            <i className="fa fa-qq"></i>&nbsp;<span>客服QQ：</span>
+                            <span className="label-warning">
+                                <a href={"tencent://message/?uin="+this.props.remoteSysConfs.online_service_qq+"&Menu=yes"} target="_blank">
+                                    <i className="fa fa-qq"></i>&nbsp;{this.props.remoteSysConfs.online_service_qq}
+                                </a>
+                            </span>
+                        </div>)
+                        :null
+                    }
+                    {
+                        this.props.remoteSysConfs.agent_service_qq?
+                        (<div>
+                            <i className="fa fa-qq"></i>&nbsp;<span>代理QQ：</span>
+                            <span className="label-warning">
+                                <a href={"tencent://message/?uin="+this.props.remoteSysConfs.agent_service_qq+"&Menu=yes"} target="_blank">
+                                    <i className="fa fa-qq"></i>&nbsp;{this.props.remoteSysConfs.agent_service_qq}
+                                </a>
+                            </span>
+                        </div>)
+                        :null
+                    }
+                    {
+                        this.props.remoteSysConfs.online_service_wechat?
+                        (<div>
+                            <i className="fa fa fa-weixin"></i>&nbsp;<span>{weixinName}：</span>
+                            <span className="label-warning">
+                                <i className="fa  fa-weixin"></i>&nbsp;{this.props.remoteSysConfs.online_service_wechat}
+                            </span>
+                        </div>)
+                        :null
+                    }
+                    {
+                        this.props.remoteSysConfs.online_service_phone?
+                        (<div>
+                            <i className="fa fa-phone"></i>&nbsp;<span>24小时客服：</span>
+                            <span className="label-warning">
+                                <i className="fa fa-phone"></i>&nbsp;{this.props.remoteSysConfs.online_service_phone}
+                            </span>
+                        </div>)
+                        :null
+                    }
+                    {
+                        this.props.remoteSysConfs.online_service_email?
+                        (<div>
+                            <i className="fa fa-envelope"></i>&nbsp;<span>客服信箱：</span>
+                            <span className="label-warning">
+                                <i className="fa fa-envelope"></i>&nbsp;{this.props.remoteSysConfs.online_service_email}
+                            </span>
+                        </div>)
+                        :null
+                    }
+                    <div className="mybtn">
+                        <a href="/register" className="btn btn-danger btn-sm"><i className="fa fa-unlock-alt"></i>&nbsp;立即开户</a>
+                    </div>
+                    {
+                        options.qrCodeImg?
+                        (<div className="qrcode">
+                            <img width="100" src={"http://qr.liantu.com/api.php?w=160&h=160&text=https://" + this.props.remoteSysConfs.channel_push_url} className="qrImg" alt="" />
+                            {/*<img width="100" src={"/api/v0/qcode.png?code=" + encodeURIComponent("https://" + location.hostname + "/_promotion/web/index.html")} className="qrImg" alt="" />*/}
+                            <div>扫一扫下载APP</div>
+                        </div>)
+                        :null
+                    }
+                </div>
+            </div>
+        );
+    }
+
+
+}
+
+const mapStateToProps = (state, ownProps) => (
+    {
+        remoteSysConfs: state.remoteSysConfs
+    }
+);
+
+export default connect(mapStateToProps)(AffixService)

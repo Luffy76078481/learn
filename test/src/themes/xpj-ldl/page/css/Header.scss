@@ -1,0 +1,231 @@
+.form-login-input input{
+    margin-bottom: 2px!important;
+}
+#topHead{
+    .errorMessage{
+        &::before{
+            margin-right: 5px;
+            width: 18px;
+            height: 18px;
+            background-image: url('../images/sprite.png');
+            background-position: -360px -320px;
+            content: "";
+            display: inline-block;
+            vertical-align: -5px;
+        }
+    }
+    .menu-nav {
+        //height: 36px;
+         overflow: hidden;
+        width: 104%;
+        // margin-top: 8px;
+    }
+    .menu-nav ul li {
+        float: left;
+        font-size: 16px;
+        line-height: 36px;
+        width:106px;
+        text-align: center;
+    }
+
+    .aaa{
+        float: left;
+        position: relative;
+        left: 50px;
+        top: 20px;
+    }
+    .notice {
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #825a55;
+        overflow: hidden;
+    }
+    .noticeCenter {
+        float: left;
+        height: 35px;
+        overflow: hidden;
+    }
+    .noticeLeft a {
+        color: #825a55;
+        margin: 0px 5px;
+        text-decoration: none;
+        &:hover{
+            color: #ffea00;
+        }
+    }
+    .noticeLeft a.vip{
+        color: #ffea00;
+    }
+    .noticeRight{
+        float: right;
+    }
+    .top_livechat {
+        width: 119px;
+        height: 25px;
+        display: block;
+        margin-top: 3px;
+    }
+
+    .timeNumber {
+        padding-top: 10px;
+        z-index: 10;
+    }
+    .timeNumber span, .timeNumber a {
+        float: left;
+        font-size: 12px;
+    }
+    .timeNumber i{
+        margin-right: 5px;
+    }
+    .logo {
+        float: left;
+        .innerLogo {
+            display: block;
+            height: 104px;
+            width: 250px;
+        }
+    }
+    .loginForm {
+        float: right;
+        color: #fff;
+    }
+
+
+    .menu-nav ul li a.active {
+        /*color: yellow;*/
+    }
+    .memberItem a{
+        text-decoration: underline;
+    }
+    .memberItem .member-msg{
+        text-decoration: none;
+    }
+    .timeNumber .personal{
+        display: block;
+        cursor: pointer;
+        padding: 0;
+    }
+    .timeNumber .personalHide{
+        display: none;
+    }
+    .timeNumber .personal:hover{
+        text-decoration: underline;
+        color: #ffea00;
+    }
+    .item{
+        padding: 0 2px;
+    }
+    .timeNumber span, .timeNumber a {
+        padding-right: 10px;
+    }
+
+    #login-form{
+        .code-input{
+            display: none;
+        }
+        .code-image{
+            display: none;
+        }
+        &.require_verify_code{
+            .account-input{
+                width: 125px;
+            }
+            .pwd-input{
+                width: 125px;
+            }
+            .code-input{
+                display:inline-block;
+                width: 70px;
+            }
+            .code-image{
+                display: inline-block;
+                width: 70px;
+                background: #4d4332;
+                height: 28px;
+                border: 1px solid #4d4332;
+                img{
+                    width: 67px;
+                }
+
+            }
+        }
+
+    }
+}
+.main-menu {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+.main-menu-item {
+    float: left;
+}
+.separator a {
+    border-right: 1px solid #4f4f4f;
+}
+.main-menu-link {
+    position: relative;
+    z-index: 16;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+}
+.mobile-item a:before, .promotion-item a:before, .vip-item a:before {
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -360px -20px;
+    text-indent: -9999px;
+    content: "";
+    margin-right: 6px;
+}
+.mobile-item a:before, .promotion-item a:before, .vip-item a:before {
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -360px -20px;
+    text-indent: -9999px;
+    content: "";
+    margin-right: 6px;
+}
+.mobile-item a:before{
+    display: inline-block;
+    width: 24px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
+    background-position: -360px -59px;
+    text-indent: -9999px;
+    content: "";
+    margin-right: 6px;
+}
+.pull-right {
+    float: right;
+}
+
+.main-menu-item ul li {
+    /* float: left; */
+    /* color: #fff; */
+    font-size: 16px;
+    line-height: 36px;
+    width: 20px;
+    /* text-align: center; */
+}
+item.active>.main-menu-link, .mobile-item>.main-menu-link:hover, .promotion-item.active>.main-menu-link, .promotion-item>.main-menu-link:hover, .vip-item.active>.main-menu-link, .vip-item>.main-menu-link:hover {
+    background: transparent;
+    color: #ffe000 !important;
+}

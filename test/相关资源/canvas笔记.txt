@@ -1,0 +1,91 @@
+https://developer.mozilla.org/zh-CN/docs/Web
+
+
+API
+获取元素：var myCanvas = document.getelementByid（“myCanvas”）；
+创建画布：var ctx = myCanvas.getContext("2d");
+清屏：ctx.clearRect(0,0,800,600)  //清除一个矩形区域
+
+矩形
+ctx.fillStyle = "red";   //设置填充颜色
+ctx.fillRect(100,100,300,200);  //绘制一个填充好的矩形
+ctx.strokeRect(100,100,300,200);  //绘制一个未填充矩形
+
+
+画线
+ctx.beginPath();      //开始绘制路径
+ctx.closePath();     //自动封闭路径（最后画到的位置到最后的起点位置）
+ctx.moveTo(100,200); //将画笔移动到某一个点；
+ctx.lineTo(200,200);   //用画笔画线，从上一次moveTo的位置到指定位置
+ctx.lineWidth = "10"; //画线展现到界面之前设置线得宽度；
+ctx.strokeStyle = "red"; //画线展现到界面之前设置线的颜色；
+ctx.stroke();   //画线，展现到界面上 
+ctx.fill(); //填充所画的东西
+ctx.lineCap = "butt"  ||  "round"  ||  "square" 粗线的折点样式
+ctx.lineJoin = "round" || "bevel" || "miter"  粗线的封闭样式
+ 
+ 
+画弧线    ( 1弧度等于57.3度 )  
+整圆= ctx.arc(200,200,100,0,Math.PI*2,true);
+ctx.arc(200,200,100,0,1,true); //圆心坐标200,200.  半径100.  开始弧度0，结束弧度1    逆时针画线true;
+ctx.arcTo(x1,y1,x2,y2,radius); //从x1,y1的点到x2,y2的点画弧线，弧度为radius
+
+
+渐变色
+var lingrad = ctx.createLinearGradient(0,0,300,300);  //创建渐变色，绝对位置坐标
+lingrad.addColorStop(0,'red');  从0，red色开始；
+lingrad.addColorStop(0,'red');  从1，blue色开始；
+ctx.fillStyle = lingrad; //将创建的渐变色实例设置颜色
+
+写字
+ctx.font = "50px 宋体"   //调整字体大小和字体样式
+ctx.fillText("文字内容",100,100);   //写文字   内容，坐标位置
+ctx.strokeText("Hello world", 0, 100);  //写文字   内容，坐标位置
+//带阴影的文字
+ctx.shadowOffsetX = 2;
+ctx.shadowOffsetY = 2;
+ctx.shadowBlur = 2;
+
+用图片
+var img = new Image();
+img.src = "images/test.jpg";
+img.onload = function(){
+  //放普通图片
+  ctx.drawImage(img,100,100,200,200);    //图片对象，左上角坐标，宽高
+  //将图片切片
+  ctx.drawImage(img,168,150,126,141,100,100,300,300);    //图片对象，切片的四个位置坐标（左上角，右下角），左上角坐标，宽高
+}
+
+
+
+
+动态画布
+
+结构：
+function Circle(){
+
+}
+
+Circle.prototype.render = function(){
+
+}
+
+Circle.prototype.update = function(){
+
+}
+
+var yuan = new Circle();
+
+setInterval(function(){
+    yuan.update();
+    yuan.render();
+},20) 
+
+
+
+
+
+
+
+
+

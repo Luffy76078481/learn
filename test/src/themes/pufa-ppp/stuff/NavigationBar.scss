@@ -1,0 +1,56 @@
+.Navigation{
+    .bomb{
+        background-color: #fff440;
+        color: #045E47;
+        border-radius: 8px;
+    }
+    li{
+        &:hover{
+            ul.items{
+                display: block;
+            }
+        }
+        ul.items{
+            position: absolute;
+            top: 197px;
+            outline: 2px solid #ebc155;
+            width: 105px;
+            z-index: 999999;
+            text-align: center;
+            background: #43280b;
+            margin-left: -10px;
+            padding-bottom: 5px;
+            transition: all .4s;
+            display: none;
+            height: auto;
+            padding-left: 0;
+            li{
+                display: block;
+                width: 80px;
+                height: 25px;
+                line-height: normal !important;
+                font-size: 14px;
+                padding-top: 5px;
+                margin: auto;
+                a{
+                    width: 80px;
+                    height: 25px;
+                    color: #ebc155;
+                    white-space: nowrap;
+                    &:hover{
+                        color: #fff000;
+                    }
+                }
+            }
+        }
+    }
+}
+.mainTitle.looto{
+    width: 80px!important;
+    a{
+        width: 80px!important;
+    }
+}
+
+
+

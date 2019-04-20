@@ -1,0 +1,362 @@
+.am-action-sheet-button-list-item {
+  height: auto; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  html:not([data-scale]) .DepositPage .am-list-body::after {
+    background-color: transparent !important; } }
+.am-list-body {
+  margin-bottom: 30px; }
+  .am-list-body .am-input-control input {
+    color: #888 !important; }
+  .am-list-body .copyInfoBtn {
+    position: absolute;
+    width: 1rem;
+    right: 0.2rem;
+    font-size: 0.3rem;
+    line-height: .44rem;
+    z-index: 99;
+    padding: 0; }
+  .am-list-body .btn {
+    background: #02543f;
+    margin-bottom: 2rem; }
+
+.DepositPage .am-list-item .am-input-control input:read-only {
+  color: #888; }
+.DepositPage .am-list-line:after {
+  height: 0 !important; }
+.DepositPage .payTabs {
+  height: .6rem;
+  padding: 0 .2rem;
+  margin-top: .2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .DepositPage .payTabs .tabsItem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #02543f;
+    border: 1px solid #02543f;
+    border-left-width: 0;
+    position: relative; }
+    .DepositPage .payTabs .tabsItem:first-child {
+      border-left-width: 1PX;
+      border-radius: .1rem 0 0 .1rem; }
+    .DepositPage .payTabs .tabsItem:last-child {
+      border-radius: 0 .1rem .1rem 0; }
+    .DepositPage .payTabs .tabsItem > div {
+      display: block;
+      text-align: center; }
+      .DepositPage .payTabs .tabsItem > div p {
+        font-size: .2rem;
+        margin: 0;
+        padding: 0; }
+    .DepositPage .payTabs .tabsItem.active {
+      background: #02543f;
+      color: #fff; }
+.DepositPage .Segmented {
+  height: .6rem;
+  padding: 0 .2rem;
+  margin-top: .2rem; }
+  .DepositPage .Segmented .am-segment-item {
+    color: #02543f;
+    border-color: #02543f;
+    position: relative; }
+    .DepositPage .Segmented .am-segment-item .tooltiptextuc {
+      position: absolute;
+      top: -.1rem;
+      right: 0; }
+  .DepositPage .Segmented .am-segment-item-selected {
+    background: #02543f; }
+.DepositPage .am-list-item.am-input-item {
+  padding-left: 0; }
+.DepositPage .am-list-item.depositmoney .am-list-line .am-list-extra {
+  flex-basis: 28%; }
+.DepositPage .am-list-item .am-list-line .am-list-extra {
+  flex-basis: 60%;
+  color: #000; }
+.DepositPage .addAmount a {
+  display: inline-block;
+  padding: 3px .2rem;
+  font-size: .25rem;
+  background: #e6a72c;
+  color: #333;
+  margin-left: .2rem;
+  border-radius: .1rem; }
+  .DepositPage .addAmount a:last-child {
+    color: #fff;
+    background: #02543f; }
+.DepositPage .quick-amount .am-flexbox-item {
+  text-align: center;
+  height: .8rem;
+  line-height: .8rem;
+  border: 1px solid #02543f;
+  border-radius: .2rem;
+  margin: .1rem .2rem !important;
+  color: #02543f; }
+  .DepositPage .quick-amount .am-flexbox-item.active {
+    background-color: #02543f;
+    color: #fff; }
+.DepositPage .onlinepay {
+  background: #eee;
+  text-align: left;
+  font-size: .32rem;
+  margin-top: .2rem;
+  padding-left: .2rem;
+  line-height: .48rem;
+  color: #000; }
+  .DepositPage .onlinepay i {
+    position: relative;
+    top: 1px;
+    font-size: .28rem; }
+.DepositPage .depositContent {
+  text-align: left;
+  padding-bottom: .2rem; }
+  .DepositPage .depositContent .bankItem {
+    font-size: .24rem;
+    text-align: center;
+    color: #222;
+    margin: 0 .2rem;
+    display: inline-block; }
+
+.atmbox {
+  z-index: 999;
+  position: fixed;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .atmbox .am-list-item.am-input-item {
+    padding-left: .3rem; }
+  .atmbox .mask {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+  .atmbox .dom {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff; }
+    .atmbox .dom .title {
+      border-bottom: 1px solid #bbb;
+      font-weight: bold;
+      text-align: center;
+      line-height: .8rem;
+      height: .8rem;
+      font-size: .35rem;
+      color: #02543f;
+      position: relative; }
+      .atmbox .dom .title i {
+        font-size: .35rem;
+        position: absolute;
+        left: .3rem;
+        top: .15rem; }
+      .atmbox .dom .title a {
+        position: absolute;
+        right: .3rem;
+        top: 0;
+        font-size: .25rem; }
+    .atmbox .dom .overflow {
+      position: absolute;
+      top: .82rem;
+      width: 100%;
+      bottom: 0;
+      overflow-y: auto;
+      text-align: center; }
+      .atmbox .dom .overflow h3 {
+        color: #000;
+        background: #eee;
+        line-height: .6rem;
+        margin: 0; }
+      .atmbox .dom .overflow .qrcode img {
+        max-height: 3.2rem;
+        margin: 0 auto; }
+      .atmbox .dom .overflow .amount {
+        font-size: .3rem;
+        font-weight: bold;
+        color: #000;
+        line-height: 1rem;
+        text-align: center; }
+        .atmbox .dom .overflow .amount span {
+          font-size: .35rem;
+          color: #02543f; }
+      .atmbox .dom .overflow .text {
+        margin: .2rem;
+        line-height: .48rem;
+        color: #02543f; }
+      .atmbox .dom .overflow .am-list-item .am-input-label {
+        color: #888;
+        width: 1.8rem;
+        font-size: 14px; }
+      .atmbox .dom .overflow .am-list-item .am-list-line .am-list-content {
+        color: #888; }
+      .atmbox .dom .overflow .am-list-item .am-list-line .am-list-extra {
+        color: #000; }
+
+.tipsAmount {
+  color: #02543f;
+  font-size: .24rem;
+  padding: .2rem; }
+
+.qrcodeCon {
+  padding: 0 .5rem .5rem; }
+  .qrcodeCon .amount {
+    font-size: .3rem;
+    font-weight: bold;
+    color: #000;
+    line-height: 1rem;
+    text-align: center; }
+    .qrcodeCon .amount span {
+      font-size: .35rem;
+      color: #02543f; }
+  .qrcodeCon .qrcode {
+    flex: 1;
+    font-size: .25rem;
+    text-align: center;
+    line-height: 1.6rem;
+    min-height: 3.2rem; }
+  .qrcodeCon .text {
+    flex: 1;
+    padding-top: .4rem;
+    line-height: .44rem;
+    text-align: left;
+    color: #333; }
+    .qrcodeCon .text i {
+      color: #02543f; }
+    .qrcodeCon .text strong {
+      color: #02543f; }
+
+.QrcodeDeposit {
+  z-index: 999;
+  position: absolute;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .QrcodeDeposit .mask {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); }
+  .QrcodeDeposit .dom {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    background: #fff; }
+    .QrcodeDeposit .dom .title {
+      border-bottom: 1px solid #eee;
+      font-weight: bold;
+      text-align: center;
+      line-height: .7rem;
+      height: .7rem;
+      font-size: .35rem;
+      color: #02543f;
+      position: relative; }
+      .QrcodeDeposit .dom .title i {
+        font-size: .35rem;
+        position: absolute;
+        left: .3rem;
+        top: .15rem; }
+      .QrcodeDeposit .dom .title a {
+        position: absolute;
+        right: .3rem;
+        top: 0;
+        font-size: .25rem; }
+    .QrcodeDeposit .dom .amount {
+      font-size: .3rem;
+      font-weight: bold;
+      color: #000;
+      line-height: 1rem;
+      text-align: center; }
+      .QrcodeDeposit .dom .amount span {
+        font-size: .35rem;
+        color: #02543f; }
+    .QrcodeDeposit .dom .con {
+      padding: 0 .5rem .5rem;
+      display: flex; }
+      .QrcodeDeposit .dom .con .qrcode {
+        flex: 1;
+        font-size: .25rem;
+        text-align: center;
+        line-height: 1.6rem;
+        min-height: 3.2rem; }
+      .QrcodeDeposit .dom .con .text {
+        flex: 1;
+        padding-top: .4rem;
+        line-height: .44rem;
+        text-align: left;
+        color: #333; }
+        .QrcodeDeposit .dom .con .text i {
+          color: #02543f; }
+        .QrcodeDeposit .dom .con .text strong {
+          color: #02543f; }
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp; }
+
+.slideOutDown {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown; }
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+@keyframes slideOutDown {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); } }
+.am-list-item .am-input-control input {
+  float: left;
+  font-size: .32rem !important; }
+
+/*# sourceMappingURL=DepositPage.css.map */

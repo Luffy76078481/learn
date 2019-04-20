@@ -1,0 +1,195 @@
+const config ={
+    // ★★★★★
+    "webSiteTag":"dafa",//请求除游戏之外接口时传入的tag
+    "gameTag":"dafa",//请求游戏相关接口时传入的tag
+    "apiPath": "/api/v0/",//请求接口的url
+    "version": "1.0.0",//版本号
+    "promotionUrl": "/_promotion/web/index.html",
+    "spec":"xhXhtd",//皮的ID 主要用途为 在import的时候根据该参数加载themes文件夹内的对应的文件 例如:help.js/agent.js
+    "appName":"新濠天地",//皮的Name
+    "title":"新濠天地",
+    "agentLoginUrl":"https://ag.betcn.app",//代理页面登录接口
+    "email":"xp9677@gmail.com",
+    "skype":"待定",
+    "qq":"99999",
+    "phone":"99999988888888888",
+    "weixin":"dfkf06",
+    "timezone": "美东时间",
+    "prdImgUrl":"http://bt6.dafa.pc.cgtest06.com/",  //本地调试图片地址,打包时需要删除
+    "IsLDL":false //如果是莱得利多皮参数true
+
+}
+export {config};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BT6:
+
+
+                         dafa
+
+export const config ={
+    "webSiteTag":"dafa",
+    "gameTag":"dafa",
+    "apiPath": "/api/v0/",
+    "version": "1.0.0",
+    "promotionUrl": "/_promotion/web/index.html",
+    "spec":"dafa-bt6",
+    "appName":"Dafabet",
+    "title":"dafabet在线投注亚洲最好的在线投注网站",
+    "agentLoginUrl":"https://ag.betcn.app",
+    "email":"xp9677@gmail.com",
+    "skype":"待定",
+    "qq":"99999",
+    "phone":"99999988888888888",
+    "weixin":"dfkf06",
+    "timezone": "美东时间",
+    "prdImgUrl":"",
+    "isApp":false,
+    "IsLDL":false
+    }
+
+
+
+
+                             XHTD
+
+export const config ={
+    "webSiteTag":"xhtd",
+    "gameTag":"dafa",
+    "apiPath": "/api/v0/",
+    "version": "1.0.0",
+    "promotionUrl": "/_promotion/web/index.html",
+    "spec":"xhtd-bt6",
+    "appName":"新濠天地",
+    "title":"新濠天地",
+    "agentLoginUrl":"https://ag.betcn.app",
+    "email":"xp9677@gmail.com",
+    "skype":"待定",
+    "qq":"99999",
+    "phone":"99999988888888888",
+    "weixin":"dfkf06",
+    "timezone": "美东时间",
+    "prdImgUrl":"",
+    "isApp":false,
+    "IsLDL":false
+    }
+
+
+
+
+                      XPJ
+
+export const config ={
+    "webSiteTag":"xpj",
+    "gameTag":"dafa",
+    "apiPath": "/api/v0/",
+    "version": "1.0.0",
+    "promotionUrl": "/_promotion/web/index.html",
+    "spec":"xpj-bt6",
+    "appName":"新葡京",
+    "title":"新葡京",
+    "agentLoginUrl":"https://ag.betcn.app",
+    "email":"xp9677@gmail.com",
+    "skype":"待定",
+    "qq":"99999",
+    "phone":"99999988888888888",
+    "weixin":"dfkf06",
+    "timezone": "美东时间",
+    "prdImgUrl":"",
+    "isApp":false,
+    "IsLDL":false
+    }
+
+
+
+
+
+                      vns
+
+export const config ={
+    "webSiteTag":"vns",
+    "gameTag":"dafa",
+    "apiPath": "/api/v0/",
+    "version": "1.0.0",
+    "promotionUrl": "/_promotion/web/index.html",
+    "spec":"vns-bt6",
+    "appName":"威尼斯人",
+    "title":"威尼斯人",
+    "agentLoginUrl":"https://ag.betcn.app",
+    "email":"xp9677@gmail.com",
+    "skype":"待定",
+    "qq":"99999",
+    "phone":"99999988888888888",
+    "weixin":"dfkf06",
+    "timezone": "美东时间",
+    "prdImgUrl":"",
+    "isApp":false,
+    "IsLDL":false
+    }
+
+
+
+
+
+
+
+
+
+    TYC
+
+
+    export const config ={
+    "webSiteTag":"tyc",
+    "gameTag":"dafa",
+    "apiPath": "/api/v0/",
+    "version": "1.0.0",
+    "promotionUrl": "/_promotion/web/index.html",
+    "spec":"tyc-bt6",
+    "appName":"Sun Game",
+    "title":"Sun Game网络博彩 | 体育投注 | 走地 | 现金网",
+    "agentLoginUrl":"https://ag.betcn.app",
+    "email":"xp9677@gmail.com",
+    "skype":"待定",
+    "qq":"99999",
+    "phone":"99999988888888888",
+    "weixin":"dfkf06",
+    "timezone": "美东时间",
+    "prdImgUrl":"",
+    "isApp":false,
+    "IsLDL":false
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

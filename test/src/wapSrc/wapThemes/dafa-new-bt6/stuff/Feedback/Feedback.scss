@@ -1,0 +1,16 @@
+
+.feedbackPage {
+    .am-navbar {
+        .am-navbar-left {
+            color: #fff;
+        }
+        .am-navbar-title {
+            color: #fff;
+        }
+    }
+    .scroll-content {
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}

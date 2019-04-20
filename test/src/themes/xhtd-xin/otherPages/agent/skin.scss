@@ -1,0 +1,501 @@
+@charset "utf-8";
+@import "variables";
+
+body{
+  background-color: $bg-color;
+  color: $text-color-normal;
+}
+
+h3{
+  color:$text-color-hightline;
+}
+.agent2 .menuBtn{
+  height: 44px;
+}
+#agent{
+  background: #381479 url("resources/allbg.jpg") no-repeat ;
+  .info{
+    margin-left: 15px;
+    color: gold;
+    margin-bottom: 15px;
+  }
+  .inter{
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  h4{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .header_left {
+    width: 400px;
+    background: map-get($base,logo_img) center center no-repeat;
+    height: 122px;
+  }
+  .cont {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    .tit {
+      color: gold;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+  }
+  .menuBtn{
+    ul{
+      margin-left: 300px;
+      li{
+        width: 95px;
+        height: 39px;
+        a{
+          line-height: 39px;
+          color: #ffb;
+          display: block;
+          text-align: center;
+          z-index: 15;
+        }
+      }
+    }
+  }
+}
+
+.header_bg{
+  background: url("resources/headBg.jpg") ;
+  .logo_img{
+    position: relative;
+    width: 1200px;
+    height: 105px;
+    display: block;
+    margin: 0 auto;
+  }
+  .logo_img:after{
+    width: 600px;
+    height: 103px;
+    content: '';
+    position: absolute;
+    right: 0;
+    background: url("resources/headright.png") no-repeat center;
+  }
+}
+.header {
+  height: 123px;
+  border-bottom: none;
+}
+.now{
+  background-color: #442086;
+  color: #ffb ;
+}
+.menuNav ul li{
+  height: 39px ;
+}
+
+//-----------footer-------------
+.footerNav {
+  background: #381479;
+  margin-top: 30px;
+}
+.footerNav a {
+  color: $text-footer;
+}
+.footerNavBtn a:hover{
+  color: $footer-hover;
+}
+.footer_bg {
+  width: auto ;
+  background: url("resources/footer_bg.jpg") center no-repeat;
+
+}
+
+//-------------主要內容--------------
+.main{
+  height: auto;
+  width: 1075px;
+  margin: 50px auto;
+  box-shadow: 0 5px 10px 2px rgba(0,0,0,.5);
+  color: #ddd;
+  min-height: 700px;
+  padding: 10px;
+  box-sizing: content-box;
+  background: #1f0058;
+  border: 1px solid #6130b9;
+  .rightContent{
+    width: 800px ;
+    margin: 0 20px ;
+    background: #472089;
+    padding-top: 0 ;
+    display: inline-block;
+    .show{
+      .title{
+        width: 800px ;
+        height: 53px ;
+        background: url("resources/title.jpg") center no-repeat / 100% 100%;
+        margin-left: 0;
+        position: relative;
+      }
+      .center{
+        padding: 0 20px 0 40px;
+        margin-left: 0;
+      }
+    }
+
+  }
+  .banner{
+    height: 142px;
+    width: 100%;
+    background: url("resources/agent_banner2.jpg") center no-repeat
+  }
+  .content{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    .leftBar{
+      position: relative;
+      margin-top: 92px;
+      width: 231px ;
+      display: inline-block;
+      vertical-align: top;
+      .sideNav{
+        ul{
+          li{
+            position: relative;
+            width: 231px;
+            height: 45px;
+            margin-bottom: 0 ;
+            a{
+              width: 231px ;
+              height: 45px ;
+              display: block;
+            }
+          }
+          .sportnav{  background: url("resources/left_bg_1.jpg") no-repeat center top;  }
+          .bingonav{  background: url("resources/left_bg_2.jpg") no-repeat center top;  }
+          .casinonav{  background: url("resources/left_bg_3.jpg") no-repeat center top;  }
+          .gamesnav{  background: url("resources/left_bg_4.jpg") no-repeat center top;  }
+
+          .sportnav:hover{  background: url("resources/left_bg_1.jpg") no-repeat center bottom;  }
+          .bingonav:hover{  background: url("resources/left_bg_2.jpg") no-repeat center bottom;  }
+          .casinonav:hover{  background: url("resources/left_bg_3.jpg") no-repeat center bottom;  }
+          .gamesnav:hover{  background: url("resources/left_bg_4.jpg") no-repeat center bottom;  }
+
+        }
+      }
+    }
+    .leftBar:before{
+      content: '';
+      position: absolute;
+      width: 231px;
+      height: 92px;
+      top: -92px;
+      background: url("resources/left_top.jpg") no-repeat;
+    }
+    .leftBar:after{
+      content: '';
+      position: absolute;
+      width: 231px;
+      height: 264px;
+      bottom: -264px;
+      background: url("resources/left_bottom.jpg") no-repeat;
+    }
+  }
+}
+//----------------代裡合作-------------------
+#AllianceContent{
+  .menuBar{
+    ul{
+      width: 100% ;
+      margin-top: 35px;
+      padding-bottom: 0 ;
+      border-bottom: 2px solid #faf419 ;
+      li{
+        width: 87px ;
+        height: 35px;
+        line-height: 35px;
+        display: inline-block;
+        text-align: center;
+        a{
+          display: block;
+          width: 87px;
+          height: 35px;
+          line-height: 35px;
+          color: #fff;
+        }
+        a:hover{
+          color: #000 ;
+          background: #faf419 ;
+        }
+        .now{
+          color: #000 ;
+          background: #faf419 ;
+        }
+      }
+    }
+  }
+  .tableList tr td {
+    border: 1px #999 solid;
+  }
+  .title:before{
+    content: '合作伙伴';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+
+}
+.tableList {
+  color: $bg-content-color;
+  font-size: 14px;
+  background: #F6F6F6;
+  .table-title{
+    background:#EA6153 ;
+    color: $text-color-normal;
+  }
+}
+
+.tableList tr:nth-child(odd){
+  background: #E9E9E9;
+}
+
+.rg1 {
+  border: 0;
+  background: none;
+}
+.rg2{
+  background-image: map-get($base,register_bg_img);
+  background: none;
+  margin-left: -100px;
+}
+
+.reg-fnameContent {
+  border: 0;
+  background: none;
+  color: $menu-click-color;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.submit_btn_input {
+  background: #9A2120 ;
+  color: $text-color-normal;
+  border: 0;
+}
+//----------------關於我們-------------------
+#AboutUs{
+  .title:before{
+    content: '关于我们';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------連絡我們-------------------
+#ContactUs{
+  .title:before{
+    content: '连络我们';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+  .contactHzImg{
+    display: none;
+  }
+  .intime{
+    display: none;
+  }
+}
+//----------------如何存款-------------------
+#Deposit {
+  .title:before{
+    content: '如何存款';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------如何取款-------------------
+#Wthdrawal {
+  .title:before{
+    content: '如何取款';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------常見問題-------------------
+#Faq {
+  .title:before{
+    content: '常见问题';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------責任博彩-------------------
+#BetRule {
+  .title:before{
+    content: '责任博彩';
+    position: absolute;
+    font-size: 16px;
+    color:#ffc428;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+  .txt{
+    width: 690px;
+  }
+}
+
+
+.agent2 #AllianceContent .agentRegister .tb .col-md-offset-3{
+  margin-left: 0;
+}
+.agent2 #AllianceContent #Register #regForm {
+  margin-left: 120px;
+  padding-top: 0;
+}
+.agent2 #AllianceContent #Register .user-input .inptfix {
+  width: 200px;
+}
+.agent2 #AllianceContent #Register .info-group {
+  margin-bottom: 0;
+  position: relative;
+  margin-left: 90px;
+}
+.agent2 #AllianceContent #Register .userinfo {
+  display: inline-block;
+  width: 95px;
+}
+.agent2 #AllianceContent #Register .user-input {
+  display: inline-block;
+}
+.inptdivt {
+  margin-left: -20px;
+}
+.agent2 #AllianceContent #Register .info-group p.hit {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.agent2 #AllianceContent .agentRegister .submit_btn .col-md-12 input {
+  width: 85px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  border-radius: 0;
+  margin: 20px 0 10px 0;
+}
+.tb button, .tb html input[type="button"], .tb input[type="reset"], .tb input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.agent2 #AllianceContent #Register .check_tongyi {
+  width: 500px;
+}
+.check_tongyi, .submit_btn {
+  text-align: center;
+}
+.check_tongyi {
+  margin-right: -35px;
+}
+.agent2 #AllianceContent .agentRegister .submit_btn .col-md-12 {
+  width: 20%;
+  margin-left: 260px;
+}
+.form-group.mb{
+  margin: 20px 0 20px 90px!important
+}
+.agent2 #ContactUs .cont .info {
+  margin-top: 20px;
+  margin-left: 15px;
+  color: gold;
+  margin-bottom: 15px;
+}
+.agent2 #ContactUs .cont .items {
+  font-size: 20px;
+  line-height: 40px;
+}
+.agent2 #ContactUs .cont p.items {
+  margin: 0
+}
+.iconGroup {
+  font-size: 24px;
+}
+.huang {
+  color: #ffa800;
+}
+.agent2 #Wthdrawal .cont .txt span.yy {
+  color: gold;
+}
+.agent2 #Wthdrawal .cont .txt span {
+  line-height: 25px;
+}
+.agent2 #Wthdrawal .cont .txt .service {
+  color: gold;
+  margin: 0 10px;
+}
+.agent2 #Deposit .cont .txt .block {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 15px 0;
+}
+.agent2 #Deposit .cont .txt span {
+  line-height: 25px;
+}
+.agent2 #Faq .cont .txt h4 {
+  color: gold;
+  font-weight: 100;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+}
+.agent2 #Faq .cont .txt span {
+  line-height: 25px;
+  display: none;
+}
+.agent2 #Faq .cont .tit {
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.agent2 #BetRule .cont .txt span.yy {
+  color: gold;
+}
+.agent2 #AboutUs .cont .txt span {
+  line-height: 25px;
+}
+.agent2 #BetRule .cont .txt span {
+  line-height: 25px;
+}

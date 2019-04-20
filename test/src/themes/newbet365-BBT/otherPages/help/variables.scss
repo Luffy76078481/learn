@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/**
+* @description: 常用变量
+* @author: assassin.liu
+* @update: 2014/9/2
+*/
+
+// base
+
+
+$font-size:              14px;
+//$font-family:            #{arial,helvetica,STHeitiSC-Light,"Heiti SC",droidsansfallback,dengxian,"microsoft yahei"};
+
+$text-color-normal:      #000;
+$text-color-nav:             #ffea99;
+$text-color-ReturnTop:        #412201;
+$text-header-title: #000;
+$title-color: #101010;
+//$text-color-deep:        #e3c652;
+$text-color-hightline:   #f8d04c;
+
+$bg-color:               #2C1810;
+$bg-color-main-content:  #007b5b;
+$bg-color-nav:          #45290c;
+$bg-color-nav-hover:          #381F05;
+$bg-color-title:          #F0CA65;
+$bg-color-footer:          #281400;
+$bg-color-contact:        #312f2f;
+$bg-color-contact-btn:   #EBB751;
+$bg-color-header:         #EBB751;
+
+
+$nav-Separate-lines:     #381F05;
+
+$border-color:            #d2d2d2;
+//$border-color-deep:      #8effe0;
+
+// base
+$base: (
+    logo_img:url(resources/logo2.png),
+    hader_right_img:url(resources/help.png),
+    title_bg_img:url(resources/banner.png),
+    footer_bg_img:url(resources/footer.jpg),
+
+);

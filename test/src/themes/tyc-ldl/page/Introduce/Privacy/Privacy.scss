@@ -1,0 +1,58 @@
+.page-title{
+  margin-top:20px;
+}
+.item-title{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.page-txt{
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  a{
+    color:#da2d33;
+  }
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+  padding-left:15px;
+  font-size:15px;
+  .arrow{
+    left:auto;
+    right:16px;
+  }
+}
+.ant-collapse-item{
+  border:1px solid #ccc;
+  margin-bottom:10px;
+}
+.ant-collapse-content-box{
+  .num{
+    float: left;
+    width: 40px;
+    font-size: 13px;
+    margin-left:0;
+    text-align: center;
+  }
+  p{
+    margin-left:50px;
+    font-size: 13px;
+    width:90%;
+    line-height:24px;
+  }
+  a{
+    color:#da2d33;
+  }
+  ul {
+    li{
+      ul li{
+        list-style: disc;
+        margin-left:70px;
+        p{
+          margin-left:0px;
+        }
+      }
+
+    }
+  }
+}

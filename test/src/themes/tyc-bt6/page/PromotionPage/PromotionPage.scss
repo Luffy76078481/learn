@@ -1,0 +1,85 @@
+#promotions{
+  .container{
+    width:1200px;
+    margin:10px auto;
+  }
+  #promotionsModal.modal{
+    overflow-y:auto;
+    .modal-dialog{
+      width:800px;
+      .modal-header{
+        border:none;
+        padding: 15px 15px 15px;
+        button i {
+          color: #af0000;
+        }
+      }
+    }
+  }
+  .promotion-tab{
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin-top: 1px;
+    border-bottom: 1px solid #fff;
+    a{
+      color: #fff;
+      display: table-cell;
+      border-right: 1px solid #fff;
+      box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+      font-size: 14px;
+      text-align: center;
+      line-height:30px;
+      background-color: #8d271b;
+      &:hover{
+        background-color: #f44;
+      }
+      &.active{
+        background-color: #c83434;
+      }
+    }
+  }
+  .promotion-container{
+    min-height:300px;
+    .promotion-info{
+      background-color: #f2f2f2;
+      padding: 0;
+      margin-bottom: 5px;
+      margin-top: 7px;
+      overflow: hidden;
+      transition: all .3s;
+      height: 230px;
+      cursor: pointer;
+      position: relative;
+      .promotion-img{
+          transition: all .3s;
+          &:hover{
+          transform: scale(1.1);
+        }
+      }
+      img{
+        width:100%;
+      }
+      .promotion-title{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        line-height: 28px;
+        text-align: center;
+        color:#fff;
+        background: #c83434;
+      }
+    }
+  }
+  .loading-container{
+    text-align: center;
+    padding:30px 0;
+    .ant-spin{
+      .ant-spin-dot i{
+        background-color:#333;
+      }
+      color:#bbb;
+    }
+  }
+}

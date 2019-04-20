@@ -1,0 +1,306 @@
+@charset "utf-8";
+@import "variables";
+/* CSS Document */
+*{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+body, html {
+  font-family: Microsoft YaHei!important;
+  background-color: #2a1412;
+}
+.main{
+  width: 980px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  min-height: 930px;
+}
+.header{
+  height: 130px;
+}
+.header_left{
+  width: 50%;
+  height: 130px;
+  float: left;
+  background: map-get($base, logo_img) 0 0 no-repeat;
+
+}
+
+.header_right{
+  width: 50%;
+  height: 130px;
+  float: right;
+  background: map-get($base, hader_right_img)  no-repeat right;
+
+}
+/*---------内文切换-------------*/
+.contents{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
+/*---------菜单start-----------*/
+a{
+  color: $text-color-normal;
+  text-decoration:none;
+  font-weight: bold;
+
+}
+.main_content{
+  background-color: #331a18;
+  height: auto;
+}
+.title_img{
+  width: 100%;
+  height: 30px;
+  background: #851d14;
+  color: #fff;
+  padding-left: 1rem;
+  line-height: 30px;
+  font-weight: 700;
+}
+.menu{
+  height: 32px;
+  border-bottom: 1px solid #976161;
+}
+.navigation, .navigation li {
+  list-style: none;
+}
+.navigation{
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 0;
+}
+ul.navigation li {
+  position: relative;
+  float: left;
+  transition: all .3s;
+}
+ul.navigation li a{
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  line-height: 2px;
+}
+ul.navigation ul{
+  display: none;
+  float: left;
+  width: 160px;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 0px;
+  //border: 1px solid #ffffff;
+}
+ul.navigation li:hover > ul{
+  border: 1px solid $border-color;
+}
+ul.navigation ul li {
+  border-bottom: 1px solid #471a17;
+}
+ul.navigation ul li:last-child {
+  border-bottom: none;
+}
+ul.navigation ul a {
+  text-align: center;
+  font-weight: 300;
+  width: 120px;
+  color: #fff;
+  background: #4f201d;
+  transition: all .3s;
+}
+ul.navigation ul a:hover {
+  background: #331a18;
+  color: #ffea00;
+}
+.arrow-bottom {
+  display: inline-block;
+  margin-left: 5px;
+  border-top: 4px solid $text-color-normal;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  width: 1px;
+  height: 1px;
+}
+
+/*－－－－－－－－－－－－关于我们------------------*/
+.helpContent{
+  height: auto;
+  overflow: hidden;
+  color: white;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+}
+.helpContent li {
+  float: none;
+  width: 500px;
+  line-height: 30px;
+}
+.helpContent p{
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.helpContent a{
+  font-weight: 200;
+}
+.helpContent a:hover{
+  color: #823832;
+}
+.helpContent .title1 {
+  font-size: 16px;
+  font-family: '微软雅黑';
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.title2 {
+  background: #823832;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  padding: 7px 10px;
+}
+.ReturnTop {
+  float: right;
+  color: #cf918c;
+  text-decoration: none;
+}
+.ReturnTop:hover{
+  color: #cf918c;
+  text-decoration: underline;
+}
+.content{
+  height: auto;
+  overflow: hidden;
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+}
+.content li {
+  float: none;
+  width: 500px;
+  line-height: 30px;
+}
+.content p{
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.content a{
+  font-weight: 200;
+}
+.content a:hover{
+  color: #ffea00;
+}
+.content .title1 {
+  font-size: 16px;
+  font-family: '微软雅黑';
+  color: $text-color-nav;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
+/*-----------------一般常见问题------------------------------*/
+ADDRESS{
+  color: $text-color-normal;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+  font-style: normal;
+}
+/*-----------------娱乐成------------------------------*/
+.tab-TFinfo {
+  width: 650px;
+  background: #823832;
+  border-color: $border-color;
+  line-height: 26px;
+  margin: 10px auto;
+}
+
+.tab-tr-red {
+  background: $bg-color-main-content;
+}
+/*-----------------联系我们------------------------------*/
+.content-contact {
+  height: auto;
+  color: #fff;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+}
+.contact_tab tr td {
+  width: 25%;
+  line-height: 22px;
+  padding: 10px 0;
+}
+.huang {
+  color: #ffea00;
+}
+.line {
+  width: 100%;
+  border-bottom: 1px solid #66352e;
+}
+.content {
+  height: auto;
+  overflow: hidden;
+  color: #fff;
+  font-size: 12px;
+  padding: 15px;
+  line-height: 20px;
+}
+.contact-font b {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.17em;
+}
+.contact-text {
+  background: #823832;
+  padding: 15px;
+  width: 135px;
+  margin-top: 10px;
+  position: relative;
+  color: #fff;
+}
+.content a {
+  font-weight: 200;
+}
+.contact-btn {
+  background: #e6c446;
+  border: 0;
+  width: 165px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-family: \\9ED1\4F53,\\5FAE\8F6F\96C5\9ED1;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  -webkit-transition: background 1s;
+  -o-transition: background 1s;
+  opacity: .8;
+}
+/*------footer-------------*/
+.ReturnTopBtn{
+  position: relative;
+  bottom: 29px;
+  right: 10px;
+  font-size: 14px;
+}
+.foot{
+  background: #180e0c;
+  margin-top: 10px;
+}
+.footer-bg{
+  background: map-get($base, footer_bg_img) no-repeat center;
+  height: 127px;
+}
+
+
+

@@ -1,0 +1,373 @@
+@charset "utf-8";
+@import "variables";
+
+body{
+  background-color: $bg-color;
+  color: $text-color-normal;
+
+
+}
+
+h3{
+  color:$text-color-title;
+}
+
+
+.header_bg{
+  //background: url("resources/headBg.jpg") ;
+}
+
+.header {
+  border-bottom: 1px solid $header-Separate-top;
+  background-color: $bg-color-header;
+}
+.menuNav{
+  //border-top: 1px solid $header-Separate-bottom;
+  background-color: $bg-title-color;
+}
+
+.menuNav a{
+
+}
+
+.header_left {
+  background: map-get($base,logo_img) 0 30% no-repeat;
+  position: relative;
+  left: -69px;
+  top: 5px;
+}
+.header_right {
+  background: map-get($base,hader_right_img)  no-repeat right;
+}
+.now{
+  color:$text-color-hightline  ;
+}
+.menuNav ul li a {
+  color: $text-color-3;
+}
+
+//-----------footer-------------
+.footerNav {
+  background: $bg-footer-nav;
+}
+.footerNav a {
+  color: $text-color-2;
+}
+.footerNavBtn a:hover{
+  color: $footer-hover;
+}
+.footer {
+  background: $bg-color-footer;
+}
+.footer_bg {
+  background: map-get($base,footer_bg_img) no-repeat;
+
+}
+
+//--------------网站首页-----------
+
+.bannerImg {
+  background: map-get($base,index_banner_img) no-repeat;
+}
+
+.imgLeft {
+  background: map-get($base,index_banner_img_two) no-repeat;
+}
+
+#sqBtnStyle {
+  background: $bg-color-btn;
+  color: $text-color-normal;
+}
+
+#sqBtnStyle:hover{
+  background: $btn-hover;
+}
+
+.content_up {
+  border-bottom: 1px solid $nav-Separate-lines-top;
+  padding-bottom: 25px;
+}
+
+//------------品牌介紹-------------
+#BrandContent  .banner{
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .brandBanner {
+  background: map-get($base,brand_banner_img) no-repeat;
+}
+#BrandContent .contentText1 {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .contentText2 {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .contentText3 {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+#BrandContent .contentText4 {
+  border-top: 1px solid $nav-Separate-lines-top;
+}
+
+#BrandContent .productMix {
+  background: $bg-color-btn;
+  color: $text-color-normal;
+}
+
+#BrandContent .productMix:hover{
+  background: $btn-hover;
+}
+
+#BrandContent .icon1 {
+  background:  map-get($base,brand_icon1) no-repeat center;
+}
+#BrandContent .icon2 {
+  background:  map-get($base,brand_icon2) no-repeat center;
+}
+#BrandContent .icon3 {
+  background:  map-get($base,brand_icon3) no-repeat center;
+}
+
+#BrandContent .LocaHref {
+  background: $bg-color-btn;
+  color: $text-color-normal;
+}
+#BrandContent .productListImgTy {
+  background: map-get($base,productListImgTy) no-repeat top center;
+}
+#BrandContent .productListImgZr {
+  background: map-get($base,productListImgZr) no-repeat top center;
+}
+#BrandContent .productListImgLhj {
+  background: map-get($base,productListImghj) no-repeat top center;
+}
+#BrandContent .productListImgCp {
+  background: map-get($base,productListImgCp) no-repeat top center;
+}
+
+#BrandContent .productListImg {
+  border: 1px solid $border-color2;
+}
+
+#BrandContent .productListImg1 {
+  background: map-get($base,productListImg1) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg2 {
+  background: map-get($base,productListImg2) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg3 {
+  background: map-get($base,productListImg3) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg4 {
+  background: map-get($base,productListImg4) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg5 {
+  background: map-get($base,productListImg5) no-repeat;
+  background-size: 100%;
+}
+#BrandContent .productListImg6 {
+  background: map-get($base,productListImg6) no-repeat;
+  background-size: 100%;
+}
+
+//--------合營計畫--------
+
+.money-fousImg{
+  background: map-get($base,Cooperation_head_img) top center no-repeat;
+  height: 574px;
+}
+.money-text span {
+  color: $text-color-title;
+}
+
+.moneyStepList {
+  background: $bg-color-header;
+}
+
+.moneyBorderSan {
+  border-left: 30px solid $bg-footer-nav;
+}
+.fnameCenter .moneyStepList h3 {
+  color: $text-color-2 !important;
+}
+
+.fnameCenter .moneyStepList p {
+  color: $text-color-3 !important;
+;
+}
+
+.borderHeng {
+  border-top: 1px solid $nav-Separate-lines-top;
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+
+
+.tableList {
+  color: $text-color-2;
+  border-bottom: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  background: $bg-title-color;
+}
+
+.tableList tr td {
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+}
+
+//__________________________立即加入________________
+
+
+.rg1 {
+  border: 1px solid $border-color2;
+}
+.rg2{
+  background-image: map-get($base,register_bg_img);
+}
+
+.reg-fnameContent {
+  border: 1px solid $border-color2;
+  background: rgba(0,0,0,.7);
+  color: $menu-click-color;
+}
+
+.submit_btn_input {
+  background: $bg-color-btn !important;
+  color: $text-color-normal!important;
+  border:0 !important;
+}
+
+.register_title_img{
+  background: url("resources/ag_reg.png") no-repeat center!important;
+}
+
+
+//__________________________營銷工具________________
+
+.marke-fousImg{
+  background: map-get($base,tools_head_img) top center no-repeat;
+  height: 520px;
+}
+
+#ToolsContent{
+  .fnameCenter{
+    span{
+      color:$text-color-title;
+      i{  color:#B54A3A  }
+    }
+    h3{  color:$text-color-title;  }
+    p{  color:$text-color-normal;  }
+  }
+}
+
+.productMix{
+  background-color: $bg-color-btn;
+  color: $text-color-normal;
+}
+.productMix:hover{
+  background-color: $bg-color-btnhover;
+}
+
+
+
+
+//__________________________常見問題________________
+
+#FaqContent .img{
+  background: map-get($base,problem_head_img);
+}
+
+.helpStyle{
+  h3{
+    background-color: $text-color-title;
+    //border-bottom: 1px solid $nav-Separate-lines-bottom;
+    //border-left: 2px solid $nav-Separate-lines-bottom;
+    color: $text-color-3 !important;
+    font-weight: bolder;
+    padding: 20px 30px;
+  }
+  .helpList{
+    background-color: $bg-content-color;
+    border-left: 2px solid $helpList-Separate-lines-bottom;
+    a{
+      color:$text-color-3;
+      border-top: 1px solid $helpList-Separate-lines-bottom;
+      border-bottom: 1px solid $helpList-Separate-lines-top;
+    }
+    p{
+      color:$text-color-2;
+      border-top: 1px solid $helpList-Separate-lines-bottom;
+      border-bottom: 1px solid $helpList-Separate-lines-top;
+    }
+    hengTwoList{
+      border-bottom: 1px solid $helpList-Separate-lines-bottom;
+    }
+  }
+}
+
+//__________________________聯絡我們________________
+
+.contact-fousImg{
+  background: map-get($base,contact_head_img) top center no-repeat;
+}
+
+.fnameCenter{
+  span{
+    color:$text-color-title;
+    i{  color:#B54A3A  }
+  }
+  h3{  color:$text-color-title;}
+  p{  color:$text-color-normal;  }
+  .formRight{
+    span{ color:$text-color-normal; }
+    .contactHzImg{
+      width: 369px;
+      position: relative;
+      border-radius: 6px;
+      background-color: #373737;
+      left: -20px;
+      bottom: -28px;
+      box-shadow: 0 0 10px #fff inset;
+      span{ color:$text-color-3;  }
+    }
+  }
+}
+
+.huang {
+  color: $text-color-title;
+}
+
+
+.logoImg{
+  background:  map-get($base,contact_bottom_logo_img) no-repeat center;
+  background-size: 80%;
+}
+.content_up{
+  border-bottom: 1px solid $nav-Separate-lines-bottom;
+}
+
+.content_bottom {
+  border-top: 1px solid $nav-Separate-lines-top;
+}
+
+.iconGroup {
+  color:#8f0000;
+}
+
+.fnameCenter .contactFname span i {
+  color: #8f0000;
+}
+.fnameCenter .titleGroup span i {
+  color: $text-color-title;
+}
+
+
+
+
+
+

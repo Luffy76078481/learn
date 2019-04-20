@@ -1,0 +1,440 @@
+@charset "utf-8";
+@import "variables";
+
+body{
+  background-color: $bg-color;
+  color: $text-color-normal;
+}
+h3{
+  color:$text-color-hightline;
+}
+
+#agent{
+  background: #fbf1cc;
+  p.info {
+    margin-left: 15px;
+    color: gold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+
+
+.agent2 .menuBtn{
+  height: 44px;
+}
+.header_bg{
+  background: url("resources/headBg.jpg") ;
+  .logo_img{
+    position: relative;
+    width: 1200px;
+    height: 105px;
+  }
+  .logo_img:after{
+    width: 600px;
+    height: 103px;
+    content: '';
+    position: absolute;
+    right: 0;
+    background: url("resources/headright.png") no-repeat center;
+  }
+}
+
+.header {
+  height: 123px;
+}
+
+#agent .header .logo_img  .header_left {
+  width: 400px;
+  background: map-get($base,logo_img) center center no-repeat;
+  height: 122px;
+}
+.agent2 .header_bg .menuBtn ul {
+  margin-left: 300px;
+}
+.now{
+  background-color: #ce0000;
+  color: #ffb !important;
+}
+#agent .menuNav ul li{
+  height: 39px ;
+  width: 95px;
+  a{
+    display: block;
+    line-height: 39px;
+    text-align: center;
+    z-index: 15;
+    color: black;
+    &.now {
+      background-color: #ce0000;
+      color: #ffb!important;
+  }
+  
+  }
+}
+#agent .main{
+  height: auto;
+  width: 1075px;
+  box-shadow: 0 5px 10px 2px rgba(0,0,0,.5);
+  color: #ddd;
+  box-sizing: content-box;
+}
+//-----------footer-------------
+.footerNav {
+  background: #705015;
+  margin-top: 30px;
+}
+.footerNav a {
+  color: #ddb365;
+}
+.footerNavBtn a:hover{
+  color: #ffc428;
+}
+.footer {
+  //background: $bg-color-footer;
+}
+.footer_bg {
+  width: auto !important;
+  height: 110px !important;
+  background: url("resources/footer_bg.jpg") center no-repeat;
+
+}
+.b-footer{
+  background: #705015
+}
+.agent2 #AboutUs .cont .tit{
+  color: #ffc428!important;
+}
+//-------------主要內容--------------
+.agent2 .main .content {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.agent2 #Wthdrawal .cont .txt span.yy {
+  color: red;
+}
+.agent2 #Wthdrawal .cont .txt .service {
+  color: gold;
+  margin: 0 10px;
+}
+
+.agent2 #Faq .cont .txt h4 {
+  color: gold;
+  font-weight: 100;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.agent2 #Faq .cont {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.agent2 #Faq .cont .txt span {
+  line-height: 25px;
+  display: none;
+  margin: 5px 0;
+}
+.agent2 #BetRule .cont .txt span.yy {
+  color: gold;
+}
+.agent2 #BetRule .cont {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.agent2 #Wthdrawal .cont {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.agent2 #Faq .cont .tit {
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.agent2 #Deposit .cont .txt .service {
+  color: gold;
+  margin: 0 10px;
+}
+.agent2 #Deposit .cont .txt .block {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 15px 0;
+}
+.agent2 #Deposit .cont {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.agent2 #AboutUs .cont .tit {
+  margin-top: 15px;
+  color: #ffc428;
+  margin-bottom: 15px;
+}
+.agent2 #ContactUs .cont .items {
+  font-size: 20px;
+  line-height: 40px;
+}
+.huang {
+  color: #ffa800;
+}
+.agent2 #ContactUs .cont .info {
+  margin-top: 20px;
+  margin-left: 15px;
+  color: gold;
+  margin-bottom: 15px;
+}
+.main{
+  min-height: 700px;
+  margin: 50px auto !important;
+  padding: 10px;
+  background: #705015;
+  border: 1px solid #705015;
+  .rightContent{
+    width: 800px ;
+    margin: 0 20px ;
+    background: #a6851c;
+    display: inline-block;
+    padding: 0 0 20px 0;
+
+    .title{
+      width: 800px ;
+      height: 53px ;
+      background: url("resources/title.jpg") center no-repeat / 100% 100%;
+      margin-left: 0;
+      position: relative;
+    }
+    .center{
+      padding: 0 20px 0 40px;
+      margin-left: 0;
+    }
+    
+
+  }
+  .banner{
+    height: 142px  ;
+    background: url("resources/agent_banner2.jpg") center no-repeat
+  }
+  .content{
+    .leftBar{
+      position: relative;
+      margin-top: 92px;
+      width: 231px ;
+      display: inline-block;
+    vertical-align: top;
+      .sideNav{
+        ul{
+          li{
+            position: relative;
+            width: 231px;
+            height: 45px;
+            margin-bottom: 0 ;
+            a{
+              width: 231px ;
+              height: 45px ;
+              display: block
+            }
+          }
+          .sportnav{  background: url("resources/left_bg_1.jpg") no-repeat center top;  }
+          .bingonav{  background: url("resources/left_bg_2.jpg") no-repeat center top;  }
+          .casinonav{  background: url("resources/left_bg_3.jpg") no-repeat center top;  }
+          .gamesnav{  background: url("resources/left_bg_4.jpg") no-repeat center top;  }
+
+          .sportnav:hover{  background: url("resources/left_bg_1.jpg") no-repeat center bottom;  }
+          .bingonav:hover{  background: url("resources/left_bg_2.jpg") no-repeat center bottom;  }
+          .casinonav:hover{  background: url("resources/left_bg_3.jpg") no-repeat center bottom;  }
+          .gamesnav:hover{  background: url("resources/left_bg_4.jpg") no-repeat center bottom;  }
+
+        }
+      }
+    }
+    .leftBar:before{
+      content: '';
+      position: absolute;
+      width: 231px;
+      height: 92px;
+      top: -92px;
+      background: url("resources/left_top.jpg") no-repeat;
+    }
+    .leftBar:after{
+      content: '';
+      position: absolute;
+      width: 231px;
+      height: 264px;
+      bottom: -264px;
+      background: url("resources/left_bottom.jpg") no-repeat;
+    }
+  }
+}
+//----------------代裡合作-------------------
+#AllianceContent{
+  .menuBar{
+    ul{
+      width: 100% ;
+      padding-bottom: 0 ;
+      margin-top: 35px;
+      border-bottom: 2px solid #faf419 ;
+      li{
+        width: 87px ;
+        height: 35px;
+        display: inline-block;
+        text-align: center;
+        line-height: 35px;
+        a{
+          display: block;
+          width: 87px;
+          height: 35px;
+          line-height: 35px;
+          color: #fff;
+        }
+        a:hover{
+          color: #000 !important;
+          background: #faf419 !important;
+        }
+        .now{
+          color: #000 !important;
+          background: #faf419 !important;
+        }
+      }
+    }
+  }
+  .tableList tr td {
+    border: 1px #999 solid;
+  }
+  .title:before{
+    content: '合作伙伴';
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+
+}
+.tableList {
+  color: $bg-content-color;
+  font-size: 14px;
+  background: #F6F6F6;
+  .table-title{
+    background:#EA6153 ;
+    color: $text-color-normal;
+  }
+}
+
+.tableList tr:nth-child(odd){
+  background: #E9E9E9;
+}
+
+.reg-fnameContent {
+  border: 0;
+  background: none;
+  color: $menu-click-color;
+}
+
+.submit_btn_input {
+  background: #9A2120 !important;
+  color: $text-color-normal!important;
+  border: 0!important;
+}
+//----------------關於我們-------------------
+#AboutUs{
+  .title:before{
+    content: '关于我们';
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------連絡我們-------------------
+#ContactUs{
+  .title:before{
+    content: '连络我们';
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+  .contactHzImg{
+    display: none;
+  }
+  .intime{
+    display: none;
+  }
+}
+.agent2 #Wthdrawal .cont .txt span.yy{
+  color: red;
+}
+//----------------如何存款-------------------
+#Deposit {
+  .title:before{
+    content: '如何存款';
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------如何取款-------------------
+#Wthdrawal {
+  .title:before{
+    content: '如何取款';
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------常見問題-------------------
+#Faq {
+  .title:before{
+    content: '常见问题';
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+}
+//----------------責任博彩-------------------
+#BetRule {
+  .title:before{
+    content: '责任博彩';
+    position: absolute;
+    font-size: 16px;
+    color:#fff;
+    width: 800px;
+    height: 53px;
+    line-height: 53px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+  .txt{
+    width: 690px;
+  }
+}
+
+

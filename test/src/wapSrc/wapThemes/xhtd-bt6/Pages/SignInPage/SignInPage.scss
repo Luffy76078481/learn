@@ -1,0 +1,50 @@
+@import "../../style/variables.scss";
+
+.signInPage{
+  background:$theme-border-color2;
+  color:#fff;
+  padding:.4rem .5rem;
+  h2{
+    font-size:.45rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top:0;
+  }
+  table{
+    border-collapse: collapse;
+    th,td{
+      text-align: center;
+      font-size:.25rem;
+      padding:.15rem ;
+      border:1px solid #ccc;
+      line-height:.4rem;
+      position: relative;
+      .am-badge {
+        position: absolute;
+        top: 5px;
+        right: 2px;
+        text-indent: 0;
+        .am-badge-text{
+          background:red;
+        }
+      }
+    }
+  }
+  .signInBtn{
+    border-radius: .1rem;
+    border: none;
+    color: #333;
+    line-height: .7rem;
+    font-size: .4rem;
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    background: $theme-textActive-color;
+    font-weight: 600;
+    padding: .1rem 0;
+    &.disabled{
+      background:$theme-bgBg-disabled;
+    }
+  }
+}

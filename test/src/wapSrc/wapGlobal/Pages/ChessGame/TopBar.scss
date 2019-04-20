@@ -1,0 +1,100 @@
+.topBar{
+    height: 0.8rem;
+    width: 100%;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1;
+    // 中部
+    .topMiddle{
+        height: .5rem;
+        width: 6rem;
+        position: absolute;
+        top: .17rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        .am-notice-bar{
+            background-color: rgba(0,0,0,.2);
+            height: 100%;
+            width: 6rem;
+            color: #fff;
+            font-size: .3rem;
+            line-height: .5rem;
+            border-radius: 15px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                background: url("../../style/images/chess/lb.png") no-repeat center / cover;
+                width: .38rem;
+                height: .34rem;
+                left: .15rem;
+                top: .08rem;
+            }
+            svg:not(:root){
+                visibility: hidden
+            }
+        }
+    }
+    .setting{
+        position: absolute;
+        right: .3rem;
+        top: .19rem;
+        // 信号
+        .signal{
+            width: .5rem;
+            height: 100%;
+            text-align: center;
+            padding-top: .08rem;
+            float: left;
+            margin-right: .05rem;
+            div{
+                width: 0.06rem;
+                display: inline-block;
+                background: rgba(255,255,255,.5);
+                margin-left: .05rem;     
+            }
+            div.active{
+                background: rgba(255,255,255,1);
+            }
+            .signal1{height: 0.15rem;}
+            .signal2{height: 0.2rem;}
+            .signal3{height: 0.25rem;}
+            .signal4{height: 0.3rem;}
+        }
+        .rinima{
+            width: 2.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            -webkit-box-pack: justify;
+            -webkit-box-align: center;
+        }
+        div.fullScreen,div.message,div.setUp,div.service{
+            flex: 1;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: .53rem;
+            height: 0.43rem;   
+        }
+        div.fullScreen{
+            background-image:url("../../style/images/chess/qp.png");          
+        }
+        div.message{
+            background-image: url("../../style/images/chess/xx.png")
+        }
+        div.setUp{
+            background-image: url("../../style/images/chess/sz.png")
+        }
+        div.service{
+            background-image: url("../../style/images/chess/kf.png")
+        }
+    }
+}

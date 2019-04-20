@@ -1,0 +1,288 @@
+
+
+//<!-- 动画 animate -->
+@import "./animate.css";
+
+//<!-- class类名对应的样式 -->
+@import "./alignment.css";
+
+//<!--公共样式-->
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Arial", "sans-serif", "Microsoft YaHei";
+  color: #555;
+  min-width: 1360px;
+}
+ul, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.container{ position: relative;}
+img{ border: none }
+.img { width:100%; }
+.clear {clear: both}
+.right{float:right}
+.left{float:left}
+a{text-decoration: none}
+a,input{outline:none !important;}
+.zoom{zoom:1} 
+
+
+#login-form {
+  padding-top: 5px;
+}
+
+.form-login-reg {
+  width: 115px;
+  height: 46px;
+  background-position: -100px 0px;
+  float: right;
+}
+.form-login-button a {
+  color: #ff9c00;
+  padding: 8px 0px;
+  display: block;
+}
+
+.form-reg-btn {
+  float: right;
+}
+.form-login-btn {
+  width: 100px;
+  height: 25px;
+}
+.form-reg-btn:hover {
+  background-position: -100px -46px;
+}
+
+.form-login-input {
+  width: 203px;
+  float: left;
+}
+
+.form-login-button {
+  width: 140px;
+  float: left;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.form-login-btn:hover {
+  background-position: 0px -25px;
+}
+// 考察
+.form-login-input input {
+  width: 100%;
+  margin-bottom: 5px;
+  height: 28px;
+  color: #fff;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+/*banner上的文字样式*/
+
+$white:#fff;
+$yellow:#ffe000;
+$blue:#0093ff;
+$red:#ff0000;
+$backgroundColor :#ffe000;
+.bannerTextCon{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding:0 200px;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.bannerTextCon.hasOption{
+  padding-right:490px;
+}
+.bannerTextCon .bannerText{
+  display: table-cell;
+  vertical-align: middle;
+}
+.bannerTextCon .bannerText .text-align-right,.bannerTextCon .bannerText .text-align-left{
+  margin-bottom:15px;
+}
+.bannerTextCon .bannerText .text-align-right{
+  text-align: right;
+}
+.bannerTextCon .bannerText .text-align-left{
+  text-align: left;
+}
+.bannerTextCon .bannerText .color-white{
+  color:$white;
+}
+.bannerTextCon .bannerText .color-yellow{
+  color:$yellow;
+}
+.bannerTextCon .bannerText .color-blue{
+  color:$blue;
+}
+.bannerTextCon .bannerText .color-red{
+  color:$red;
+}
+
+.bannerTextCon .bannerText .text-20{
+  font-size:20px;
+}
+.bannerTextCon .bannerText .text-28{
+  font-size:20px;
+}
+.bannerTextCon .bannerText .text-30{
+  font-size:30px;
+}
+.bannerTextCon .bannerText .text-38{
+  font-size:38px;
+}
+.bannerTextCon .bannerText .text-40{
+  font-size:40px;
+}
+.bannerTextCon .bannerText .text-48{
+  font-size:48px;
+}
+.bannerTextCon .bannerText a.btn{
+  padding: 5px 23px;
+  font-size: 24px;
+  line-height: 1.42857;
+  border-radius: 2px;
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #ffe000;
+  transition: all .3s;
+  display: inline-block;
+  cursor:pointer;
+}
+.bannerTextCon .bannerText a.btn:hover{
+  opacity: .9;
+}
+.bannerTextCon .bannerText a.btn.btn-yellow{
+  background-color:$yellow;
+}
+.bannerTextCon .bannerText a.btn.btn-blue{
+  background-color:$blue;
+}
+.bannerTextCon .bannerText a.btn.btn-red{
+  background-color:$red;
+}
+.bannerTextCon .bannerText a.btn.btn-white{
+  background-color:$white;
+}
+
+.globe-popbox{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  opacity: 0.7;
+  z-index: 2007;
+}
+
+.globe-popbox-popbox{
+  width: 320px;
+  height: 160px;
+  background: #fff;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2008;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.globe-popbox-popbox p{
+  text-align: center;
+  font-weight: bold;
+}
+.globe-popbox-popbox p:nth-child(1){
+  color: black;
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+.globe-popbox-popbox p:nth-child(2){
+  color: red;
+  border-top: 1px solid #dbdbdf;
+  font-size: 20px;
+}
+#globe-show{
+  display: none;
+}
+.modal-open .modal{
+  overflow-y: hidden;
+}
+
+.bankimgABC,.offlinepayimgABC{  background: url("./images/bank/ABC.png");  }
+.bankimgBJBANK,.offlinepayimgBJBANK{  background: url("./images/bank/BJBANK.png");  }
+.bankimgBOC,.offlinepayimgBOC{  background: url("./images/bank/BOC.png");  }
+.bankimgBOB,.offlinepayimgBOB{  background: url("./images/bank/BOB.png");  }
+.bankimgBJRCB,.offlinepayimgBJRCB{  background: url("./images/bank/BOB.png");  }
+.bankimgBOS,.offlinepayimgBOS{  background: url("./images/bank/BOS.png");  }
+.bankimgCCB,.offlinepayimgCCB{  background: url("./images/bank/CCB.png");  }
+.bankimgCEB,.offlinepayimgCEB{  background: url("./images/bank/CEB.png");  }
+.bankimgCIB,.offlinepayimgCIB{  background: url("./images/bank/CIB.png");  }
+.bankimgCMB,.offlinepayimgCMB{  background: url("./images/bank/CMB.png");  }
+.bankimgCMBC,.offlinepayimgCMBC{  background: url("./images/bank/CMBC.png");  }
+.bankimgCNCB,.offlinepayimgCNCB{  background: url("./images/bank/CNCB.png");  }
+.bankimgICBC,.offlinepayimgHSB{  background: url("./images/bank/HSB.png");  }
+.bankimgCOMM,.offlinepayimgCOMM{  background: url("./images/bank/COMM.png");  }
+.bankimgGDB,.offlinepayimgGDB{  background: url("./images/bank/GDB.png");  }
+.bankimgHXB,.offlinepayimgHXB{  background: url("./images/bank/HXB.png");  }
+.bankimgHZB,.offlinepayimgHZB{  background: url("./images/bank/HZB.png");  }
+.bankimgHZCB,.offlinepayimgHZCB{  background: url("./images/bank/HZCB.png");  }
+.bankimgICBC,.offlinepayimgICBC{  background: url("./images/bank/ICBC.png");  }
+.bankimgNBCB,.offlinepayimgNBCB{  background: url("./images/bank/NBCB.png");  }
+.bankimgPAB,.offlinepayimgPAB{  background: url("./images/bank/PAB.png");  }
+.bankimgPSBC,.offlinepayimgPSBC{  background: url("./images/bank/PSBC.png");  }
+.bankimgSPDB,.offlinepayimgSPDB{  background: url("./images/bank/SPDB.png");  }
+.bankimgYLPAY_GATE,.offlinepayimgYLPAY_GATE{  background: url("./images/bank/UNIONPAY.png");  }
+.bankimgYLPAY_WAP,.offlinepayimgYLPAY_WAP{  background: url("./images/bank/UNIONPAY.png");  }
+.bankimgGXIBBUGB,.offlinepayimgGXIBBUGB{  background: url("./images/bank/GXIBBUGB.png"); background-size: 100%;  }
+.bankimgCBHB,.offlinepayimgCBHB{  background: url("./images/bank/CBHB.png");   }
+.bankimgHKBEA,.offlinepayimgHKBEA  {background: url("./images/bank/HKBEA.png");   }
+.bankimgNJCB,.offlinepayimgNJCB{  background: url("./images/bank/NJCB.png");   }
+.bankimgNJC,.offlinepayimgNJC{  background: url("./images/bank/NJCB.png");   }
+.bankimgBCOM,.offlinepayimgBCOM{  background: url("./images/bank/BCOM.png");   }
+.bankimgCEBB,.offlinepayimgCEBB{  background: url("./images/bank/CEBB.png");   }
+.bankimgECITIC,.offlinepayimgECITIC{  background: url("./images/bank/ECITIC.png");   }
+.bankimgECC,.offlinepayimgECC{  background: url("./images/bank/ECITIC.png");   }
+.bankimgNBB,.offlinepayimgNBB{  background: url("./images/bank/NBB.png");   }
+.bankimgSHB,.offlinepayimgSHB{  background: url("./images/bank/SHB.png");   }
+.bankimgSPABANK,.offlinepayimgSPABANK{  background: url("./images/bank/SPABANK.png");   }
+.bankimgTIANJIN,.offlinepayimgTIANJIN{  background: url("./images/bank/TIANJIN.png");   }
+.bankimgALIPAYOL,.offlinepayimgALIPAYOL{  background: url("./images/bank/ALIPAYOL.png");   }
+.bankimgALIPAY_WAP,.offlinepayimgALIPAY_WAP{  background: url("./images/bank/ALIPAYOL.png");   }
+.bankimgALIPAY_GATE,.offlinepayimgALIPAY_GATE{  background: url("./images/bank/ALIPAYOL.png");   }
+.bankimgWECHATOL,.offlinepayimgWECHATOL{  background: url("./images/bank/WECHATOL.png");   }
+.bankimgWECHAT_WAP,.offlinepayimgWECHAT_WAP{  background: url("./images/bank/WECHATOL.png");   }
+.bankimgJDPAY_WAP,.offlinepayimgJDPAY_WAP{  background: url("./images/bank/JDPAY.png");   }
+.bankimgWECHAT_GATE,.offlinepayimgWECHAT_GATE{  background: url("./images/bank/WECHATOL.png");   }
+.bankimgQQPAYOL,.offlinepayimgQQPAYOL{  background: url("./images/bank/QQPAYOL.png");   }
+.bankimgQQPAY_WAP,.offlinepayimgQQPAY_WAP{  background: url("./images/bank/QQPAYOL.png");   }
+.bankimgQQPAY_GATE,.offlinepayimgQQPAY_GATE{  background: url("./images/bank/QQPAYOL.png");   }
+.bankimgGDRC,.offlinepayimgGDRC{  background: url("./images/bank/GDRC.png");   }
+.bankimgJGB,.offlinepayimgJGB{  background: url("./images/bank/JGB.png");   }
+.bankimgBQD,.offlinepayimgBQD{  background: url("./images/bank/BQD.png");   }
+.bankimgH5Quick,.offlinepayimgH5Quick{  background: url("./images/bank/H5Quick.png");   }
+
+ 
+.spec-jiantou{
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      -webkit-appearance: none !important;
+      margin: 0;
+  }
+}
+
+.sweet-alert h2{
+  margin: 0px 0 25px 0!important;
+}

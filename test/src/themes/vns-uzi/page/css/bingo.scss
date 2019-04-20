@@ -1,0 +1,53 @@
+#bingo {
+  .banner{
+    width: 100%
+  }
+  .note{
+    margin: auto;
+    width: 1200px;
+    margin: auto;
+    .notice-bar {
+      line-height: 30px;
+      width: 1000px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 20px;
+      a{color: #5D5D5D !important;
+      }
+    }
+  }
+  .main{
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+
+  a {
+    text-decoration: none;
+  }
+  .bbin, .kg{
+    display: inline-block;
+  }
+  .bingo_bbin {
+    border: 2px solid transparent;
+    border-radius: 9px;
+    margin: 5px;
+    width: 482px;
+    height: 363px;
+    display: inline-block;
+
+  }
+
+  .bingo_kg {
+    border: 2px solid transparent;
+    border-radius: 9px;
+    margin: 5px;
+    width: 482px;
+    height: 363px;
+    display: inline-block;
+
+  }
+}

@@ -1,0 +1,16 @@
+.GamePlatformPage{
+  .center{
+    width: 1075px;
+    margin: 0  auto 30px auto;
+    ul{
+      li{
+        display: inline-block;
+        width: 300px;
+        height: 303px;
+        margin-top: 30px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+}

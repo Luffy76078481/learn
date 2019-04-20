@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.top {
+    width: 100%;
+}
+
+.download {
+    text-align: center;
+    font-size: 18px;
+    height: 160px;
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+.qr {
+    width: 49%;
+    cursor: pointer;
+    float: left;
+}
+
+.qr img {
+	width: 65%;
+}
+
+.loadBtn {
+    width: 49%;
+    cursor: pointer;
+    float: left;
+}
+
+.loadBtn a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #6f3329;
+    width: 65%;
+    height: 30.1vw;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 0.5;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-left: 17%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: -5px -5px 10px rgba(111, 59, 50, 0.82) inset;
+}
+
+
+.btn p {
+    margin-top: 10%;
+    line-height: 1.5;
+}
+.loadBtnP{
+    line-height: 2;
+}
+
+.textArea {
+    background-color: #f4f4f4;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 4% 4%;
+}
+
+.pic {
+    display: block;
+    margin: 5% auto;
+}
+
+.service {
+    background-color: #333333;
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+}
+
+.service p {
+    margin-left: 25%;
+    line-height: 2;
+}
+
+footer {
+    background-color: #333333;
+    font-size: 15px;
+    line-height: 3.5;
+    text-align: center;
+    color: #ffffff;
+}

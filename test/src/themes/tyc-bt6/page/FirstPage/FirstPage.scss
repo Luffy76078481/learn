@@ -1,0 +1,132 @@
+
+.firstPage{
+  padding-bottom:50px;
+  background:#fff;
+  .flex-align-stretch{
+    margin-top:10px;
+    //background: #f2f2f2;
+    .e-game-title{
+      text-align: center;
+      padding:5px 0;
+      background: #e0dbdb;
+      h5{
+        margin:0;
+        padding:0;
+        font-size:18px;
+        font-weight: 600;
+        color:#c83434;
+        text-align: center;
+      }
+    }
+    img{
+      width:100%;
+    }
+  }
+  .stretch{
+    .owl-dots{
+      margin-top: -25px;
+      text-align: center;
+      z-index: 5;
+      position: relative;
+      button{
+        margin:0 5px;
+      }
+      .active span{
+        background:#fff;
+      }
+      span{
+        border:1px solid #fff;
+        border-radius:100%;
+        display: inline-block;
+        width:10px;
+        height:10px;
+
+      }
+    }
+  }
+  .rightCon{
+    img{width:100%;}
+  }
+  .tabsCon{
+    height:457px;
+    overflow: hidden;
+    .sliderLi{
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 3;
+      padding:0;
+      width: 100%;
+      flex-wrap: nowrap;
+      background-color: #dbdbdb;
+      li{
+        -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+        -moz-box-flex: 1;         /* OLD - Firefox 19- */
+        -webkit-flex: 1;          /* Chrome */
+        -ms-flex: 1;              /* IE 10 */
+        flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        text-indent: 0;
+        color: #616161;
+        text-align: center;
+        border: 0;
+        border-radius: 0;
+        cursor:pointer;
+        height:31px;
+        line-height:31px;
+        font-size:12px;
+        &.active{
+          color: #fff;
+          background-color: #fe4445;
+          width: 17%;
+          height: auto;
+          margin: 0;
+          span{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12px 10px 0;
+            border-color: #fe4445 transparent transparent;
+            display: block;
+            margin: auto;
+            margin-bottom: -12px;
+          }
+        }
+      }
+    }
+    .sliderBox{
+      div{
+        height:426px;
+        &.AG{
+          background-image:url('./images/AG.png');
+        }
+        &.BBIN{
+          background-image:url('./images/bbin.png');
+        }
+        &.TGP{
+          background-image:url('./images/sunbet.png');
+        }
+        &.OG{
+          background-image:url('./images/OG.png');
+        }
+        &.AB{
+          background-image:url('./images/AB.png');
+        }
+        &.MG2{
+          background-image:url('./images/MG.png');
+        }
+        &.PT{
+          background-image:url('./images/PT.png');
+        }
+        &.eBET{
+          background-image:url('./images/ebet.png');
+        }
+      }
+    }
+  }
+}
+ 
+

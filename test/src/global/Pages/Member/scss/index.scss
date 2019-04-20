@@ -1,0 +1,114 @@
+@import "./css/jquery-ui.css";
+@import "./css/datepicker.css";
+@import "style";
+
+.member2 {
+  .nav {
+    background: transparent;
+    height: auto;
+    //overflow: auto;
+  }
+
+  #bindPhoneModal {
+
+
+    .modal-dialog {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 200px;
+      width: 393px !important;
+
+      .modal-header {
+        text-align: center;
+        color: white;
+        background: #af0000;
+        padding: 15px;
+      }
+
+      .lbl {
+        float: left;
+      }
+
+      .yzm {
+        margin-right: 28px;
+      }
+
+      .modal-body {
+        height: 173px;
+      }
+
+      .custinput input {
+        width: 164px !important;
+        margin-bottom: 23px;
+        margin-top: -9px;
+      }
+
+      .custinput .getcode {
+        position: absolute;
+        left: 275px;
+        width: 41px !important;
+        top: 74px;
+        background: #af0000;
+        color: white;
+      }
+
+      .custbtn button {
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 111px;
+        color: white;
+        background: #af0000;
+        border: none;
+      }
+
+      .lxzzkf {
+        position: absolute;
+        top: -16px;
+        right: 19px;
+        margin-top: 30px;
+        float: right;
+      }
+    }
+  }
+}
+
+
+
+.custinput .warning-placehoder::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cf271e !important;
+}
+
+.custinput .warning-placehoder:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cf271e !important;
+}
+
+.custinput .warning-placehoder::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cf271e !important;
+}
+
+.custinput .warning-placehoder:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #cf271e !important;
+}
+
+/* 谷歌 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* 火狐 */
+input {
+  -moz-appearance: textfield;
+}

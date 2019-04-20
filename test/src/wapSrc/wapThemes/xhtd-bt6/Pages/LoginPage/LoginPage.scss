@@ -1,0 +1,133 @@
+@import "../../style/variables.scss";
+
+.loginModal.am-modal-transparent {
+    width: 90%;
+
+    .am-modal-content {
+        background: $theme-firstBg-color;
+        padding-top: 35px;
+
+        .am-modal-close {
+            background-color: #900000;
+            right: 5px;
+            top: 5px;
+
+            span {
+                margin-top: 2px;
+            }
+        }
+        .am-modal-body {
+            .login-logo2 {
+                height: 1rem;
+                background-size: auto 100%;
+                width: 90%;
+                background-position-x: center;
+                margin: 0 auto;
+            }
+            form {
+                .inputItem {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #fff;
+                    width: 80%;
+                    border-radius: 5px;
+                    height: .9rem;
+                    margin: 25px auto;
+                    
+                    // display: block;
+            
+                    i {
+                        color: #777;
+                        font-size: 22px;
+                        line-height: .9rem;
+                        margin: 0 5%;
+
+                        // float: left;
+                    }
+            
+                    ::-webkit-input-placeholder {
+                        /* WebKit browsers */
+                        color: #777;
+                    }
+            
+                    :-moz-placeholder {
+                        /* Mozilla Firefox 4 to 18 */
+                        color: #777;
+                    }
+            
+                    ::-moz-placeholder {
+                        /* Mozilla Firefox 19+ */
+                        color: #777;
+                    }
+            
+                    :-ms-input-placeholder {
+                        /* Internet Explorer 10+ */
+                        color: #777;
+                    }
+            
+                    input[type="text"],
+                    input[type="password"] {
+                        flex: 1;
+                        border: none;
+                        background: none;
+                        font-size: .3rem;
+                        padding-right: .5rem;
+                        color: #777;
+                        height: 100%;
+                        box-sizing: border-box;
+                        margin-right: 5px;
+                        
+                        // line-height: .8rem;
+                        // height: .8rem;
+                        // width: 65%;
+                        // display: inline-block;
+                    }
+                }
+            }
+            .loginBt {
+                a {
+                    display: block;
+                    margin: 20px auto;
+                    color: #fff;
+                    text-underline: #fff;
+                    font-size: .3rem;
+        
+                    &.register {
+                        border-radius: .1rem;
+                        border: none;
+                        color: #333;
+                        line-height: .7rem;
+                        font-size: .4rem;
+                        text-align: center;
+                        display: block;
+                        width: 80%;
+                        margin: 20px auto;
+                        background: #ffe255;
+                        font-weight: 600;
+                        padding: .1rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .loginBtn {
+        border-radius: .1rem;
+        border: none;
+        color: #333;
+        line-height: .7rem;
+        font-size: .4rem;
+        text-align: center;
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        background: #e4e4e4;
+        font-weight: 600;
+        padding: .1rem 0;
+    }
+
+    
+}

@@ -1,0 +1,152 @@
+.affix-online-server-2 {
+    position: fixed;
+    right: 10px;
+    top: 20%;
+    z-index: 999;
+    
+    .newQQ span {
+        display: inline-block;
+        margin: 21px 0 0 47px;
+        color: #886227;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: normal;
+        line-height: 14px;
+    }
+    
+    .newTEL span {
+        display: inline-block;
+        margin: 32px 0 0 16px;
+        color: #886227;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: normal;
+    }
+    
+    .newScan canvas {
+        display: block;
+        margin: 0px auto 0;
+        width: 90px;
+        padding: 5px 0 0 0;
+    }
+    
+    .welcom_right {
+        background: url(./resource/Y_01.png) no-repeat;
+        width: 153px;
+        height: 291px;
+        cursor: pointer;
+    }
+    
+    .welcom_right_bottom {
+        background: url(./resource/Y_02.png) no-repeat;
+        width: 153px;
+        height: 63px;
+        cursor: pointer;
+    }
+    
+    .welcom_right_bottom3 {
+        background: url(./resource/Z_04.png) no-repeat;
+        width: 153px;
+        height: 34px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    
+    .hd {
+        background: url("./resource/service-logo.png") bottom center no-repeat;
+        background-size: 80%;
+        height: 120px;
+        width: 120px;
+    }
+    
+    .bd {
+        border-radius: 5px;
+        
+        .block {
+            .title {
+                color: #94692A;
+                font-size: 15px;
+                height: 35px;
+                line-height: 35px;
+            }
+            
+            .content {
+                color: #94692A;
+                font-size: 14px;
+                background: none;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+        }
+        
+        .qrcode {
+            padding: 10px;
+            text-align: center;
+            background: rgba(116, 94, 96, 0.5);
+            
+            img {
+                opacity: .9;
+            }
+            
+            div {
+                // color: #f2d670;
+                margin-top: 10px;
+            }
+        }
+        
+        .online-service {
+            cursor: pointer
+        }
+        
+        .net {
+            a {
+                display: block;
+                height: 105px;
+            }
+        }
+    }
+    
+    .ft {
+        height: 20px;
+        line-height: 20px;
+        background: none;
+        text-align: center;
+        
+        span {
+            display: inline-block;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            line-height: 20px;
+            width: 36px;
+            text-align: center;
+            vertical-align: top;
+            
+            &.center {
+                background: #D2BD85;
+                font-size: 12px;
+                cursor: pointer;
+            }
+            
+            &.left-span {
+                height: 0;
+                width: 0;
+                border: 10px solid transparent;
+                border-top-color: #D2BD85;
+                border-right-color: #D2BD85;
+                font-size: 0;
+            }
+            
+            &.right-span {
+                height: 0;
+                width: 0;
+                border: 10px solid transparent;
+                border-left-color: #D2BD85;
+                border-top-color: #D2BD85;
+                font-size: 0;
+            }
+        }
+    }
+}

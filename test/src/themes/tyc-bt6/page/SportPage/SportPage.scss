@@ -1,0 +1,29 @@
+
+.sport-content{
+  width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  .sportnav{
+    margin:0 auto;
+    height:40px;
+    text-align: left;
+    background: #ff8f79;
+    a{
+      position: relative;
+      z-index: 16;
+      display: inline-block;
+      height: 40px;
+      padding: 0 20px;
+      color: #fff;
+      font-size: 16px;
+      line-height: 40px;
+      text-decoration: none;
+      transition: all .5s;
+      cursor:pointer;
+    }
+    a.active,a:hover{
+      background: #c83434;
+      color: #ffe000;
+    }
+  }
+}

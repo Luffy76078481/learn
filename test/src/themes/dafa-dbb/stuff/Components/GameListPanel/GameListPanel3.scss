@@ -1,0 +1,475 @@
+.game-list-content2{
+  height: auto;
+
+  .game-list-left-nav li {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  .game-list-right-content li a img {
+    border-radius: 4px 4px 0px 0px;
+  }
+  .game-list-right-content li a img.gameImg {
+    width: 238px ;
+    height: 99px ;
+  }
+  #GamesGridPopupMask .GamePopupMask {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0px 0px -18px;
+    background: url("images/loaderSpinner.gif");
+  }
+
+  .game-list-right-box{
+    .bonus_box_content{
+
+      .bonus1{
+        .bonus1_img{
+          background: url("images/bonus1.png") no-repeat center;
+          background-size: contain;
+        }
+      }
+      .bonus2{
+        .bonus2_img{
+          background: url("images/bonus2.png") ;
+          background-size: contain;
+        }
+      }
+      .bonus3{
+        .bonus3_img{
+          background: url("images/bonus3.jpg") ;
+          background-size: contain;
+        }
+      }
+      .bonus4{
+        .bonus4_img{
+          background: url("images/bonus4.jpg") ;
+          background-size: contain;
+        }
+      }
+    }
+  }
+
+  .game-list-left-nav li a {
+    //color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    display: block;
+  }
+  .game-list-fname2{
+    width: 100% ;
+  }
+  .game-list-left-nav{
+    margin-right: 8px;
+    height: 838px;
+    float: left;
+    width: 155px;
+    padding-top: 20px;
+  }
+
+  .game-jackpot-num2{
+    font-size: 21px;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+
+  .pager_box{
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    border-top: 1px #888 dashed;
+  }
+
+  .pager_box div{
+    display: inline-block;
+    margin: 15px 5px;
+    font-size: 12px;
+  }
+
+  .pager_box div.number_icon{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #888;
+    vertical-align: middle;
+  }
+
+  .nexprepage_icon{
+    color: #fff;
+    background-color: #888;
+    width: 52px;
+    height: 28px;
+    vertical-align: middle;
+    line-height: 28px;
+  }
+
+  .nexprepage_icon a{
+    color: #fff;
+  }
+
+
+  .pager_box div.active{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #c2c2c2 !important;
+  }
+
+  .pager_box div.number_icon a{
+    color: #fff;
+  }
+
+  .problem {
+    a{
+      text-decoration:none;
+      color: #fff;
+    }
+    .box_title{
+      text-decoration:none;
+      color: #fff;
+    }
+  }
+
+  .pager_box div.active a{
+    color: #000;
+    background-color: transparent !important;
+  }
+
+  .bonus_box{
+    width: 100%;
+    height: 838px;
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  .game-jackpot-num2 span{
+    background-color: #0b815f;
+    padding: 3px 8px;
+  }
+
+  .bonus_box_title{
+    position: relative;
+    left: -8px;
+    width: 335px;
+    height: 41px;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .bonus_box_title_text{
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: bold;
+  }
+  .bonus_box_content{
+    background-color: #2b2b2b;
+    color: #fff;
+  }
+  .game-list-right-box .contact .mail{
+    i{
+      text-align: center;
+      width: 41px;
+      height: 41px;
+      font-size: 30px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  }
+
+  .bonusgame{
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-left: 10px;
+  }
+
+  .bonus_img{
+    width: 65px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .bonus_text{
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+  }
+
+
+  .winning_box{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    color: #000;
+    margin-top: 8px;
+  }
+  .gameItem b {
+    top: 44px !important;
+  }
+  .game-list-box2{
+    text-align: left;
+    background-color: #363536;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .game_list_top_img{
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+    height: 170px;
+  }
+  .game-list-mid-box{
+    margin: 0 0 15px 15px;
+    float: left;
+  }
+  .platform_list2{
+    margin: 0;
+    font-size: 14px;
+    height: 30px;
+    width: auto;
+    padding: 0 10px;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle;
+    float: left;
+  }
+
+  .list2_onchoose{
+    border-bottom: 5px solid #0b815f;
+  }
+
+
+  .searchbartext:focus{
+    border:none;
+    outline:none;
+  }
+
+  .searchbar{
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .searchbartext{
+    display: inline-block;
+    width: 85%;
+    height: 30px;
+    border-radius: 30px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,.9);
+    border:none;
+    padding-left: 15px;
+
+  }
+
+  .hand{
+    vertical-align: middle;
+    position: relative;
+    right: 0;
+    display: inline-block;
+    width: 7%;
+    text-align: center;
+    color:#fdfa6f;
+    /*height: 100%;*/
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .searchBtn{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 15px;
+  }
+
+  .onchoosing{
+    display: block;
+  }
+  .jackPot{
+    width: 100%;
+    height: 25px;
+    background: url("images/imgbg_07.png");
+    color:rgb(255, 255, 146);;
+    position: absolute;
+    background-size: cover;
+    top: -16px;
+    left: 0;
+    z-index: 55561;
+    text-align: center;
+  }
+  .checkJackpot{
+    width: 128px;
+    height: 28px;
+    margin-left: 13px;
+    border-radius: 26px;
+    margin-top: 4%;
+  }
+  .checkJackpot input[type=checkbox]{
+    background-color: rgba(0,0,0,.9);
+  }
+  .checkJackpot input {
+    margin-left: 5px;
+  }
+  .checkJackpot:hover label{
+    color: #ffea00;
+  }
+  .game-list-right-box .contact .contactimg{
+    cursor: pointer;
+  }
+
+  .gamefootlist{
+    clear: both;
+    width: 100%;
+    background-color: #e6e6e6;
+    padding: 10px 0;
+    height: 100px;
+    ul{
+      li{
+        cursor: pointer;
+        width: 33%;
+        float: left;
+        color: #000;
+      }
+    }
+  }
+
+}
+#Gamebg .games_box{
+  width: 100%;
+  min-height: 780px;
+  padding: 0;
+  background-color: transparent;
+  height: auto;
+}
+
+
+// 整理
+.gamecss{
+  .box_title{
+    background-color: #2e6a11;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+  }  
+  .promo_box a{
+    margin-left: 10px;
+    color: #fbb821;
+  }
+  .proimg{
+    width: 302px;
+    height: 92px;
+    margin: 10px;
+  }
+  .game-list-right-box .problem .problemimg {
+    width: 302px;
+    height: 92px;
+    margin: 10px;
+  }
+  .promo_box .more{
+    width: 320px;
+    height: 31px;
+    text-align: right;
+    border-top: 1px solid #151515;
+    a{
+      line-height: 31px;
+      font-size: 12px;
+      margin-right: 15px;
+    }
+  }
+  .game-list-right-box .contact {
+    width: 320px;
+    height: 254px;
+    .contactimg{
+      cursor: pointer;
+    }
+    .contactimg{
+      width: 320px;
+      height: 105px;
+    }
+    .mail {
+      width: 100%;
+      height: 41px;
+      padding-left: 50px;
+      margin-top: 10px;
+      i {
+        text-align: center;
+        width: 41px;
+        height: 41px;
+        font-size: 30px;
+        margin-right: 8px;
+        vertical-align: middle;
+        color: #fff
+      }
+      a {
+        color: #fff;
+      }
+    }
+    .phone {
+      width: 100%;
+      height: 41px;
+      padding-left: 50px;
+      margin-top: 10px;
+      div{
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff
+      }
+    }
+    .iconimg{
+      vertical-align: middle;
+      margin-right: 8px;
+      display: inline-block;
+      width: 41px;
+      height: 41px;
+    }
+  }
+  .game-list-right-box .rightbx {
+    margin-bottom: 8px;
+    background-color: #2b2b2b;
+    position: relative;
+  }
+  .game-list-right-box .problem p {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .game-list-right-box .problem .more {
+    width: 320px;
+    height: 31px;
+    text-align: right;
+    a {
+      line-height: 31px;
+      font-size: 12px;
+      margin-right: 15px;
+      color: #fbb821;
+  }
+}
+
+}
+.gamecss .game-list-content2 .game-list-right-content li.gameItem
+{
+  width: 206px!important;
+  height: 155px!important;
+}
+.gamecss .game-list-content2 .game-list-right-content li a img.gameImg{
+  width: 183px!important;
+  height: 76px!important;
+}
+.gamecss .game-list-content2 .game-list-right-content li a span{
+  font-size: 14px
+}

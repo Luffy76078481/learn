@@ -1,0 +1,1080 @@
+.Bgmember-main{
+  .tm {
+    padding-top: 1.8%;
+  }
+  .tm .divc {
+    margin: 0 auto;
+  }
+  .tm .ht-t {
+    text-align: center;
+    line-height: 1.3;
+    width: 315px;
+    height: 59px;
+    margin: 0 auto;
+    padding: 25px 0px;
+  }
+  .tm .ht-nav {
+    padding-top: 3%;
+    height: auto;
+    background: transparent;
+  }
+  .tm .ht-nav::before {
+    content: " ";
+    position: relative;
+    top: -15px;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-position: center;
+  }
+  .tm .ht-nav li {
+    width: 23%;
+    margin: 0 1%;
+    float: left;
+    font-size: 16px;
+  }
+  .tm .ht-nav li a {
+    vertical-align: middle;
+    display: block;
+    padding-left: 13px;
+    width: 100%;
+  }
+  .tm1 {
+    width: 23%;
+    margin: 0 1%;
+    height: 70px;
+    font-size: 0px;
+  }
+  .tm2, .tm3, .tm4{
+    height: 70px;
+    font-size: 0px;
+  }
+  .tm .ht-nav li a.on, .tm .ht-nav li a:hover {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .tm i {
+    font-style: normal;
+  }
+  .tm .i2,.tm .i1,.tm .i3,.tm .i4 {
+    display: none;
+    width: 23%;
+    margin: 0 1%;
+  }
+  .tm_dw {
+    width: 15% !important;
+    margin: 30px 0 !important;
+    font-size: 16px;
+  }
+  .tm .ht-nav li .htico {
+    width: 24px;
+    height: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.Bgmember-main .tm .ht-nav li a {
+  vertical-align: middle;
+  display: block;
+  padding-left: 13px;
+  width: 100%;
+}
+  .tm .ht-nav li a.item5 .htico {
+    background-position: 0 -120px;
+}
+
+.tm .ht-nav li a.item6 .htico {
+  background-position: 0 -150px;
+}
+.tm .ht-nav li a.item8 .htico {
+  background-position: 0 -210px;
+}
+.tm .ht-cunkuan .t a {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: middle;
+  display: inline-block;
+}
+.tm .f14 {
+  font-size: 14px;
+}
+.tm .tc {
+  text-align: center;
+  color: #FFF;
+}
+
+  .form-login-input{
+    line-height: 24px;
+    padding-left: 7px;
+  }
+  .memberItem a{
+    color: #fff;
+    text-decoration: none;
+    margin-left:5px;
+  }
+  .memberItem a:hover{
+    color: #FFFF00;
+    text-decoration: none;
+    margin-left:5px;
+  }
+  .memberItem .btn{
+    color: #fff;
+    background-color: #4a1d19;
+    border: 1px solid #6b423b;
+  }
+  .form-login-input input, .form-login-input .input-group-addon{
+    margin-bottom: 5px;
+    height: 28px;
+    color: #fff;
+    padding: 3px 5px;
+    /*background: #2f201d;*/
+    /*border: 1px solid #5f3b34;*/
+    font-size: 12px;
+  }
+  .form-login-input input, .form-login-input .input-group{
+    width: 203px;
+  }
+
+  /*.ht-nav #tm9 .item9:hover i{*/
+  /*color:#ffcc00 !important;*/
+  /*}*/
+
+  .tm .tanchu .c, .tm .tanchu .wraperh-md{
+    color: #d72809;
+    //background-color: #fff;
+  }
+
+  // .tm .ht-nav li a{
+  //   color: #2b1212;
+  // }
+  .tm .ht-nav li a.on,.tm .ht-nav li a:hover  {
+    color: #fff;
+    background-color: #4a1d19;
+  }
+  .tm .ht-cunkuan .t a.on {
+    color: #e3c652;
+    border: 1px solid #e3c652;
+  }
+  .tm .ht-cunkuan .t a:hover {
+    color: #e3c652;
+  }
+  .tm .report .t a:hover {
+    color: #e3c652;
+  }
+  .tm .report .t a.on {
+    color: #e3c652;
+    border: 1px solid #e3c652;
+  }
+  .tm .btn-mid, .tm a.btn-mid, .tm input.btn-mid {
+    //background: #4a1d19;
+    //color: #fff;
+  }
+
+  //.tm .table-msg th{
+  //  background-color: #2b1212;
+  //}
+  //.tm .table-border tr:hover td {
+  //  background: #4a1d19;
+  //}
+  .tm input{
+    color: #FFF;
+  }
+  .tm input.date-select{
+    color: #fff;
+  }
+
+  #verifyField { height: 50px; }
+  #verifyField span {padding:0 6px;color:red;font-family:monospace;font-size:16px;}
+  .tm .t, .tm .c {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tm {
+    /*background: url(../images/bg_02.jpg);*/
+  }
+  .tm .ht-t {
+    text-align: center;
+    /*color: #999;*/
+    line-height: 1.3;
+    /*background: url(../images/title_03.png) no-repeat;*/
+    width: 315px;
+    height: 59px;
+    margin: 0 auto;
+  }
+  .tm .ht-t p {
+    display: none;
+  }
+  .tm .ht-nav::before
+  {
+    content: " ";
+    position: relative;
+    top: -15px;
+    /*background: url(../images/menu_img_03.png);*/
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-position: center;
+  }
+  .tm ul
+  {
+    margin-top: 10px;
+  }
+  .tm .ht-nav::after
+  {
+    content: " ";
+    position: relative;
+    top: 85px;
+    /*background: url(../images/menu_img_03.png);*/
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-position: center;
+  }
+  .tm .ht-nav {
+    padding-top: 3%;
+    height: auto;
+    background: transparent;
+  }
+
+  #tm9{
+    margin-left:5% !important; ;
+  }
+  #tm8{
+    margin-right:0% !important; ;
+  }
+  #tm11{
+    .item11{
+      line-height: 30px;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  .ttt{
+    /*position:relative;*/
+    top:4px;
+    fontSize:25px;
+    marginRight:5px;
+    color:#a1a1a1;
+  }
+
+  .tm .ht-nav li a.on, .tm .ht-nav li a:hover {
+    color: #ffcc00;
+    background-color: transparent;
+    text-decoration:none;
+  }
+  .tm .xxzx {
+    margin-top: 10px;
+  }
+  .tm .clearfix.t20 {
+    margin-top: 145px;
+    padding: 20px 40px;
+    border-radius: 6px 6px 0 0;
+
+  }
+  .tm .p20 {
+    padding: 20px;
+}
+  .tm .border {
+    border: 0;
+  }
+  .tm .bbd {
+    border-bottom: 1px solid #693432;
+  }
+  .tm .gminfolist div .t {
+    border-right: 0;
+  }
+  .clearfix.t20.ht-cunkuan.deposit
+  {
+    margin-top: 0px;
+    border-top: none;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .tm .ht-jinggao .jgico {
+    width: 59px;
+    height: 54px;
+    background-position: -63px -84px;
+    margin-left: 10px;
+}
+.tm .ht-jinggao .info {
+  width: 88%;
+  margin-left: 24px;
+  color: red;
+}
+.money_input_group label {
+  font-size: 20px;
+  margin-top: 4px;
+  color: #FFF;
+}
+.onlinepay_left {
+  padding: 0 20px!important;
+  width: 20%;
+  text-align: center;
+  border-radius: 5px;
+}
+.onlinepayOption {
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 7px;
+  margin: 10px!important;
+  position: relative;
+}
+.deposit_input, .deposit_title ,.moneyIcon,.deposit_icon{
+  display: inline-block;
+  vertical-align: middle;
+}
+.deposit_input {
+  width: 265px;
+  margin-left: 11px;
+}
+.tm input.input {
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+.deposit_icon {
+  width: 455px;
+}
+.money_input_group {
+  padding-bottom: 20px!important;
+}
+.money_quick_input .moneyIcon {
+  height: 50px;
+  line-height: 48px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ecb934;
+  background: #5f3b34;
+  border: 1px solid #5f3b34;
+}
+.money_quick_input {
+  padding-bottom: 40px!important;
+  padding-left: 120px!important;
+}
+.tm .w238 {
+  width: 238px;
+}
+.tm .w253 {
+  width: 253px;
+}
+
+.deposit_input input {
+  height: 40px;
+  font-size: 25px!important;
+  text-align: center;
+}
+.moneyIcon {
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  height: 36px;
+  line-height: 33px;
+  border: 2px solid #ecb934;
+  color: #ddd;
+  border-radius: 5px;
+  margin: 3px 10px!important;
+  box-shadow: inset 0 0 100px #272727;
+}
+.Bgmember-main .tm i {
+  font-style: normal;
+}
+
+.moneyIcon i {
+  color: #ecb934;
+}
+.money_input_group .moneyIcon {
+  border: 1px solid #5f3b34;
+  background: #5f3b34;
+  width: 91px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.onlinepay {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+  .ggg{
+    box-sizing: border-box !important;
+    padding-top: 10px !important;
+    position: relative;
+    margin: 10px auto !important;
+    width: 330px;
+    font-size: 14px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .test{
+    width: 100%;
+  }
+
+  .select, .input {
+    color: #fff !important;
+  }
+  .gminfolist div .c, .gminfolist div .t{
+    color: #fff;
+  }
+
+  .tishi_b .tishi_bt {
+    background: #4a1d19;
+  }
+  .tishi_b p {
+    border-left: 4px solid #4a1d19;
+    border-right: 4px solid #4a1d19;
+    border-bottom: 4px solid #4a1d19;
+  }
+  .tishi_b .tishi_bt {
+    background: #4a1d19;
+  }
+  #verifyField { height: 50px; }
+  #verifyField span {padding:0 6px;color:red;font-family:monospace;font-size:16px;}
+  .status-0 a {
+    font-weight: bold;
+  }
+
+  .active .tm3{
+    /*background: url(../images/menu_img_hover_07.png) no-repeat;*/
+  }
+  .active .tm1{
+    /*background: url(../images/menu_img_07.png) no-repeat;*/
+  }
+  .active .tm2{
+    /*background: url(../images/menu_img_hover_05.png) no-repeat;*/
+  }
+  .active .tm4{
+    /*background: url(../images/menu_img_hover_09.png) no-repeat;*/
+  }
+
+ 
+  .clearfix.t20.ht-cunkuan.deposit {
+    margin-top: 0px;
+    border-top: none;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .htbtnlg[disabled],.htbtnlg[disabled]:hover {background:#ccc; cursor:default;}
+
+  .sportButton:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+  }
+
+  .ico {
+    /*background-image: url(../images/ico.png);*/
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .promo-main{
+    width: 520px;
+    height: 150px;
+    margin: 20px auto 0;
+    text-align: center;
+    color: #FFF;
+    .promo-title{
+      text-align: center;
+      font-size: 16px;
+    }
+    .promo-body{
+      margin-top: 20px;
+      input.input{
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .copyBtn{
+        width: 70px;
+        height: 35px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 35px;
+      }
+      span{
+        color: #f00b0d;
+        margin-left: 5px;
+      }
+
+    }
+
+  }
+  .recommend{
+    width: 1000px;
+    #recommendCode{
+      width: 400px;
+    }
+  }
+
+}
+
+
+//銀行相關圖標
+.onlinepayOption_text {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto!important;
+}
+.QQPAY,.QQPAYOL{
+  background: url("./img/banks/02.png") no-repeat;
+  background-size: cover;
+}
+
+.WECHAT,.WECHATOL,.WECHAT_WAP{
+  background: url("./img/banks/01.png") no-repeat;
+  background-size: cover;
+}
+
+.ALIPAY,.ALIPAYOL ,.ALIPAY_WAP{
+  background: url("./img/banks/03.png") no-repeat;
+  background-size: cover;
+}
+
+.JDPAY{
+  background: url("./img/banks/04.png") no-repeat;
+  background-size: cover;
+}
+.BAIDUPAY{
+  background: url("./img/banks/05.png") no-repeat;
+  background-size: cover;
+}
+.TENPAY{
+  background: url("./img/banks/06.png") no-repeat;
+  background-size: cover;
+}
+
+.YLPAY{
+  background: url("./img/banks/07.png") no-repeat;
+  background-size: cover;
+}
+
+.bankimgABC,.offlinepayimgABC{  background: url("./img/banks/ABC.png");  }
+.bankimgBJBANK,.offlinepayimgBJBANK{  background: url("./img/banks/BJBANK.png");  }
+.bankimgBOC,.offlinepayimgBOC{  background: url("./img/banks/BOC.png");  }
+.bankimgBOB,.offlinepayimgBOB{  background: url("./img/banks/BOB.png");  }
+.bankimgBJRCB,.offlinepayimgBJRCB{  background: url("./img/banks/BOB.png");  }
+.bankimgBOS,.offlinepayimgBOS{  background: url("./img/banks/BOS.png");  }
+.bankimgCCB,.offlinepayimgCCB{  background: url("./img/banks/CCB.png");  }
+.bankimgCEB,.offlinepayimgCEB{  background: url("./img/banks/CEB.png");  }
+.bankimgCIB,.offlinepayimgCIB{  background: url("./img/banks/CIB.png");  }
+.bankimgCMB,.offlinepayimgCMB{  background: url("./img/banks/CMB.png");  }
+.bankimgCMBC,.offlinepayimgCMBC{  background: url("./img/banks/CMBC.png");  }
+.bankimgCNCB,.offlinepayimgCNCB{  background: url("./img/banks/CNCB.png");  }
+.bankimgICBC,.offlinepayimgHSB{  background: url("./img/banks/HSB.png");  }
+.bankimgCOMM,.offlinepayimgCOMM{  background: url("./img/banks/COMM.png");  }
+.bankimgGDB,.offlinepayimgGDB{  background: url("./img/banks/GDB.png");  }
+.bankimgHXB,.offlinepayimgHXB{  background: url("./img/banks/HXB.png");  }
+.bankimgHZB,.offlinepayimgHZB{  background: url("./img/banks/HZB.png");  }
+.bankimgHZCB,.offlinepayimgHZCB{  background: url("./img/banks/HZCB.png");  }
+.bankimgICBC,.offlinepayimgICBC{  background: url("./img/banks/ICBC.png");  }
+.bankimgNBCB,.offlinepayimgNBCB{  background: url("./img/banks/NBCB.png");  }
+.bankimgPAB,.offlinepayimgPAB{  background: url("./img/banks/PAB.png");  }
+.bankimgPSBC,.offlinepayimgPSBC{  background: url("./img/banks/PSBC.png");  }
+.bankimgSPDB,.offlinepayimgSPDB{  background: url("./img/banks/SPDB.png");  }
+.bankimgYLPAY_GATE,.offlinepayimgYLPAY_GATE{  background: url("./img/banks/UNIONPAY.png");  }
+.bankimgYLPAY_WAP,.offlinepayimgYLPAY_WAP{  background: url("./img/banks/UNIONPAY.png");  }
+.bankimgGXIBBUGB,.offlinepayimgGXIBBUGB{  background: url("./img/banks/GXIBBUGB.png"); background-size: 100%;  }
+.bankimgCBHB,.offlinepayimgCBHB{  background: url("./img/banks/CBHB.png");   }
+.bankimgHKBEA,.offlinepayimgHKBEA  {background: url("./img/banks/HKBEA.png");   }
+.bankimgNJCB,.offlinepayimgNJCB{  background: url("./img/banks/NJCB.png");   }
+.bankimgNJC,.offlinepayimgNJC{  background: url("./img/banks/NJCB.png");   }
+.bankimgBCOM,.offlinepayimgBCOM{  background: url("./img/banks/BCOM.png");   }
+.bankimgCEBB,.offlinepayimgCEBB{  background: url("./img/banks/CEBB.png");   }
+.bankimgECITIC,.offlinepayimgECITIC{  background: url("./img/banks/ECITIC.png");   }
+.bankimgECC,.offlinepayimgECC{  background: url("./img/banks/ECITIC.png");   }
+.bankimgNBB,.offlinepayimgNBB{  background: url("./img/banks/NBB.png");   }
+.bankimgSHB,.offlinepayimgSHB{  background: url("./img/banks/SHB.png");   }
+.bankimgSPABANK,.offlinepayimgSPABANK{  background: url("./img/banks/SPABANK.png");   }
+.bankimgTIANJIN,.offlinepayimgTIANJIN{  background: url("./img/banks/TIANJIN.png");   }
+.bankimgALIPAYOL,.offlinepayimgALIPAYOL{  background: url("./img/banks/ALIPAYOL.png");   }
+.bankimgALIPAY_WAP,.offlinepayimgALIPAY_WAP{  background: url("./img/banks/ALIPAYOL.png");   }
+.bankimgALIPAY_GATE,.offlinepayimgALIPAY_GATE{  background: url("./img/banks/ALIPAYOL.png");   }
+.bankimgWECHATOL,.offlinepayimgWECHATOL{  background: url("./img/banks/WECHATOL.png");   }
+.bankimgWECHAT_WAP,.offlinepayimgWECHAT_WAP{  background: url("./img/banks/WECHATOL.png");   }
+.bankimgJDPAY_WAP,.offlinepayimgJDPAY_WAP{  background: url("./img/banks/JDPAY.png");   }
+.bankimgWECHAT_GATE,.offlinepayimgWECHAT_GATE{  background: url("./img/banks/WECHATOL.png");   }
+.bankimgQQPAYOL,.offlinepayimgQQPAYOL{  background: url("./img/banks/QQPAYOL.png");   }
+.bankimgQQPAY_WAP,.offlinepayimgQQPAY_WAP{  background: url("./img/banks/QQPAYOL.png");   }
+.bankimgQQPAY_GATE,.offlinepayimgQQPAY_GATE{  background: url("./img/banks/QQPAYOL.png");   }
+.bankimgGDRC,.offlinepayimgGDRC{  background: url("./img/banks/GDRC.png");   }
+.bankimgJGB,.offlinepayimgJGB{  background: url("./img/banks/JGB.png");   }
+.bankimgBQD,.offlinepayimgBQD{  background: url("./img/banks/BQD.png");   }
+.bankimgH5Quick,.offlinepayimgH5Quick{  background: url("./img/banks/H5Quick.png");   }
+
+// 在线支付
+
+.depositContent{
+  width: 624px;
+  margin: 50px auto;
+  label{
+    padding-right: 20px;
+    font-size: 16px;
+    color: #d86767;
+  }
+  select{
+    width: 196px;
+    height: 36px;
+    border: 1px solid #4d4332!important;
+    background-color: #211b13!important;
+    color: #8a8686;
+    padding-left: 10px;
+  }
+  .font_bold{
+    font-size: 15px;
+    padding-left: 15px;
+    display: inline-block;
+    font-weight: bold;
+    color:#e43131; 
+  }
+  .tips{
+    padding: 5px;
+    border: 1px dashed #b55454;
+    line-height: 24px;
+    font-size: 12px;
+    width: 460px!important;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #ba7e70;
+  }
+  .memberBtn{
+    display: block;
+    width: 156px;
+    height: 46px;
+    margin-left: 116px;
+    margin-top: 12px;
+    border: 1px solid #4d4332!important;
+    background-color: #211b13!important;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d7d64c!important;
+  }
+}
+
+
+.atmBox {
+  background: #2b1212;
+  border: 2px solid #5f3b34;
+}
+.atmBox {
+  width: 666px;
+  height: 600px;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto!important;
+  border-radius: 5px;
+  padding-top: 70px!important;
+  z-index: 1000;
+  box-shadow: inset 0 0 10px #aaa;
+  background: #11100e;
+  border: 2px solid #4d4332;
+}
+.atmBox_title{
+  border-bottom: 2px solid #5f3b34;
+  color: #ff9c00;
+}
+
+.updateContent{
+  .noticeCenter{
+    position: relative;
+    top: 2px;
+    width: 600px;
+  }
+}
+.atmBox_title {
+  font-size: 25px;
+  font-weight: bolder;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #4d4332;
+  color: #dfb934;
+  position: absolute;
+  top: 25px;
+  padding-left: 50px!important;
+}
+.atmBox_clossbtn {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px!important;
+  border: 1px solid #fff;
+  line-height: 30px!important;
+  text-align: center;
+  color: #aaa;
+  border-radius: 5px;
+  box-shadow: inset 0 0 100px #000;
+  background: #fff;
+}
+.atmBox_texttitle {
+  padding-left: 50px!important;
+}
+.tm .htbtnlg, .tm a.htbtnlg, .tm input.htbtnlg {
+  cursor: pointer;
+  color: #fff;
+  height: 54px;
+  line-height: 54px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+}
+.tm .w260 {
+  width: 254px;
+}
+.atmBox_text {
+  margin: 15px 0!important;
+  color: #FFF;
+}
+.tm .ml5 {
+  color: #f7aa9d!important;
+  margin-left: 5px;
+}
+.tm .f16 {
+  font-size: 16px;
+}
+.affix-online-server{
+  .hd{
+    height: 345px;
+    padding-top: 110px;
+  }
+}
+.tm .t30 {
+  margin-top: 30px;
+}
+.tm table.ht-fktable td {
+  padding: 0 5px;
+  height: 55px;
+  line-height: 50px;
+  vertical-align: top;
+  color: #FFF;
+}
+.tm select.select {
+  border: 1px solid #b45656;
+  background-color: #2b1212;
+}
+
+.tm select.select, div .datelist {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.tm select.select {
+  padding: 6px 12px;
+  color: #fff!important;
+}
+.tm .tr {
+  text-align: right;
+}
+.member2 .cust_container .containerTop .icons_verify_new{
+  height: 164px;
+  width: 290px;
+  // background: url('./resources/newImg.jpg') 0 0/100% 100% no-repeat;
+  position: absolute;
+  right: 48px;
+  top: 21px;
+}
+
+#topHead #login-form{
+  padding-top: 18px !important;
+  position: relative;
+}
+#topHead #login-form .errorMessage{
+  position: absolute;
+  left: 5px;
+  top: -3px;
+}
+.transIcon{
+  display: inline-block;
+  width: 9px;
+  height: 17px;
+  background: url('./img/navs/transIcon.png');
+  vertical-align: middle;
+}
+
+#bindCardPage .title {
+  position: relative;
+  top: 9%;
+  left: -31%;
+  font-size: 20px;
+  z-index: 55;
+  color: #FFF;
+}
+.tm .table-border th {
+  font-weight: 400;
+  font-size: 16px;
+}
+.tm .table-msg td, .tm .table-msg th {
+  padding: 10px 20px;
+}
+.tm .wraperh-md {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.tm .wraperl-xs {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.tm .fl {
+  float: left;
+  color: #FFF;
+}
+.tm .fr {
+  float: right;
+}
+.tm .report .t a {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+}
+.Bgmember-main .tm .report .t a.on {
+  color: #e3c652;
+  border: 1px solid #e3c652;
+}
+.tm .mr10 {
+  margin-right: 10px;
+  color: #FFF;
+}
+.tm .btn-mid, .tm a.btn-mid, .tm input.btn-mid {
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  border: none;
+  text-align: center;
+}
+.tm .btn-mid, .tm a.btn-mid, .tm input.btn-mid {
+  background: #4a1d19;
+  color: #fff;
+}
+.tm .wraperh-sm {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.tm .iblock {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  color: #fff!important;
+}
+.myDatePick{
+  div{
+    div{color: #FFF!important}
+  }
+}
+div .datelist {
+  border: 1px solid #b55454;
+  background-color: #2b1212;
+  padding: 0 10px;
+  color: #fff;
+}
+a:hover{
+  text-decoration: underline!important;
+}
+.Bgmember-main .rightside {
+  width: 960px;
+  border-left: 1px solid #e3e7ea;
+  min-height: 800px;
+}
+.Bgmember-main .deposit {
+  padding: 0 70px;
+  background: rgba(0,0,0,.3);
+  border: 1px solid #6b423b;
+  clear: both;
+  padding-bottom: 74px;
+}
+.Bgmember-main .deposit .tabsUl {
+  border-bottom: 1px solid #6b423b;
+  margin: auto;
+  margin-top: 43px;
+  height: 32px;
+}
+.Bgmember-main .deposit .tabsUl li {
+  float: left;
+  display: inline;
+  _width: 130px;
+  margin: 0 20px;
+  padding: 0;
+  font-size: 13px;
+  a{
+    color: #ecb934;
+    font-size: 18px;
+  }
+}
+.Bgmember-main .deposit .tabsUl li.selected_red a {
+  font-weight: 700;
+  border: 1px solid #d86767;
+  color: #ecb934;
+  
+  padding: 3px 10px 0px 10px;
+}
+.Bgmember-main .deposit .tabsUl li a {
+  color: #b55454;
+  display: block;
+  position: relative;
+  border: 1px solid #6b423b;
+  padding: 3px 10px 0px 10px;
+
+}
+.Bgmember-main .deposit .dpt_credit .tips, .member2 .deposit .money .tips {
+  padding: 5px;
+  border: 1px dashed #ccc7c7;
+  line-height: 24px;
+  font-size: 12px;
+  width: 460px!important;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #9a7c41;
+}
+
+.Bgmember-main .deposit .dpt_credit, .member2 .deposit .money {
+  margin-top: 25px;
+}
+.Bgmember-main .deposit .dpt_credit label, .Bgmember-main .deposit .money label {
+  display: inline-block;
+  text-align: left;
+  width: 90px;
+  color: #b55454!important;
+}
+
+ .Bgmember-main .deposit .money select,.dpt_credit select,.userPayInfo input,.bankInfos input {
+  width: 200px;
+  border: 1px solid #b55454;
+  background-color: #2b1212;
+  outline: none;
+  padding-left: 4px;
+  height: 36px;
+  color: #8c8383;
+}
+.font_red{
+  color: red;
+  padding-left: 15px;
+}
+.Bgmember-main .deposit .dpt_credit .tips, .Bgmember-main .deposit .money .tips {
+  padding: 5px;
+  border: 1px dashed #b55454;
+  line-height: 24px;
+  font-size: 12px;
+  width: 460px!important;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #b55454;
+}
+.Bgmember-main .deposit .dpt_credit .memberBtn,  .Bgmember-main .deposit .money .memberBtn {
+  display: inline-block;
+  width: 156px;
+  text-align: center;
+  color: #d86767!important;
+  border: 1px solid #b55454;
+  background-color: #2b1212;
+  padding: 9px 0;
+  border: 0;
+  font-size: 18px;
+  margin-left: 100px;
+  border: 1px solid;
+}
+.resultBtn{
+  margin-left: -73px;
+}
+.Bgmember-main .deposit .dpt_credit  .default{
+  margin-left: 100px;
+}
+.offlineBankInfo {
+  h5{
+    color: #635846!important;
+    border-bottom: 1px solid #4d4332;
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+}
+
+.bankPay{
+  span{
+    color: red;
+  }
+}
+.thirdFrom{
+  p{
+    color: #FFF;
+    float: left;
+    padding: 20px;
+  }
+}
+.offlineBankInfo {
+  position: relative;
+}
+.alipayCode_qrcode{
+  position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+.alipayCode_info{
+  p{
+    span{
+      color: #8c8383;
+    }
+  }
+}
+
+.tooltiptextuc{
+  width: 90px;
+  background-color: #ffffe4;
+  color: #cf271e;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #e6adaa;
+  position: absolute;
+  top: -31px;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 14px;
+}
+.tooltiptextuc:after{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: rotate(45deg); 
+  border: 1px solid #e6adaa;
+  background: #ffffe4; 
+  border-left: none;
+  border-top: none;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -5px;
+}

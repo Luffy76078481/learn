@@ -1,0 +1,20 @@
+export const config ={
+    "webSiteTag":"",
+    "gameTag":"xhtd",
+    "apiPath": "/api/v0/",
+    "version": "1.0.0",
+    "promotionUrl": "/_promotion/web/index.html",
+    "spec":"xhtd-xhtd",
+    "appName":"新濠天地",
+    "title":"Www.4776.coM",
+    "agentLoginUrl":"https://ag.xhtd-vip.com",
+    "email":"xp9677@gmail.com",
+    "skype":"待定",
+    "qq":"99999",
+    "phone":"99999988888888888",
+    "weixin":"dfkf06",
+    "timezone": "美东时间",
+    "prdImgUrl":"",
+    "isApp":false,
+    "IsLDL":false
+}

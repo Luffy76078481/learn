@@ -1,0 +1,105 @@
+@import "../../style/variables.scss";
+
+.moneyManagePage {
+    .am-navbar {
+        .am-navbar-title {
+            color: #fff;
+        }
+    }
+    .MoneyManage {
+        border-top: none;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        .cashBtn {
+            text-align: center;
+            a {
+                display: inline-block;
+                border-radius: 4px;
+                height: 2.2em;
+                font-size: .3rem;
+                color: #fff;
+                background-color: $theme-btnBg;
+                margin: 0.2rem .8rem;
+                padding: 0 1em;
+                line-height: 2.2;
+                &.withdrawBtn {
+                    background-color: #e6a72c;
+                    color: #222;
+                }
+                i {
+                    font-size: .5rem;
+                    margin-right: 5px;
+                    position: relative;
+                    top: 5px;
+                }
+            }
+        }
+        .list {
+            .title {
+                color: #222;
+                background-color: #f4f4f4;
+                text-align: left;
+                padding: .2rem;
+                a {
+                    display: inline-block;
+                    float: right;
+                    font-size: .25rem;
+                    color: #fff;
+                    background: $theme-btnBg;
+                    border-radius: .2rem;
+                    padding: .1rem .2rem;
+                    margin-top: -.1rem;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .listItem {
+                &.am-list-item .am-list-line .am-list-extra {
+                    flex-basis: 65%;
+                    -webkit-flex-basis: 65%;
+                }
+                span.loading {
+                    color: #666;
+                    background: #eee;
+                    float: right;
+                    display: inline-block;
+                    padding: .05rem .15rem;
+                    font-size: .25rem;
+                    border-radius: .2rem;
+                    margin-right: .5rem;
+                    i {
+                        margin-right: 8px;
+                    }
+                }
+                span.balance {
+                    float: right;
+                    display: inline-block;
+                    padding: .08rem .1rem .05rem;
+                    color: #fff;
+                    background: #d6d6d6;
+                    font-size: .25rem;
+                    text-align: center;
+                    border-radius: .2rem;
+                    min-width: 1.2rem;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    margin-right: .5rem;
+                    &.has {
+                        background: $theme-btnBg;
+                    }
+                }
+                a.bolt {
+                    float: right;
+                    font-size: .25rem;
+                    color: #fff;
+                    background: $theme-btnBg;
+                    border-radius: .2rem;
+                    padding: .05rem .3rem;
+                }
+            }
+        }
+    }
+}

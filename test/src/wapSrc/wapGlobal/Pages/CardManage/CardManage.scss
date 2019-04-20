@@ -1,0 +1,46 @@
+@import "../../style/variables.scss";
+.CardManage{
+  .scroll-content{
+    margin-bottom:0;
+    z-index:1;
+    .noCard{
+      text-align: center;
+      color:#888;
+      font-size:.25rem;
+      line-height:2rem;
+    }
+    .cardsList{
+      padding:.3rem .6rem;
+      .card{
+        text-align: left;
+        margin-bottom:.2rem;
+        border: 1px solid $theme-card-bg ;
+        box-shadow: 0 0 4px #999;
+        overflow: hidden;
+        .am-card-header{
+          background:$theme-card-bg ;
+          .am-card-header-content{
+            color:#fff;
+          }
+        }
+        .am-card-body{
+          font-size:.25rem;
+          color:#333;
+          line-height:26px;
+        }
+      }
+    }
+  }
+  .updateCode{
+    margin-top:10px;
+    .am-image-picker-list{
+      width:50%;
+      margin:0 auto;
+    }
+    p.tips{
+      color:#af0000;
+      padding:10px;
+      line-height:22px;
+    }
+  }
+}

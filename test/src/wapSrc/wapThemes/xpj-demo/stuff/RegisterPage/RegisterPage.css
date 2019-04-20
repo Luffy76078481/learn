@@ -1,0 +1,35 @@
+.am-navbar .am-navbar-right .goHome {
+  color: #fff; }
+
+.register.scroll-content {
+  background: #fff;
+  margin-bottom: 0;
+  padding-bottom: 320px;
+  z-index: 2; }
+  .register.scroll-content .am-list .am-list-body {
+    padding: .4rem .2rem 0; }
+    .register.scroll-content .am-list .am-list-body .am-list-item .am-input-label.am-input-label-5 {
+      width: 1rem;
+      text-align: center; }
+    .register.scroll-content .am-list .am-list-body .verifyCode .am-input-label.am-input-label-5 {
+      float: right;
+      width: 2rem; }
+    .register.scroll-content .am-list .am-list-body i {
+      font-size: .35rem; }
+  .register.scroll-content .registerBtn {
+    background: #02543f; }
+  .register.scroll-content .checkPay .am-list-content {
+    padding: 0 !important; }
+    .register.scroll-content .checkPay .am-list-content .am-list-line:after {
+      height: 0 !important; }
+    .register.scroll-content .checkPay .am-list-content .am-list-line .am-list-content {
+      font-size: .25rem !important; }
+  .register.scroll-content .loginBt a {
+    color: #02543f;
+    font-size: .25rem;
+    padding: .3rem 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%; }
+
+/*# sourceMappingURL=RegisterPage.css.map */
