@@ -2,10 +2,15 @@ import React, {Component} from 'react';
 import {Route, Router, IndexRoute} from 'react-router'
 import {wapAuth,wapLogin} from "globalAction";
 import {Provider} from 'react-redux'
-
+import {config} from 'globalConfig'
+// 登录验证
 const isLogin = (params, replace) => {
-    if (!wapAuth()) replace('/login'); //如果要跳转到登录页面
-    // if(!wapLogin(true)) replace('/'); //弹出登录悬浮窗
+    if(!config.isPopupLogin){ 
+        if(!wapAuth())replace('/login');//如果要跳转到登录页面
+    }
+    else{
+        if(!wapLogin(true)) replace('/'); //弹出登录悬浮窗 
+    }
 }
 
 export default class CusRouter extends Component {

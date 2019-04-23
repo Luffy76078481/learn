@@ -28,7 +28,7 @@ window.Promise = Promise;//解决IE下Promise报错 【1.install babel-runtime�
 
 // ★★★★★
 //__start import "./themes/#{spec}/otherPages/help/skin.scss";
-import "./themes/xhtd-xhtd/otherPages/help/skin.scss";
+import "./themes/dafa-bt6/otherPages/help/skin.scss";
 //__end
 class HelperPage extends Component {
     render() {

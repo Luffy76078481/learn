@@ -13,15 +13,6 @@
       color: #888!important
     }
   }
-  .copyInfoBtn{
-    position: absolute;
-    width: 50px;
-    right: 0.2rem;
-    font-size: 0.3rem;
-    line-height: 22px;
-    z-index: 99;
-    padding: 0;
-  }
 }
 .DepositPage{
   .am-list-item .am-input-control input:read-only{
@@ -252,7 +243,10 @@
       }
       .am-list-item .am-input-label{
         color:#888;
-        width:90px;
+        margin: -5px 0px 0 0px;
+      }
+      .am-input-control{
+        pointer-events: all
       }
       .am-list-item .am-list-line .am-list-content{
         color:#888;

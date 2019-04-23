@@ -1,6 +1,3 @@
-/**
- * Created by sobi on 2017/11/16.
- */
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
@@ -20,7 +17,6 @@ class AffixService_Callback extends Component{
     close(){
         this.setState({show: false});
     }
-     
     shwoNumber(){
         this.setState({showbg: true});
     }
@@ -28,7 +24,6 @@ class AffixService_Callback extends Component{
     hideNumber(){
         this.setState({showbg: false});
     }
-
     subPhone(){
         var num = this.refs.callbackNumber.value;
         if(num == ""){

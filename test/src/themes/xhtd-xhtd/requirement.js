@@ -11,9 +11,9 @@ import Router           from "globalRouter";
 import ImageGallery2    from "./../../global/Components/ImageGallery2/ImageGallery" // Flux 3D轮播
 import ImageGallery     from "./../../global/Components/ImageGallery/ImageGallery"
 import NoticeBar        from "./../../global/Components/NoticeBar/NoticeBar"; // 走马灯
-import AgPage           from "../../global/Pages/AgPage/AgPage";
 import LootoPage        from "../../global/Pages/LootoPage2/LootoPage"; //大转盘
 import VerifyCode       from "../../global/Components/VerifyCode/VerifyCode";//验证码
+import AgPage           from "../../global/Pages/AgPage/AgPage"; // 捕鱼页
 // 页面部分
 import Frame                from "./stuff/Frame/Frame";
 import Header               from "./stuff/Frame/Header/Header_xhXhtd_new";

@@ -12,7 +12,7 @@ window.Promise = Promise;//解决IE下Promise报错 【1.install babel-runtime�
 
 // ★★★★★
 //__start import "./themes/#{spec}/otherPages/agent/skin.scss";
-import "./themes/xhtd-xhtd/otherPages/agent/skin.scss";
+import "./themes/dafa-bt6/otherPages/agent/skin.scss";
 //__end
 
 let agentPage = AgentPage1;

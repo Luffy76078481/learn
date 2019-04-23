@@ -276,7 +276,7 @@ class DepositPage extends Component{
                             </Flex.Item>*/}
                         </Flex>
                     </div>
-                    <div className="payTabs">  
+                    <div className="payTabs">
                         {this.renderPayTabsDom()}
                     </div>
                     <List>

@@ -7,7 +7,7 @@ import Frame            from "../../wapGlobal/Pages/Frame/Frame_noWeixin";
 import SideBar          from "../../wapGlobal/Pages/SideBar/SideBar";
 import FooterBar        from "./stuff/FooterBar/FooterBar_new";
 import FirstPage        from "./stuff/FirstPage/FirstPage";
-import VerifyCode       from "./stuff/VerifyCode/VerifyCode";
+//import VerifyCode       from "./stuff/VerifyCode/VerifyCode";
 import LoginPage        from "./stuff/LoginPage/LoginPage";
 import RegisterPage     from "./stuff/RegisterPage/RegisterPage";
 import RegisterRule     from "./stuff/RegisterPage/RegisterRule";
@@ -55,7 +55,7 @@ export default class Requirement extends BaseRequirement {
         this.r("HelpPage", HelpPage);
         this.r("ServicePage", ServicePage);
         this.r('Feedback', Feedback);
-        this.r("VerifyCode", VerifyCode);
+        //this.r("VerifyCode", VerifyCode);
         this.r("AllGamePage", AllGamePage);
         this.r('MyMessage', MyMessage);
         this.r('MessageLetter',MessageLetter);

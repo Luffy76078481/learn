@@ -4,12 +4,23 @@
     position: relative;
     .slideLeftNotice{
       position: absolute;
-      background: url("./leftNotice2.gif") no-repeat center / cover;
-      width: 1.5rem;
-      height: 1.2rem;
-      right: -5%;
-      top: 5%;
-      z-index: 100;
+      z-index: 99;
+      width: 100%;
+      min-height: 1.5rem;
+      pointer-events: none;
+      svg{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-shadow: 0 0 black;
+        color: #014b38       
+      }
+      .leftNoticeJ{
+        left: 1px;
+      }
+      .rightNoticeJ{
+        right: 1px;
+      }
     }
   }
   .am-navbar{

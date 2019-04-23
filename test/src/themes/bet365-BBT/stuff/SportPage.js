@@ -1,13 +1,9 @@
-/**
- * Created by xm on 2017/5/8.
- */
 
 import React, {Component} from 'react';
 import {ApiGetLoginUrl, auth} from "globalAction";
 import {connect} from 'react-redux';
 import './css/SportPage.scss';
 class SportPage2 extends Component {
-
     constructor (props){
         super(props);
         this.state = {
@@ -29,12 +25,10 @@ class SportPage2 extends Component {
     componentDidMount() {
         window.$("#root").attr("class", "usefulcss");
     }
-
     onClickGame(game,event) {
         if($(event.target).hasClass("sportRule")){
             var ruleLink = window.config.spec+"_sport_rule.html";
             window.open(ruleLink,'_blank');
-
         }else {
             if (!auth()) {
                 return;
@@ -56,10 +50,7 @@ class SportPage2 extends Component {
                 }
             })
         }
-
     }
-
-
     render() {
         let sportGames = [];
         //用户未登陆不显示N188体育

@@ -105,16 +105,30 @@ class QrcodeDeposit extends Component{
                                 <i className="icon icon-info-sign"></i>
                                 <strong>长按保存二维码</strong>，或使用 <strong>截屏保存</strong>，打开{BankName}<strong>扫描相册二维码</strong>完成支付。如无法充值，请联系客服。
                             </div>
-                            {/* Asa vN2要求复制功能 ======== */}
-                            {config.gameTag == 'vn2' || config.gameTag == 'asa' || config.gameTag == 'uzi'?
+                            {/* 
+                                给我全部上复制功能 
+                                ======== 
+                                <List>
+                                    <InputItem value={this.props.offpay.AccountName} editable={false}>收款姓名:</InputItem>
+                                    <InputItem value={this.props.offpay.AccountNo} editable={false}>收款账号:</InputItem>
+                                    <InputItem value={this.props.offpay.Bank.BankName} editable={false}>收款银行:</InputItem>
+                                </List>   
+                            */}
                             <div className="am-list">
                                 <div className="am-list-body">
                                     <div className="am-list-item am-input-item am-list-item-middle">
                                         <div className="am-list-line">
                                             <div className="am-input-label am-input-label-5">收款姓名:</div>
                                             <div className="am-input-control">
-                                                <input type="text" id='account_name' style={{width:"75%"}} value={this.props.offpay.AccountName} contentEditable ={true} readOnly={false} />
-                                                <button className="copyInfoBtn" onClick={this.copyCode.bind(this,'account_name')}>复制</button>
+                                                <input type="text" id='account_name' style={{width:"75%"}} defaultValue={this.props.offpay.AccountName} contentEditable ={true} readOnly={false} />
+                                                <Button 
+                                                    onClick={this.copyCode.bind(this,'account_name')}  
+                                                    shape="round"
+                                                    size="small"
+                                                    type="warning"
+                                                    style={{"padding":0}}
+                                            
+                                                >复制</Button>
                                             </div>
                                         </div>
                                     </div>
@@ -122,21 +136,36 @@ class QrcodeDeposit extends Component{
                                         <div className="am-list-line">
                                             <div className="am-input-label am-input-label-5">收款账号:</div>
                                             <div className="am-input-control">
-                                                <input type="text" id='account_no' style={{width:"75%"}} value={this.props.offpay.AccountNo} contentEditable ={true} readOnly={false}/>
-                                                <button className="copyInfoBtn" onClick={this.copyCode.bind(this,'account_no')}>复制</button>
+                                                <input type="text" id='account_no' style={{width:"75%"}} defaultValue={this.props.offpay.AccountNo} contentEditable ={true} readOnly={false}/>
+                                                <Button 
+                                                    onClick={this.copyCode.bind(this,'account_no')}  
+                                                    shape="round"
+                                                    size="small"
+                                                    type="warning"
+                                                    style={{"padding":0}}
+                                            
+                                                >复制</Button>
                                             </div>
                                         </div>
                                     </div>
-                                    <InputItem value={this.props.offpay.Bank.BankName} editable={false}>收款银行:</InputItem>
+                                    <div className="am-list-item am-input-item am-list-item-middle">
+                                        <div className="am-list-line">
+                                            <div className="am-input-label am-input-label-5">收款银行:</div>
+                                            <div className="am-input-control">
+                                                <input type="text" id='account_BankName' style={{width:"75%"}} defaultValue={this.props.offpay.Bank.BankName} contentEditable ={true} readOnly={false}/>
+                                                <Button 
+                                                    onClick={this.copyCode.bind(this,'account_BankName')}  
+                                                    shape="round"
+                                                    size="small"
+                                                    type="warning"
+                                                    style={{"padding":0}}
+                                            
+                                                >复制</Button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>                            
-                            :
-                            <List>
-                                <InputItem value={this.props.offpay.AccountName} editable={false}>收款姓名:</InputItem>
-                                <InputItem value={this.props.offpay.AccountNo} editable={false}>收款账号:</InputItem>
-                                <InputItem value={this.props.offpay.Bank.BankName} editable={false}>收款银行:</InputItem>
-                            </List>                            
-                            }
                             <h3>转账信息</h3>
                             <List>
                                 <InputItem
@@ -147,8 +176,8 @@ class QrcodeDeposit extends Component{
                             </List>
                             {
                                 this.state.AccountName?
-                                    <a onClick={this.offlinePay.bind(this)} className={"btn"}>转账完成点这里</a>
-                                    :<a className={"disabled btn"}>转账完成点这里</a>
+                                <a onClick={this.offlinePay.bind(this)} className={"btn"}>转账完成点这里</a>
+                                :<a className={"disabled btn"}>转账完成点这里</a>
                             }
                         </div>
                     </div>

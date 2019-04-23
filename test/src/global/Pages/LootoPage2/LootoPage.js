@@ -36,7 +36,7 @@ class LootoPage extends Component {
         /*
         let arr = [
             {"name":"保时捷汽车","count":3},
-            {"name":"iphoneX","count":24},
+            {"name":"iphoneX","count":2},
             {"name":"免费筹码888","count":500},
             {"name":"存送优惠券","count":800},
             {"name":"免费筹码188","count":1000},
@@ -51,7 +51,7 @@ class LootoPage extends Component {
         // 获取大转盘剩余奖项JSON字符串  
         new ApiGetQueryLuckyCounts().fly(resp => {
             this.setState({
-                shengYu:JSON.parse(resp.value)
+                shengYu:resp.value?JSON.parse(resp.value):[]
             })
             this.QueryLuckyTime(resp.currentTime,resp.lastUpdateTime,JSON.parse(resp.value))
             this.carouselAction2(resp) // 剩余奖品滚动展示
@@ -146,35 +146,25 @@ class LootoPage extends Component {
     productDay(val,params,currentDay,endDay,currentHour,endHour,isStartActivity){
         // 如果号数不同，需要重置
         if(currentDay!=endDay){    
-            // 活动开始
-            if(isStartActivity){
-                val[0].count = 500;
-                val[1].count = 800;
-                val[2].count = 1000;
-                val[3].count = 1500;
-                val[4].count = 3000;
-                val[5].count = 650;
-                val[6].count = 100;     
+            let restartGift = [500,800,1000,1500,3000,650,100]           
+            if(isStartActivity){ // 活动开始 
+                val.forEach((item,index)=>{
+                    item.count = restartGift[index]-parseInt( Math.random()* ((restartGift[index])/2) )
+                })
+            }else{// 活动结束
+                val.forEach((item,index)=>{
+                    item.count = restartGift[index]
+                })      
             }
-            // 活动结束
-            else{
-                val[0].count = 500 - parseInt(Math.random()*250)
-                val[1].count = 800 - parseInt(Math.random()*400)
-                val[2].count = 1000 - parseInt(Math.random()*500)
-                val[3].count = 1500 - parseInt(Math.random()*750)
-                val[4].count = 3000 - parseInt(Math.random()*1500)
-                val[5].count = 650 - parseInt(Math.random()*325)
-                val[6].count = 100 - parseInt(Math.random()*50)
-            }
-            params.forEach((item,index)=>{
-                params[index+2].count = item;
+            val.forEach((item,index)=>{
+                params[index+2].count = item.count;
             })
             this.writeSurplus(params) //返写
         }
         else{
             // 活動進行時，每小時減少一次禮品
             if( isStartActivity && Number(currentHour)-Number(endHour)>=1 ){
-                if( val.count==0 || val.count=="0" ) return
+                if( Number(val.count) == 0 || val.count == false || val.count == null ) return
                 val.forEach( (ele,index) => {
                     val[index].count = ele.count - parseInt(Math.random()*ele.count)
                     params[index+2].count = val[index].count

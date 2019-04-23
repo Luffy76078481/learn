@@ -178,67 +178,17 @@ module.exports = {
         //openPage: "",
         host: IPv4,
         proxy: {//重定向
-             // '/api/v0/Pay/**': {target: 'http://43.255.191.5:1144/', secure: true },//.net測試環境
-             // '/api/**': {target: 'http://43.255.191.5:1133/', secure: false,changeOrigin:true },//.net測試環境
-
-            //  '/api/v0/Pay/**': { target: 'http://43.255.191.5:1144/', secure: true },    //测试多渠道支付
-            //  '/api/**': { target: 'http://43.255.191.5:1133/', secure: true },    //测试多渠道支付
-
-            // '/api/v0/Pay/**': {//.net生產環境[支付]
-            //     target: 'http://paynew.df8.in/',//dbb大发
-            //     secure: false,//若地址为https，需要设置为false
-            //     changeOrigin:true //是否跨域
-            // },
-            // '/api/**': {//.net生產環境
-            //         target: 'http://dbb.ybapi.club/',//dbb大发
-            //         secure: false,//若地址为https，需要设置为false
-            //         changeOrigin:true //是否跨域
-            // },
-
-            
             '/api/v0/Pay/**': {//.net生產環境[支付]
-                // target: 'http://wy8.net.pc.cgtest06.com/',//wy8测试demo站'
-                // target: 'http://bt6.tyc.pc.cgtest06.com/',//代理地址大发'
-                // target: 'http://43.255.191.12:1133/',//测试站
-                // target: 'https://5967700.com/', // ASA新葡京
-                // target: 'http://bt6.dafa.pc.cgtest06.com/',//代理地址大发'
-                // target: 'http://df52083.com/', // 莱得利
-                // target: 'http://0.xpjcdn.in/',//代理地址新葡京xpj-xpj
-                // target: 'http://uzi1.vnsrcdn.in/',//代理地址威尼斯UZI
-                // target: 'http://vv88.mgmcdn.in/',//代理地址美高梅vv8
-                // target: 'http://asa-pay-1.xpjcdn.in/',//代理地址新葡京asa
-                // target: 'http://kyy1.lilaicdn.in/',//代理地址kyy利达国际
-                // target: 'https://cndf1.com/',//大发DBB
-                // target: 'http://vn2.net.pc.cgtest06.com',//威尼斯人vn2
-                target: 'https://47761110.com/',//xhtd-xhtd
-                // target: 'http://ppp1.pufacdn.in/',//浦发ppp
-                // target: 'http://pay1.jhcdn.in/',// 金濠jjh
-                // target: 'http://xin1.xhtdcdn.in/', // 代理地址 xhtd-xin
-                // target: 'http://wy8-pay.cgtest06.com/', // WY8测试后台
-                // target: 'http://bet365-pc-demo.dbet.bet',   //newbet365-BBT
+                //__start target: '#{spec}',
+                target: 'https://47761110.com/',
+                //__end
                 secure: false,//若地址为https，需要设置为false
                 changeOrigin:true //是否跨域
             },
             '/api/**': {//.net生產環境
-                // target: 'http://wy8.net.pc.cgtest06.com/',//wy8测试demo站'
-                // target: 'http://43.255.191.12:1133/',//代理地址大发'
-                // target: 'http://bt6.dafa.pc.cgtest06.com/',//代理地址大发'
-                // target: 'http://df52083.com/', // 莱得利
-                // target: 'https://5967700.com/', // ASA新葡京
-                // target: 'http://xpj.ybapi.club/',//代理地址新葡京xpj-xpj
-                // target: 'http://uzi.ybapi.club/',//代理地址威尼斯UZI
-                // target: 'http://vv8.ybapi.club/',//代理地址美高梅vv8
-                // target: 'http://asa.ybapi.club/',//代理地址新葡京asa
-            //    target: 'https://cndf1.com/',//大发DBB
-                // target: 'http://kyy.ybapi.club/',//代理地址kyy利达国际
-                // target: 'http://vn2.net.pc.cgtest06.com',//代理地址vn2
-                // target: 'http://xhtd.ybapi.club/',//代理地址xhtd-xhtd
-                // target: 'http://ppp.ybapi.club/',//代理地址ppp
-                // target: 'http://jjh.ybapi.club/',//金濠jjh
+                  //__start target: '#{spec}',
                 target: 'https://47761110.com/',//xhtd-xhtd
-                // target: 'http://xin1.ybapi.club/',// 代理地址 xhtd-xin
-                // target: 'http://wy8.ybapi.club/', // WY8测试后台
-                // target: 'http://bet365-pc-demo.dbet.bet',   //newbet365-BBT
+                 //__end
                 secure: false,//若地址为https，需要设置为false
                 changeOrigin:true //是否跨域
             },

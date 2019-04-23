@@ -66,16 +66,15 @@
     &>div{
         background: url(../../style/images/chess/globGif.gif);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         background-position: 0 0;
         width: 6rem;
-        height: 4rem;
+        height: 2rem;
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         margin: auto;
-
     }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Modal, List, InputItem, Picker,Toast} from 'antd-mobile';
+import {Modal, List, InputItem, Picker,Toast,Button} from 'antd-mobile';
 import {provinces} from "provincesJson";
 import {transferTypes} from "offlineTransferJson";
 import './DepositPage.scss';
@@ -124,6 +124,7 @@ class AtmBox extends Component{
     }
     // 复制copyCode
     copyCode(copyId){
+        console.log(copyId)
         var copyObj = document.getElementById(copyId);
         copyObj.select();
         copyObj.setSelectionRange(0, copyObj.value.length)
@@ -144,17 +145,31 @@ class AtmBox extends Component{
                             请向下面账号转账:<span>￥{this.props.depositmoney}</span>
                         </div>
                         <div className="con">
-                        {/* Asa vN2要求复制功能 ======== */}
-                        {config.gameTag == 'vn2' || config.gameTag == 'asa' || config.gameTag == 'uzi'
-                        ?
+                        {/* 
+                            原本长这样，因为需要复制功能，所以
+                            <List>
+                                <InputItem value={this.props.offpay.AccountName} editable={false}>收款姓名:</InputItem>
+                                <InputItem value={this.props.offpay.AccountNo} editable={false}>收款账号:</InputItem>
+                                <InputItem value={this.props.offpay.Bank.BankName} editable={false}>收款银行:</InputItem>
+                                <InputItem value={this.props.offpay.OpeningBank} editable={false}>银行支行:</InputItem>
+                            </List>    
+                        */}
                         <div className="am-list">
                             <div className="am-list-body">
                                 <div className="am-list-item am-input-item am-list-item-middle">
                                     <div className="am-list-line">
                                         <div className="am-input-label am-input-label-5">收款姓名:</div>
                                         <div className="am-input-control">
-                                            <input type="text" id='account_name' style={{width:"75%"}} value={this.props.offpay.AccountName}/>
-                                            <button className="copyInfoBtn" onClick={this.copyCode.bind(this,'account_name')}>复制</button>
+                                            <input type="text" id='account_name' style={{width:"75%"}} defaultValue={this.props.offpay.AccountName}/>
+                                            <Button 
+                                                onClick={this.copyCode.bind(this,'account_name')}  
+                                                shape="round"
+                                                size="small"
+                                                type="warning"
+                                                style={{"padding":0}}
+                                        
+                                            >复制</Button>
+                                            {/* <button className="copyInfoBtn" onClick={this.copyCode.bind(this,'account_name')}>复制</button> */}
                                         </div>
                                     </div>
                                 </div>
@@ -162,31 +177,59 @@ class AtmBox extends Component{
                                     <div className="am-list-line">
                                         <div className="am-input-label am-input-label-5">收款账号:</div>
                                         <div className="am-input-control">
-                                            <input type="text" id='account_no' style={{width:"75%"}} value={this.props.offpay.AccountNo}/>
-                                            <button className="copyInfoBtn" onClick={this.copyCode.bind(this,'account_no')}>复制</button>
+                                            <input type="text" id='account_no' style={{width:"75%"}} defaultValue={this.props.offpay.AccountNo}/>
+                                            <Button 
+                                                onClick={this.copyCode.bind(this,'account_no')}  
+                                                shape="round"
+                                                size="small"
+                                                type="warning"
+                                                style={{"padding":0}}
+                                        
+                                            >复制</Button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="am-list-item am-input-item am-list-item-middle">
+                                    <div className="am-list-line">
+                                        <div className="am-input-label am-input-label-5">收款银行:</div>
+                                        <div className="am-input-control">
+                                            <input type="text" id='account_BankName' style={{width:"75%"}} defaultValue={this.props.offpay.Bank.BankName}/>
+                                            <Button 
+                                                onClick={this.copyCode.bind(this,'account_BankName')}  
+                                                shape="round"
+                                                size="small"
+                                                type="warning"
+                                                style={{"padding":0}}
+                                        
+                                            >复制</Button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="am-list-item am-input-item am-list-item-middle">
+                                    <div className="am-list-line">
+                                        <div className="am-input-label am-input-label-5">银行支行:</div>
+                                        <div className="am-input-control">
+                                            <input type="text" id='account_OpeningBank' style={{width:"75%"}} defaultValue={this.props.offpay.OpeningBank}/>
+                                            <Button 
+                                                onClick={this.copyCode.bind(this,'account_OpeningBank')}  
+                                                shape="round"
+                                                size="small"
+                                                type="warning"
+                                                style={{"padding":0}}
+                                        
+                                            >复制</Button>
                                         </div>
                                     </div>
                                 </div>
                             </div>  
-                            <InputItem value={this.props.offpay.Bank.BankName} editable={false}>收款银行:</InputItem>
-                            <InputItem value={this.props.offpay.OpeningBank} editable={false}>银行支行:</InputItem>  
                         </div>
-                        :
-                        <List>
-                            <InputItem value={this.props.offpay.AccountName} editable={false}>收款姓名:</InputItem>
-                            <InputItem value={this.props.offpay.AccountNo} editable={false}>收款账号:</InputItem>
-                            <InputItem value={this.props.offpay.Bank.BankName} editable={false}>收款银行:</InputItem>
-                            <InputItem value={this.props.offpay.OpeningBank} editable={false}>银行支行:</InputItem>
-                        </List>                        
-                        }
-
                         <h3>转账信息</h3>
                         <List>
                             <InputItem
                                 defaultValue={this.props.user.realName}
                                 ref="offline_accountName"
                                 placeholder="请输入付款银行卡开户姓名"
-                            >银行卡姓名:</InputItem>
+                            >持卡姓名:</InputItem>
 
                             {
                                 this.state.requirePlace?

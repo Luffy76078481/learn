@@ -3,7 +3,7 @@
 import {MuiTheme, PreferencesIcon} from "./theme";
 //公共部分- 路由，页面
 import Router from "globalRouter";
-import AgPage from "../../global/Pages/AgPage/AgPage";
+import AgPage from "../../global/Pages/AgPage/AgPage";//捕鱼
 import NoticeBar            from "../../global/Components/NoticeBar/NoticeBar";
 import ImageGallery         from "../../global/Components/ImageGallery/ImageGallery";
 import ForgetPasswordPage   from "../../global/Pages/ForgetPasswordPage/ForgetPasswordPage";
@@ -33,8 +33,6 @@ import PromotionPage        from "./page/PromotionPage/PromotionPage";
 import AffixService2        from "./page/AffixService2";
 //import AffixHongbao         from "../../global/Pages/Frame/Header/AffixHongbao/AffixHongbao";
 import MemberCenterRouter   from "./page/MemberCenter/Router/MemberCenterRouter2";
-
-
 /*每个站点自己的router*/
 import RequireSelfRouter from "./RequireSelfRouter";
 import SecondNav from "./page/SecondNav/SecondNav"

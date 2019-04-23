@@ -165,3 +165,24 @@
 .am-modal-button-group-h .am-modal-button, .am-modal-button-group-v .am-modal-button{
     color: #7c3d19!important;
 }
+.am-modal-content{
+    background: linear-gradient(#f9fbe0,#fdf7bf);
+}
+
+.IntoRoomClass{
+    background: #ebe0b3;
+    border: 1px solid #d3c69d;
+    border-radius: 3px;
+    padding: .1rem;
+    width: 3rem;
+    color: #ba885b;
+    border-radius: 8px;
+}
+
+::-webkit-input-placeholder{
+    color: #ba885b!important;
+}
+.am-modal-title{
+    color: #7c3d19!important;
+    font-size: .32rem!important;
+}

@@ -4,6 +4,7 @@
 import React, {Component} from 'react';
 import './AgPage.scss'
 import {connect} from 'react-redux';
+import {config} from "globalConfig";
 
 class AgPage extends Component {
     onClickGameLink() {
@@ -31,10 +32,23 @@ class AgPage extends Component {
     componentDidMount() {
         window.$("#root").attr("class", "usefulcss");
     }
-    render() {
-      
+    fishCodeRender(){
+        let ret = []
+        if(config.gameTag!="dafa"){
+            ret.push(
+                <img src={require("./images/code_"+window.config.gameTag+".png")} key="Fishimg"/>
+            )
+        }
+        else{
+            ret.push(
+                <img src={'http://qr.liantu.com/api.php?w=200&h=200&text=https://'+location.hostname+'/_promotion/web/index.html'} key="FishLink"/>
+            )
+        }
+        return ret;        
+    }
+    render() {    
         const toDecimalNumber = window.toDecimalNumber;
-        //const gameLink = 'AC656FE07A6E414FBA69A1F5DAA05ED4';
+        //const gameLink = 'AC656FE07A6E414FBA69A1F5DAA05ED4'; // 捕鱼ID
         return (
             <article id="ag-game">
                 <img className="fishing_title" src={require( './images/fishing_title.png')} alt="捕鱼游戏" title="捕鱼游戏"/>
@@ -53,7 +67,7 @@ class AgPage extends Component {
                             <li><a target="_blank" href="javascript:void(0)" onClick={this.onClickGameLink.bind(this)}><div className="lotto-game"></div><button className="btn1" onClick={this.onClickGameLink.bind(this)}>开始游戏</button></a></li>
                             <li>
                                 <div className="fh_qrcode">
-                                    <img src={'http://qr.liantu.com/api.php?w=200&h=200&text=https://'+location.hostname+'/_promotion/web/index.html'}/>
+                                    {this.fishCodeRender()}
                                     <p>手机版app</p>
                                 </div>
                             </li>

@@ -6,7 +6,7 @@
     "scripts": {
         "prebuild": "node prebuild.js",
         "start": "node prebuild.js && webpack-dev-server -d --progress --colors",
-        "build": "set NODE_ENV=production&& node prebuild.js && webpack --progress --color --verbose --config ./webpack.prd.config.js",
+        "build": "set NODE_ENV=production&& node prebuildDist.js && webpack --progress --color --verbose --config ./webpack.prd.config.js",
         "test": "webpack --progress --color --verbose --config ./webpack.test.config.js",
         "start_wap": "webpack-dev-server -d --progress --colors --config ./webpack.config_wap.js",
         "build_wap": "set NODE_ENV=production&&webpack  --progress --color --verbose --config ./webpack.prd_wap.config.js"

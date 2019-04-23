@@ -47,20 +47,6 @@ class FirstPage extends Component {
         leftNotice:true// 滑动提示
     }
     componentDidMount(){
-        let self = this;     
-        if(!localStorage.getItem("leftNotice")){
-            setTimeout(()=>{
-                self.setState({
-                    leftNotice:false
-                })
-            },4500)            
-            localStorage.setItem("leftNotice",true);
-        }
-        else{
-            self.setState({
-                leftNotice:false
-            })    
-        }
 
     }
     componentWillMount() {
@@ -525,7 +511,10 @@ class FirstPage extends Component {
                         {notice}
                     </NoticeBar>
                     <div className="theGameList">
-                        {this.state.leftNotice?<div className='slideLeftNotice'></div>:null}
+                        <div className='slideLeftNotice'>
+                            <Icon className="leftNoticeJ" type="left"/>
+                            <Icon className="rightNoticeJ" type="right"/>
+                        </div>
                         <TabExample titleList={wapCategores}
                                     contentList={contentList}
                                     changeFun={this.tabsChange.bind(this)}

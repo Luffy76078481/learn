@@ -30,7 +30,8 @@ import WithdrawPage from '../../wapGlobal/Pages/WithdrawPage/WithdrawPage_noVerf
 import LottoPage from '../../wapGlobal/Pages/LottoPage/LottoPage'
 import StatementPage from '../../wapGlobal/Pages/StatementPage/StatementPage'
 import HotActivity from '../../wapGlobal/Pages/HotActivity/HotActivity'
-import AffixService_Callback from "../../global/Components/AffixService/AffixHide/AffixService_Callback" //电话回访
+//import AffixService_Callback from "../../../global/Components/AffixService/AffixHide/AffixService_Callback" //电话回访
+
 
 //加载该站点自有的样式
 
